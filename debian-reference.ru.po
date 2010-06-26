@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Справочник по Debian\n"
 "POT-Creation-Date: 2010-06-24 18:27+0500\n"
-"PO-Revision-Date: 2010-06-25 15:09+0400\n"
-"Last-Translator: Juniperus Love <qref2ru@gmail.com>\n"
+"PO-Revision-Date: 2010-06-24 18:17+0400\n"
+"Last-Translator: Nikolay Mikhailov <qref2ru@gmail.com>\n"
 "Language-Team:\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -1636,9 +1636,10 @@ msgstr ""
 # type: Content of the https entity
 #. type: Content of the ibus entity
 #: debian-reference.en.xmlt:310
+#, fuzzy
 #| msgid "http://en.wikipedia.org/wiki/Https"
 msgid "http://en.wikipedia.org/wiki/Intelligent_Input_Bus"
-msgstr ""
+msgstr "http://ru.wikipedia.org/wiki/HTTPS"
 
 # type: Content of the ieeebdjefirewire entity
 #. type: Content of the ieeebdjefirewire entity
