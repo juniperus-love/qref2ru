@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Справочник по Debian\n"
 "POT-Creation-Date: 2010-06-24 18:27+0500\n"
-"PO-Revision-Date: 2010-07-02 06:09+0400\n"
+"PO-Revision-Date: 2010-07-02 23:19+0400\n"
 "Last-Translator: Juniperus Love <qref2ru@gmail.com>\n"
 "Language-Team:\n"
 "Language: \n"
@@ -12556,7 +12556,7 @@ msgstr "IFS также используется командным интерп�
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:4828
 msgid "Be careful about using this shell IFS tricks.  Strange things may happen, when shell interprets some parts of the script as its <emphasis role=\"strong\">input</emphasis>."
-msgstr "Будьте осторожны в трюках с IFS, ибо могут случаться всякие странные вещи, когда шелл начинает воспринимать части скрипта как свой <emphasis role=\"strong\">ввод</emphasis>."
+msgstr "Будьте осторожны в трюках с IFS, ибо могут случаться всякие странные вещи, когда командный интерпретатор начинает воспринимать части скрипта как свой <emphasis role=\"strong\">ввод</emphasis>."
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -13312,7 +13312,7 @@ msgstr "Второй аргумент -- это имя выпуска: имя с
 #: debian-reference.en.xmlt:5362
 #| msgid "The 3rd and following arguments are the list of valid archive component names of the Debian archive."
 msgid "The 3rd and following arguments are the list of valid archive area names of the Debian archive."
-msgstr "Третий и остальные аргументы -- названия разделов архива, которые будут использоваться."
+msgstr "Третий и остальные аргументы -- названия областей архива Debian, которые будут использоваться."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -13530,15 +13530,14 @@ msgstr ""
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
 #: debian-reference.en.xmlt:5514
-#, fuzzy
 #| msgid "List of Debian archive sites"
 msgid "List of Debian archive area"
-msgstr "Список разделов архивов Debian"
+msgstr "Список области архивов Debian (archive area)"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:5522 debian-reference.en.xmlt:14039
 msgid "area"
-msgstr ""
+msgstr "область (area)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
@@ -13549,10 +13548,9 @@ msgstr "количество пакетов"
 # type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:5528
-#, fuzzy
 #| msgid "criteria of package"
 msgid "criteria of package component"
-msgstr "критерий соответствия DFSG"
+msgstr "критерий присутствия пакета в этой области архива"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -13611,10 +13609,9 @@ msgstr "несвободный по критериям DFSG"
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:5569
-#, fuzzy
 #| msgid "Here the number of packages in the above is for the &arch; architecture.  Strictly speaking, only the <literal>main</literal> component archive shall be considered as the Debian system."
 msgid "Here the number of packages in the above is for the &arch; architecture.  Strictly speaking, only the <literal>main</literal> area archive shall be considered as the Debian system."
-msgstr "Статистика количества пакетов в разделах приводится для архитектуры &arch;. Строго говоря, только раздел \"<literal>main</literal>\" должен восприниматься как система Debian."
+msgstr "Статистика количества пакетов приводится для архитектуры &arch;. Строго говоря, только область \"<literal>main</literal>\" должна восприниматься как система Debian."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -13632,7 +13629,7 @@ msgstr "Каждый выпуск системы Debian (дистрибутив)
 #. type: Content of: <book><chapter><section><section><table><title>
 #: debian-reference.en.xmlt:5573
 msgid "The relationship between suite and codename"
-msgstr "Отношения между именем комплекта и кодовым именем"
+msgstr "Отношения между статусом и кодовым именем"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
@@ -13698,15 +13695,14 @@ msgstr "codename = <literal>&codename-nexttesting;</literal>"
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:5627
 msgid "The history of codenames are described in <ulink url=\"&debianfaqgdbwhiceenusedinthepast;\">Debian FAQ: 6.3.1 Which other codenames have been used in the past?</ulink>"
-msgstr "История кодовых названий описана в <ulink url=\"&debianfaqgdbwhiceenusedinthepast;\">Debian FAQ: 6.3.1 \"Which other codenames have been used in the past?\"</ulink>"
+msgstr "История кодовых имён описана в <ulink url=\"&debianfaqgdbwhiceenusedinthepast;\">Debian FAQ: 6.3.1 \"Which other codenames have been used in the past?\"</ulink>"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:5628
-#, fuzzy
 #| msgid "In the stricter Debian archive terminology, the word \"section\" is specifically used for the categorization of packages by the application area.  (Although, the word \"main section\" may sometimes be used to describe the Debian archive section which provides the main component.)"
 msgid "In the stricter Debian archive terminology, the word \"section\" is specifically used for the categorization of packages by the application area.  (Although, the word \"main section\" may sometimes be used to describe the Debian archive area named as \"main\".)"
-msgstr "Строго говоря, согласно терминологии архивов Debian, слово \"<literal>раздел</literal>\" (\"<literal>section</literal>\") используются для категоризации пакетов по области применения. (Хотя \"главный раздел\" - \"main section\" иногда обозначает раздел архива Debian, который содержит комплект \"main\")."
+msgstr "Строго говоря, согласно терминологии архивов Debian, слово \"раздел\" -- \"section\" используется специально для категоризации пакетов по области применения. (С другой стороны, \"главный раздел\" -- \"main section\" иногда обозначает область архива \"main\".)"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -15008,10 +15004,9 @@ msgstr "<literal>Обновляемые Пакеты</literal>"
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:6563
-#, fuzzy
 #| msgid "list packages organized as <literal>section</literal> → <literal>component</literal> → <literal>package</literal>"
 msgid "list packages organized as <literal>section</literal> → <literal>area</literal> → <literal>package</literal>"
-msgstr "список организован как \"<literal>Раздел</literal>\" -- \"<literal>Архив</literal>\" -- \"<literal>Пакет</literal>\""
+msgstr "список организован так: \"<literal>раздел</literal>\" → \"<literal>область</literal>\" → \"<literal>пакет</literal>\""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16349,10 +16344,9 @@ msgstr "<literal>dpkg-source -x &lt;package_name&gt;_&lt;version&gt;- &lt;debian
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7425
-#, fuzzy
 #| msgid "The source package format described here as a set of source packages (\"<literal>*.tar.gz</literal>\" and \"<literal>*.diff.gz</literal>\") is format 1.0 which is still popular.  See more on <literal>dpkg-source</literal>(1) for other newer formats."
 msgid "build a source tree from a set of source packages (\"<literal>*.orig.tar.gz</literal>\" and \"<literal>*.debian.tar.gz</literal>\"/\"<literal>*.diff.gz</literal>\")"
-msgstr "Формат пакета с исходниками, который имеется в виду здесь (набор пакетов и патчей к ним \"<literal>*.tar.gz</literal>\" и \"<literal>*.diff.gz</literal>), это старый формат версии 1.0, который до сих пор популярен. О других форматах читайте в <literal>dpkg-source</literal>(1)."
+msgstr "собрать дерево с исходным кодом из набора пакетов (\"<literal>*.orig.tar.gz</literal>\" и <literal>*.orig.tar.gz</literal>\"/\"<literal>*.debian.tar.gz</literal>\")"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16670,10 +16664,9 @@ msgstr "список всех файлов всех пакетов в архив
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7625
-#, fuzzy
 #| msgid "top of each distribution/component/architecture combination"
 msgid "top of each distribution/area/architecture combination"
-msgstr "верх каждого каталога выпуск/раздел/архитектура"
+msgstr ""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16690,10 +16683,9 @@ msgstr "<literal>Packages</literal>"
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7636
-#, fuzzy
 #| msgid "top of each distribution/component/binary-architecture combination"
 msgid "top of each distribution/area/binary-architecture combination"
-msgstr "верх каждого каталога выпуск/раздел/бинарная_ архитектура"
+msgstr ""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16710,10 +16702,9 @@ msgstr "<literal>Sources</literal>"
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7647
-#, fuzzy
 #| msgid "top of each distribution/component/source combination"
 msgid "top of each distribution/area/source combination"
-msgstr "верх каждого каталога выпуск/раздел/исходный_ код"
+msgstr ""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16910,10 +16901,9 @@ msgstr "Получение мета-данных пакетов"
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:7737
-#, fuzzy
 #| msgid "When APT tools, such as <literal>aptitude</literal>, <literal>apt-get</literal>, <literal>synaptic</literal>, <literal>apt-file</literal>, <literal>auto-apt</literal>…, are used, we need to update the local copies of the meta data containing the Debian archive information. These local copies have following file names corresponding to the specified <literal>distribution</literal>, <literal>component</literal>, and <literal>architecture</literal> names in the \"<literal>/etc/apt/sources.list</literal>\" (see <xref linkend=\"_debian_archive_basics\"/>)."
 msgid "When APT tools, such as <literal>aptitude</literal>, <literal>apt-get</literal>, <literal>synaptic</literal>, <literal>apt-file</literal>, <literal>auto-apt</literal>…, are used, we need to update the local copies of the meta data containing the Debian archive information. These local copies have following file names corresponding to the specified <literal>distribution</literal>, <literal>area</literal>, and <literal>architecture</literal> names in the \"<literal>/etc/apt/sources.list</literal>\" (see <xref linkend=\"_debian_archive_basics\"/>)."
-msgstr "При использовании средств APT (<literal>aptitude</literal>, <literal>apt-get</literal>, <literal>synaptic</literal>, <literal>apt-file</literal>, <literal>auto-apt</literal> ...) необходимо, чтобы локальные копии мета-данных архивов обновлялись. Эти локальные копии хранятся в \"<literal>/var/lib/apt/lists/</literal>\" и имеют имена, по которым можно определить имя <literal>дистрибутива</literal>, <literal>раздела</literal> и <literal>архитектуры</literal>, для которой предназначен архив. Имена формируются в соответствии с записями в \"<literal>/etc/apt/sources.list</literal>\". (См. <xref linkend=\"_debian_archive_basics\"/>)"
+msgstr "При использовании средств APT (<literal>aptitude</literal>, <literal>apt-get</literal>, <literal>synaptic</literal>, <literal>apt-file</literal>, <literal>auto-apt</literal> ...) необходимо, чтобы локальные копии мета-данных архивов обновлялись. Эти локальные копии хранятся в \"<literal>/var/lib/apt/lists/</literal>\" и имеют имена, по которым можно определить имя <literal>выпуска</literal> (distribution), <literal>оласти</literal> (area) и <literal>архитектуры</literal>, для которой предназначен архив. Имена формируются в соответствии с записями в \"<literal>/etc/apt/sources.list</literal>\". (См. <xref linkend=\"_debian_archive_basics\"/>)"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -17066,18 +17056,16 @@ msgstr "Пакет с исходным кодом от разработчико�
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7822
-#, fuzzy
 #| msgid "<literal>dpkg-source -x &lt;package_name&gt;_&lt;version&gt;-&lt;debian_version&gt;.dsc</literal>"
 msgid "<literal>&lt;package-name&gt;_&lt;epoch&gt;:&lt;upstream-version&gt;-&lt;debian.version&gt;.orig.tar.gz</literal>"
-msgstr "<literal>dpkg-source -x &lt;package_name&gt;_&lt;version&gt;- &lt;debian_version&gt;.dsc</literal>"
+msgstr "<literal>&lt;package-name&gt;_&lt;epoch&gt;:&lt;upstream-version&gt;-&lt;debian.version&gt;.orig.tar.gz</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7827
-#, fuzzy
 #| msgid "The source package (Debian changes)"
 msgid "The <literal>1.0</literal> source package (Debian changes)"
-msgstr "Пакет с исходным кодом, внесённым разработчиками Debian"
+msgstr ""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -31140,18 +31128,16 @@ msgstr "Методы ввода IBus"
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:18161
-#, fuzzy
 #| msgid "Setup of multilingual input for the Debian system is simplified by using the <ulink url=\"&smartcommoninputmethodscim;\">Smart Common Input Method (SCIM)</ulink> family of packages with the <literal>im-switch</literal> package. The list of SCIM packages are the following."
 msgid "Setup of multilingual input for the Debian system is simplified by using the <ulink url=\"&ibus;\">IBus</ulink> family of packages with the <literal>im-switch</literal> package. The list of IBus packages are the following."
-msgstr "<ulink url=\"&smartcommoninputmethodscim;\">SCIM -- Smart Common Input Method</ulink>. В Debian представлен группой пакетов \"<literal>im-switch-</literal>\". Вот она."
+msgstr ""
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
 #: debian-reference.en.xmlt:18163
-#, fuzzy
 #| msgid "List of input method supports with SCIM"
 msgid "List of input method supports with IBus"
-msgstr "Пакеты SCIM в Debian"
+msgstr "Список методов ввода, поддерживаемых IBus"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
@@ -31216,10 +31202,9 @@ msgstr "Многоязычная: хинди, арабский и др."
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:18269
-#, fuzzy
 #| msgid "The kinput2 method and other locale dependent Asian classic <ulink url=\"&inputmethods;\">input methods</ulink> still exist but are not recommended for the modern UTF-8 X environment.  The <ulink url=\"&uim;\">uim</ulink> tool chain is an alternative approach for the international input method for the modern UTF-8 X environment which is also capable for non-X environment."
 msgid "The kinput2 method and other locale dependent Asian classic <ulink url=\"&inputmethods;\">input methods</ulink> still exist but are not recommended for the modern UTF-8 X environment.  The <ulink url=\"&scim;\">SCIM</ulink> and <ulink url=\"&uim;\">uim</ulink> tool chains are an slightly older approach for the international input method for the modern UTF-8 X environment."
-msgstr "Kinput2 и другие азиатские <ulink url=\"&inputmethods;\">методы ввода</ulink> всё ещё доступны но не рекомендуются для современного окружения X Window с UTF-8. Другой подход к реализации поддержки методов ввода для современного окружения с UTF-8 -- <ulink url=\"&uim;\">uim</ulink>, который \"умеет\" работать не только в X Window."
+msgstr "Kinput2 и другие азиатские <ulink url=\"&inputmethods;\">методы ввода</ulink> всё ещё доступны но не рекомендуются для современного окружения X Window с UTF-8. <ulink url=\"&scim;\">SCIM</ulink> и <ulink url=\"&uim;\">uim</ulink> подходят для современного окружения X Window с UTF-8, хоть и немного устарели."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -35224,7 +35209,7 @@ msgstr "Отключение хранителя экрана"
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:21143
 msgid "For disabling the screen saver, use following commands."
-msgstr "Хранитель экрана (Screen saver, скренсейвер) можно отключить такими способами."
+msgstr "Хранитель экрана (Screen saver, скринсейвер) можно отключить такими способами."
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
@@ -45815,10 +45800,9 @@ msgstr "<literal>fpc</literal>(1) и html из <literal>fp-docs</literal> (Pasca
 # type: Content of: <book><chapter><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:29152 debian-reference.en.xmlt:29160
-#, fuzzy
 #| msgid "help provided via menu"
 msgid "help provided via menu (UI Builder)"
-msgstr "раздел помощи есть в меню"
+msgstr ""
 
 # type: Content of: <book><chapter><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><table><tgroup><tbody><row><entry>
