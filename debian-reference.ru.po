@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Справочник по Debian\n"
 "POT-Creation-Date: 2010-06-24 18:27+0500\n"
-"PO-Revision-Date: 2010-07-02 23:19+0400\n"
+"PO-Revision-Date: 2010-07-24 13:09+0400\n"
 "Last-Translator: Juniperus Love <qref2ru@gmail.com>\n"
 "Language-Team:\n"
 "Language: \n"
@@ -6518,7 +6518,7 @@ msgstr "описание"
 #: debian-reference.en.xmlt:30944 debian-reference.en.xmlt:30953
 #: debian-reference.en.xmlt:30954 debian-reference.en.xmlt:30955
 msgid "DUMMY"
-msgstr ""
+msgstr "DUMMY"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -7334,7 +7334,7 @@ msgstr "Установка бита <emphasis role=\"strong\">set user ID</empha
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:1763
 msgid "Setting <emphasis role=\"strong\">set group ID</emphasis> on a directory enables the <ulink url=\"&bsdlike;\">BSD-like</ulink> file creation scheme where all files created in the directory belong to the <emphasis role=\"strong\">group</emphasis> of the directory."
-msgstr "Установка бита <emphasis role=\"strong\">set group ID</emphasis> на каталог включает схему создания файлов как системах <ulink url=\"&bsdlike;\">BSD</ulink>, где все файлы созданные в данном каталоге будут принадлежать группе <emphasis role=\"strong\">group</emphasis>, владеющей этим каталогом. "
+msgstr "Установка бита <emphasis role=\"strong\">set group ID</emphasis> на каталог включает схему создания файлов как с системах <ulink url=\"&bsdlike;\">BSD</ulink>, где все файлы, созданные в данном каталоге, будут принадлежать группе <emphasis role=\"strong\">group</emphasis>, владеющей этим каталогом. "
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -8968,7 +8968,7 @@ msgstr "Список интерпретаторов команд"
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:2679
 msgid "POSIX shell"
-msgstr ""
+msgstr "POSIX-оболочка"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -9492,6 +9492,23 @@ msgid ""
 "\" filler\n"
 "\" filler"
 msgstr ""
+"\" -------------------------------\n"
+"\" Локальная конфигурация\n"
+"\"\n"
+"set nocompatible\n"
+"set nopaste\n"
+"set pastetoggle=&lt;f2&gt;\n"
+"syn on\n"
+"if $USER == \"root\"\n"
+" set nomodeline\n"
+" set noswapfile\n"
+"else\n"
+" set modeline\n"
+" set swapfile\n"
+"endif\n"
+"\" первая строка открываемого файла не должна считываться как строка\n"
+"\" настроек редактора (modeline), если пользователь -- root\n"
+"\""
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -10501,14 +10518,13 @@ msgstr "Установкой переменных окружения в их з�
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:3646
 msgid "The display manager such as <literal>gdm</literal> resets environment variables."
-msgstr ""
+msgstr "Дисплейный менеджер <literal>gdm</literal> переустанавливает переменные окружения."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
-# та же фигня
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:3651
 msgid "The shell in its start up codes resets environment variables in \"<literal>~/bash_profile</literal>\" and \"<literal>~/.bashrc</literal>\"."
-msgstr ""
+msgstr "Оболочка при запуске переустанавливает переменные окружения, указанные в \"<literal>~/bash_profile</literal>\" и \"<literal>~/.bashrc</literal>\"."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -11171,7 +11187,7 @@ msgstr "См. <literal>glob</literal>(7)."
 #. type: Content of: <book><chapter><section><section><note><simpara>
 #: debian-reference.en.xmlt:4055
 msgid "Unlike normal filename expansion by the shell, the shell pattern \"<literal>*</literal>\" tested in <literal>find</literal>(1) with \"<literal>-name</literal>\" test etc., matches the initial \"<literal>.</literal>\" of the filename. (New <ulink url=\"&posix;\">POSIX</ulink> feature)"
-msgstr ""
+msgstr "В отличие от обычных шаблонов имён файлов оболочки, команда <literal>find</literal>(1) с ключами типа \"<literal>-name</literal>\" отбирает по шаблону \"<literal>*</literal>\" в том числе те файлы, имена которых начинаются с \"<literal>.</literal>\". (Новое требование <ulink url=\"&posix;\">POSIX</ulink>.)"
 
 # type: Content of: <book><chapter><section><section><note><simpara>
 #. type: Content of: <book><chapter><section><section><note><simpara>
@@ -12494,6 +12510,19 @@ msgid ""
 "$ awk '($2==\"Perens\") { print $3,$4 }' &lt;DPL # When Perens started\n"
 "April 1996"
 msgstr ""
+"$ awk '{ print $3 }' &lt;DPL                   # первые месяцы\n"
+"August\n"
+"April\n"
+"January\n"
+"January\n"
+"April\n"
+"April\n"
+"March\n"
+"$ awk '($1==\"Ian\") { print }' &lt;DPL          # DPL по имени Ian\n"
+"Ian     Murdock   August  1993\n"
+"Ian     Jackson   January 1998\n"
+"$ awk '($2==\"Perens\") { print $3,$4 }' &lt;DPL # Первый месяц Perens'а\n"
+"April 1996"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -12511,6 +12540,10 @@ msgid ""
 "  done &lt;DPL\n"
 "... same output as the first Awk example"
 msgstr ""
+"$ while read first last month year; do\n"
+"    echo $month\n"
+"  done &lt;DPL\n"
+"... тот же вывод, что и в предыдущем примере на Awk"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -12539,6 +12572,15 @@ msgid ""
 "bozo's ID is 1000\n"
 "$ IFS=\"$oldIFS\"   # restore old value"
 msgstr ""
+"$ oldIFS=\"$IFS\"   # сохраняем начальное значение\n"
+"$ IFS=':'\n"
+"$ while read user password uid gid rest_of_line; do\n"
+"    if [ \"$user\" = \"bozo\" ]; then\n"
+"      echo \"$user's ID is $uid\"\n"
+"    fi\n"
+"  done &lt; /etc/passwd\n"
+"bozo's ID is 1000\n"
+"$ IFS=\"$oldIFS\"   # восстанавливаем начальное значение"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -12574,6 +12616,16 @@ msgid ""
 "$ echo $(date -R)\n"
 "Sat, 23 Aug 2003 08:30:50 +0200"
 msgstr ""
+"$ IFS=\":,\"                        # IFS будет \":\" и \",\"\n"
+"$ echo IFS=$IFS,   IFS=\"$IFS\"     # echo это встроенная команда Bash\n"
+"IFS=  , IFS=:,\n"
+"$ date -R                         # обычный вывод команды\n"
+"Sat, 23 Aug 2003 08:30:15 +0200\n"
+"$ echo $(date -R)                 # вывод команды -- это ввод оболочки\n"
+"Sat  23 Aug 2003 08 30 36 +0200\n"
+"$ unset IFS                       # установить IFS в значение по-умолчанию\n"
+"$ echo $(date -R)\n"
+"Sat, 23 Aug 2003 08:30:50 +0200"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -13525,7 +13577,7 @@ msgstr "Для \"<literal>stable</literal>\" и \"<literal>testing</literal>\" �
 #. type: Content of: <book><chapter><section><section><note><simpara>
 #: debian-reference.en.xmlt:5511
 msgid "The security bugs for the <literal>stable</literal> archive are fixed by the Debian security team.  This activity has been quite rigorous and reliable.  Those for the <literal>testing</literal> archive may be fixed by the Debian testing security team.  For <ulink url=\"&several;\">several</ulink> <ulink url=\"&reasons;\">reasons</ulink>, this activity is not as rigorous as that for <literal>stable</literal> and you may need to wait for the migration of fixed <literal>unstable</literal> packages.  Those for the <literal>unstable</literal> archive are fixed by the individual maintainer.  Actively maintained <literal>unstable</literal> packages are usually in a fairly good shape by leveraging latest upstream security fixes.  See <ulink url=\"&debiansecurityfaq;\">Debian security FAQ</ulink> for how Debian handles security bugs."
-msgstr ""
+msgstr "В <literal>стабильном</literal> архиве ошибки, связанные с безопасностью, исправляются командой безопасности Debian. Их действия тщательны и надёжны. В <literal>тестируемом</literal> архиве такие ошибки могут исправляться командой безопасности тестируемого выпуска Debian. По <ulink url=\"&several;\">некоторым</ulink> <ulink url=\"&reasons;\">причинам</ulink> эти исправления не столь тщательны, как в стабильном выпуске; возможно, вам придётся ожидать исправленой версии из <literal>нестабильного</literal> выпуска. В <literal>нестабильном</literal> же выпуске ошибки исправляются сопровождающими пакетов. Активно поддерживаемые пакеты из <literal>нестабильного</literal> архива обычно очень хороши благодаря исправлениям от разработчиков ПО (upstream). Читайте <ulink url=\"&debiansecurityfaq;\">Debian security FAQ</ulink> о том, как в Debian исправляются ошибки безопасности."
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
@@ -14312,7 +14364,7 @@ msgstr "удалить пакет \"<literal>foo</literal>\", сохранив �
 #: debian-reference.en.xmlt:21586 debian-reference.en.xmlt:24289
 #: debian-reference.en.xmlt:26111 debian-reference.en.xmlt:26122
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -15895,19 +15947,19 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:7117
 msgid "Here is how I tidy auto/manual install status for packages (after using non-aptitude package installer etc.)."
-msgstr ""
+msgstr "Вот так я привожу в порядок установочные статусы auto/manual (после использования других установщиков, кроме aptitude)."
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7121
 msgid "Start <literal>aptitude</literal> in interactive mode as root."
-msgstr ""
+msgstr "Запустить <literal>aptitude</literal> в интерактивном режиме от имени суперпользователя."
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7126
 msgid "Type \"<literal>u</literal>\", \"<literal>U</literal>\", \"<literal>f</literal>\" and \"<literal>g</literal>\" to update and upgrade package list and packages."
-msgstr ""
+msgstr "Нажать \"<literal>u</literal>\", \"<literal>U</literal>\", \"<literal>f</literal>\" и \"<literal>g</literal>\" для обновления списка пакетов и самих пакетов."
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
@@ -19262,25 +19314,25 @@ msgstr "Типичный процесс загрузки напоминает р
 #. type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:8992
 msgid "<xref linkend=\"_stage_1_the_bios\"/>"
-msgstr ""
+msgstr "<xref linkend=\"_stage_1_the_bios\"/>"
 
 # type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:8997
 msgid "<xref linkend=\"_stage_2_the_boot_loader\"/>"
-msgstr ""
+msgstr "<xref linkend=\"_stage_2_the_boot_loader\"/>"
 
 # type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:9002
 msgid "<xref linkend=\"_stage_3_the_mini_debian_system\"/>"
-msgstr ""
+msgstr "<xref linkend=\"_stage_3_the_mini_debian_system\"/>"
 
 # type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:9007
 msgid "<xref linkend=\"_stage_4_the_normal_debian_system\"/>"
-msgstr ""
+msgstr "<xref linkend=\"_stage_4_the_normal_debian_system\"/>"
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
@@ -19388,13 +19440,13 @@ msgstr "загрузчик"
 #. type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:9070
 msgid "initrd"
-msgstr ""
+msgstr "initrd"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9080
 msgid "<ulink url=\"&grublegacy;\">GRUB Legacy</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&grublegacy;\">GRUB Legacy</ulink>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -19405,7 +19457,7 @@ msgstr ""
 #: debian-reference.en.xmlt:19314 debian-reference.en.xmlt:19325
 #: debian-reference.en.xmlt:19336 debian-reference.en.xmlt:19347
 msgid "Supported"
-msgstr ""
+msgstr "поддерживается"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -19417,7 +19469,7 @@ msgstr "Понимает различные форматы партиций и �
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9094 debian-reference.en.xmlt:9108
 msgid "<ulink url=\"&grubc;\">GRUB 2</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&grubc;\">GRUB 2</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -19435,7 +19487,7 @@ msgstr "Загрузочные образы для восстановления 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9122
 msgid "<ulink url=\"&lilo;\">Lilo</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&lilo;\">Lilo</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -19447,7 +19499,7 @@ msgstr "Работает на основании данных о сектора�
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9136
 msgid "<ulink url=\"&isolinux;\">Isolinux</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&isolinux;\">Isolinux</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -19459,7 +19511,7 @@ msgstr "Понимает ISO9660 ФС. Используется в загруз�
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9150
 msgid "<ulink url=\"&syslinux;\">Syslinux</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&syslinux;\">Syslinux</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -19471,7 +19523,7 @@ msgstr "Понимает ФС MSDOS -- <ulink url=\"&msdosfilesystemfat;\">FAT</
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9164
 msgid "<ulink url=\"&loadlin;\">Loadlin</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&loadlin;\">Loadlin</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -19483,13 +19535,13 @@ msgstr "Загружает Linux из уже запущенной DOS"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9178
 msgid "<ulink url=\"&mbrbyneilturton;\">MBR by Neil Turton</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&mbrbyneilturton;\">MBR</ulink>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9184 debian-reference.en.xmlt:19292
 msgid "Not supported"
-msgstr ""
+msgstr "не поддерживается"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -19519,6 +19571,10 @@ msgid ""
 "kernel          /vmlinuz root=/dev/hda3 ro\n"
 "initrd          /initrd.img"
 msgstr ""
+"title           Debian GNU/Linux\n"
+"root            (hd0,2)\n"
+"kernel          /vmlinuz root=/dev/hda3 ro\n"
+"initrd          /initrd.img"
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
@@ -19537,6 +19593,11 @@ msgid ""
 "        initrd /initrd.img\n"
 "}"
 msgstr ""
+"menuentry \\\"Debian GNU/Linux\\\" {\n"
+"        set root=(hd0,3)\n"
+"        linux /vmlinuz root=/dev/hda3\n"
+"        initrd /initrd.img\n"
+"}"
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
@@ -19562,7 +19623,7 @@ msgstr "параметр GRUB"
 #: debian-reference.en.xmlt:9936 debian-reference.en.xmlt:9950
 #: debian-reference.en.xmlt:9967 debian-reference.en.xmlt:9970
 msgid "<literal>root</literal>"
-msgstr ""
+msgstr "<literal>root</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -19574,7 +19635,7 @@ msgstr "использовать третий раздел первого жёс
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9234
 msgid "<literal>kernel</literal>"
-msgstr ""
+msgstr "<literal>kernel</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -19586,7 +19647,7 @@ msgstr "использовать файл ядра \"<literal>/vmlinuz</literal>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9242
 msgid "<literal>initrd</literal>"
-msgstr ""
+msgstr "<literal>initrd</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -19669,83 +19730,83 @@ msgstr "Четвёртый этап: нормальная система Debian"
 #. type: Content of: <book><chapter><section><table><title>
 #: debian-reference.en.xmlt:9278
 msgid "List of boot utilities for the Debian system"
-msgstr ""
+msgstr "Список загрузочных утилит для Debian"
 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9306
 msgid "scripts for initializing and shutting down the system"
-msgstr ""
+msgstr "сценарии инициализации и выключения системы"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9314
 msgid "System-V-like <literal>init</literal>(8) utilities"
-msgstr ""
+msgstr "утилиты <literal>init</literal>(8) в стиле UNIX System V"
 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9322
 msgid "System-V-like runlevel change mechanism"
-msgstr ""
+msgstr "механизм смены уровня выполнения (runlevel) в стиле System V"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9330
 msgid "System-V-like utilities (<literal>startpar</literal>(8), <literal>bootlogd</literal>(8), …)"
-msgstr ""
+msgstr "утилиты System V (<literal>startpar</literal>(8), <literal>bootlogd</literal>(8), …)"
 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9337
 msgid "<ulink url=\"&linuxstandardbase;\">Linux Standard Base</ulink> 3.2 init script functionality"
-msgstr ""
+msgstr "<ulink url=\"&linuxstandardbase;\">Linux Standard Base</ulink> 3.2 -- библиотека для загрузочных сценариев"
 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9345
 msgid "tool to organize boot sequence using LSB init.d script dependencies"
-msgstr ""
+msgstr "формирование порядка загрузки на основе зависимостей LSB-сценариев init.d"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9353
 msgid "event-based <literal>init</literal>(8) daemon for concurrency (alternative to <literal>sysvinit</literal>)"
-msgstr ""
+msgstr "служба начальной загрузки системы на основе событий (альтернатива <literal>sysvinit</literal>)"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9360
 msgid "<literal>readahead</literal>(8) to preload boot process files"
-msgstr ""
+msgstr "<literal>readahead</literal>(8) -- упреждающее чтение загрузочных файлов"
 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9368
 msgid "tools to use userspace software suspend provided by Linux"
-msgstr ""
+msgstr "утилиты для временной приостановки работы системы"
 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9376
 msgid "kexec tool for <literal>kexec</literal>(8) reboots (warm reboot)"
-msgstr ""
+msgstr "<literal>kexec</literal>(8) -- \"мягкая\" перезагрузка ядра без перезагрузки системы"
 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9384
 msgid "boot process performance analyser"
-msgstr ""
+msgstr "анализ процесса начальной загрузки с точки зрения производительности"
 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9392
 msgid "boot process performance analyser (visualisation)"
-msgstr ""
+msgstr "анализ процесса начальной загрузки с точки зрения производительности (отображение)"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9400
 msgid "console-only <literal>getty</literal>(8)"
-msgstr ""
+msgstr "<literal>getty</literal>(8) только для консоли"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9408
 msgid "smart modem <literal>getty</literal>(8) replacement"
-msgstr ""
+msgstr "<literal>getty</literal>(8) для модема"
 
 # type: Content of: <book><chapter><section><note><simpara>
 #. type: Content of: <book><chapter><section><note><simpara>
@@ -19757,12 +19818,12 @@ msgstr "Здесь описывается классический способ 
 #. type: Content of: <book><chapter><section><tip><simpara>
 #: debian-reference.en.xmlt:9418
 msgid "All boot mechanisms are compatible through \"<literal>/etc/init.d/rc</literal>\", \"<literal>/etc/init.d/rcS</literal>\", \"<literal>/usr/sbin/update-rc.d</literal>\", and \"<literal>/usr/sbin/invoke-rc.d</literal>\" scripts."
-msgstr ""
+msgstr "Все загрузочные механизмы совместимы через сценарии \"<literal>/etc/init.d/rc</literal>\", \"<literal>/etc/init.d/rcS</literal>\", \"<literal>/usr/sbin/update-rc.d</literal>\" и <literal>/usr/sbin/update-rc.d</literal>\"."
 
 #. type: Content of: <book><chapter><section><tip><simpara>
 #: debian-reference.en.xmlt:9421
 msgid "The <literal>readahead-fedora</literal> package can speed up starting of a system with decent amount of DRAM."
-msgstr ""
+msgstr "Пакет <literal>readahead-fedora</literal> может ускорить загрузку системы с достаточно большим количеством памяти (DRAM)."
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
@@ -19840,13 +19901,13 @@ msgstr "описание использования"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9469
 msgid "<literal>N</literal>"
-msgstr ""
+msgstr "<literal>N</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9472
 msgid "none"
-msgstr ""
+msgstr "нет"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -19858,13 +19919,13 @@ msgstr "начальное состояние системы, каталог н�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9480 debian-reference.en.xmlt:20550
 msgid "<literal>0</literal>"
-msgstr ""
+msgstr "<literal>0</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9483
 msgid "<literal>/etc/rc0.d/</literal>"
-msgstr ""
+msgstr "<literal>/etc/rc0.d/</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -19876,13 +19937,13 @@ msgstr "выключение системы"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9491
 msgid "<literal>S</literal>"
-msgstr ""
+msgstr "<literal>S</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9494
 msgid "<literal>/etc/rcS.d/</literal>"
-msgstr ""
+msgstr "<literal>/etc/rcS.d/</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -19894,13 +19955,13 @@ msgstr "однопользовательский режим при загруз�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9502
 msgid "<literal>1</literal>"
-msgstr ""
+msgstr "<literal>1</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9505
 msgid "<literal>/etc/rc1.d/</literal>"
-msgstr ""
+msgstr "<literal>/etc/rc1.d/</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -19912,13 +19973,13 @@ msgstr "однопользовательский режим, включенны�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9513
 msgid "<literal>2</literal>"
-msgstr ""
+msgstr "<literal>2</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9516
 msgid "<literal>/etc/rc2.d/</literal>"
-msgstr ""
+msgstr "<literal>/etc/rc2.d/</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -19930,13 +19991,13 @@ msgstr "многопользовательский режим"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9524
 msgid "<literal>3</literal>"
-msgstr ""
+msgstr "<literal>3</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9527
 msgid "<literal>/etc/rc3.d/</literal>"
-msgstr ""
+msgstr "<literal>/etc/rc3.d/</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -19944,43 +20005,43 @@ msgstr ""
 #: debian-reference.en.xmlt:9552 debian-reference.en.xmlt:9585
 #: debian-reference.en.xmlt:9596
 msgid ",,"
-msgstr ""
+msgstr ",,"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9535
 msgid "<literal>4</literal>"
-msgstr ""
+msgstr "<literal>4</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9538
 msgid "<literal>/etc/rc4.d/</literal>"
-msgstr ""
+msgstr "<literal>/etc/rc4.d/</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9546
 msgid "<literal>5</literal>"
-msgstr ""
+msgstr "<literal>5</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9549
 msgid "<literal>/etc/rc5.d/</literal>"
-msgstr ""
+msgstr "<literal>/etc/rc5.d/</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9557
 msgid "<literal>6</literal>"
-msgstr ""
+msgstr "<literal>6</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9560
 msgid "<literal>/etc/rc6.d/</literal>"
-msgstr ""
+msgstr "<literal>/etc/rc6.d/</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -19992,13 +20053,13 @@ msgstr "перезагрузка системы"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9568
 msgid "<literal>7</literal>"
-msgstr ""
+msgstr "<literal>7</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9571
 msgid "<literal>/etc/rc7.d/</literal>"
-msgstr ""
+msgstr "<literal>/etc/rc7.d/</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -20010,25 +20071,25 @@ msgstr "допустимый многопользовательский режи
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9579
 msgid "<literal>8</literal>"
-msgstr ""
+msgstr "<literal>8</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9582
 msgid "<literal>/etc/rc8.d/</literal>"
-msgstr ""
+msgstr "<literal>/etc/rc8.d/</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9590
 msgid "<literal>9</literal>"
-msgstr ""
+msgstr "<literal>9</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9593
 msgid "<literal>/etc/rc9.d/</literal>"
-msgstr ""
+msgstr "<literal>/etc/rc9.d/</literal>"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -20041,7 +20102,7 @@ msgstr "Вы можете изменить уровень выполнения �
 #: debian-reference.en.xmlt:9603
 #, no-wrap
 msgid "$ sudo telinit 4"
-msgstr ""
+msgstr "$ sudo telinit 4"
 
 # type: Content of: <book><chapter><section><section><caution><simpara>
 #. type: Content of: <book><chapter><section><section><caution><simpara>
@@ -20064,7 +20125,7 @@ msgstr "Конфигурация уровня выполнения"
 #. type: Content of: <book><chapter><section><section><note><simpara>
 #: debian-reference.en.xmlt:9614
 msgid "In Debian <literal>squeeze</literal>, dependency based boot order provided by the <literal>insserv</literal> package is used instead of classical alphabetical one.  The \"<literal>CONCURRENCY</literal>\" value in \"<literal>/etc/default/rcS</literal>\" controls its concurrency: \"<literal>none</literal>\" for no concurrency, \"<literal>startpar</literal>\" for concurrency within the same sequence number, or \"<literal>makefile</literal>\" for full concurrency.  See \"<literal>/usr/share/doc/insserv/README.Debian</literal>\"."
-msgstr ""
+msgstr "В <literal>squeeze</literal> вместо старого, алфавитного порядка выполнения сценариев загрузки используется новый, на основе зависимостей, предоставленный пакетом <literal>insserv</literal>. Значение \"<literal>CONCURRENCY</literal>\" в \"<literal>/etc/default/rcS</literal>\" управляет распараллеливанием: \"<literal>none</literal>\" -- без распараллеливания, \"<literal>startpar</literal>\" -- параллельное выполнение сценариев с одинаковым порядковым номером, \"<literal>makefile</literal>\" -- параллельное выполнение всех сценариев. См. \"<literal>/usr/share/doc/insserv/README.Debian</literal>\"."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -20077,7 +20138,7 @@ msgstr "В каталогах уровней выполнения \"<literal>/et
 #: debian-reference.en.xmlt:9617
 #| msgid "When <literal>init</literal>(8) or <literal>telinit</literal>(8) commands goes into the runlevel to \"&lt;n&gt;\", it execute following scripts."
 msgid "For \"<literal>CONCURRENCY=none</literal>\", when <literal>init</literal>(8) or <literal>telinit</literal>(8) commands goes into the runlevel to \"&lt;n&gt;\", it execute following scripts."
-msgstr ""
+msgstr "Если \"<literal>CONCURRENCY=none</literal>\", то <literal>init</literal>(8) или <literal>telinit</literal>(8) при переходе на уровень выполнения \"&lt;n&gt;\" выполняют следующие сценарии:"
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
@@ -20100,7 +20161,7 @@ msgstr "Например, если у вас есть ссылки \"<literal>S1
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:9631
 msgid "For \"<literal>CONCURRENCY=makefile</literal>\" (new default), package dependency defined in the header of init scripts are used to order them."
-msgstr ""
+msgstr "Если \"<literal>CONCURRENCY=makefile</literal>\" (новое значение по-умолчанию), то для определения порядка выполнения используются зависимости, определённые в заголовках сценариев инициализации."
 
 # type: Content of: <book><chapter><section><section><warning><simpara>
 #. type: Content of: <book><chapter><section><section><warning><simpara>
@@ -20152,6 +20213,8 @@ msgid ""
 "# cd /etc/rc2.d ; mv S21gdm K21gdm\n"
 "# cd /etc ; perl -i -p -e 's/^id:.:/id:3:/' inittab"
 msgstr ""
+"# cd /etc/rc2.d ; mv S21gdm K21gdm\n"
+"# cd /etc ; perl -i -p -e 's/^id:.:/id:3:/' inittab"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -20350,7 +20413,7 @@ msgstr "Вы можете также напрямую изменить уров�
 #: debian-reference.en.xmlt:9726
 #, no-wrap
 msgid "# dmesg -n3"
-msgstr ""
+msgstr "# dmesg -n3"
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
@@ -20374,7 +20437,7 @@ msgstr "имя уровня ошибки"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9752
 msgid "KERN_EMERG"
-msgstr ""
+msgstr "KERN_EMERG"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -20386,7 +20449,7 @@ msgstr "система неработоспособна"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9763
 msgid "KERN_ALERT"
-msgstr ""
+msgstr "KERN_ALERT"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -20398,7 +20461,7 @@ msgstr "необходимо немедленно принять меры"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9774
 msgid "KERN_CRIT"
-msgstr ""
+msgstr "KERN_CRIT"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -20410,13 +20473,13 @@ msgstr "критическая ошибка"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9782
 msgid "3"
-msgstr ""
+msgstr "3"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9785
 msgid "KERN_ERR"
-msgstr ""
+msgstr "KERN_ERR"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -20428,13 +20491,13 @@ msgstr "ошибка"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9793
 msgid "4"
-msgstr ""
+msgstr "4"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9796
 msgid "KERN_WARNING"
-msgstr ""
+msgstr "KERN_WARNING"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -20446,13 +20509,13 @@ msgstr "предупреждение"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9804
 msgid "5"
-msgstr ""
+msgstr "5"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9807
 msgid "KERN_NOTICE"
-msgstr ""
+msgstr "KERN_NOTICE"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -20464,13 +20527,13 @@ msgstr "обычное, но важное сообщение"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9815
 msgid "6"
-msgstr ""
+msgstr "6"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9818
 msgid "KERN_INFO"
-msgstr ""
+msgstr "KERN_INFO"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -20482,13 +20545,13 @@ msgstr "информационное сообщение"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9826
 msgid "7"
-msgstr ""
+msgstr "7"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9829
 msgid "KERN_DEBUG"
-msgstr ""
+msgstr "KERN_DEBUG"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -20668,7 +20731,7 @@ msgstr "пользователь"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9927
 msgid "<literal>/etc/passwd</literal>"
-msgstr ""
+msgstr "<literal>/etc/passwd</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -20680,19 +20743,19 @@ msgstr "(очищен от паролей) информация об учётн�
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9944
 msgid "<literal>/etc/shadow</literal>"
-msgstr ""
+msgstr "<literal>/etc/shadow</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9947
 msgid "<literal>-rw-r-----</literal>"
-msgstr ""
+msgstr "<literal>-rw-r-----</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9953
 msgid "<literal>shadow</literal>"
-msgstr ""
+msgstr "<literal>shadow</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -20704,7 +20767,7 @@ msgstr "список пользователей и их паролей (хэше
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:9961
 msgid "<literal>/etc/group</literal>"
-msgstr ""
+msgstr "<literal>/etc/group</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -20728,6 +20791,10 @@ msgid ""
 "user2:x:1001:1001:User2 Name,,,:/home/user2:/bin/bash\n"
 " ..."
 msgstr ""
+" ...\n"
+"user1:x:1000:1000:User1 Name,,,:/home/user1:/bin/bash\n"
+"user2:x:1001:1001:User2 Name,,,:/home/user2:/bin/bash\n"
+" ..."
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
@@ -20805,7 +20872,7 @@ msgstr "учётная запись без пароля"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10049
 msgid "x"
-msgstr ""
+msgstr "x"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -20817,7 +20884,7 @@ msgstr "зашифрованный пароль находится в \"<literal
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10057
 msgid "*"
-msgstr ""
+msgstr "*"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -20829,7 +20896,7 @@ msgstr "учётная запись без возможности входа"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10065
 msgid "!"
-msgstr ""
+msgstr "!"
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
@@ -20847,6 +20914,10 @@ msgid ""
 "user2:$1$vXGZLVbS$ElyErNf/agUDsm1DehJMS/:13261:0:99999:7:::\n"
 " ..."
 msgstr ""
+" ...\n"
+"user1:$1$Xop0FYH9$IfxyQwBe9b8tiyIkt2P4F/:13262:0:99999:7:::\n"
+"user2:$1$vXGZLVbS$ElyErNf/agUDsm1DehJMS/:13261:0:99999:7:::\n"
+" ..."
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
@@ -20895,7 +20966,7 @@ msgstr "\"<literal>/etc/group</literal>\" имеет вид:"
 #: debian-reference.en.xmlt:10118
 #, no-wrap
 msgid "group1:x:20:user1,user2"
-msgstr ""
+msgstr "group1:x:20:user1,user2"
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
@@ -21009,7 +21080,7 @@ msgstr "просмотреть информацию о группе \"<literal>&
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10197
 msgid "<literal>passwd</literal>"
-msgstr ""
+msgstr "<literal>passwd</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -21021,7 +21092,7 @@ msgstr "управление паролем учётной записи"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10205
 msgid "<literal>passwd -e</literal>"
-msgstr ""
+msgstr "<literal>passwd -e</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -21033,7 +21104,7 @@ msgstr "установить одноразовый пароль для акти
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10213
 msgid "<literal>chage</literal>"
-msgstr ""
+msgstr "<literal>chage</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -21111,7 +21182,7 @@ msgstr "Средства генерации пароля"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10287
 msgid "<literal>mkpasswd</literal>"
-msgstr ""
+msgstr "<literal>mkpasswd</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -21123,7 +21194,7 @@ msgstr "средство взаимодействия с библиотекой 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10298
 msgid "<literal>openssl passwd</literal>"
-msgstr ""
+msgstr "<literal>openssl passwd</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -21297,7 +21368,7 @@ msgstr "настройки системы PAM для конкретных про
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10479
 msgid "<literal>/etc/nsswitch.conf</literal>"
-msgstr ""
+msgstr "<literal>/etc/nsswitch.conf</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -21309,7 +21380,7 @@ msgstr "настройки NSS для каждой службы в систем�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10487
 msgid "<literal>/etc/nologin</literal>"
-msgstr ""
+msgstr "<literal>/etc/nologin</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -21321,7 +21392,7 @@ msgstr "ограничение возможностей входа пользо�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10495
 msgid "<literal>/etc/securetty</literal>"
-msgstr ""
+msgstr "<literal>/etc/securetty</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -21333,7 +21404,7 @@ msgstr "ограничение возможности входа суперпо�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10503
 msgid "<literal>/etc/security/access.conf</literal>"
-msgstr ""
+msgstr "<literal>/etc/security/access.conf</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -21345,7 +21416,7 @@ msgstr "ограничение возможностей входа пользо�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10511
 msgid "<literal>/etc/security/group.conf</literal>"
-msgstr ""
+msgstr "<literal>/etc/security/group.conf</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -21357,19 +21428,19 @@ msgstr "правила членства в группах для <literal>pam_gr
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10519
 msgid "<literal>/etc/security/pam_env.conf</literal>"
-msgstr ""
+msgstr "<literal>/etc/security/pam_env.conf</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10522
 msgid "set environment variables by the <literal>pam_env</literal>(8) module"
-msgstr "переменные окружения для the <literal>pam_env</literal>(8)"
+msgstr "переменные окружения для <literal>pam_env</literal>(8)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10527
 msgid "<literal>/etc/environment</literal>"
-msgstr ""
+msgstr "<literal>/etc/environment</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -21381,7 +21452,7 @@ msgstr "дополнительные переменные окружения д�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10535
 msgid "<literal>/etc/default/locale</literal>"
-msgstr ""
+msgstr "<literal>/etc/default/locale</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -21393,7 +21464,7 @@ msgstr "установки локализации для <literal>pam_env</liter
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10543
 msgid "<literal>/etc/security/limits.conf</literal>"
-msgstr ""
+msgstr "<literal>/etc/security/limits.conf</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -21405,7 +21476,7 @@ msgstr "значения ограничений на системные ресу
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10551
 msgid "<literal>/etc/security/time.conf</literal>"
-msgstr ""
+msgstr "<literal>/etc/security/time.conf</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -21553,6 +21624,8 @@ msgid ""
 "password required pam_cracklib.so retry=3 minlen=9 difok=3\n"
 "password required pam_unix.so use_authtok nullok md5"
 msgstr ""
+"password required pam_cracklib.so retry=3 minlen=9 difok=3\n"
+"password required pam_unix.so use_authtok nullok md5"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -21570,6 +21643,10 @@ msgid ""
 "password requisite pam_deny.so\n"
 "password required pam_permit.so"
 msgstr ""
+"password required pam_cracklib.so retry=3 minlen=9 difok=3\n"
+"password [success=1 default=ignore] pam_unix.so use_authtok nullok md5\n"
+"password requisite pam_deny.so\n"
+"password required pam_permit.so"
 
 # type: Content of: <book><chapter><section><title>
 #. type: Content of: <book><chapter><section><title>
@@ -21587,7 +21664,7 @@ msgstr "См. <xref linkend=\"_alt_sysrq_key\"/> об ограничении в�
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:10652
 msgid "sudo"
-msgstr ""
+msgstr "sudo"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -21599,14 +21676,14 @@ msgstr "<literal>sudo</literal>(8) предоставляет ограничен
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:10654
 msgid "My usage of <literal>sudo</literal> for the single user system (see <xref linkend=\"_sudo_configuration\"/>) is aimed to protect myself from my own stupidity. Personally, I consider using <literal>sudo</literal> a better alternative to using the system from the root account all the time.  For example, the following changes the owner of \"<literal>&lt;some_file&gt;</literal>\" to \"<literal>&lt;my_name&gt;</literal>\"."
-msgstr "Моё способ использования <literal>sudo</literal> для системы с одним пользователем (см. <xref linkend=\"_sudo_configuration\"/>) предназначен для защищать меня от моей же собственной глупости. Я полагаю, что использование <literal>sudo</literal> -- лучшая альтернатива постоянному использованию учётной записи root. Например, этой командой можно изменить владельца файла \"<literal>&lt;some_file&gt;</literal>\" на \"<literal>&lt;my_name&gt;</literal>\":"
+msgstr "Мой способ использования <literal>sudo</literal> для системы с одним пользователем (см. <xref linkend=\"_sudo_configuration\"/>) предназначен для защищать меня от моей же собственной глупости. Я полагаю, что использование <literal>sudo</literal> -- лучшая альтернатива постоянному использованию учётной записи root. Например, этой командой можно изменить владельца файла \"<literal>&lt;имя_файла&gt;</literal>\" на \"<literal>&lt;моё_имя&gt;</literal>\":"
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
 #: debian-reference.en.xmlt:10655
 #, no-wrap
 msgid "$ sudo chown &lt;my_name&gt; &lt;some_file&gt;"
-msgstr ""
+msgstr "$ sudo chown &lt;моё_имя&gt; &lt;имя_файла&gt;"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -21618,13 +21695,13 @@ msgstr "Конечно, если вы знаете пароль root (как л�
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:10659
 msgid "SELinux"
-msgstr ""
+msgstr "SELinux"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:10660
 msgid "<ulink url=\"&securityenhancedlinuxselinux;\">Security-Enhanced Linux (SELinux)</ulink> is a framework to tighten privilege model tighter than the ordinary Unix-like security model with the <ulink url=\"&mandatoryaccesscontrolmac;\">mandatory access control (MAC)</ulink> policies.  The root power may be restricted under some conditions."
-msgstr ""
+msgstr "<ulink url=\"&securityenhancedlinuxselinux;\">Security-Enhanced Linux (SELinux)</ulink> -- система, урезающая традиционную для Unix модель безопасности с политиками <ulink url=\"&mandatoryaccesscontrolmac;\">мандатного контроля доступа (MAC)</ulink>. Полномочия суперпользователя (root) в некоторых случаях могут быть ограничены."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -21769,193 +21846,193 @@ msgstr "безопасные аналоги"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10753
 msgid "www (http)"
-msgstr ""
+msgstr "www (http)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10756
 msgid "80"
-msgstr ""
+msgstr "80"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10759
 msgid "https"
-msgstr ""
+msgstr "https"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10762
 msgid "443"
-msgstr ""
+msgstr "443"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10767
 msgid "smtp (mail)"
-msgstr ""
+msgstr "smtp (mail)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10770
 msgid "25"
-msgstr ""
+msgstr "25"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10773
 msgid "ssmtp (smtps)"
-msgstr ""
+msgstr "ssmtp (smtps)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10776
 msgid "465"
-msgstr ""
+msgstr "465"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10781
 msgid "ftp-data"
-msgstr ""
+msgstr "ftp-data"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10784
 msgid "20"
-msgstr ""
+msgstr "20"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10787
 msgid "ftps-data"
-msgstr ""
+msgstr "ftps-data"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10790
 msgid "989"
-msgstr ""
+msgstr "989"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10795
 msgid "ftp"
-msgstr ""
+msgstr "ftp"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10798
 msgid "21"
-msgstr ""
+msgstr "21"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10801
 msgid "ftps"
-msgstr ""
+msgstr "ftps"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10809
 msgid "telnet"
-msgstr ""
+msgstr "telnet"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10812
 msgid "23"
-msgstr ""
+msgstr "23"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10815
 msgid "telnets"
-msgstr ""
+msgstr "telnets"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10818
 msgid "992"
-msgstr ""
+msgstr "992"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10823
 msgid "imap2"
-msgstr ""
+msgstr "imap2"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10826
 msgid "143"
-msgstr ""
+msgstr "143"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10829
 msgid "imaps"
-msgstr ""
+msgstr "imaps"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10832
 msgid "993"
-msgstr ""
+msgstr "993"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10837
 msgid "pop3"
-msgstr ""
+msgstr "pop3"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10840
 msgid "110"
-msgstr ""
+msgstr "110"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10843
 msgid "pop3s"
-msgstr ""
+msgstr "pop3s"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10846
 msgid "995"
-msgstr ""
+msgstr "995"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10851
 msgid "ldap"
-msgstr ""
+msgstr "ldap"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10854
 msgid "389"
-msgstr ""
+msgstr "389"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10857
 msgid "ldaps"
-msgstr ""
+msgstr "ldaps"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10860
 msgid "636"
-msgstr ""
+msgstr "636"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:10866
 msgid "The encryption costs CPU time.  As a CPU friendly alternative, you can keep communication in plain text while securing just password with the secure authentication protocol such as \"Authenticated Post Office Protocol\" (APOP) for POP and \"Challenge-Response Authentication Mechanism MD5\" (CRAM-MD5) for SMTP and IMAP.  (For sending mail messages over the Internet to your mail server from your mail client, it is recently popular to use new message submission port 587 instead of traditional SMTP port 25 to avoid port 25 blocking by the network provider while authenticating yourself with CRAM-MD5.)"
-msgstr ""
+msgstr "Шифрование требует процессорного времени. Чтобы пощадить процессор, вы можете оставить передачу данных незашифрованной, обезопасив лишь передачу пароля с помощью защищённого протокола аутентификации, например, \"Authenticated Post Office Protocol\" (APOP) для POP и \"Challenge-Response Authentication Mechanism MD5\" (CRAM-MD5) для SMTP и IMAP. (Для отсылки почты через Интернет на почтовый сервер из почтового клиента в последнее время часто используется порт 587 вместо традиционного SMTP-порта 25, это позволяет обойти блокировку 25 порта провайдером, в то время как аутентификация происходит по протоколу CRAM-MD5.)"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -21997,25 +22074,25 @@ msgstr "Средства для применения особых мер без�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10905
 msgid "small port-knock daemon <literal>knockd</literal>(1) and client <literal>konck</literal>(1)"
-msgstr ""
+msgstr "служба <literal>knockd</literal>(1) и клиент <literal>konck</literal>(1): выполнение дейстивий при приёме определённых пакетов"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10913
 msgid "utility to help sysadmins thwart ssh hackers"
-msgstr ""
+msgstr "утилита для помощи в пресечении взлома ssh"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10921 debian-reference.en.xmlt:18786
 msgid "ban IPs that cause multiple authentication errors"
-msgstr ""
+msgstr "блокирование IP-адресов, соединения с которых приводят к нескольким ошибкам аутентификации"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:10929
 msgid "lock out remote attackers trying password guessing"
-msgstr ""
+msgstr "блокирование удалённых взломщиков, пытающихся подобрать пароль"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -22123,7 +22200,7 @@ msgstr "Как только кто-то получает доступ к кон�
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:11006
 msgid "The only reasonable software solution to avoid all these concerns is to use software encrypted root partition (or \"<literal>/etc</literal>\" partition) using <ulink url=\"&dmcrypt;\">dm-crypt</ulink> and initramfs (see <xref linkend=\"_data_encryption_tips\"/>).  You always need password to boot the system, though."
-msgstr ""
+msgstr "Единственный разумный программный метод защиты от этого -- использовать программно зашифрованный корневой раздел диска (или раздел \"<literal>/etc</literal>\") с помощью <ulink url=\"&dmcrypt;\">dm-crypt</ulink> и initramfs (см. <xref linkend=\"_data_encryption_tips\"/>). Хотя в этом случае всегда необходим ввод пароля для загрузки системы."
 
 # type: Content of: <book><chapter><title>
 #. type: Content of: <book><chapter><title>
@@ -26180,145 +26257,145 @@ msgstr ""
 #. type: Content of: <book><chapter><title>
 #: debian-reference.en.xmlt:13860
 msgid "Network applications"
-msgstr ""
+msgstr "Сетевые приложения"
 
 # type: Content of: <book><chapter><simpara>
 #. type: Content of: <book><chapter><simpara>
 #: debian-reference.en.xmlt:13861
 msgid "After establishing network connectivity (see <xref linkend=\"_network_setup\"/>), you can run various network applications."
-msgstr ""
+msgstr "Установив подключение к сети (см. <xref linkend=\"_network_setup\"/>), вы можете запускать различные сетевые приложения."
 
 # type: Content of: <book><chapter><section><title>
 #. type: Content of: <book><chapter><section><title>
 #: debian-reference.en.xmlt:13863
 msgid "Web browsers"
-msgstr ""
+msgstr "Web-браузеры"
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
 #: debian-reference.en.xmlt:13864
 msgid "There are many <ulink url=\"&webbrowser;\">web browser</ulink> packages to access remote contents with <ulink url=\"&hypertexttransferprotocol;\">Hypertext Transfer Protocol</ulink> (HTTP)."
-msgstr ""
+msgstr "Есть много пакетов с <ulink url=\"&webbrowser;\">web-браузерами</ulink> для доступа по протоколу <ulink url=\"&hypertexttransferprotocol;\">HTTP</ulink>."
 
 # type: Content of: <book><chapter><section><table><title>
 #. type: Content of: <book><chapter><section><table><title>
 #: debian-reference.en.xmlt:13866
 msgid "List of web browsers"
-msgstr ""
+msgstr "Список web-браузеров"
 
 # type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:13888
 msgid "description of web browser"
-msgstr ""
+msgstr "описание web-браузера"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13898
 msgid "X"
-msgstr ""
+msgstr "X"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13901
 msgid "<ulink url=\"&unbranded;\">unbranded</ulink> <ulink url=\"&mozillafirefox;\">Mozilla Firefox</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&unbranded;\">переименованный</ulink> браузер <ulink url=\"&mozillafirefox;\">Mozilla Firefox</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13912
 msgid "<ulink url=\"&unbranded;\">unbranded</ulink><ulink url=\"&mozilla;\">Mozilla</ulink>, removed due to security concerns <ulink url=\"&bugfaffgf;\">bug#505565</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&unbranded;\">переименованный</ulink> браузер <ulink url=\"&mozilla;\">Mozilla</ulink>, удалён в связи с его небезопасностью (<ulink url=\"&bugfaffgf;\">bug#505565</ulink>)"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13921
 msgid "<ulink url=\"&gnome;\">GNOME</ulink>, <ulink url=\"&hig;\">HIG</ulink> compliant, <ulink url=\"&epiphany;\">Epiphany</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&epiphany;\">Epiphany</ulink> для <ulink url=\"&gnome;\">GNOME</ulink>, соответствует рекомендациям <ulink url=\"&hig;\">HIG</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13931
 msgid "<ulink url=\"&gnome;\">GNOME</ulink>, <ulink url=\"&galeon;\">Galeon</ulink>, superseded by <ulink url=\"&epiphany;\">Epiphany</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&galeon;\">Galeon</ulink> для <ulink url=\"&gnome;\">GNOME</ulink>, вытеснен <ulink url=\"&epiphany;\">Epiphany</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13940
 msgid "<ulink url=\"&kde;\">KDE</ulink>, <ulink url=\"&konqueror;\">Konqueror</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&konqueror;\">Konqueror</ulink> для <ulink url=\"&kde;\">KDE</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13947
 msgid "text"
-msgstr ""
+msgstr "текстовый"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13950
 msgid "<ulink url=\"&wdm;\">w3m</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&wdm;\">w3m</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13961
 msgid "<ulink url=\"&lynx;\">Lynx</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&lynx;\">Lynx</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13972
 msgid "<ulink url=\"&elinks;\">ELinks</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&elinks;\">ELinks</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13982
 msgid "<ulink url=\"&links;\">Links</ulink> (text only)"
-msgstr ""
+msgstr "<ulink url=\"&links;\">Links</ulink> (только текстовый)"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13990
 msgid "graphics"
-msgstr ""
+msgstr "графический"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13992
 msgid "<ulink url=\"&links;\">Links</ulink> (console graphics without X)"
-msgstr ""
+msgstr "<ulink url=\"&links;\">Links</ulink> (консольный, графический, не требует X Window)"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:13999
 msgid "Browser configuration"
-msgstr ""
+msgstr "Настройка браузера"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:14000
 msgid "You may be able to use following special URL strings for some browsers to confirm their settings."
-msgstr ""
+msgstr "Некоторые браузеры поддерживают следующие специальные строки адреса URL, по которым можно открыть их настройки."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:14004
 msgid "\"<literal>about:</literal>\""
-msgstr ""
+msgstr "\"<literal>about:</literal>\""
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:14009
 msgid "\"<literal>about:config</literal>\""
-msgstr ""
+msgstr "\"<literal>about:config</literal>\""
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:14014
 msgid "\"<literal>about:plugins</literal>\""
-msgstr ""
+msgstr "\"<literal>about:plugins</literal>\""
 
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:14018
@@ -26329,7 +26406,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><title>
 #: debian-reference.en.xmlt:14020
 msgid "List of browser plugin packages"
-msgstr ""
+msgstr "Список пакетов с дополнениями (plugin) для браузеров"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -26337,125 +26414,125 @@ msgstr ""
 #: debian-reference.en.xmlt:14096 debian-reference.en.xmlt:14107
 #: debian-reference.en.xmlt:14118
 msgid "main"
-msgstr ""
+msgstr "main"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:14055
 msgid "Java plugin based on OpenJDK and IcedTea"
-msgstr ""
+msgstr "модуль поддержки Java; создан на основе OpenJDK и IcedTea"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:14063
 msgid "non-free"
-msgstr ""
+msgstr "non-free"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:14066
 msgid "Java plugin for Sun's Java SE 6 (i386 only)"
-msgstr ""
+msgstr "модуль поддержки Java для Sun Java SE 6 (только для i386)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:14077
 msgid "Flash plugin based on Gnash"
-msgstr ""
+msgstr "модуль поддержки Flash, на основе Gnash"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:14085 debian-reference.en.xmlt:14129
 msgid "contrib"
-msgstr ""
+msgstr "contrib"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:14088
 msgid "Flash plugin helper to install Adobe Flash Player (i386, amd64 only)"
-msgstr ""
+msgstr "вспомогательный пакет для установки Adobe Flash Player (только для i386 и amd64)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:14099
 msgid "Multimedia plugin based on <ulink url=\"&vlcmediaplayer;\">VLC media player</ulink>"
-msgstr ""
+msgstr "мультимедиа-модуль на основе <ulink url=\"&vlcmediaplayer;\">VLC</ulink>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:14110
 msgid "Multimedia plugin based on <ulink url=\"&gnomestotemmediaplayer;\">GNOME's Totem media player</ulink>"
-msgstr ""
+msgstr "мультимедиа-модуль на основе <ulink url=\"&gnomestotemmediaplayer;\">проигрывателя Totem</ulink>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:14121
 msgid "Multimedia plugin based on (GNOME) <ulink url=\"&mplayer;\">MPlayer</ulink>"
-msgstr ""
+msgstr "мультимедиа-модуль на основе <ulink url=\"&mplayer;\">MPlayer</ulink>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:14132
 msgid "A wrapper to run i386 Netscape plugins on amd64 architecture"
-msgstr ""
+msgstr "\"обёртка\" для запуска дополнений Netscape (созданных для i386) на amd64"
 
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:14139
 msgid "Although use of above Debian packages are much easier, browser plugins can be still manually enabled by installing \"*.so\" into plugin directories (e.g., \"<literal>/usr/lib/iceweasel/plugins/</literal>\") and restarting browsers."
-msgstr ""
+msgstr "Хотя использование этих пакетов гораздо проще, дополнения можно по-прежнему установить вручную, скопировав файлы \"*.so\" в соответствующий каталог, например, \"<literal>/usr/lib/iceweasel/plugins/</literal>\" и перезапустив браузер."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:14141
 msgid "Some web sites refuse to be connected based on the user-agent string of your browser.  You can work around this situation by <ulink url=\"&spoofingtheuseragentstring;\">spoofing the user-agent string</ulink>.  For example, you can do this by adding following line into user configuration files such as \"<literal>~/.gnome2/epiphany/mozilla/epiphany/user.js</literal>\" or \"<literal>~/.mozilla/firefox/*.default/user.js</literal>\"."
-msgstr ""
+msgstr "Некоторые web-сайты отказывают в соединении, основываясь на строке идентификации браузера (user-agent string). Можно попробовать решить эту проблему, <ulink url=\"&spoofingtheuseragentstring;\">\"подделав\" эту строчку</ulink>. Например, можно добавить в файлы настройки типа \"<literal>~/.gnome2/epiphany/mozilla/epiphany/user.js</literal>\" или \"<literal>~/.mozilla/firefox/*.default/user.js</literal>\" следующую переменную:"
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
 #: debian-reference.en.xmlt:14142
 #, no-wrap
 msgid "user_pref{\"general.useragent.override\",\"Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)\"};"
-msgstr ""
+msgstr "user_pref{\"general.useragent.override\",\"Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)\"};"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:14143
 msgid "Alternatively, you can add and reset this variable by typing \"<literal>about:config</literal>\" into URL and right clicking its display contents."
-msgstr ""
+msgstr "Можно также изменить эту переменную, набрав адрес \"<literal>about:config</literal>\" и изменив настройки через web-интерфейс."
 
 # type: Content of: <book><chapter><section><section><caution><simpara>
 #. type: Content of: <book><chapter><section><section><caution><simpara>
 #: debian-reference.en.xmlt:14145
 msgid "Spoofed user-agent string may cause <ulink url=\"&badsideeffectswithjava;\">bad side effects with Java</ulink>."
-msgstr ""
+msgstr "Однако, \"подделанная\" таким образом строка идентификации может вызывать <ulink url=\"&badsideeffectswithjava;\">ошибки в работе Java</ulink>"
 
 # type: Content of: <book><chapter><section><title>
 #. type: Content of: <book><chapter><section><title>
 #: debian-reference.en.xmlt:14150
 msgid "The mail system"
-msgstr ""
+msgstr "Почтовая система"
 
 # type: Content of: <book><chapter><section><caution><simpara>
 #. type: Content of: <book><chapter><section><caution><simpara>
 #: debian-reference.en.xmlt:14152
 msgid "If you are to set up the mail server to exchange mail directly with the Internet, you should be better than reading this elementary document."
-msgstr ""
+msgstr "Если вы настраиваете почтовый сервер для обмена почтой напрямую через Интернет, вам следовало бы знать побольше, чем можно почерпнуть из этого элементарного документа."
 
 #. type: Content of: <book><chapter><section><note><simpara>
 #: debian-reference.en.xmlt:14155
 msgid "The following configuration examples are only valid for the typical mobile workstation on consumer grade Internet connections."
-msgstr ""
+msgstr "Описанные здесь примеры конфигурации подходят лишь для обычного настольного компьютера и подключения к Интернету потребительского класса."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:14158
 msgid "Modern mail service basics"
-msgstr ""
+msgstr "Основы современной почтовой службы"
 
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:14159
 msgid "In order to contain spam (unwanted and unsolicited email) problems, many ISPs which provide consumer grade Internet connections are implementing counter measures."
-msgstr ""
+msgstr "Из-за проблемы спама (нежелательной и непрошенной почты), многие Интернет-провайдеры, предоставляющие подключение к Интернету конечным пользователям, принимают ответные меры:"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -26479,7 +26556,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:14177
 msgid "When configuring your mail system or resolving mail delivery problems, you must consider these new limitations."
-msgstr ""
+msgstr "Настраивая почтовую систему или решая проблемы с доставкой почты, вам нужно помнить об этих новых ограничениях."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -29301,7 +29378,7 @@ msgstr "стандартная среда рабочего стола <ulink url
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:16559
 msgid "core <ulink url=\"&kde;\">KDE</ulink> desktop environment (metapackage)"
-msgstr ""
+msgstr "среда рабочего стола <ulink url=\"&kde;\">KDE</ulink> (мета-пакет)"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -29451,7 +29528,7 @@ msgstr "программа, запущенная на <emphasis role=\"strong\">
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:16649
 msgid "<emphasis role=\"strong\">application server</emphasis>"
-msgstr ""
+msgstr "<emphasis role=\"strong\">сервер приложения</emphasis>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -29463,7 +29540,7 @@ msgstr "программа, работающая <emphasis role=\"strong\">уд�
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:16657
 msgid "<emphasis role=\"strong\">application client</emphasis>"
-msgstr ""
+msgstr "<emphasis role=\"strong\">клиент приложения</emphasis>"
 
 # type: Content of: <book><chapter><section><title>
 #. type: Content of: <book><chapter><section><title>
@@ -29503,6 +29580,8 @@ msgid ""
 "# dpkg-reconfigure --priority=low x11-common\n"
 "# dpkg-reconfigure --priority=low xserver-xorg"
 msgstr ""
+"# dpkg-reconfigure --priority=low x11-common\n"
+"# dpkg-reconfigure --priority=low xserver-xorg"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -29515,7 +29594,7 @@ msgstr "Если вы вручную редактировали файл \"<lite
 #: debian-reference.en.xmlt:16679
 #, no-wrap
 msgid "# sudo dpkg-reconfigure -phigh xserver-xorg"
-msgstr ""
+msgstr "# sudo dpkg-reconfigure -phigh xserver-xorg"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -29575,7 +29654,7 @@ msgstr "команда <literal>xhost</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:16731
 msgid "unchecked"
-msgstr ""
+msgstr "не проверяется"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -29587,7 +29666,7 @@ msgstr "нет"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:16737
 msgid "deprecated"
-msgstr ""
+msgstr "использование осуждается"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -29602,7 +29681,7 @@ msgstr "команда <literal>xauth</literal>"
 #: debian-reference.en.xmlt:16814 debian-reference.en.xmlt:16831
 #: debian-reference.en.xmlt:16848
 msgid "checked"
-msgstr ""
+msgstr "проверяется"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -29802,6 +29881,9 @@ msgid ""
 "Session=default\n"
 "Language=ja_JP.UTF-8"
 msgstr ""
+"[Desktop]\n"
+"Session=default\n"
+"Language=ru_RU.UTF-8"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -29895,6 +29977,8 @@ msgid ""
 "localname @ localhost $ ssh -q -X loginname@remotehost.domain\n"
 "Password:"
 msgstr ""
+"localname @ localhost $ ssh -q -X loginname@remotehost.domain\n"
+"Password:"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -29907,7 +29991,7 @@ msgstr "Запустите приложение X Window, например, \"<l
 #: debian-reference.en.xmlt:16971
 #, no-wrap
 msgid "loginname @ remotehost $ gimp &amp;"
-msgstr ""
+msgstr "loginname @ remotehost $ gimp &amp;"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -30270,7 +30354,7 @@ msgstr "Nimbus Mono L"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:17250
 msgid "<ulink url=\"&urw;\">URW</ulink> (Adobe compatible size)"
-msgstr ""
+msgstr "<ulink url=\"&urw;\">URW</ulink> (размер совместимый с Adobe)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -30300,7 +30384,7 @@ msgstr "Free Courier"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:17284
 msgid "URW extended (Adobe compatible size)"
-msgstr ""
+msgstr "расширенный URW (размер совместимый с Adobe)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -30354,7 +30438,7 @@ msgstr "<ulink url=\"&couriernew;\">Courier New</ulink>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:17357
 msgid "Microsoft (Adobe compatible size) (This installs non-free data)"
-msgstr ""
+msgstr "Microsoft (размер совместимый с Adobe) (Устанавливает несвободные данные)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -30692,7 +30776,7 @@ msgstr "размер пакета"
 #: debian-reference.en.xmlt:17643 debian-reference.en.xmlt:17654
 #: debian-reference.en.xmlt:17665 debian-reference.en.xmlt:17676
 msgid "OO"
-msgstr ""
+msgstr "OO"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -30741,14 +30825,14 @@ msgstr "математические вычисления/редактирова
 #: debian-reference.en.xmlt:17931 debian-reference.en.xmlt:17964
 #: debian-reference.en.xmlt:17986
 msgid "GNOME"
-msgstr ""
+msgstr "GNOME"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:17709 debian-reference.en.xmlt:17997
 #: debian-reference.en.xmlt:18019
 msgid "GTK"
-msgstr ""
+msgstr "GTK"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -30780,7 +30864,7 @@ msgstr "управление проектами"
 #: debian-reference.en.xmlt:17975 debian-reference.en.xmlt:18008
 #: debian-reference.en.xmlt:18030
 msgid "KDE"
-msgstr ""
+msgstr "KDE"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -30915,7 +30999,7 @@ msgstr "Файл \"<literal>~/.Xresources</literal>\" используется �
 #: debian-reference.en.xmlt:18059
 #, no-wrap
 msgid "$ xrdb -merge ~/.Xresources"
-msgstr ""
+msgstr "$ xrdb -merge ~/.Xresources"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -30958,7 +31042,7 @@ msgstr "Простые способы запустить конкретный X-
 #: debian-reference.en.xmlt:18072
 #, no-wrap
 msgid "$ sudo foo &amp;"
-msgstr ""
+msgstr "$ sudo foo &amp;"
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -30968,13 +31052,15 @@ msgid ""
 "$ sudo -s\n"
 "# foo &amp;"
 msgstr ""
+"$ sudo -s\n"
+"# foo &amp;"
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
 #: debian-reference.en.xmlt:18075
 #, no-wrap
 msgid "$ gksu foo &amp;"
-msgstr ""
+msgstr "$ gksu foo &amp;"
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -30984,6 +31070,8 @@ msgid ""
 "$ ssh -X root@localhost\n"
 "# foo &amp;"
 msgstr ""
+"$ ssh -X root@localhost\n"
+"# foo &amp;"
 
 # type: Content of: <book><chapter><section><section><caution><simpara>
 #. type: Content of: <book><chapter><section><section><caution><simpara>
@@ -31130,7 +31218,7 @@ msgstr "Методы ввода IBus"
 #: debian-reference.en.xmlt:18161
 #| msgid "Setup of multilingual input for the Debian system is simplified by using the <ulink url=\"&smartcommoninputmethodscim;\">Smart Common Input Method (SCIM)</ulink> family of packages with the <literal>im-switch</literal> package. The list of SCIM packages are the following."
 msgid "Setup of multilingual input for the Debian system is simplified by using the <ulink url=\"&ibus;\">IBus</ulink> family of packages with the <literal>im-switch</literal> package. The list of IBus packages are the following."
-msgstr ""
+msgstr "Настройка многоязычного ввода в системе Debian упрощается семейством пакетов <ulink url=\"&ibus;\">IBus</ulink> и пакетом <literal>im-switch</literal>. Вот список пакетов IBus."
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
@@ -31148,7 +31236,7 @@ msgstr "поддерживаемая локаль"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18191
 msgid "input method framework using dbus"
-msgstr ""
+msgstr "реализация метода ввода, использующая dbus"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -31178,7 +31266,7 @@ msgstr "корейская"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18239
 msgid "table engine for IBus"
-msgstr ""
+msgstr "поддержка табличных механизмов ввода для IBus"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -31236,7 +31324,7 @@ msgstr "Выполните \"<literal>im-switch -c</literal>\" от имени �
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:18287
 msgid "Select \"System\" → \"Preferences\" → \"IBus Preferences\" → \"Input Method\" → \"Select an input method\" → \"Japanese\" → \"Anthy\" and click \"Add\"."
-msgstr ""
+msgstr "Выберите в меню \"Система\" → \"Параметры\" → \"IBus Preferences\" → \"Input Method\" → \"Select an input method\" → \"Japanese\" → \"Anthy\" и нажмите \"Добавить\"."
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
@@ -31292,7 +31380,7 @@ msgstr "Если вы не хотите, чтобы ввод обрабатыв�
 #: debian-reference.en.xmlt:18327
 #, no-wrap
 msgid "$ XMODIFIERS=none emacs"
-msgstr ""
+msgstr "$ XMODIFIERS=none emacs"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -31416,6 +31504,8 @@ msgid ""
 "“double quoted text”\n"
 "‘single quoted text’"
 msgstr ""
+"“текст в двойных кавычках”\n"
+"‘текст в одинарных кавычках’"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -31452,7 +31542,7 @@ msgstr "Чтобы система могла использовать конкр
 #: debian-reference.en.xmlt:18376
 #, no-wrap
 msgid "$ locale -a | grep utf8"
-msgstr ""
+msgstr "$ locale -a | grep utf8"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -31465,7 +31555,7 @@ msgstr "По такой команде можно изменить настро�
 #: debian-reference.en.xmlt:18378
 #, no-wrap
 msgid "# dpkg-reconfigure locales"
-msgstr ""
+msgstr "# dpkg-reconfigure locales"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -31598,7 +31688,7 @@ msgstr "Следующая строчка определяет, где нахо�
 #: debian-reference.en.xmlt:18450
 #, no-wrap
 msgid "auth    required        pam_env.so read_env=1 envfile=/etc/default/locale"
-msgstr ""
+msgstr "auth    required        pam_env.so read_env=1 envfile=/etc/default/locale"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -31611,7 +31701,7 @@ msgstr "Измените её следующим способом."
 #: debian-reference.en.xmlt:18452
 #, no-wrap
 msgid "auth    required        pam_env.so read_env=1 envfile=/etc/default/locale-x"
-msgstr ""
+msgstr "auth    required        pam_env.so read_env=1 envfile=/etc/default/locale-x"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -31624,7 +31714,7 @@ msgstr "Для японского, создайте \"<literal>/etc/defaults/loc
 #: debian-reference.en.xmlt:18454
 #, no-wrap
 msgid "LANG=\"ja_JP.UTF-8\""
-msgstr ""
+msgstr "LANG=\"ja_JP.UTF-8\""
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -31637,7 +31727,7 @@ msgstr "Не трогайте используемый по умолчанию �
 #: debian-reference.en.xmlt:18456
 #, no-wrap
 msgid "LANG=\"en_US.UTF-8\""
-msgstr ""
+msgstr "LANG=\"en_US.UTF-8\""
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -31710,7 +31800,7 @@ msgstr "Например, вы можете установить пакеты <l
 #: debian-reference.en.xmlt:18477
 #, no-wrap
 msgid "LANG=it_IT.UTF-8 man &lt;programname&gt;"
-msgstr ""
+msgstr "LANG=it_IT.UTF-8 man &lt;имя_программы&gt;"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -31770,7 +31860,7 @@ msgstr "Список программ, поддерживающих прерва
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18522
 msgid "terminal multiplexer with VT100/ANSI terminal emulation"
-msgstr ""
+msgstr "терминальный мультиплексор с эмуляцией терминала VT100/ANSI"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -31885,7 +31975,7 @@ msgstr "Список команд управления screen"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18619
 msgid "<literal>^A ?</literal>"
-msgstr ""
+msgstr "<literal>^A ?</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -31897,7 +31987,7 @@ msgstr "показать справка (список команд)"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18627
 msgid "<literal>^A c</literal>"
-msgstr ""
+msgstr "<literal>^A c</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -31909,7 +31999,7 @@ msgstr "создать новое окно и переключиться на н
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18635
 msgid "<literal>^A n</literal>"
-msgstr ""
+msgstr "<literal>^A n</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -31921,7 +32011,7 @@ msgstr "перейти к следующему окну"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18643
 msgid "<literal>^A p</literal>"
-msgstr ""
+msgstr "<literal>^A p</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -31933,7 +32023,7 @@ msgstr "перейти к предыдущему окну"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18651
 msgid "<literal>^A 0</literal>"
-msgstr ""
+msgstr "<literal>^A 0</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -31945,7 +32035,7 @@ msgstr "перейти к окну с номером 0"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18659
 msgid "<literal>^A 1</literal>"
-msgstr ""
+msgstr "<literal>^A 1</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -31957,7 +32047,7 @@ msgstr "перейти к окну с номером 1"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18667
 msgid "<literal>^A w</literal>"
-msgstr ""
+msgstr "<literal>^A w</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -31969,7 +32059,7 @@ msgstr "показать список окон"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18675
 msgid "<literal>^A a</literal>"
-msgstr ""
+msgstr "<literal>^A a</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -31981,7 +32071,7 @@ msgstr "послать текущему окну Ctrl-A как ввод с кл�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18683
 msgid "<literal>^A h</literal>"
-msgstr ""
+msgstr "<literal>^A h</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -31993,7 +32083,7 @@ msgstr "записать копию текущего окна в файл"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18691
 msgid "<literal>^A H</literal>"
-msgstr ""
+msgstr "<literal>^A H</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -32005,7 +32095,7 @@ msgstr "начать/завершить ведение журнала актив
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18699
 msgid "<literal>^A ^X</literal>"
-msgstr ""
+msgstr "<literal>^A ^X</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -32017,7 +32107,7 @@ msgstr "заблокировать терминал (защищено парол
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18707
 msgid "<literal>^A d</literal>"
-msgstr ""
+msgstr "<literal>^A d</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -32029,7 +32119,7 @@ msgstr "отключить сессию screen от терминала"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18715
 msgid "<literal>^A DD</literal>"
-msgstr ""
+msgstr "<literal>^A DD</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -32143,7 +32233,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18842
 msgid "firewall log analyzer"
-msgstr ""
+msgstr "анализатор журнала фаервола"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -32155,7 +32245,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18858
 msgid "fast web server log analyzer"
-msgstr ""
+msgstr "быстрый анализатор журнала веб-сервера"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -32173,7 +32263,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18882
 msgid "interpret ICMP messages"
-msgstr ""
+msgstr "интерпретатор ICMP-сообщений"
 
 # type: Content of: <book><chapter><section><section><note><simpara>
 #. type: Content of: <book><chapter><section><section><note><simpara>
@@ -32210,6 +32300,8 @@ msgid ""
 "$ col -bx &lt;typescript &gt;cleanedfile\n"
 "$ vim cleanedfile"
 msgstr ""
+"$ col -bx &lt;typescript &gt;очищенный_файл\n"
+"$ vim очищенный_файл"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -32222,7 +32314,7 @@ msgstr "Если <literal>script</literal> недоступен (наприме�
 #: debian-reference.en.xmlt:18901
 #, no-wrap
 msgid "$ sh -i 2&gt;&amp;1 | tee typescript"
-msgstr ""
+msgstr "$ sh -i 2&gt;&amp;1 | tee typescript"
 
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><tip><simpara>
@@ -32300,7 +32392,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:18936
 msgid "locale"
-msgstr ""
+msgstr "локаль"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
@@ -32312,99 +32404,99 @@ msgstr "отображение времени и даты"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18946
 msgid "<literal>iso</literal>"
-msgstr ""
+msgstr "<literal>iso</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18949 debian-reference.en.xmlt:18960
 #: debian-reference.en.xmlt:18971 debian-reference.en.xmlt:19015
 msgid "<emphasis>any</emphasis>"
-msgstr ""
+msgstr "<emphasis>любая</emphasis>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18952
 msgid "<literal>01-19 00:15</literal>"
-msgstr ""
+msgstr "<literal>01-19 00:15</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18957
 msgid "<literal>long-iso</literal>"
-msgstr ""
+msgstr "<literal>long-iso</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18963 debian-reference.en.xmlt:18996
 msgid "<literal>2009-01-19 00:15</literal>"
-msgstr ""
+msgstr "<literal>2009-01-19 00:15</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18968
 msgid "<literal>full-iso</literal>"
-msgstr ""
+msgstr "<literal>full-iso</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18974
 msgid "<literal>2009-01-19 00:15:16.000000000 +0900</literal>"
-msgstr ""
+msgstr "<literal>2009-01-19 00:15:16.000000000 +0900</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18979 debian-reference.en.xmlt:18990
 #: debian-reference.en.xmlt:19001
 msgid "<literal>locale</literal>"
-msgstr ""
+msgstr "<literal>locale</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:18985
 msgid "<literal>Jan 19 00:15</literal>"
-msgstr ""
+msgstr "<literal>Jan 19 00:15</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:19007
 msgid "<literal>ene 19 00:15</literal>"
-msgstr ""
+msgstr "<literal>ene 19 00:15</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:19012
 msgid "<literal>+%d.%m.%y %H:%M</literal>"
-msgstr ""
+msgstr "<literal>+%d.%m.%y %H:%M</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:19018
 msgid "<literal>19.01.09 00:15</literal>"
-msgstr ""
+msgstr "<literal>19.01.09 00:15</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:19023 debian-reference.en.xmlt:19033
 msgid "<literal>+%d.%b.%y %H:%M</literal>"
-msgstr ""
+msgstr "<literal>+%d.%b.%y %H:%M</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:19025
 msgid "<literal>C</literal> or <literal>en_US.UTF-8</literal>"
-msgstr ""
+msgstr "<literal>C</literal> или <literal>en_US.UTF-8</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:19028
 msgid "<literal>19.Jan.09 00:15</literal>"
-msgstr ""
+msgstr "<literal>19.Jan.09 00:15</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:19039
 msgid "<literal>19.ene.09 00:15</literal>"
-msgstr ""
+msgstr "<literal>19.ene.09 00:15</literal>"
 
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><tip><simpara>
@@ -32440,6 +32532,10 @@ msgid ""
 "$ REVERSE=$(printf \"\\x1b[7m\")\n"
 "$ echo \"${RED}RED-TEXT${NORMAL} ${REVERSE}REVERSE-TEXT${NORMAL}\""
 msgstr ""
+"$ RED=$(printf \"\\x1b[31m\")\n"
+"$ NORMAL=$(printf \"\\x1b[0m\")\n"
+"$ REVERSE=$(printf \"\\x1b[7m\")\n"
+"$ echo \\\"${RED}RED-TEXT${NORMAL} ${REVERSE}REVERSE-TEXT${NORMAL}\\\""
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -32474,6 +32570,21 @@ msgid ""
 "    alias la='ls -A'\n"
 "fi"
 msgstr ""
+"if [ \"$TERM\" != \"dumb\" ]; then\n"
+"    eval \"`dircolors -b`\"\n"
+"    alias ls='ls --color=always'\n"
+"    alias ll='ls --color=always -l'\n"
+"    alias la='ls --color=always -A'\n"
+"    alias less='less -R'\n"
+"    alias ls='ls --color=always'\n"
+"    alias grep='grep --color=always'\n"
+"    alias egrep='egrep --color=always'\n"
+"    alias fgrep='fgrep --color=always'\n"
+"    alias zgrep='zgrep --color=always'\n"
+"else\n"
+"    alias ll='ls -l'\n"
+"    alias la='ls -A'\n"
+"fi"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -32698,7 +32809,7 @@ msgstr "Список пакетов для управления разделам
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:19279
 msgid "GPT"
-msgstr ""
+msgstr "GPT"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -33522,7 +33633,7 @@ msgstr "Добавьте следующую строчку перед \"<literal
 #: debian-reference.en.xmlt:19892
 #, no-wrap
 msgid "auth required pam_ecryptfs.so unwrap"
-msgstr ""
+msgstr "auth required pam_ecryptfs.so unwrap"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -33535,7 +33646,7 @@ msgstr "Добавьте следующую строчку в конце фай�
 #: debian-reference.en.xmlt:19894
 #, no-wrap
 msgid "session optional pam_ecryptfs.so unwrap"
-msgstr ""
+msgstr "session optional pam_ecryptfs.so unwrap"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -33548,7 +33659,7 @@ msgstr "Добавьте следующую строчку около перво
 #: debian-reference.en.xmlt:19896
 #, no-wrap
 msgid "password required pam_ecryptfs.so"
-msgstr ""
+msgstr "password required pam_ecryptfs.so"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -35269,19 +35380,19 @@ msgstr "<literal>xscreensaver-command -prefs</literal>"
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:21197
 msgid "Disabling beep sounds"
-msgstr ""
+msgstr "Отключение встроенного динамика (speaker)"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:21198
 msgid "One can always unplug the PC speaker to disable beep sounds.  Removing <literal>pcspkr</literal> kernel module does this for you."
-msgstr ""
+msgstr "Можно физически отключить динамик, чтобы избавиться от пищащих звуков. А можно выгрузить модуль ядра <literal>pcspkr</literal>."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:21199
 msgid "The following prevents the <literal>readline</literal>(3) program used by <literal>bash</literal>(1) to beep when encountering \"<literal>\\a</literal>\" (ASCII=7)."
-msgstr ""
+msgstr "А таким способом можно запретить программе <literal>readline</literal>(3), используемой <literal>bash</literal>(1), пищать при встрече с символом \"<literal>\\a</literal>\" (ASCII=7)."
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -35294,19 +35405,19 @@ msgstr "$ echo \"set bell-style none\"&gt;&gt; ~/.inputrc"
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:21203
 msgid "Memory usage"
-msgstr ""
+msgstr "Использование памяти"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:21204
 msgid "The kernel boot message in the \"<literal>/var/log/dmesg</literal>\" contains the total exact size of available memory."
-msgstr ""
+msgstr "Сообщение загрузки ядра в \"<literal>/var/log/dmesg</literal>\" содержит полное и точное количество доступной памяти."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:21205
 msgid "<literal>free</literal>(1) and <literal>top</literal>(1) display information on memory resources on the running system."
-msgstr ""
+msgstr "<literal>free</literal>(1) и <literal>top</literal>(1) выводят информацию о ресурсах памяти на запущенной системе."
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -35321,78 +35432,85 @@ msgid ""
 "-/+ buffers/cache:     675404     321780\n"
 "Swap:      4545576          4    4545572"
 msgstr ""
+"$ grep '\\] Memory' /var/log/dmesg\n"
+"[    0.004000] Memory: 990528k/1016784k available (1975k kernel code, 25868k reserved, 931k data, 296k init)\n"
+"$ free -k\n"
+"             total       used       free     shared    buffers     cached\n"
+"Mem:        997184     976928      20256          0     129592     171932\n"
+"-/+ buffers/cache:     675404     321780\n"
+"Swap:      4545576          4    4545572"
 
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:21214
 msgid "Do not worry about the large size of \"<literal>used</literal>\" and the small size of \"<literal>free</literal>\" in the \"<literal>Mem:</literal>\" line, but read the one under them (675404 and 321780 in the example below) and relax."
-msgstr ""
+msgstr "Не беспокойтесь о большом размере использованной (\"<literal>used</literal>\") и маленьком свободной (\"<literal>free</literal>\") в строке \"<literal>Mem:</literal>\"; взгляните на строчку ниже (675404 и 321780 в примере выше) и расслабьтесь."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:21216
 msgid "For my MacBook with 1GB=1048576k DRAM (video system steals some of this), I see the following."
-msgstr ""
+msgstr "У меня на MacBook'е с 1GB=1048576k DRAM (часть которой забирает видео-подсистема), выводится следующее:"
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
 #: debian-reference.en.xmlt:21218
 msgid "List of memory sizes reported"
-msgstr ""
+msgstr "Список выводимых размеров памяти"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:21225
 msgid "report"
-msgstr ""
+msgstr "отчёт"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:21235
 msgid "Total size in dmesg"
-msgstr ""
+msgstr "общее количество, dmesg"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:21238
 msgid "1016784k = 1GB - 31792k"
-msgstr ""
+msgstr "1016784k = 1GB - 31792k"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:21243
 msgid "Free in dmesg"
-msgstr ""
+msgstr "свободно, dmesg"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:21246
 msgid "990528k"
-msgstr ""
+msgstr "990528k"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:21251
 msgid "Total under shell"
-msgstr ""
+msgstr "всего, из оболочки"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:21254
 msgid "997184k"
-msgstr ""
+msgstr "997184k"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:21259
 msgid "Free under shell"
-msgstr ""
+msgstr "свободно, из оболочки"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:21262
 msgid "20256k (but effectively 321780k)"
-msgstr ""
+msgstr "20256k (но в действительности 321780k)"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -35611,19 +35729,19 @@ msgstr "См. \"<literal>kernel-parameters.txt(.gz)</literal>\" и другую 
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:21466
 msgid "Kernel headers"
-msgstr ""
+msgstr "Заголовки ядра"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:21467
 msgid "Most <emphasis role=\"strong\">normal programs</emphasis> don't need kernel headers and in fact may break if you use them directly for compiling. They should be compiled against the headers in \"<literal>/usr/include/linux</literal>\" and \"<literal>/usr/include/asm</literal>\" provided by the <literal>libc6-dev</literal> package (created from the <literal>glibc</literal> source package) on the Debian system."
-msgstr ""
+msgstr "Большинство <emphasis role=\"strong\">обычных программ</emphasis> не нуждаются в заголовочных файлах ядра и могут не работать, если использовать эти файлы для компиляции. Таковые должны компилироваться с заголовками в \"<literal>/usr/include/linux</literal>\" и \"<literal>/usr/include/asm</literal>\", устанавливаемыми пакетом <literal>libc6-dev</literal> (который создан из исходного пакета <literal>glibc</literal>)."
 
 # type: Content of: <book><chapter><section><section><note><simpara>
 #. type: Content of: <book><chapter><section><section><note><simpara>
 #: debian-reference.en.xmlt:21469
 msgid "For compiling some kernel-specific programs such as the kernel modules from the external source and the automounter daemon (<literal>amd</literal>), you must include path to the corresponding kernel headers, e.g. \"<literal>-I/usr/src/linux-particular-version/include/</literal>\", to your command line. <literal>module-assistant</literal>(8) (or its short form <literal>m-a</literal>) helps users to build and install module package(s) easily for one or more custom kernels."
-msgstr ""
+msgstr "Для компиляции некоторых программ, завязанных на ядро (например, модулей ядра из различных источников, либо службы для автомонтирования <literal>amd</literal>), вам нужно указывать путь к соответствующим заголовкам ядра (например так: \"<literal>-I/usr/src/linux-particular-version/include/</literal>\") в командной строке. <literal>module-assistant</literal>(8) (короткое название <literal>m-a</literal>) помогает пользователям легко собирать и устанавливать пакеты модулей для одного или нескольких ядер."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -35772,6 +35890,17 @@ msgid ""
 "$ cd ..\n"
 "# dpkg -i linux-image*.deb"
 msgstr ""
+"# aptitude install linux-tree-&lt;номер_версии&gt;\n"
+"$ cd /usr/src\n"
+"$ tar -xjvf linux-source-&lt;номер_версии&gt;.tar.bz2\n"
+"$ cd linux-source-&lt;номер_версии&gt;\n"
+"$ cp /boot/config-&lt;версия_старого_ядра&gt; .config\n"
+"$ make menuconfig\n"
+" ...\n"
+"$ make-kpkg clean\n"
+"$ fakeroot make-kpkg --append_to_version -amd64 --initrd --revision=rev.01 kernel_image modules_image\n"
+"$ cd ..\n"
+"# dpkg -i linux-image*.deb"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -35811,6 +35940,14 @@ msgid ""
 "...\n"
 "$ sudo apt-get autoremove"
 msgstr ""
+"$ sudo aptitude install module-assistant\n"
+"...\n"
+"$ sudo aptitude install unionfs-source unionfs-tools unionfs-utils\n"
+"$ sudo m-a update\n"
+"$ sudo m-a prepare\n"
+"$ sudo m-a auto-install unionfs\n"
+"...\n"
+"$ sudo apt-get autoremove"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -35843,6 +35980,19 @@ msgid ""
 "# depmod -a\n"
 "# update-initramfs -c -k &lt;version&gt;"
 msgstr ""
+"$ cd /usr/src\n"
+"$ wget http://www.kernel.org/pub/linux/kernel/v2.6/linux-&lt;номер_версии&gt;.tar.bz2\n"
+"$ tar -xjvf linux-&lt;номер_версии&gt;.tar.bz2\n"
+"$ cd linux-&lt;номер_версии&gt;\n"
+"$ cp /boot/config-&lt;номер_версии&gt; .config\n"
+"$ make menuconfig\n"
+" ...\n"
+"$ make dep; make bzImage\n"
+"$ make modules\n"
+"# cp ./arch/x86_64/boot/bzImage /boot/vmlinuz-&lt;номер_версии&gt;\n"
+"# make modules_install\n"
+"# depmod -a\n"
+"# update-initramfs -c -k &lt;номер_версии&gt;"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -36386,6 +36536,10 @@ msgid ""
 "$ qemu -hda virtdisk.qcow2 -cdrom debian-503-amd64-netinst.iso -boot d -m 256\n"
 "..."
 msgstr ""
+"$ wget http://cdimage.debian.org/debian-cd/5.0.3/amd64/iso-cd/debian-503-amd64-netinst.iso\n"
+"$ qemu-img create -f qcow2 virtdisk.qcow2 5G\n"
+"$ qemu -hda virtdisk.qcow2 -cdrom debian-503-amd64-netinst.iso -boot d -m 256\n"
+"..."
 
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:22085
@@ -37010,6 +37164,8 @@ msgid ""
 "$ find ./source -xdev -print0 | cpio -ov --null &gt; archive.cpio; gzip archive.cpio\n"
 "$ zcat archive.cpio.gz | cpio -i"
 msgstr ""
+"$ find ./source -xdev -print0 | cpio -ov --null &gt; archive.cpio; gzip archive.cpio\n"
+"$ zcat archive.cpio.gz | cpio -i"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -37024,6 +37180,8 @@ msgid ""
 "$ find ./source -xdev -print0 | afio -ovZ0 archive.afio\n"
 "$ afio -ivZ archive.afio"
 msgstr ""
+"$ find ./source -xdev -print0 | afio -ovZ0 archive.afio\n"
+"$ afio -ivZ archive.afio"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -37062,6 +37220,8 @@ msgid ""
 "# cd ./source; rsync -av . /dest\n"
 "# cd ./source; rsync -av . user@host.dom:/dest"
 msgstr ""
+"# cd ./source; rsync -av . /dest\n"
+"# cd ./source; rsync -av . user@host.dom:/dest"
 
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:22593
@@ -37075,6 +37235,8 @@ msgid ""
 "# rsync -av ./source/ /dest\n"
 "# rsync -av ./source/ user@host.dom:/dest"
 msgstr ""
+"# rsync -av ./source/ /dest\n"
+"# rsync -av ./source/ user@host.dom:/dest"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -37089,6 +37251,8 @@ msgid ""
 "# cd ./source; cp -a . /dest\n"
 "# cd ./source; scp -pr . user@host.dom:/dest"
 msgstr ""
+"# cd ./source; cp -a . /dest\n"
+"# cd ./source; scp -pr . user@host.dom:/dest"
 
 #. type: Content of: <book><chapter><section><section><screen>
 #: debian-reference.en.xmlt:22600
@@ -37097,18 +37261,20 @@ msgid ""
 "# (cd ./source &amp;&amp; tar cf - . ) | (cd /dest &amp;&amp; tar xvfp - )\n"
 "# (cd ./source &amp;&amp; tar cf - . ) | ssh user@host.dom '(cd /dest &amp;&amp; tar xvfp - )'"
 msgstr ""
+"# (cd ./source &amp;&amp; tar cf - . ) | (cd /dest &amp;&amp; tar xvfp - )\n"
+"# (cd ./source &amp;&amp; tar cf - . ) | ssh user@host.dom '(cd /dest &amp;&amp; tar xvfp - )'"
 
 #. type: Content of: <book><chapter><section><section><screen>
 #: debian-reference.en.xmlt:22603
 #, no-wrap
 msgid "# cd ./source; find . -print0 | cpio -pvdm --null --sparse /dest"
-msgstr ""
+msgstr "# cd ./source; find . -print0 | cpio -pvdm --null --sparse /dest"
 
 #. type: Content of: <book><chapter><section><section><screen>
 #: debian-reference.en.xmlt:22605
 #, no-wrap
 msgid "# cd ./source; find . -print0 | afio -pv0a /dest"
-msgstr ""
+msgstr "# cd ./source; find . -print0 | afio -pv0a /dest"
 
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -37236,6 +37402,12 @@ msgid ""
 "    -type f -size +99M -prune -o \\\n"
 "    -type f -newer /path/to/timestamp -print0"
 msgstr ""
+"# find /path/to \\\n"
+"    -xdev -regextype posix-extended \\\n"
+"    -type f -regex \".*\\.afio|.*~\" -prune -o \\\n"
+"    -type d -regex \".*/\\.git\" -prune -o \\\n"
+"    -type f -size +99M -prune -o \\\n"
+"    -type f -newer /path/to/timestamp -print0"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -40140,19 +40312,19 @@ msgstr ""
 #. type: Content of: <book><chapter><section><title>
 #: debian-reference.en.xmlt:24756
 msgid "Source code merge tools"
-msgstr ""
+msgstr "Средства соединения файлов с исходным кодом (merge)"
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
 #: debian-reference.en.xmlt:24757
 msgid "There are many merge tools for the source code.  Following commands caught my eyes."
-msgstr ""
+msgstr "Есть много средств объединить файлы с исходным кодом. Вот те, что попались мне на глаза."
 
 # type: Content of: <book><chapter><section><table><title>
 #. type: Content of: <book><chapter><section><table><title>
 #: debian-reference.en.xmlt:24759
 msgid "List of source code merge tools"
-msgstr ""
+msgstr "Список средств соединения файлов с исходным кодом (merge)"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40164,7 +40336,7 @@ msgstr "<literal>diff</literal>(1)"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:24793
 msgid "compare files line by line"
-msgstr ""
+msgstr "сравнивает файлы построчно"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40176,7 +40348,7 @@ msgstr "<literal>diff3</literal>(1)"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:24803
 msgid "compare and merges three files line by line"
-msgstr ""
+msgstr "сравнивает и объединяет три файла построчно"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40188,7 +40360,7 @@ msgstr "<literal>vimdiff</literal>(1)"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:24813
 msgid "compare 2 files side by side in vim"
-msgstr ""
+msgstr "сравнение и редактирование 2 файлов в vim с отображением различий"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40200,7 +40372,7 @@ msgstr "<literal>patch</literal>(1)"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:24823
 msgid "apply a diff file to an original"
-msgstr ""
+msgstr "соединяет файл различий (diff-файл) с оригиналом"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40212,7 +40384,7 @@ msgstr "<literal>dpatch</literal>(1)"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:24833
 msgid "manage series of patches for Debian package"
-msgstr ""
+msgstr "управление заплатами (patch) для пакета Debian"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40224,7 +40396,7 @@ msgstr "<literal>diffstat</literal>(1)"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:24843
 msgid "produce a histogram of changes by the diff"
-msgstr ""
+msgstr "статистика изменений, вносимых diff-файлом"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40236,7 +40408,7 @@ msgstr "<literal>combinediff</literal>(1)"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:24853
 msgid "create a cumulative patch from two incremental patches"
-msgstr ""
+msgstr "создаёт одну совокупную заплату (patch) из двух последовательных"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40248,7 +40420,7 @@ msgstr "<literal>dehtmldiff</literal>(1)"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:24863
 msgid "extract a diff from an HTML page"
-msgstr ""
+msgstr "извлекает diff-файл из HTML-страницы"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40260,7 +40432,7 @@ msgstr "<literal>filterdiff</literal>(1)"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:24873
 msgid "extract or excludes diffs from a diff file"
-msgstr ""
+msgstr "извлекает/исключает отличия из diff-файла"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40272,7 +40444,7 @@ msgstr "<literal>fixcvsdiff</literal>(1)"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:24883
 msgid "fix diff files created by CVS that <literal>patch</literal>(1) mis-interprets"
-msgstr ""
+msgstr "исправляет diff-файлы, созданные CVS, которые не обрабатываются командой <literal>patch</literal>(1)"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40284,7 +40456,7 @@ msgstr "<literal>flipdiff</literal>(1)"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:24893
 msgid "exchange the order of two patches"
-msgstr ""
+msgstr "меняет очерёдность двух заплат"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40308,7 +40480,7 @@ msgstr "<literal>interdiff</literal>(1)"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:24913
 msgid "show differences between two unified diff files"
-msgstr ""
+msgstr "показывает отличия между двумя diff-файлами"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40320,7 +40492,7 @@ msgstr "<literal>lsdiff</literal>(1)"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:24923
 msgid "show which files are modified by a patch"
-msgstr ""
+msgstr "показывает, какие файлы изменены заплатой"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40555,31 +40727,31 @@ msgstr ""
 #. type: Content of: <book><chapter><section><title>
 #: debian-reference.en.xmlt:25088
 msgid "Version control systems"
-msgstr ""
+msgstr "Системы управления версиями (VCS)"
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
 #: debian-reference.en.xmlt:25089
 msgid "Here is a summary of the <ulink url=\"&versioncontrolsystemsvcs;\">version control systems (VCS)</ulink> on the Debian system."
-msgstr ""
+msgstr "Вот сводка по всем <ulink url=\"&versioncontrolsystemsvcs;\">системам управления версиями</ulink>, доступным в Debian."
 
 # type: Content of: <book><chapter><section><note><simpara>
 #. type: Content of: <book><chapter><section><note><simpara>
 #: debian-reference.en.xmlt:25091
 msgid "If you are new to VCS systems, you should start learning with <emphasis role=\"strong\">Git</emphasis>, which is growing fast in popularity."
-msgstr ""
+msgstr "Если вы ещё не пользовались системами VCS, начните изучение с <emphasis role=\"strong\">Git</emphasis>, который стремительно набирает популярность."
 
 # type: Content of: <book><chapter><section><table><title>
 #. type: Content of: <book><chapter><section><table><title>
 #: debian-reference.en.xmlt:25094
 msgid "List of version control system tools"
-msgstr ""
+msgstr "Список средств VCS"
 
 # type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:25117
 msgid "VCS type"
-msgstr ""
+msgstr "тип хранилища VCS"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40591,13 +40763,13 @@ msgstr "<ulink url=\"&cssc;\">CSSC</ulink>"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25133 debian-reference.en.xmlt:25147
 msgid "local"
-msgstr ""
+msgstr "локальное"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25136
 msgid "clone of the <ulink url=\"&unixsccs;\">Unix SCCS</ulink> (deprecated)"
-msgstr ""
+msgstr "вариант <ulink url=\"&unixsccs;\">Unix SCCS</ulink> (устарело)"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40609,7 +40781,7 @@ msgstr "<ulink url=\"&rcs;\">RCS</ulink>"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25150
 msgid "\"<ulink url=\"&unixsccs;\">Unix SCCS</ulink> done right\""
-msgstr ""
+msgstr "<ulink url=\"&unixsccs;\">Unix SCCS</ulink>, сделанный как следует"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40622,13 +40794,13 @@ msgstr "<ulink url=\"&cvs;\">CVS</ulink>"
 #: debian-reference.en.xmlt:25161 debian-reference.en.xmlt:25175
 #: debian-reference.en.xmlt:25273
 msgid "remote"
-msgstr ""
+msgstr "удалённое"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25164
 msgid "previous standard remote VCS"
-msgstr ""
+msgstr "в прошлом -- стандартная удалённая VCS"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40640,7 +40812,7 @@ msgstr "<ulink url=\"&subversion;\">Subversion</ulink>"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25178
 msgid "\"CVS done right\", the new de facto standard remote VCS"
-msgstr ""
+msgstr "\"CVS сделанный как следует\", новый стандарт удалённых VCS де-факто"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40655,13 +40827,13 @@ msgstr "<ulink url=\"&git;\">Git</ulink>"
 #: debian-reference.en.xmlt:25245 debian-reference.en.xmlt:25259
 #: debian-reference.en.xmlt:25287
 msgid "distributed"
-msgstr ""
+msgstr "распределённое"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25192
 msgid "fast DVCS in C (used by the Linux kernel and others)"
-msgstr ""
+msgstr "быстрая DVCS, написана на C, используется разработчиками ядра Linux и многими другими"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40673,7 +40845,7 @@ msgstr "<ulink url=\"&mercurial;\">Mercurial</ulink>"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25206
 msgid "DVCS in Python and some C"
-msgstr ""
+msgstr "DVCS на Питоне и немного на C"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40703,7 +40875,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25242
 msgid "<ulink url=\"&gnuarch;\">GNU arch</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&gnuarch;\">GNU arch</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40721,7 +40893,7 @@ msgstr "<ulink url=\"&monotone;\">Monotone</ulink>"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25262
 msgid "DVCS in C++"
-msgstr ""
+msgstr "DVCS на C++"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -40733,7 +40905,7 @@ msgstr "CVS, …"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25276
 msgid "GUI display of VCS (CVS, Subversion, RCS) repository tree"
-msgstr ""
+msgstr "GUI для хранилищ VCS (CVS, Subversion, RCS)"
 
 # type: Content of: <book><chapter><section><title>
 #. type: Content of: <book><chapter><section><title>
@@ -40746,74 +40918,74 @@ msgstr "Git"
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25290
 msgid "GUI display of VCS (Git) repository tree"
-msgstr ""
+msgstr "GUI для хранилищ VCS (Git)"
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
 #: debian-reference.en.xmlt:25296
 msgid "VCS is sometimes known as revision control system (RCS), or software configuration management (SCM)."
-msgstr ""
+msgstr "VCS иногда называют системами управления редакциями (RCS) или системами конфигурационного управления (SCM)."
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
 #: debian-reference.en.xmlt:25297
 msgid "Distributed VCS such as Git is the tool of choice these days.  CVS and Subversion may still be useful to join some existing open source program activities."
-msgstr ""
+msgstr "Распределённые VCS, такие, как Git -- это выбор наших дней. CVS и Subversion могут ещё быть полезными, чтобы присоединиться к разработке существующих открытых программ."
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
 #: debian-reference.en.xmlt:25298
 msgid "Debian provides free VCS services via <ulink url=\"&debianaliothservice;\">Debian Alioth service</ulink>.  It supports practically all VCSs. Its documentation can be found at <ulink url=\"&httpwikidebianorgalioth;\">http://wiki.debian.org/Alioth</ulink> ."
-msgstr ""
+msgstr "Debian предоставляет бесплатную службу VCS -- <ulink url=\"&debianaliothservice;\">Debian Alioth</ulink>. Этот сервис поддерживает почти все VCS. Документацию по нему можно найти здесь: <ulink url=\"&httpwikidebianorgalioth;\">http://wiki.debian.org/Alioth</ulink>."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><caution><simpara>
 #: debian-reference.en.xmlt:25300
 msgid "The <literal>git</literal> package was \"GNU Interactive Tools\" and the <literal>git-core</literal> package was DVCS in <literal>lenny</literal>."
-msgstr ""
+msgstr "В <literal>lenny</literal> система управления версиями Git входила в пакет <literal>git-core</literal>, в то время как пакет <literal>git</literal> включал в себя интерактивные средства GNU."
 
 #. type: Content of: <book><chapter><section><simpara>
 #: debian-reference.en.xmlt:25302
 msgid "There are few basics for creating a shared access VCS archive."
-msgstr ""
+msgstr "Основные правила создания архива VCS с разделяемым доступом."
 
 #. type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:25306
 msgid "Use \"<literal>umask 002</literal>\" (see <xref linkend=\"_control_of_permissions_for_newly_created_files_umask\"/>)"
-msgstr ""
+msgstr "Используйте \"<literal>umask 002</literal>\" (см. <xref linkend=\"_control_of_permissions_for_newly_created_files_umask\"/>)"
 
 #. type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:25311
 msgid "Make all VCS archive files belonging to a pertinent group"
-msgstr ""
+msgstr "Все файлы в архиве VCS должны принадлежать одной группе"
 
 #. type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:25316
 msgid "Enable set group ID on all VCS archive directories (BSD-like file creation scheme, see <xref linkend=\"_filesystem_permissions\"/>)"
-msgstr ""
+msgstr "Устанавливайте бит <literal>set group ID</literal> для всех каталогов архива VCS (для создания файлов как в системах BSD, см. <xref linkend=\"_filesystem_permissions\"/>)"
 
 #. type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:25321
 msgid "Make user sharing the VCS archive belonging to the group"
-msgstr ""
+msgstr "Включайте пользователя, разделяющего доступ к архиву VCS, в соответствующую группу"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:25326
 msgid "Comparison of VCS commands"
-msgstr ""
+msgstr "Сравнение команд различных VCS"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:25327
 msgid "Here is an oversimplified comparison of native VCS commands to provide the big picture. The typical command sequence may require options and arguments."
-msgstr ""
+msgstr "Вот очень упрощённое сравнение команд различных VCS, дающее их общую картину. На практике в используемой последовательности команд могут потребоваться ключи и параметры."
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
 #: debian-reference.en.xmlt:25329
 msgid "Comparison of native VCS commands"
-msgstr ""
+msgstr "Сравнение команд различных VCS"
 
 # type: Content of: <book><chapter><section><title>
 #. type: Content of: <book><chapter><section><title>
@@ -40849,7 +41021,7 @@ msgstr "<literal>git init</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25363
 msgid "create the (local) repository"
-msgstr ""
+msgstr "создать (локальное) хранилище"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -40861,7 +41033,7 @@ msgstr "<literal>cvs login</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25377
 msgid "login to the remote repository"
-msgstr ""
+msgstr "войти на удалённое хранилище"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -40885,7 +41057,7 @@ msgstr "<literal>git clone</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25391
 msgid "check out the remote repository as the working tree"
-msgstr ""
+msgstr "получить содержимое удалённого хранилища в виде рабочего дерева (check out)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -40933,7 +41105,7 @@ msgstr "<literal>git add .</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25419
 msgid "add file(s) in the working tree to the VCS"
-msgstr ""
+msgstr "добавить файл(ы) в рабочее дерево хранилища VCS"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -40957,7 +41129,7 @@ msgstr "<literal>git rm</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25433
 msgid "remove file(s) in working tree from the VCS"
-msgstr ""
+msgstr "удалить файл(ы) из рабочего дерева хранилища VCS"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -40975,7 +41147,7 @@ msgstr "<literal>svn ci</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25447
 msgid "commit changes to the remote repository"
-msgstr ""
+msgstr "\"залить\" изменения на удалённое хранилище"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -40987,7 +41159,7 @@ msgstr "<literal>git commit -a</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25461
 msgid "commit changes to the local repository"
-msgstr ""
+msgstr "\"залить\" изменения в локальное хранилище"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -40999,7 +41171,7 @@ msgstr "<literal>git push</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25475
 msgid "update the remote repository by the local repository"
-msgstr ""
+msgstr "обновить содержимое удалённого хранилища из локального хранилища"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -41023,7 +41195,7 @@ msgstr "<literal>git status</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25489
 msgid "display the working tree status from the VCS"
-msgstr ""
+msgstr "отобразить состояние рабочего дерева VCS"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -41047,7 +41219,7 @@ msgstr "<literal>git diff</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25503
 msgid "diff &lt;reference_repository&gt; &lt;working_tree&gt;"
-msgstr ""
+msgstr "diff &lt;ссылка_на_хранилище&gt; &lt;рабочее_дерево&gt;"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -41077,29 +41249,29 @@ msgstr "<literal>gitk</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:25531
 msgid "GUI display of VCS repository tree"
-msgstr ""
+msgstr "просмотр хранилища через GUI"
 
 # type: Content of: <book><chapter><section><section><caution><simpara>
 #. type: Content of: <book><chapter><section><section><caution><simpara>
 #: debian-reference.en.xmlt:25538
 msgid "Invoking a <literal>git</literal> subcommand directly as \"<literal>git-xyz</literal>\" from the command line has been deprecated since early 2006."
-msgstr ""
+msgstr "Использование подкоманд <literal>git</literal> вида \"<literal>git-имя_подкоманды</literal>\" из консоли осуждается с начала 2006 года (deprecated)."
 
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:25541
 msgid "GUI tools such as <literal>tkcvs</literal>(1) and <literal>gitk</literal>(1) really help you with tracking revision history of files.  The web interface provided by many public archives for browsing their repositories is also quite useful, too."
-msgstr ""
+msgstr "Графические средства, такие, как <literal>tkcvs</literal>(1) и <literal>gitk</literal>(1), действительно могут помочь вам отслеживать историю редакций файлов. Web-интерфейс, предоставляемый многими общедоступными архивами для просмотра содержимого хранилищ также может быть полезным."
 
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:25544
 msgid "Git can work directly with different VCS repositories such as ones provided by CVS and Subversion, and provides the local repository for local changes with <literal>git-cvs</literal> and <literal>git-svn</literal> packages.  See <ulink url=\"&gitforcvsusers;\">git for CVS users</ulink>, and <xref linkend=\"_git_for_the_subversion_repository\"/>."
-msgstr ""
+msgstr "Git может напрямую работать с хранилищами различных VCS (например, с такими, как CVS и Subversion) и предоставляет локальное хранилище для локальных изменений (пакеты <literal>git-cvs</literal> и <literal>git-svn</literal>)."
 
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:25547
 msgid "Git has commands which have no equivalents in CVS and Subversion: \"fetch\", \"rebase\", \"cherry-pick\", …"
-msgstr ""
+msgstr "Команды Git, не имеющие эквивалентов в CVS и Subversion: \"fetch\", \"rebase\", \"cherry-pick\", …"
 
 # type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
@@ -42307,7 +42479,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:26011
 msgid "Configuration of Git client"
-msgstr ""
+msgstr "Настройка Git-клиента"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -42356,19 +42528,19 @@ msgstr "$ git config --global --list"
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:26022
 msgid "Git references"
-msgstr ""
+msgstr "Ссылки по Git"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:26026
 msgid "<ulink url=\"&manpagegitb;\">manpage: git(1)</ulink> (<literal>/usr/share/doc/git-doc/git.html</literal>)"
-msgstr ""
+msgstr "<ulink url=\"&manpagegitb;\">man-страница: git(1)</ulink> (<literal>/usr/share/doc/git-doc/git.html</literal>)"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:26030
 msgid "<ulink url=\"&gitusersmanual;\">Git User's Manual</ulink> (<literal>/usr/share/doc/git-doc/user-manual.html</literal>)"
-msgstr ""
+msgstr "<ulink url=\"&gitusersmanual;\">Руководство пользователя Git</ulink> (<literal>/usr/share/doc/git-doc/user-manual.html</literal>)"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -42392,7 +42564,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:26046
 msgid "<ulink url=\"&gitforcvsusers;\">git for CVS users</ulink> (<literal>/usr/share/doc/git-doc/gitcvs-migration.html</literal>)"
-msgstr ""
+msgstr "<ulink url=\"&gitforcvsusers;\">git для пользователей CVS</ulink> (<literal>/usr/share/doc/git-doc/gitcvs-migration.html</literal>)"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
@@ -42422,7 +42594,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:26073
 msgid "<literal>git-gui</literal>(1) and <literal>gitk</literal>(1) commands make using Git very easy."
-msgstr ""
+msgstr "<literal>git-gui</literal>(1) и <literal>gitk</literal>(1) упрощают использование Git."
 
 # type: Content of: <book><chapter><section><section><warning><simpara>
 #. type: Content of: <book><chapter><section><section><warning><simpara>
@@ -42446,7 +42618,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><title>
 #: debian-reference.en.xmlt:26082
 msgid "List of git related packages and commands"
-msgstr ""
+msgstr "Список пакетов и команд, связанных с Git"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -42458,7 +42630,7 @@ msgstr "официальная документация по Git"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:26128
 msgid "\"Git Magic\", easier to understand guide for Git"
-msgstr ""
+msgstr "\"Git Magic\", более простое для понимания руководство по Git"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -42470,7 +42642,7 @@ msgstr "<literal>git</literal>(7)"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:26138
 msgid "Git, the fast, scalable, distributed revision control system"
-msgstr ""
+msgstr "Git -- быстрая, масштабируемая, распределённая система контроля версий"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -42482,7 +42654,7 @@ msgstr "<literal>gitk</literal>(1)"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:26148
 msgid "GUI Git repository browser with history"
-msgstr ""
+msgstr "графический браузер хранилищ Git"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -42494,7 +42666,7 @@ msgstr "<literal>git-gui</literal>(1)"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:26158
 msgid "GUI for Git (No history)"
-msgstr ""
+msgstr "графический интерфейс для Git (без истории)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -42506,7 +42678,7 @@ msgstr "<literal>git-svnimport</literal>(1)"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:26168
 msgid "import the data out of Subversion into Git"
-msgstr ""
+msgstr "перенос данных из Subversion в Git"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -42518,7 +42690,7 @@ msgstr "<literal>git-svn</literal>(1)"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:26178
 msgid "provide bidirectional operation between the Subversion and Git"
-msgstr ""
+msgstr "обмен данными между хранилищами Subversion и Git"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -42530,7 +42702,7 @@ msgstr "<literal>git-cvsimport</literal>(1)"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:26188
 msgid "import the data out of CVS into Git"
-msgstr ""
+msgstr "перенос данных из CVS в Git"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -42554,7 +42726,7 @@ msgstr "<literal>git-cvsserver</literal>(1)"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:26208
 msgid "CVS server emulator for Git"
-msgstr ""
+msgstr "эмулятор сервера CVS для Git"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -42617,12 +42789,12 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:26262
 msgid "Git for the Subversion repository"
-msgstr ""
+msgstr "Git для хранилища Subversion"
 
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:26263
 msgid "You can check out a Subversion repository at \"<literal>svn+ssh://svn.example.org/project/module/trunk</literal>\" to a local Git repository at \"<literal>./dest</literal>\" and commit back to the Subvesrion repository.  E.g.:"
-msgstr ""
+msgstr "Вы можете получать (check out) из хранилища Subversion (по адресу \"<literal>svn+ssh://svn.example.org/project/module/trunk</literal>\") в локальное хранилище Git (в каталоге \"<literal>./dest</literal>\"), а затем заливать (commit) обратно в Subversion:"
 
 #. type: Content of: <book><chapter><section><section><screen>
 #: debian-reference.en.xmlt:26264
@@ -42635,25 +42807,31 @@ msgid ""
 "... keep working locally with git\n"
 "$ git svn dcommit"
 msgstr ""
+"$ git svn clone -s -rHEAD svn+ssh://svn.example.org/project dest\n"
+"$ cd dest\n"
+"... вносите изменения\n"
+"$ git commit -a\n"
+"... продолжаете работать с git локально\n"
+"$ git svn dcommit"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:26271
 #| msgid "The use of \"<literal>ssh -X</literal>\" enables a secure connection from a local X server to a remote application server."
 msgid "The use of \"<literal>-rHEAD</literal>\" enables us to avoid cloning entire historical contents from the Subvesrion repository."
-msgstr ""
+msgstr "Ключ \"<literal>-rHEAD</literal>\" позволяет избежать копирование всей истории из хранилища Subversion."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:26275
 msgid "Git for recording configuration history"
-msgstr ""
+msgstr "Git для записи истории изменения конфигурационных файлов"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:26276
 msgid "You can manually record chronological history of configuration using <ulink url=\"&git;\">Git</ulink> tools.  Here is a simple example for your practice to record \"<literal>/etc/apt/</literal>\" contents."
-msgstr ""
+msgstr "Средствами <ulink url=\"&git;\">Git</ulink> вы можете вручную сохранять историю настроек системы. Вот простой пример для записи содержимого \"<literal>/etc/apt/</literal>\"."
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -42676,13 +42854,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:26282
 msgid "Commit configuration with description."
-msgstr ""
+msgstr "Сохраните конфигурацию вместе с её описанием (commit)."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:26283
 msgid "Make modification to the configuration files."
-msgstr ""
+msgstr "Внесите изменения в файлы настроек."
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -42699,7 +42877,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:26286
 msgid "Commit configuration with description and continue your life."
-msgstr ""
+msgstr "Сохраните новую конфигурацию (commit), добавив её описание, и живите себе дальше."
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -42716,25 +42894,25 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:26289
 msgid "You have full configuration history with you."
-msgstr ""
+msgstr "У вас имеется полная история изменения файлов."
 
 # type: Content of: <book><chapter><section><section><note><simpara>
 #. type: Content of: <book><chapter><section><section><note><simpara>
 #: debian-reference.en.xmlt:26291
 msgid "<literal>sudo</literal>(8) is needed to work with any file permissions of configuration data.  For user configuration data, you may skip <literal>sudo</literal>."
-msgstr ""
+msgstr "<literal>sudo</literal> здесь нужно для доступа к файлам с любыми разрешениями доступа. Для сохранения настроек своего пользователя вы можете обойтись без <literal>sudo</literal>(8)."
 
 # type: Content of: <book><chapter><section><section><note><simpara>
 #. type: Content of: <book><chapter><section><section><note><simpara>
 #: debian-reference.en.xmlt:26294
 msgid "The \"<literal>chmod 700 .git</literal>\" command in the above example is needed to protect archive data from unauthorized read access."
-msgstr ""
+msgstr "Команда \"<literal>chmod 700 .git</literal>\" в предыдущем примере нужна для защиты архива истории от неавторизованного доступа для чтения."
 
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:26297
 msgid "For more complete setup for recording configuration history, please look for the <literal>etckeeper</literal> package: <xref linkend=\"_recording_changes_in_configuration_files\"/>."
-msgstr ""
+msgstr "Для более полной настройки сохранения истории конфигурации взгляните на пакет <literal>etckeeper</literal>: <xref linkend=\"_recording_changes_in_configuration_files\"/>."
 
 # type: Content of: <book><chapter><title>
 #. type: Content of: <book><chapter><title>
@@ -48539,7 +48717,7 @@ msgstr "теряет актуальность с выходом этого те�
 #. type: Content of: <book><appendix><section><simpara>
 #: debian-reference.en.xmlt:31089
 msgid "The previous \"Debian Reference (version 1)\" was created with many contributors."
-msgstr ""
+msgstr "Предыдущий \"Справочник по Debian (версия 1)\" был создан при помощи многих людей."
 
 # type: Content of: <book><appendix><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><appendix><section><itemizedlist><listitem><simpara>
@@ -48593,16 +48771,17 @@ msgstr ""
 #. type: Content of: <book><appendix><section><simpara>
 #: debian-reference.en.xmlt:31120
 msgid "The author, Osamu Aoki, thanks all those who helped make this document possible."
-msgstr ""
+msgstr "Автор, Осаму Аоки, благодарит всех, с чьей помощью этот документ стал возможным."
 
 # type: Content of: <book><appendix><section><title>
 #. type: Content of: <book><appendix><section><title>
 #: debian-reference.en.xmlt:31123
 msgid "Document format"
-msgstr ""
+msgstr "Формат документа"
 
 # type: Content of: <book><appendix><section><simpara>
 #. type: Content of: <book><appendix><section><simpara>
 #: debian-reference.en.xmlt:31124
 msgid "The source of the English original document is currently written in <ulink url=\"&asciidoc;\">AsciiDoc</ulink> text files.  <ulink url=\"&asciidoc;\">AsciiDoc</ulink> is used as convenience only since it is less typing than straight XML and supports table in the very intuitive format.  You should think XML and PO files as real source files.  Via build script, it is converted to DocBook XML format and automatically generated data are inserted to form a final Docbook XML source. This final Docbook XML source can be converted to HTML, plain text, PostScript, and PDF. Currently, only HTML and plain text conversions are enabled."
 msgstr ""
+

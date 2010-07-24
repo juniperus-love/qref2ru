@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="debian-reference.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
 <meta name="description" content="Это свободная книга, вы можете распространять её на условиях любой DFSG-совместимой версии GNU General Public License (в соответствии с Debian Free Software Guidelines -- DFSG).">
-<link rel="home" href="#id2771556" title="Справочник по Debian">
+<link rel="home" href="#id2640484" title="Справочник по Debian">
 <link rel="next" href="#_preface" title="Введение">
 <link rel="preface" href="#_preface" title="Введение">
 <link rel="chapter" href="#_gnu_linux_tutorials" title="Глава 1. Основы работы в GNU/Linux">
@@ -13,7 +13,7 @@
 <link rel="chapter" href="#_the_system_initialization" title="Глава 3. Загрузка системы">
 <link rel="chapter" href="#_authentication" title="Глава 4. Аутентификация">
 <link rel="chapter" href="#_network_setup" title="Глава 5. Настройка сети">
-<link rel="chapter" href="#_network_applications" title="Глава 6. Network applications">
+<link rel="chapter" href="#_network_applications" title="Глава 6. Сетевые приложения">
 <link rel="chapter" href="#_the_x_window_system" title="Глава 7. Система X Window">
 <link rel="chapter" href="#_i18n_and_l10n" title="Глава 8. I18N и L10N">
 <link rel="chapter" href="#_system_tips" title="Глава 9. Советы по использованию системы">
@@ -26,13 +26,13 @@
 <div class="titlepage">
 <div>
 <div><h1 class="title">
-<a name="id2771556"></a>Справочник по Debian</h1></div>
+<a name="id2640484"></a>Справочник по Debian</h1></div>
 <div><div class="author"><h3 class="author">
 <span class="firstname">Osamu</span> <span class="surname">Aoki</span>
 </h3></div></div>
 <div><p class="copyright">Copyright © 2007-2009 Osamu Aoki</p></div>
 <div><div class="legalnotice" title="Авторские права">
-<a name="id2771603"></a><p>Этот Справочник по Debian (v2) (2010-07-02 19:21:21 UTC) предоставляет широкий обзор
+<a name="id2640531"></a><p>Этот Справочник по Debian (v2) (2010-07-24 09:11:41 UTC) предоставляет широкий обзор
 системы Debian в форме руководства пользователя после
 установки. Рассматриваются многие аспекты управления системой на примерах в
 командной строке.</p>
@@ -337,13 +337,13 @@ Free Software Guidelines -- DFSG).</p>
 </dl></dd>
 <dt><span class="section"><a href="#_netfilter_infrastructure">5.9. Netfilter infrastructure</a></span></dt>
 </dl></dd>
-<dt><span class="chapter"><a href="#_network_applications">6. Network applications</a></span></dt>
+<dt><span class="chapter"><a href="#_network_applications">6. Сетевые приложения</a></span></dt>
 <dd><dl>
-<dt><span class="section"><a href="#_web_browsers">6.1. Web browsers</a></span></dt>
-<dd><dl><dt><span class="section"><a href="#_browser_configuration">6.1.1. Browser configuration</a></span></dt></dl></dd>
-<dt><span class="section"><a href="#_the_mail_system">6.2. The mail system</a></span></dt>
+<dt><span class="section"><a href="#_web_browsers">6.1. Web-браузеры</a></span></dt>
+<dd><dl><dt><span class="section"><a href="#_browser_configuration">6.1.1. Настройка браузера</a></span></dt></dl></dd>
+<dt><span class="section"><a href="#_the_mail_system">6.2. Почтовая система</a></span></dt>
 <dd><dl>
-<dt><span class="section"><a href="#_modern_mail_service_basics">6.2.1. Modern mail service basics</a></span></dt>
+<dt><span class="section"><a href="#_modern_mail_service_basics">6.2.1. Основы современной почтовой службы</a></span></dt>
 <dt><span class="section"><a href="#_the_mail_configuration_strategy_for_workstation">6.2.2. The mail configuration strategy for workstation</a></span></dt>
 </dl></dd>
 <dt><span class="section"><a href="#_mail_transport_agent_mta">6.3. Mail transport agent (MTA)</a></span></dt>
@@ -515,15 +515,15 @@ Free Software Guidelines -- DFSG).</p>
 <dt><span class="section"><a href="#_the_terminal_configuration">9.6.6. Настройки терминала</a></span></dt>
 <dt><span class="section"><a href="#_the_sound_infrastructure">9.6.7. Звуковая подсистема</a></span></dt>
 <dt><span class="section"><a href="#_disabling_the_screen_saver">9.6.8. Отключение хранителя экрана</a></span></dt>
-<dt><span class="section"><a href="#_disabling_beep_sounds">9.6.9. Disabling beep sounds</a></span></dt>
-<dt><span class="section"><a href="#_memory_usage">9.6.10. Memory usage</a></span></dt>
+<dt><span class="section"><a href="#_disabling_beep_sounds">9.6.9. Отключение встроенного динамика (speaker)</a></span></dt>
+<dt><span class="section"><a href="#_memory_usage">9.6.10. Использование памяти</a></span></dt>
 <dt><span class="section"><a href="#_system_security_and_integrity_check">9.6.11. System security and integrity check</a></span></dt>
 </dl></dd>
 <dt><span class="section"><a href="#_the_kernel">9.7. Ядро</a></span></dt>
 <dd><dl>
 <dt><span class="section"><a href="#_linux_kernel_2_6">9.7.1. Ядра Linux версий 2.6</a></span></dt>
 <dt><span class="section"><a href="#_kernel_parameters">9.7.2. Параметры ядра</a></span></dt>
-<dt><span class="section"><a href="#_kernel_headers">9.7.3. Kernel headers</a></span></dt>
+<dt><span class="section"><a href="#_kernel_headers">9.7.3. Заголовки ядра</a></span></dt>
 <dt><span class="section"><a href="#_compiling_the_kernel_and_related_modules">9.7.4. Компиляция ядра и модулей</a></span></dt>
 <dt><span class="section"><a href="#_compiling_the_kernel_source_debian_standard_method">9.7.5. Компиляция ядра: стандартный для Debian способ</a></span></dt>
 <dt><span class="section"><a href="#_compiling_the_module_source_debian_standard_method">9.7.6. Компиляция модулей: стандартный для Debian способ</a></span></dt>
@@ -590,14 +590,14 @@ Free Software Guidelines -- DFSG).</p>
 <dt><span class="section"><a href="#_using_gnupg_with_vim">10.4.4. Using GnuPG with Vim</a></span></dt>
 <dt><span class="section"><a href="#_the_md5_sum">10.4.5. The MD5 sum</a></span></dt>
 </dl></dd>
-<dt><span class="section"><a href="#_source_code_merge_tools">10.5. Source code merge tools</a></span></dt>
+<dt><span class="section"><a href="#_source_code_merge_tools">10.5. Средства соединения файлов с исходным кодом (merge)</a></span></dt>
 <dd><dl>
 <dt><span class="section"><a href="#_extracting_differences_for_source_files">10.5.1. Extracting differences for source files</a></span></dt>
 <dt><span class="section"><a href="#_merging_updates_for_source_files">10.5.2. Merging updates for source files</a></span></dt>
 <dt><span class="section"><a href="#_updating_via_3_way_merge">10.5.3. Updating via 3-way-merge</a></span></dt>
 </dl></dd>
-<dt><span class="section"><a href="#_version_control_systems">10.6. Version control systems</a></span></dt>
-<dd><dl><dt><span class="section"><a href="#_comparison_of_vcs_commands">10.6.1. Comparison of VCS commands</a></span></dt></dl></dd>
+<dt><span class="section"><a href="#_version_control_systems">10.6. Системы управления версиями (VCS)</a></span></dt>
+<dd><dl><dt><span class="section"><a href="#_comparison_of_vcs_commands">10.6.1. Сравнение команд различных VCS</a></span></dt></dl></dd>
 <dt><span class="section"><a href="#_cvs">10.7. CVS</a></span></dt>
 <dd><dl>
 <dt><span class="section"><a href="#_configuration_of_cvs_repository">10.7.1. Configuration of CVS repository</a></span></dt>
@@ -623,11 +623,11 @@ Free Software Guidelines -- DFSG).</p>
 </dl></dd>
 <dt><span class="section"><a href="#_git">10.9. Git</a></span></dt>
 <dd><dl>
-<dt><span class="section"><a href="#_configuration_of_git_client">10.9.1. Configuration of Git client</a></span></dt>
-<dt><span class="section"><a href="#_git_references">10.9.2. Git references</a></span></dt>
+<dt><span class="section"><a href="#_configuration_of_git_client">10.9.1. Настройка Git-клиента</a></span></dt>
+<dt><span class="section"><a href="#_git_references">10.9.2. Ссылки по Git</a></span></dt>
 <dt><span class="section"><a href="#_git_commands">10.9.3. Команды Git</a></span></dt>
-<dt><span class="section"><a href="#_git_for_the_subversion_repository">10.9.4. Git for the Subversion repository</a></span></dt>
-<dt><span class="section"><a href="#_git_for_recording_configuration_history">10.9.5. Git for recording configuration history</a></span></dt>
+<dt><span class="section"><a href="#_git_for_the_subversion_repository">10.9.4. Git для хранилища Subversion</a></span></dt>
+<dt><span class="section"><a href="#_git_for_recording_configuration_history">10.9.5. Git для записи истории изменения конфигурационных файлов</a></span></dt>
 </dl></dd>
 </dl></dd>
 <dt><span class="chapter"><a href="#_data_conversion">11. Преобразование данных</a></span></dt>
@@ -712,7 +712,7 @@ Free Software Guidelines -- DFSG).</p>
 <dd><dl>
 <dt><span class="section"><a href="#_the_debian_maze">A.1. Лабиринт Debian</a></span></dt>
 <dt><span class="section"><a href="#_copyright_history">A.2. Источники, история авторства</a></span></dt>
-<dt><span class="section"><a href="#_document_format">A.3. Document format</a></span></dt>
+<dt><span class="section"><a href="#_document_format">A.3. Формат документа</a></span></dt>
 </dl></dd>
 </dl>
 </div>
@@ -814,7 +814,7 @@ Free Software Guidelines -- DFSG).</p>
 </dt>
 <dt>3.2. <a href="#themeaningofgrubparameters">Значения параметров GRUB</a>
 </dt>
-<dt>3.3. <a href="#listofbootutilitrthedebiansystem">List of boot utilities for the Debian system</a>
+<dt>3.3. <a href="#listofbootutilitrthedebiansystem">Список загрузочных утилит для Debian</a>
 </dt>
 <dt>3.4. <a href="#listofrunlevelsationoftheirusage">Список уровней выполнения и описание их использования</a>
 </dt>
@@ -876,9 +876,9 @@ connection with pppconfig</a>
 </dt>
 <dt>5.19. <a href="#listoffirewalltools">List of firewall tools</a>
 </dt>
-<dt>6.1. <a href="#listofwebbrowsers">List of web browsers</a>
+<dt>6.1. <a href="#listofwebbrowsers">Список web-браузеров</a>
 </dt>
-<dt>6.2. <a href="#listofbrowserpluginpackages">List of browser plugin packages</a>
+<dt>6.2. <a href="#listofbrowserpluginpackages">Список пакетов с дополнениями (plugin) для браузеров</a>
 </dt>
 <dt>6.3. <a href="#listofbasicmailtesforworkstation">List of basic mail transport agent related packages for workstation</a>
 </dt>
@@ -979,7 +979,7 @@ Type 1</a>
 </dt>
 <dt>9.19. <a href="#listofcommandsfongthescreensaver">Список команд для отключения хранителя экрана</a>
 </dt>
-<dt>9.20. <a href="#listofmemorysizesreported">List of memory sizes reported</a>
+<dt>9.20. <a href="#listofmemorysizesreported">Список выводимых размеров памяти</a>
 </dt>
 <dt>9.21. <a href="#listoftoolsforsyndintegritycheck">List of tools for system security and integrity check</a>
 </dt>
@@ -1018,11 +1018,11 @@ scenarios</a>
 </dt>
 <dt>10.14. <a href="#listofgnuprivacydcommandsonfiles">List of GNU Privacy Guard commands on files</a>
 </dt>
-<dt>10.15. <a href="#listofsourcecodemergetools">List of source code merge tools</a>
+<dt>10.15. <a href="#listofsourcecodemergetools">Список средств соединения файлов с исходным кодом (merge)</a>
 </dt>
-<dt>10.16. <a href="#list-of-vcs">List of version control system tools</a>
+<dt>10.16. <a href="#list-of-vcs">Список средств VCS</a>
 </dt>
-<dt>10.17. <a href="#comparisonofnativevcscommands">Comparison of native VCS commands</a>
+<dt>10.17. <a href="#comparisonofnativevcscommands">Сравнение команд различных VCS</a>
 </dt>
 <dt>10.18. <a href="#notableoptionsfotargumentstocvsb">Notable options for CVS commands (use as first argument(s) to
 <code class="literal">cvs</code>(1))</a>
@@ -1030,7 +1030,7 @@ scenarios</a>
 <dt>10.19. <a href="#notableoptionsfotargumentstosvnb">Notable options for Subversion commands (use as first argument(s) to
 <code class="literal">svn</code>(1))</a>
 </dt>
-<dt>10.20. <a href="#listofgitrelatedkagesandcommands">List of git related packages and commands</a>
+<dt>10.20. <a href="#listofgitrelatedkagesandcommands">Список пакетов и команд, связанных с Git</a>
 </dt>
 <dt>11.1. <a href="#listoftextdataconversiontools">Список средств преобразования текстов</a>
 </dt>
@@ -1107,7 +1107,7 @@ scenarios</a>
 <div class="titlepage"><div><div><h2 class="title">
 <a name="_preface"></a>Введение</h2></div></div></div>
 <p>В этом <a class="ulink" href="http://www.debian.org/doc/manuals/debian-reference/" target="_top">Справочнике по Debian (версия
-2)</a> (2010-07-02 19:21:21 UTC) мы стремимся предоставить широкий обзор правил и
+2)</a> (2010-07-24 09:11:41 UTC) мы стремимся предоставить широкий обзор правил и
 возможностей администрирования (настройки и управления) уже установленной
 системы Debian.</p>
 <p>Справочник предназначен для тех начинающих изучение Debian, кто не готов
@@ -2452,9 +2452,9 @@ GNU/Linux в документе "<code class="literal">/usr/include/linux/fs.h</
 серьёзную дыру в безопасности системы, устанавливайте эти биты очень
 внимательно.</p>
 <p>Установка бита <span class="strong"><strong>set group ID</strong></span> на каталог
-включает схему создания файлов как системах <a class="ulink" href="http://ru.wikipedia.org/wiki/BSD" target="_top">BSD</a>, где все файлы созданные в данном каталоге будут
-принадлежать группе <span class="strong"><strong>group</strong></span>, владеющей этим
-каталогом. </p>
+включает схему создания файлов как с системах <a class="ulink" href="http://ru.wikipedia.org/wiki/BSD" target="_top">BSD</a>, где все файлы, созданные в данном каталоге,
+будут принадлежать группе <span class="strong"><strong>group</strong></span>,
+владеющей этим каталогом. </p>
 <p>Установка бита <span class="strong"><strong>sticky bit</strong></span> на каталог
 предотвращает удаление файлов в каталоге пользователями, ими не
 владеющими. Для защиты содержимого файла в каталоге, в который разрешена
@@ -3594,7 +3594,7 @@ MC.</p>
     размер
     </th>
 <th align="left">
-    POSIX shell
+    POSIX-оболочка
     </th>
 <th align="left">
     описание
@@ -4051,7 +4051,7 @@ Emacs в качестве справочника при изучении.</p>
 "<code class="literal">~/.vimrc</code>". Попробуйте такую конфигурацию.</p>
 <p>Попробуйте для примера: </p>
 <pre class="screen">" -------------------------------
-" Local configuration
+" Локальная конфигурация
 "
 set nocompatible
 set nopaste
@@ -4064,9 +4064,9 @@ else
  set modeline
  set swapfile
 endif
-" filler to avoid the line above being recognized as a modeline
-" filler
-" filler</pre>
+" первая строка открываемого файла не должна считываться как строка
+" настроек редактора (modeline), если пользователь -- root
+"</pre>
 </div>
 <div class="section" title="1.4.9. Запись вывода оболочки">
 <div class="titlepage"><div><div><h3 class="title">
@@ -4735,12 +4735,12 @@ Debian. Давайте заглянем глубже, в механизмы вы
 из модулей системы PAM. Программы могут изменять часть этих переменных.</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
-The display manager such as <code class="literal">gdm</code> resets environment
-variables.
+Дисплейный менеджер <code class="literal">gdm</code> переустанавливает переменные
+окружения.
 </li>
 <li class="listitem">
-The shell in its start up codes resets environment variables in
-"<code class="literal">~/bash_profile</code>" and "<code class="literal">~/.bashrc</code>".
+Оболочка при запуске переустанавливает переменные окружения, указанные в
+"<code class="literal">~/bash_profile</code>" и "<code class="literal">~/.bashrc</code>".
 </li>
 </ul></div>
 </div>
@@ -5200,10 +5200,10 @@ $ cd ..; rm -rf junk</pre>
 <p>См. <code class="literal">glob</code>(7).</p>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
-<p>Unlike normal filename expansion by the shell, the shell pattern
-"<code class="literal">*</code>" tested in <code class="literal">find</code>(1) with
-"<code class="literal">-name</code>" test etc., matches the initial
-"<code class="literal">.</code>" of the filename. (New <a class="ulink" href="http://ru.wikipedia.org/wiki/POSIX" target="_top">POSIX</a> feature)</p>
+<p>В отличие от обычных шаблонов имён файлов оболочки, команда
+<code class="literal">find</code>(1) с ключами типа "<code class="literal">-name</code>"
+отбирает по шаблону "<code class="literal">*</code>" в том числе те файлы, имена
+которых начинаются с "<code class="literal">.</code>". (Новое требование <a class="ulink" href="http://ru.wikipedia.org/wiki/POSIX" target="_top">POSIX</a>.)</p>
 </div>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
@@ -6074,7 +6074,7 @@ Martin  Michlmayr March   2003</pre>
 <p><code class="literal">awk</code>(1) часто используется для извлечения данных из файлов
 такого типа.</p>
 <p>Попробуйте для примера: </p>
-<pre class="screen">$ awk '{ print $3 }' &lt;DPL                   # month started
+<pre class="screen">$ awk '{ print $3 }' &lt;DPL                   # первые месяцы
 August
 April
 January
@@ -6082,10 +6082,10 @@ January
 April
 April
 March
-$ awk '($1=="Ian") { print }' &lt;DPL          # DPL called Ian
+$ awk '($1=="Ian") { print }' &lt;DPL          # DPL по имени Ian
 Ian     Murdock   August  1993
 Ian     Jackson   January 1998
-$ awk '($2=="Perens") { print $3,$4 }' &lt;DPL # When Perens started
+$ awk '($2=="Perens") { print $3,$4 }' &lt;DPL # Первый месяц Perens'а
 April 1996</pre>
 <p><code class="literal">bash</code>(1) тоже может использоваться для разбора такого типа
 файлов.</p>
@@ -6093,14 +6093,14 @@ April 1996</pre>
 <pre class="screen">$ while read first last month year; do
     echo $month
   done &lt;DPL
-... same output as the first Awk example</pre>
+... тот же вывод, что и в предыдущем примере на Awk</pre>
 <p>Здесь <code class="literal">read</code> -- встроенная команда bash, использует символы
 из переменной "<code class="literal">$IFS</code>" (Internal Field Separator --
 разделитель полей), чтобы разбить строки на слова.</p>
 <p>Если вы поменяете значение "<code class="literal">$IFS</code>" на
 "<code class="literal">:</code>", то сможете легко разбирать поля файла
 "<code class="literal">/etc/passwd</code>" с помощью bash.</p>
-<pre class="screen">$ oldIFS="$IFS"   # save old value
+<pre class="screen">$ oldIFS="$IFS"   # сохраняем начальное значение
 $ IFS=':'
 $ while read user password uid gid rest_of_line; do
     if [ "$user" = "bozo" ]; then
@@ -6108,7 +6108,7 @@ $ while read user password uid gid rest_of_line; do
     fi
   done &lt; /etc/passwd
 bozo's ID is 1000
-$ IFS="$oldIFS"   # restore old value</pre>
+$ IFS="$oldIFS"   # восстанавливаем начальное значение</pre>
 <p>(Если для этой задачи использовать Awk, то разделитель полей устанавливается
 добавлением "<code class="literal">FS=':'</code>").</p>
 <p>IFS также используется командным интерпретатором чтобы разделять результаты
@@ -6119,14 +6119,14 @@ double or single quoted words. По умолчанию IFS состоит из &
 <p>Будьте осторожны в трюках с IFS, ибо могут случаться всякие странные вещи,
 когда командный интерпретатор начинает воспринимать части скрипта как свой
 <span class="strong"><strong>ввод</strong></span>.</p>
-<pre class="screen">$ IFS=":,"                        # use ":" and "," as IFS
-$ echo IFS=$IFS,   IFS="$IFS"     # echo is a Bash builtin
+<pre class="screen">$ IFS=":,"                        # IFS будет ":" и ","
+$ echo IFS=$IFS,   IFS="$IFS"     # echo это встроенная команда Bash
 IFS=  , IFS=:,
-$ date -R                         # just a command output
+$ date -R                         # обычный вывод команды
 Sat, 23 Aug 2003 08:30:15 +0200
-$ echo $(date -R)                 # sub shell --&gt; input to main shell
+$ echo $(date -R)                 # вывод команды -- это ввод оболочки
 Sat  23 Aug 2003 08 30 36 +0200
-$ unset IFS                       # reset IFS to the default
+$ unset IFS                       # установить IFS в значение по-умолчанию
 $ echo $(date -R)
 Sat, 23 Aug 2003 08:30:50 +0200</pre>
 </div>
@@ -6921,16 +6921,17 @@ deb-src http://security.debian.org/ lenny/updates main contrib</pre>
 </div>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
-<p>The security bugs for the <code class="literal">stable</code> archive are fixed by the
-Debian security team.  This activity has been quite rigorous and reliable.
-Those for the <code class="literal">testing</code> archive may be fixed by the Debian
-testing security team.  For <a class="ulink" href="http://lists.debian.org/debian-testing-security-announce/2008/12/msg00019.html" target="_top">several</a> <a class="ulink" href="http://lists.debian.org/debian-testing-security-announce/2010/01/msg00000.html" target="_top">reasons</a>, this activity is not as rigorous as that
-for <code class="literal">stable</code> and you may need to wait for the migration of
-fixed <code class="literal">unstable</code> packages.  Those for the
-<code class="literal">unstable</code> archive are fixed by the individual maintainer.
-Actively maintained <code class="literal">unstable</code> packages are usually in a
-fairly good shape by leveraging latest upstream security fixes.  See <a class="ulink" href="http://www.debian.org/security/faq" target="_top">Debian security FAQ</a> for how Debian handles
-security bugs.</p>
+<p>В <code class="literal">стабильном</code> архиве ошибки, связанные с безопасностью,
+исправляются командой безопасности Debian. Их действия тщательны и
+надёжны. В <code class="literal">тестируемом</code> архиве такие ошибки могут
+исправляться командой безопасности тестируемого выпуска Debian. По <a class="ulink" href="http://lists.debian.org/debian-testing-security-announce/2008/12/msg00019.html" target="_top">некоторым</a> <a class="ulink" href="http://lists.debian.org/debian-testing-security-announce/2010/01/msg00000.html" target="_top">причинам</a>
+эти исправления не столь тщательны, как в стабильном выпуске; возможно, вам
+придётся ожидать исправленой версии из <code class="literal">нестабильного</code>
+выпуска. В <code class="literal">нестабильном</code> же выпуске ошибки исправляются
+сопровождающими пакетов. Активно поддерживаемые пакеты из
+<code class="literal">нестабильного</code> архива обычно очень хороши благодаря
+исправлениям от разработчиков ПО (upstream). Читайте <a class="ulink" href="http://www.debian.org/security/faq" target="_top">Debian security FAQ</a> о том, как в Debian
+исправляются ошибки безопасности.</p>
 </div>
 <div class="table">
 <a name="listofdebianarchivearea"></a><p class="title"><b>Таблица 2.3. Список области архивов Debian (archive area)</b></p>
@@ -8665,15 +8666,17 @@ Flat Package List"), заданный команде "<code class="literal">l</c
 <div class="section" title="2.3.4. Tidying auto/manual install status">
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_tidying_auto_manual_install_status"></a>2.3.4. Tidying auto/manual install status</h3></div></div></div>
-<p>Here is how I tidy auto/manual install status for packages (after using
-non-aptitude package installer etc.).</p>
+<p>Вот так я привожу в порядок установочные статусы auto/manual (после
+использования других установщиков, кроме aptitude).</p>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-Start <code class="literal">aptitude</code> in interactive mode as root.
+Запустить <code class="literal">aptitude</code> в интерактивном режиме от имени
+суперпользователя.
 </li>
 <li class="listitem">
-Type "<code class="literal">u</code>", "<code class="literal">U</code>", "<code class="literal">f</code>"
-and "<code class="literal">g</code>" to update and upgrade package list and packages.
+Нажать "<code class="literal">u</code>", "<code class="literal">U</code>",
+"<code class="literal">f</code>" и "<code class="literal">g</code>" для обновления списка
+пакетов и самих пакетов.
 </li>
 <li class="listitem">
 Type "<code class="literal">l</code>" to enter the package display limit as
@@ -11164,7 +11167,7 @@ GRUB в главную загрузочную запись (<a class="ulink" hre
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=grub-legacy" target="_top">V:0.5, I:1.7</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/grub-legacy.html" target="_top">1852</a></td>
 <td align="left">
-    Supported
+    поддерживается
     </td>
 <td align="left">
     Понимает различные форматы партиций и файловых систем, в том числе vfat,
@@ -11181,7 +11184,7 @@ ext3 и т.д.
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=grub-pc" target="_top">V:6, I:19</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/grub-pc.html" target="_top">2224</a></td>
 <td align="left">
-    Supported
+    поддерживается
     </td>
 <td align="left">
     То же, новая версия с другой системой настройки
@@ -11198,7 +11201,7 @@ ext3 и т.д.
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=grub-rescue-pc" target="_top">V:0.03, I:0.5</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/grub-rescue-pc.html" target="_top">3752</a></td>
 <td align="left">
-    Supported
+    поддерживается
     </td>
 <td align="left">
     Загрузочные образы для восстановления (CD and floppy) (PC/ BIOS version)
@@ -11214,7 +11217,7 @@ ext3 и т.д.
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=lilo" target="_top">V:0.5, I:2</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/l/lilo.html" target="_top">1124</a></td>
 <td align="left">
-    Supported
+    поддерживается
     </td>
 <td align="left">
     Работает на основании данных о секторах, где начинается ядро (старый
@@ -11232,7 +11235,7 @@ ext3 и т.д.
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=syslinux" target="_top">V:1.0, I:7</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/s/syslinux.html" target="_top">128</a></td>
 <td align="left">
-    Supported
+    поддерживается
     </td>
 <td align="left">
     Понимает ISO9660 ФС. Используется в загрузочных CD.
@@ -11249,7 +11252,7 @@ ext3 и т.д.
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=syslinux" target="_top">V:1.0, I:7</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/s/syslinux.html" target="_top">128</a></td>
 <td align="left">
-    Supported
+    поддерживается
     </td>
 <td align="left">
     Понимает ФС MSDOS -- <a class="ulink" href="http://ru.wikipedia.org/wiki/File_Allocation_Table" target="_top">FAT</a>
@@ -11265,7 +11268,7 @@ ext3 и т.д.
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=loadlin" target="_top">V:0.03, I:0.2</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/l/loadlin.html" target="_top">144</a></td>
 <td align="left">
-    Supported
+    поддерживается
     </td>
 <td align="left">
     Загружает Linux из уже запущенной DOS
@@ -11273,7 +11276,7 @@ ext3 и т.д.
 </tr>
 <tr>
 <td align="left">
-                <a class="ulink" href="http://www.chiark.greenend.org.uk/~neilt/" target="_top">MBR by Neil Turton</a>
+                <a class="ulink" href="http://www.chiark.greenend.org.uk/~neilt/" target="_top">MBR</a>
               </td>
 <td align="left">
 <a class="ulink" href="http://packages.debian.org/sid/mbr" target="_top"> mbr </a> <a class="ulink" href="http://bugs.debian.org/mbr" target="_top">*</a>
@@ -11281,7 +11284,7 @@ ext3 и т.д.
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=mbr" target="_top">V:0.8, I:5</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/m/mbr.html" target="_top">96</a></td>
 <td align="left">
-    Not supported
+    не поддерживается
     </td>
 <td align="left">
     Свободная программа, заменяющая MSDOS <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BE%D1%87%D0%BD%D0%B0%D1%8F_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C" target="_top">MBR</a>. "Понимает" только разделы диска.
@@ -11308,7 +11311,7 @@ initrd          /initrd.img</pre>
 "<code class="literal">/usr/sbin/update-grub</code>" из шаблонов в
 "<code class="literal">/etc/grub.d/*</code>" и настроек в
 "<code class="literal">/etc/default/grub</code>". Там могут быть такие строчки.</p>
-<pre class="screen">menuentry "Debian GNU/Linux" {
+<pre class="screen">menuentry \"Debian GNU/Linux\" {
         set root=(hd0,3)
         linux /vmlinuz root=/dev/hda3
         initrd /initrd.img
@@ -11417,8 +11420,8 @@ initrd          /initrd.img</pre>
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
 <a name="_stage_4_the_normal_debian_system"></a>3.5. Четвёртый этап: нормальная система Debian</h2></div></div></div>
 <div class="table">
-<a name="listofbootutilitrthedebiansystem"></a><p class="title"><b>Таблица 3.3. List of boot utilities for the Debian system</b></p>
-<div class="table-contents"><table summary="List of boot utilities for the Debian system" border="1">
+<a name="listofbootutilitrthedebiansystem"></a><p class="title"><b>Таблица 3.3. Список загрузочных утилит для Debian</b></p>
+<div class="table-contents"><table summary="Список загрузочных утилит для Debian" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -11448,7 +11451,7 @@ initrd          /initrd.img</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=initscripts" target="_top">V:91, I:99</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/i/initscripts.html" target="_top">392</a></td>
 <td align="left">
-    scripts for initializing and shutting down the system
+    сценарии инициализации и выключения системы
     </td>
 </tr>
 <tr>
@@ -11459,7 +11462,7 @@ initrd          /initrd.img</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=sysvinit" target="_top">V:84, I:99</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/s/sysvinit.html" target="_top">268</a></td>
 <td align="left">
-    System-V-like <code class="literal">init</code>(8) utilities
+    утилиты <code class="literal">init</code>(8) в стиле UNIX System V
     </td>
 </tr>
 <tr>
@@ -11470,7 +11473,7 @@ initrd          /initrd.img</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=sysv-rc" target="_top">V:91, I:99</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/s/sysv-rc.html" target="_top">284</a></td>
 <td align="left">
-    System-V-like runlevel change mechanism
+    механизм смены уровня выполнения (runlevel) в стиле System V
     </td>
 </tr>
 <tr>
@@ -11481,7 +11484,7 @@ initrd          /initrd.img</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=sysvinit-utils" target="_top">V:90, I:99</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/s/sysvinit-utils.html" target="_top">280</a></td>
 <td align="left">
-    System-V-like utilities (<code class="literal">startpar</code>(8),
+    утилиты System V (<code class="literal">startpar</code>(8),
 <code class="literal">bootlogd</code>(8), …)
     </td>
 </tr>
@@ -11493,8 +11496,8 @@ initrd          /initrd.img</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=lsb-base" target="_top">V:91, I:99</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/l/lsb-base.html" target="_top">72</a></td>
 <td align="left">
-<a class="ulink" href="http://ru.wikipedia.org/wiki/Linux_Standard_Base" target="_top">Linux Standard Base</a> 3.2 init script
-functionality
+<a class="ulink" href="http://ru.wikipedia.org/wiki/Linux_Standard_Base" target="_top">Linux Standard Base</a> 3.2 --
+библиотека для загрузочных сценариев
     </td>
 </tr>
 <tr>
@@ -11505,7 +11508,7 @@ functionality
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=insserv" target="_top">V:16, I:20</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/i/insserv.html" target="_top">292</a></td>
 <td align="left">
-    tool to organize boot sequence using LSB init.d script dependencies
+    формирование порядка загрузки на основе зависимостей LSB-сценариев init.d
     </td>
 </tr>
 <tr>
@@ -11516,8 +11519,8 @@ functionality
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=upstart" target="_top">V:0.18, I:0.2</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/u/upstart.html" target="_top">700</a></td>
 <td align="left">
-    event-based <code class="literal">init</code>(8) daemon for concurrency (alternative
-to <code class="literal">sysvinit</code>)
+    служба начальной загрузки системы на основе событий (альтернатива
+<code class="literal">sysvinit</code>)
     </td>
 </tr>
 <tr>
@@ -11528,7 +11531,7 @@ to <code class="literal">sysvinit</code>)
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=readahead-fedora" target="_top">V:0.3, I:0.5</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/r/readahead-fedora.html" target="_top">372</a></td>
 <td align="left">
-<code class="literal">readahead</code>(8) to preload boot process files
+<code class="literal">readahead</code>(8) -- упреждающее чтение загрузочных файлов
     </td>
 </tr>
 <tr>
@@ -11539,7 +11542,7 @@ to <code class="literal">sysvinit</code>)
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=uswsusp" target="_top">V:5, I:17</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/u/uswsusp.html" target="_top">536</a></td>
 <td align="left">
-    tools to use userspace software suspend provided by Linux
+    утилиты для временной приостановки работы системы
     </td>
 </tr>
 <tr>
@@ -11550,7 +11553,8 @@ to <code class="literal">sysvinit</code>)
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=kexec-tools" target="_top">V:0.17, I:0.5</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/k/kexec-tools.html" target="_top">320</a></td>
 <td align="left">
-    kexec tool for <code class="literal">kexec</code>(8) reboots (warm reboot)
+    <code class="literal">kexec</code>(8) -- "мягкая" перезагрузка ядра без перезагрузки
+системы
     </td>
 </tr>
 <tr>
@@ -11561,7 +11565,7 @@ to <code class="literal">sysvinit</code>)
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=bootchart" target="_top">V:0.15, I:0.9</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/b/bootchart.html" target="_top">132</a></td>
 <td align="left">
-    boot process performance analyser
+    анализ процесса начальной загрузки с точки зрения производительности
     </td>
 </tr>
 <tr>
@@ -11572,7 +11576,8 @@ to <code class="literal">sysvinit</code>)
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=bootchart-view" target="_top">V:0.13, I:0.7</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/b/bootchart-view.html" target="_top">280</a></td>
 <td align="left">
-    boot process performance analyser (visualisation)
+    анализ процесса начальной загрузки с точки зрения производительности
+(отображение)
     </td>
 </tr>
 <tr>
@@ -11583,7 +11588,7 @@ to <code class="literal">sysvinit</code>)
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=mingetty" target="_top">V:0.2, I:0.5</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/m/mingetty.html" target="_top">64</a></td>
 <td align="left">
-    console-only <code class="literal">getty</code>(8)
+    <code class="literal">getty</code>(8) только для консоли
     </td>
 </tr>
 <tr>
@@ -11594,7 +11599,7 @@ to <code class="literal">sysvinit</code>)
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=mgetty" target="_top">V:0.2, I:0.7</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/m/mgetty.html" target="_top">416</a></td>
 <td align="left">
-    smart modem <code class="literal">getty</code>(8) replacement
+    <code class="literal">getty</code>(8) для модема
     </td>
 </tr>
 </tbody>
@@ -11609,15 +11614,15 @@ future of the boot system in Debian</a> и <a class="ulink" href="http://wiki.de
 </div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>All boot mechanisms are compatible through
+<p>Все загрузочные механизмы совместимы через сценарии
 "<code class="literal">/etc/init.d/rc</code>", "<code class="literal">/etc/init.d/rcS</code>",
-"<code class="literal">/usr/sbin/update-rc.d</code>", and
-"<code class="literal">/usr/sbin/invoke-rc.d</code>" scripts.</p>
+"<code class="literal">/usr/sbin/update-rc.d</code>" и
+<code class="literal">/usr/sbin/update-rc.d</code>".</p>
 </div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>The <code class="literal">readahead-fedora</code> package can speed up starting of a
-system with decent amount of DRAM.</p>
+<p>Пакет <code class="literal">readahead-fedora</code> может ускорить загрузку системы с
+достаточно большим количеством памяти (DRAM).</p>
 </div>
 <p>Этот этап запускается мини-системой Debian как последний этап загрузки. Ядро
 системы, загруженное и настроенное на предыдущем этапе, продолжает работать
@@ -11682,7 +11687,7 @@ Debian используется схема загрузки, называема�
                   <code class="literal">N</code>
                 </td>
 <td align="left">
-    none
+    нет
     </td>
 <td align="left">
     начальное состояние системы, каталог настройки
@@ -11837,14 +11842,15 @@ Hewlett Packard</a>, ни <a class="ulink" href="http://ru.wikipedia.org/wiki/AI
 <a name="_the_configuration_of_the_runlevel"></a>3.5.2. Конфигурация уровня выполнения</h3></div></div></div>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
-<p>In Debian <code class="literal">squeeze</code>, dependency based boot order provided
-by the <code class="literal">insserv</code> package is used instead of classical
-alphabetical one.  The "<code class="literal">CONCURRENCY</code>" value in
-"<code class="literal">/etc/default/rcS</code>" controls its concurrency:
-"<code class="literal">none</code>" for no concurrency, "<code class="literal">startpar</code>"
-for concurrency within the same sequence number, or
-"<code class="literal">makefile</code>" for full concurrency.  See
-"<code class="literal">/usr/share/doc/insserv/README.Debian</code>".</p>
+<p>В <code class="literal">squeeze</code> вместо старого, алфавитного порядка выполнения
+сценариев загрузки используется новый, на основе зависимостей,
+предоставленный пакетом <code class="literal">insserv</code>. Значение
+"<code class="literal">CONCURRENCY</code>" в "<code class="literal">/etc/default/rcS</code>"
+управляет распараллеливанием: "<code class="literal">none</code>" -- без
+распараллеливания, "<code class="literal">startpar</code>" -- параллельное выполнение
+сценариев с одинаковым порядковым номером, "<code class="literal">makefile</code>" --
+параллельное выполнение всех
+сценариев. См. "<code class="literal">/usr/share/doc/insserv/README.Debian</code>".</p>
 </div>
 <p>В каталогах уровней выполнения "<code class="literal">/etc/rc&lt;уровень&gt;.d</code>"
 находятся сим-линки с именами в следующем формате:
@@ -11853,9 +11859,9 @@ for concurrency within the same sequence number, or
 число определяет очерёдность запуска скрипта (меньший номер вызывается
 первым), а "<code class="literal">S</code>" и "<code class="literal">K</code>" означают запуск
 или остановку службы ("Start" или "Kill").</p>
-<p>For "<code class="literal">CONCURRENCY=none</code>", when <code class="literal">init</code>(8)
-or <code class="literal">telinit</code>(8) commands goes into the runlevel to
-"&lt;n&gt;", it execute following scripts.</p>
+<p>Если "<code class="literal">CONCURRENCY=none</code>", то <code class="literal">init</code>(8)
+или <code class="literal">telinit</code>(8) при переходе на уровень выполнения
+"&lt;n&gt;" выполняют следующие сценарии:</p>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
 Скрипты с именами "<code class="literal">K</code>" в
@@ -11874,8 +11880,9 @@ or <code class="literal">telinit</code>(8) commands goes into the runlevel to
 "<code class="literal">../init.d/sysklogd</code>" и будет запущен до
 "<code class="literal">S20exim4</code>", который указывает на
 "<code class="literal">../init.d/exim4</code>".</p>
-<p>For "<code class="literal">CONCURRENCY=makefile</code>" (new default), package
-dependency defined in the header of init scripts are used to order them.</p>
+<p>Если "<code class="literal">CONCURRENCY=makefile</code>" (новое значение
+по-умолчанию), то для определения порядка выполнения используются
+зависимости, определённые в заголовках сценариев инициализации.</p>
 <div class="warning" title="Внимание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Внимание</h3>
 <p>Не рекомендуется делать изменений в ссылках в
@@ -11995,7 +12002,7 @@ hostname, без имени домена.</p>
 <div class="section" title="3.5.8. Запуск сетевых служб">
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_network_service_initialization"></a>3.5.8. Запуск сетевых служб</h3></div></div></div>
-<p>Многие сетевые службы (см. <a class="xref" href="#_network_applications" title="Глава 6. Network applications">Глава 6, <i>Network applications</i></a>)
+<p>Многие сетевые службы (см. <a class="xref" href="#_network_applications" title="Глава 6. Сетевые приложения">Глава 6, <i>Сетевые приложения</i></a>)
 запускаются в многопользовательском режиме в качестве процессов-демонов во
 время загрузки, например, "<code class="literal">/etc/rc2.d/S20exim4</code>" (для
 RUNLEVEL=2) это симлинк на "<code class="literal">/etc/init.d/exim4</code>".</p>
@@ -12948,7 +12955,7 @@ PAM.
                   <code class="literal">/etc/security/pam_env.conf</code>
                 </td>
 <td align="left">
-    переменные окружения для the <code class="literal">pam_env</code>(8)
+    переменные окружения для <code class="literal">pam_env</code>(8)
     </td>
 </tr>
 <tr>
@@ -13115,14 +13122,14 @@ password required pam_permit.so</pre>
 знать пароль root. Установите пакет sudo и используйте его, настроив
 "<code class="literal">/etc/sudoers</code>". Пример конфигурации смотрите в
 "<code class="literal">/usr/share/doc/sudo/examples/sudoers</code>".</p>
-<p>Моё способ использования <code class="literal">sudo</code> для системы с одним
+<p>Мой способ использования <code class="literal">sudo</code> для системы с одним
 пользователем (см. <a class="xref" href="#_sudo_configuration" title="1.1.12. Настройка sudo">Раздел 1.1.12, «Настройка sudo»</a>) предназначен для
 защищать меня от моей же собственной глупости. Я полагаю, что использование
 <code class="literal">sudo</code> -- лучшая альтернатива постоянному использованию
 учётной записи root. Например, этой командой можно изменить владельца файла
-"<code class="literal">&lt;some_file&gt;</code>" на
-"<code class="literal">&lt;my_name&gt;</code>":</p>
-<pre class="screen">$ sudo chown &lt;my_name&gt; &lt;some_file&gt;</pre>
+"<code class="literal">&lt;имя_файла&gt;</code>" на
+"<code class="literal">&lt;моё_имя&gt;</code>":</p>
+<pre class="screen">$ sudo chown &lt;моё_имя&gt; &lt;имя_файла&gt;</pre>
 <p>Конечно, если вы знаете пароль root (как любой пользователь своей системы
 Debian), любую команду можно выполнить под рутом, работая под любым
 пользователем, с помощью "<code class="literal">su -c</code>".</p>
@@ -13131,9 +13138,10 @@ Debian), любую команду можно выполнить под руто
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_selinux"></a>4.6.2. SELinux</h3></div></div></div>
 <p><a class="ulink" href="http://ru.wikipedia.org/wiki/SELinux" target="_top">Security-Enhanced Linux
-(SELinux)</a> is a framework to tighten privilege model tighter than the
-ordinary Unix-like security model with the <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BD%D0%B4%D0%B0%D1%82%D0%BD%D0%BE%D0%B5_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BE%D0%BC" target="_top">mandatory access control (MAC)</a>
-policies.  The root power may be restricted under some conditions.</p>
+(SELinux)</a> -- система, урезающая традиционную для Unix модель
+безопасности с политиками <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BD%D0%B4%D0%B0%D1%82%D0%BD%D0%BE%D0%B5_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BE%D0%BC" target="_top">мандатного контроля доступа
+(MAC)</a>. Полномочия суперпользователя (root) в некоторых случаях могут
+быть ограничены.</p>
 </div>
 <div class="section" title="4.6.3. Ограничение доступа к службам сервера">
 <div class="titlepage"><div><div><h3 class="title">
@@ -13344,15 +13352,15 @@ Layer Security</a>" (TLS) или её предшественницей "Secure S
 </tbody>
 </table></div>
 </div>
-<br class="table-break"><p>The encryption costs CPU time.  As a CPU friendly alternative, you can keep
-communication in plain text while securing just password with the secure
-authentication protocol such as "Authenticated Post Office Protocol" (APOP)
-for POP and "Challenge-Response Authentication Mechanism MD5" (CRAM-MD5) for
-SMTP and IMAP.  (For sending mail messages over the Internet to your mail
-server from your mail client, it is recently popular to use new message
-submission port 587 instead of traditional SMTP port 25 to avoid port 25
-blocking by the network provider while authenticating yourself with
-CRAM-MD5.)</p>
+<br class="table-break"><p>Шифрование требует процессорного времени. Чтобы пощадить процессор, вы
+можете оставить передачу данных незашифрованной, обезопасив лишь передачу
+пароля с помощью защищённого протокола аутентификации, например,
+"Authenticated Post Office Protocol" (APOP) для POP и "Challenge-Response
+Authentication Mechanism MD5" (CRAM-MD5) для SMTP и IMAP. (Для отсылки почты
+через Интернет на почтовый сервер из почтового клиента в последнее время
+часто используется порт 587 вместо традиционного SMTP-порта 25, это
+позволяет обойти блокировку 25 порта провайдером, в то время как
+аутентификация происходит по протоколу CRAM-MD5.)</p>
 </div>
 <div class="section" title="4.7.2. Защищённая оболочка (Secure Shell)">
 <div class="titlepage"><div><div><h3 class="title">
@@ -13409,8 +13417,8 @@ POP или X.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=knockd" target="_top">V:0.14, I:0.4</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/k/knockd.html" target="_top">164</a></td>
 <td align="left">
-    small port-knock daemon <code class="literal">knockd</code>(1) and client
-<code class="literal">konck</code>(1)
+    служба <code class="literal">knockd</code>(1) и клиент <code class="literal">konck</code>(1):
+выполнение дейстивий при приёме определённых пакетов
     </td>
 </tr>
 <tr>
@@ -13421,7 +13429,7 @@ POP или X.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=denyhosts" target="_top">V:2, I:2</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/d/denyhosts.html" target="_top">356</a></td>
 <td align="left">
-    utility to help sysadmins thwart ssh hackers
+    утилита для помощи в пресечении взлома ssh
     </td>
 </tr>
 <tr>
@@ -13432,7 +13440,8 @@ POP или X.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=fail2ban" target="_top">V:4, I:4</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/f/fail2ban.html" target="_top">660</a></td>
 <td align="left">
-    ban IPs that cause multiple authentication errors
+    блокирование IP-адресов, соединения с которых приводят к нескольким ошибкам
+аутентификации
     </td>
 </tr>
 <tr>
@@ -13443,7 +13452,7 @@ POP или X.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=libpam-shield" target="_top">V:0.01, I:0.06</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/libp/libpam-shield.html" target="_top">104</a></td>
 <td align="left">
-    lock out remote attackers trying password guessing
+    блокирование удалённых взломщиков, пытающихся подобрать пароль
     </td>
 </tr>
 </tbody>
@@ -13510,10 +13519,11 @@ root с пустым паролем.
 <code class="literal">john</code> или <code class="literal">crack</code> (см. <a class="xref" href="#_system_security_and_integrity_check" title="9.6.11. System security and integrity check">Раздел 9.6.11, «System security and integrity check»</a>), и скомпрометировать
 другие системы. Вы всегда должны пользоваться паролем для входа в систему.</p>
 </div>
-<p>The only reasonable software solution to avoid all these concerns is to use
-software encrypted root partition (or "<code class="literal">/etc</code>" partition)
-using <a class="ulink" href="http://en.wikipedia.org/wiki/Dm-crypt" target="_top">dm-crypt</a> and initramfs (see <a class="xref" href="#_data_encryption_tips" title="9.4. Советы по шифрованию данных">Раздел 9.4, «Советы по шифрованию данных»</a>).  You always need password to boot the
-system, though.</p>
+<p>Единственный разумный программный метод защиты от этого -- использовать
+программно зашифрованный корневой раздел диска (или раздел
+"<code class="literal">/etc</code>") с помощью <a class="ulink" href="http://en.wikipedia.org/wiki/Dm-crypt" target="_top">dm-crypt</a>
+и initramfs (см. <a class="xref" href="#_data_encryption_tips" title="9.4. Советы по шифрованию данных">Раздел 9.4, «Советы по шифрованию данных»</a>). Хотя в этом
+случае всегда необходим ввод пароля для загрузки системы.</p>
 </div>
 </div>
 </div>
@@ -17020,19 +17030,19 @@ and netfilter kernel function apply for current Linux <span class="strong"><stro
 </div>
 </div>
 </div>
-<div class="chapter" title="Глава 6. Network applications">
+<div class="chapter" title="Глава 6. Сетевые приложения">
 <div class="titlepage"><div><div><h2 class="title">
-<a name="_network_applications"></a>Глава 6. Network applications</h2></div></div></div>
-<p>After establishing network connectivity (see <a class="xref" href="#_network_setup" title="Глава 5. Настройка сети">Глава 5, <i>Настройка сети</i></a>), you can run various network applications.</p>
-<div class="section" title="6.1. Web browsers">
+<a name="_network_applications"></a>Глава 6. Сетевые приложения</h2></div></div></div>
+<p>Установив подключение к сети (см. <a class="xref" href="#_network_setup" title="Глава 5. Настройка сети">Глава 5, <i>Настройка сети</i></a>), вы
+можете запускать различные сетевые приложения.</p>
+<div class="section" title="6.1. Web-браузеры">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
-<a name="_web_browsers"></a>6.1. Web browsers</h2></div></div></div>
-<p>There are many <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80" target="_top">web browser</a> packages to
-access remote contents with <a class="ulink" href="http://ru.wikipedia.org/wiki/HTTP" target="_top">Hypertext Transfer Protocol</a>
-(HTTP).</p>
+<a name="_web_browsers"></a>6.1. Web-браузеры</h2></div></div></div>
+<p>Есть много пакетов с <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80" target="_top">web-браузерами</a> для
+доступа по протоколу <a class="ulink" href="http://ru.wikipedia.org/wiki/HTTP" target="_top">HTTP</a>.</p>
 <div class="table">
-<a name="listofwebbrowsers"></a><p class="title"><b>Таблица 6.1. List of web browsers</b></p>
-<div class="table-contents"><table summary="List of web browsers" border="1">
+<a name="listofwebbrowsers"></a><p class="title"><b>Таблица 6.1. Список web-браузеров</b></p>
+<div class="table-contents"><table summary="Список web-браузеров" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -17054,7 +17064,7 @@ access remote contents with <a class="ulink" href="http://ru.wikipedia.org/wiki/
     тип
     </th>
 <th align="left">
-    description of web browser
+    описание web-браузера
     </th>
 </tr></thead>
 <tbody>
@@ -17069,7 +17079,7 @@ access remote contents with <a class="ulink" href="http://ru.wikipedia.org/wiki/
     X
     </td>
 <td align="left">
-                <a class="ulink" href="http://ru.wikipedia.org/wiki/Iceweasel" target="_top">unbranded</a> <a class="ulink" href="http://ru.wikipedia.org/wiki/Mozilla_Firefox" target="_top">Mozilla Firefox</a>
+                <a class="ulink" href="http://ru.wikipedia.org/wiki/Iceweasel" target="_top">переименованный</a> браузер <a class="ulink" href="http://ru.wikipedia.org/wiki/Mozilla_Firefox" target="_top">Mozilla Firefox</a>
               </td>
 </tr>
 <tr>
@@ -17083,8 +17093,8 @@ access remote contents with <a class="ulink" href="http://ru.wikipedia.org/wiki/
     , ,
     </td>
 <td align="left">
-<a class="ulink" href="http://ru.wikipedia.org/wiki/Iceweasel" target="_top">unbranded</a><a class="ulink" href="http://ru.wikipedia.org/wiki/Mozilla_Foundation" target="_top">Mozilla</a>, removed due to security concerns <a class="ulink" href="http://bugs.debian.org/505565" target="_top">bug#505565</a>
-</td>
+<a class="ulink" href="http://ru.wikipedia.org/wiki/Iceweasel" target="_top">переименованный</a> браузер <a class="ulink" href="http://ru.wikipedia.org/wiki/Mozilla_Foundation" target="_top">Mozilla</a>, удалён в связи с его небезопасностью
+(<a class="ulink" href="http://bugs.debian.org/505565" target="_top">bug#505565</a>)</td>
 </tr>
 <tr>
 <td align="left">
@@ -17097,8 +17107,7 @@ access remote contents with <a class="ulink" href="http://ru.wikipedia.org/wiki/
     , ,
     </td>
 <td align="left">
-<a class="ulink" href="http://ru.wikipedia.org/wiki/GNOME" target="_top">GNOME</a>, <a class="ulink" href="http://ru.wikipedia.org/wiki/HIG" target="_top">HIG</a>
-compliant, <a class="ulink" href="http://ru.wikipedia.org/wiki/Epiphany" target="_top">Epiphany</a>
+<a class="ulink" href="http://ru.wikipedia.org/wiki/Epiphany" target="_top">Epiphany</a> для <a class="ulink" href="http://ru.wikipedia.org/wiki/GNOME" target="_top">GNOME</a>, соответствует рекомендациям <a class="ulink" href="http://ru.wikipedia.org/wiki/HIG" target="_top">HIG</a>
     </td>
 </tr>
 <tr>
@@ -17112,8 +17121,8 @@ compliant, <a class="ulink" href="http://ru.wikipedia.org/wiki/Epiphany" target=
     , ,
     </td>
 <td align="left">
-<a class="ulink" href="http://ru.wikipedia.org/wiki/GNOME" target="_top">GNOME</a>, <a class="ulink" href="http://ru.wikipedia.org/wiki/Galeon" target="_top">Galeon</a>,
-superseded by <a class="ulink" href="http://ru.wikipedia.org/wiki/Epiphany" target="_top">Epiphany</a>
+<a class="ulink" href="http://ru.wikipedia.org/wiki/Galeon" target="_top">Galeon</a> для <a class="ulink" href="http://ru.wikipedia.org/wiki/GNOME" target="_top">GNOME</a>,
+вытеснен <a class="ulink" href="http://ru.wikipedia.org/wiki/Epiphany" target="_top">Epiphany</a>
 </td>
 </tr>
 <tr>
@@ -17127,7 +17136,7 @@ superseded by <a class="ulink" href="http://ru.wikipedia.org/wiki/Epiphany" targ
     , ,
     </td>
 <td align="left">
-<a class="ulink" href="http://ru.wikipedia.org/wiki/KDE" target="_top">KDE</a>, <a class="ulink" href="http://ru.wikipedia.org/wiki/Konqueror" target="_top">Konqueror</a>
+<a class="ulink" href="http://ru.wikipedia.org/wiki/Konqueror" target="_top">Konqueror</a> для <a class="ulink" href="http://ru.wikipedia.org/wiki/KDE" target="_top">KDE</a>
 </td>
 </tr>
 <tr>
@@ -17138,7 +17147,7 @@ superseded by <a class="ulink" href="http://ru.wikipedia.org/wiki/Epiphany" targ
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=w3m" target="_top">V:27, I:84</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/w/w3m.html" target="_top">1856</a></td>
 <td align="left">
-    text
+    текстовый
     </td>
 <td align="left">
                 <a class="ulink" href="http://ru.wikipedia.org/wiki/W3m" target="_top">w3m</a>
@@ -17183,7 +17192,7 @@ superseded by <a class="ulink" href="http://ru.wikipedia.org/wiki/Epiphany" targ
     , ,
     </td>
 <td align="left">
-<a class="ulink" href="http://ru.wikipedia.org/wiki/Links" target="_top">Links</a> (text only)
+<a class="ulink" href="http://ru.wikipedia.org/wiki/Links" target="_top">Links</a> (только текстовый)
     </td>
 </tr>
 <tr>
@@ -17194,20 +17203,21 @@ superseded by <a class="ulink" href="http://ru.wikipedia.org/wiki/Epiphany" targ
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=links2" target="_top">V:0.8, I:3</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/l/links2.html" target="_top">3264</a></td>
 <td align="left">
-    graphics
+    графический
     </td>
 <td align="left">
-<a class="ulink" href="http://ru.wikipedia.org/wiki/Links" target="_top">Links</a> (console graphics without X)
+<a class="ulink" href="http://ru.wikipedia.org/wiki/Links" target="_top">Links</a> (консольный, графический, не требует X
+Window)
     </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<br class="table-break"><div class="section" title="6.1.1. Browser configuration">
+<br class="table-break"><div class="section" title="6.1.1. Настройка браузера">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_browser_configuration"></a>6.1.1. Browser configuration</h3></div></div></div>
-<p>You may be able to use following special URL strings for some browsers to
-confirm their settings.</p>
+<a name="_browser_configuration"></a>6.1.1. Настройка браузера</h3></div></div></div>
+<p>Некоторые браузеры поддерживают следующие специальные строки адреса URL, по
+которым можно открыть их настройки.</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
 "<code class="literal">about:</code>"
@@ -17226,8 +17236,8 @@ platform)</a> and <a class="ulink" href="http://ru.wikipedia.org/wiki/Adobe_Flas
 VCDs, etc.  Debian also offers helper programs to install non-free browser
 plugin packages as contrib or non-free archive area.</p>
 <div class="table">
-<a name="listofbrowserpluginpackages"></a><p class="title"><b>Таблица 6.2. List of browser plugin packages</b></p>
-<div class="table-contents"><table summary="List of browser plugin packages" border="1">
+<a name="listofbrowserpluginpackages"></a><p class="title"><b>Таблица 6.2. Список пакетов с дополнениями (plugin) для браузеров</b></p>
+<div class="table-contents"><table summary="Список пакетов с дополнениями (plugin) для браузеров" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -17264,7 +17274,7 @@ plugin packages as contrib or non-free archive area.</p>
     main
     </td>
 <td align="left">
-    Java plugin based on OpenJDK and IcedTea
+    модуль поддержки Java; создан на основе OpenJDK и IcedTea
     </td>
 </tr>
 <tr>
@@ -17278,7 +17288,7 @@ plugin packages as contrib or non-free archive area.</p>
     non-free
     </td>
 <td align="left">
-    Java plugin for Sun's Java SE 6 (i386 only)
+    модуль поддержки Java для Sun Java SE 6 (только для i386)
     </td>
 </tr>
 <tr>
@@ -17292,7 +17302,7 @@ plugin packages as contrib or non-free archive area.</p>
     main
     </td>
 <td align="left">
-    Flash plugin based on Gnash
+    модуль поддержки Flash, на основе Gnash
     </td>
 </tr>
 <tr>
@@ -17306,7 +17316,8 @@ plugin packages as contrib or non-free archive area.</p>
     contrib
     </td>
 <td align="left">
-    Flash plugin helper to install Adobe Flash Player (i386, amd64 only)
+    вспомогательный пакет для установки Adobe Flash Player (только для i386 и
+amd64)
     </td>
 </tr>
 <tr>
@@ -17320,8 +17331,7 @@ plugin packages as contrib or non-free archive area.</p>
     main
     </td>
 <td align="left">
-    Multimedia plugin based on <a class="ulink" href="http://en.wikipedia.org/wiki/VLC_media_player" target="_top">VLC media
-player</a>
+    мультимедиа-модуль на основе <a class="ulink" href="http://en.wikipedia.org/wiki/VLC_media_player" target="_top">VLC</a>
     </td>
 </tr>
 <tr>
@@ -17335,8 +17345,7 @@ player</a>
     main
     </td>
 <td align="left">
-    Multimedia plugin based on <a class="ulink" href="http://ru.wikipedia.org/wiki/Totem" target="_top">GNOME's
-Totem media player</a>
+    мультимедиа-модуль на основе <a class="ulink" href="http://ru.wikipedia.org/wiki/Totem" target="_top">проигрывателя Totem</a>
     </td>
 </tr>
 <tr>
@@ -17350,7 +17359,7 @@ Totem media player</a>
     main
     </td>
 <td align="left">
-    Multimedia plugin based on (GNOME) <a class="ulink" href="http://ru.wikipedia.org/wiki/MPlayer" target="_top">MPlayer</a>
+    мультимедиа-модуль на основе <a class="ulink" href="http://ru.wikipedia.org/wiki/MPlayer" target="_top">MPlayer</a>
     </td>
 </tr>
 <tr>
@@ -17364,7 +17373,7 @@ Totem media player</a>
     contrib
     </td>
 <td align="left">
-    A wrapper to run i386 Netscape plugins on amd64 architecture
+    "обёртка" для запуска дополнений Netscape (созданных для i386) на amd64
     </td>
 </tr>
 </tbody>
@@ -17372,46 +17381,48 @@ Totem media player</a>
 </div>
 <br class="table-break"><div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>Although use of above Debian packages are much easier, browser plugins can
-be still manually enabled by installing "*.so" into plugin directories
-(e.g., "<code class="literal">/usr/lib/iceweasel/plugins/</code>") and restarting
-browsers.</p>
+<p>Хотя использование этих пакетов гораздо проще, дополнения можно по-прежнему
+установить вручную, скопировав файлы "*.so" в соответствующий каталог,
+например, "<code class="literal">/usr/lib/iceweasel/plugins/</code>" и перезапустив
+браузер.</p>
 </div>
-<p>Some web sites refuse to be connected based on the user-agent string of your
-browser.  You can work around this situation by <a class="ulink" href="http://www.mozilla.org/unix/customizing.html#prefs" target="_top">spoofing the user-agent string</a>.
-For example, you can do this by adding following line into user
-configuration files such as
-"<code class="literal">~/.gnome2/epiphany/mozilla/epiphany/user.js</code>" or
-"<code class="literal">~/.mozilla/firefox/*.default/user.js</code>".</p>
+<p>Некоторые web-сайты отказывают в соединении, основываясь на строке
+идентификации браузера (user-agent string). Можно попробовать решить эту
+проблему, <a class="ulink" href="http://www.mozilla.org/unix/customizing.html#prefs" target="_top">"подделав" эту
+строчку</a>. Например, можно добавить в файлы настройки типа
+"<code class="literal">~/.gnome2/epiphany/mozilla/epiphany/user.js</code>" или
+"<code class="literal">~/.mozilla/firefox/*.default/user.js</code>" следующую
+переменную:</p>
 <pre class="screen">user_pref{"general.useragent.override","Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"};</pre>
-<p>Alternatively, you can add and reset this variable by typing
-"<code class="literal">about:config</code>" into URL and right clicking its display
-contents.</p>
+<p>Можно также изменить эту переменную, набрав адрес
+"<code class="literal">about:config</code>" и изменив настройки через web-интерфейс.</p>
 <div class="caution" title="Предостережение" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Предостережение</h3>
-<p>Spoofed user-agent string may cause <a class="ulink" href="https://bugzilla.mozilla.org/show_bug.cgi?id=83376" target="_top">bad side effects with Java</a>.</p>
+<p>Однако, "подделанная" таким образом строка идентификации может вызывать
+<a class="ulink" href="https://bugzilla.mozilla.org/show_bug.cgi?id=83376" target="_top">ошибки в работе Java</a></p>
 </div>
 </div>
 </div>
-<div class="section" title="6.2. The mail system">
+<div class="section" title="6.2. Почтовая система">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
-<a name="_the_mail_system"></a>6.2. The mail system</h2></div></div></div>
+<a name="_the_mail_system"></a>6.2. Почтовая система</h2></div></div></div>
 <div class="caution" title="Предостережение" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Предостережение</h3>
-<p>If you are to set up the mail server to exchange mail directly with the
-Internet, you should be better than reading this elementary document.</p>
+<p>Если вы настраиваете почтовый сервер для обмена почтой напрямую через
+Интернет, вам следовало бы знать побольше, чем можно почерпнуть из этого
+элементарного документа.</p>
 </div>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
-<p>The following configuration examples are only valid for the typical mobile
-workstation on consumer grade Internet connections.</p>
+<p>Описанные здесь примеры конфигурации подходят лишь для обычного настольного
+компьютера и подключения к Интернету потребительского класса.</p>
 </div>
-<div class="section" title="6.2.1. Modern mail service basics">
+<div class="section" title="6.2.1. Основы современной почтовой службы">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_modern_mail_service_basics"></a>6.2.1. Modern mail service basics</h3></div></div></div>
-<p>In order to contain spam (unwanted and unsolicited email) problems, many
-ISPs which provide consumer grade Internet connections are implementing
-counter measures.</p>
+<a name="_modern_mail_service_basics"></a>6.2.1. Основы современной почтовой службы</h3></div></div></div>
+<p>Из-за проблемы спама (нежелательной и непрошенной почты), многие
+Интернет-провайдеры, предоставляющие подключение к Интернету конечным
+пользователям, принимают ответные меры:</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
 The smarthost service for their customers to send message uses the message
@@ -17432,8 +17443,8 @@ the dial-up and other consumer grade Internet connections are the first ones
 to be blocked.)
 </li>
 </ul></div>
-<p>When configuring your mail system or resolving mail delivery problems, you
-must consider these new limitations.</p>
+<p>Настраивая почтовую систему или решая проблемы с доставкой почты, вам нужно
+помнить об этих новых ограничениях.</p>
 <p>In light of these hostile Internet situation and limitations, some
 independent Internet mail ISPs such as Yahoo.com and Gmail.com offer the
 secure mail service which can be connected from anywhere on the Internet
@@ -20411,7 +20422,7 @@ X11R7.3(lenny), X11R7.3(squeeze) и X11R7.4(sid).</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=kde-standard" target="_top">I:2</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/k/kde-standard.html" target="_top">36</a></td>
 <td align="left">
-    core <a class="ulink" href="http://ru.wikipedia.org/wiki/KDE" target="_top">KDE</a> desktop environment (metapackage)
+    среда рабочего стола <a class="ulink" href="http://ru.wikipedia.org/wiki/KDE" target="_top">KDE</a> (мета-пакет)
     </td>
 </tr>
 <tr>
@@ -20558,7 +20569,7 @@ automatically.</p>
 </tr>
 <tr>
 <td align="left">
-                <span class="strong"><strong>application server</strong></span>
+                <span class="strong"><strong>сервер приложения</strong></span>
               </td>
 <td align="left">
     программа, работающая <span class="strong"><strong>удалённой системе</strong></span>,
@@ -20567,7 +20578,7 @@ automatically.</p>
 </tr>
 <tr>
 <td align="left">
-                <span class="strong"><strong>application client</strong></span>
+                <span class="strong"><strong>клиент приложения</strong></span>
               </td>
 <td align="left">
     программа, работающая на <span class="strong"><strong>локальной
@@ -20673,13 +20684,13 @@ X-сервера</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=xbase-clients" target="_top">V:5, I:49</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/x/xbase-clients.html" target="_top">132</a></td>
 <td align="left">
-    unchecked
+    не проверяется
     </td>
 <td align="left">
     нет
     </td>
 <td align="left">
-    deprecated
+    использование осуждается
     </td>
 </tr>
 <tr>
@@ -20692,7 +20703,7 @@ X-сервера</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=xbase-clients" target="_top">V:5, I:49</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/x/xbase-clients.html" target="_top">132</a></td>
 <td align="left">
-    checked
+    проверяется
     </td>
 <td align="left">
     нет
@@ -20711,7 +20722,7 @@ X-сервера</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=openssh-client" target="_top">V:51, I:99</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/o/openssh-client.html" target="_top">2208</a></td>
 <td align="left">
-    checked
+    проверяется
     </td>
 <td align="left">
     да
@@ -20731,7 +20742,7 @@ X-сервера</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=gdm" target="_top">V:28, I:39</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/gdm.html" target="_top">15211</a></td>
 <td align="left">
-    checked
+    проверяется
     </td>
 <td align="left">
     нет(XDMCP)
@@ -20751,7 +20762,7 @@ X-сервера</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=kdm" target="_top">V:8, I:12</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/k/kdm.html" target="_top">5736</a></td>
 <td align="left">
-    checked
+    проверяется
     </td>
 <td align="left">
     нет(XDMCP)
@@ -20771,7 +20782,7 @@ X-сервера</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=xdm" target="_top">V:0.7, I:1.9</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/x/xdm.html" target="_top">780</a></td>
 <td align="left">
-    checked
+    проверяется
     </td>
 <td align="left">
     нет(XDMCP)
@@ -20791,7 +20802,7 @@ X-сервера</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=wdm" target="_top">V:27, I:84</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/w/wdm.html" target="_top">1856</a></td>
 <td align="left">
-    checked
+    проверяется
     </td>
 <td align="left">
     нет(XDMCP)
@@ -20811,7 +20822,7 @@ X-сервера</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=ldm" target="_top">V:0.01, I:0.09</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/l/ldm.html" target="_top">624</a></td>
 <td align="left">
-    checked
+    проверяется
     </td>
 <td align="left">
     да
@@ -20923,7 +20934,7 @@ x-session-manager</code>".</p>
 хранятся в "<code class="literal">~/.dmrc</code>" и выглядят так:</p>
 <pre class="screen">[Desktop]
 Session=default
-Language=ja_JP.UTF-8</pre>
+Language=ru_RU.UTF-8</pre>
 </div>
 <div class="section" title="7.5.2. Настройка X-сессии (традиционный способ)">
 <div class="titlepage"><div><div><h3 class="title">
@@ -21291,7 +21302,7 @@ Type 1" border="1">
     Nimbus Mono L
     </td>
 <td align="left">
-<a class="ulink" href="http://www.math.utah.edu/~beebe/fonts/urw.html" target="_top">URW</a> (Adobe compatible size)
+<a class="ulink" href="http://www.math.utah.edu/~beebe/fonts/urw.html" target="_top">URW</a> (размер совместимый с Adobe)
     </td>
 </tr>
 <tr>
@@ -21331,7 +21342,7 @@ Type 1" border="1">
     Free Courier
     </td>
 <td align="left">
-    URW extended (Adobe compatible size)
+    расширенный URW (размер совместимый с Adobe)
     </td>
 </tr>
 <tr>
@@ -21409,7 +21420,7 @@ ttf-mscorefonts-installer </a> <a class="ulink" href="http://bugs.debian.org/ttf
                   <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%9A%D1%83%D1%80%D1%8C%D0%B5%D1%80_(%D1%88%D1%80%D0%B8%D1%84%D1%82)" target="_top">Courier New</a>
                 </td>
 <td align="left">
-    Microsoft (Adobe compatible size) (This installs non-free data)
+    Microsoft (размер совместимый с Adobe) (Устанавливает несвободные данные)
     </td>
 </tr>
 <tr>
@@ -22438,10 +22449,9 @@ i18n</a>.</p>
 <div class="section" title="8.1.1. Методы ввода IBus">
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_the_input_method_support_with_ibus"></a>8.1.1. Методы ввода IBus</h3></div></div></div>
-<p>Setup of multilingual input for the Debian system is simplified by using the
-<a class="ulink" href="http://en.wikipedia.org/wiki/Intelligent_Input_Bus" target="_top">IBus</a> family of packages with the
-<code class="literal">im-switch</code> package. The list of IBus packages are the
-following.</p>
+<p>Настройка многоязычного ввода в системе Debian упрощается семейством пакетов
+<a class="ulink" href="http://en.wikipedia.org/wiki/Intelligent_Input_Bus" target="_top">IBus</a> и пакетом <code class="literal">im-switch</code>. Вот
+список пакетов IBus.</p>
 <div class="table">
 <a name="listofinputmethosupportswithibus"></a><p class="title"><b>Таблица 8.2. Список методов ввода, поддерживаемых IBus</b></p>
 <div class="table-contents"><table summary="Список методов ввода, поддерживаемых IBus" border="1">
@@ -22473,7 +22483,7 @@ following.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=ibus" target="_top">V:0.11, I:0.2</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/i/ibus.html" target="_top">4300</a></td>
 <td align="left">
-    input method framework using dbus
+    реализация метода ввода, использующая dbus
     </td>
 </tr>
 <tr>
@@ -22539,7 +22549,7 @@ following.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=ibus-table" target="_top">V:0.04, I:0.08</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/i/ibus-table.html" target="_top">840</a></td>
 <td align="left">
-    table engine for IBus
+    поддержка табличных механизмов ввода для IBus
     </td>
 </tr>
 <tr>
@@ -22600,8 +22610,9 @@ UTF-8. <a class="ulink" href="http://en.wikipedia.org/wiki/Smart_Common_Input_Me
 и выберите "<code class="literal">ibus</code>".
 </li>
 <li class="listitem">
-Select "System" → "Preferences" → "IBus Preferences" → "Input Method" →
-"Select an input method" → "Japanese" → "Anthy" and click "Add".
+Выберите в меню "Система" → "Параметры" → "IBus Preferences" → "Input
+Method" → "Select an input method" → "Japanese" → "Anthy" и нажмите
+"Добавить".
 </li>
 <li class="listitem">
 Закройте консоль и зайдите заново от имени пользователя (relogin).
@@ -22712,8 +22723,8 @@ Format".</p>
 (см. <code class="literal">locale</code>(1)), когда используется UTF-8.</p>
 <p>Даже полностью английский текст может содержать не-ASCII символы, например,
 открывающие и закрывающие кавычки.</p>
-<pre class="screen">“double quoted text”
-‘single quoted text’</pre>
+<pre class="screen">“текст в двойных кавычках”
+‘текст в одинарных кавычках’</pre>
 <p>Когда текст в <a class="ulink" href="http://ru.wikipedia.org/wiki/ASCII" target="_top">ASCII</a> перекодируется в <a class="ulink" href="http://ru.wikipedia.org/wiki/UTF-8" target="_top">UTF-8</a>, он остаётся точно такого же размера и
 содержания. Вы ничего не теряете, выбрав UTF-8.</p>
 <p>Некоторые программы с добавлением поддержки I18N начинают требовать больше
@@ -22878,7 +22889,7 @@ charset</code>" на нужное значение (например, на <a cl
 <code class="literal">manpages-&lt;LANG&gt;</code> с man-страницами. Чтобы прочитать,
 например, итальянскую man-страницу для заданной &lt;программы&gt; из
 "<code class="literal">/usr/share/man/it/</code>", выполните следующее.</p>
-<pre class="screen">LANG=it_IT.UTF-8 man &lt;programname&gt;</pre>
+<pre class="screen">LANG=it_IT.UTF-8 man &lt;имя_программы&gt;</pre>
 </div>
 <div class="section" title="8.3.8. Результаты установки локали">
 <div class="titlepage"><div><div><h3 class="title">
@@ -22939,7 +22950,7 @@ charset</code>" на нужное значение (например, на <a cl
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=screen" target="_top">V:11, I:33</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/s/screen.html" target="_top">952</a></td>
 <td align="left">
-    terminal multiplexer with VT100/ANSI terminal emulation
+    терминальный мультиплексор с эмуляцией терминала VT100/ANSI
     </td>
 </tr></tbody>
 </table></div>
@@ -23208,7 +23219,8 @@ parameters].  Here are important ones to remember.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=fail2ban" target="_top">V:4, I:4</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/f/fail2ban.html" target="_top">660</a></td>
 <td align="left">
-    ban IPs that cause multiple authentication errors
+    блокирование IP-адресов, соединения с которых приводят к нескольким ошибкам
+аутентификации
     </td>
 </tr>
 <tr>
@@ -23285,7 +23297,7 @@ parameters].  Here are important ones to remember.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=fwlogwatch" target="_top">V:0.11, I:0.2</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/f/fwlogwatch.html" target="_top">360</a></td>
 <td align="left">
-    firewall log analyzer
+    анализатор журнала фаервола
     </td>
 </tr>
 <tr>
@@ -23307,7 +23319,7 @@ parameters].  Here are important ones to remember.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=visitors" target="_top">V:0.09, I:0.3</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/v/visitors.html" target="_top">228</a></td>
 <td align="left">
-    fast web server log analyzer
+    быстрый анализатор журнала веб-сервера
     </td>
 </tr>
 <tr>
@@ -23340,7 +23352,7 @@ parameters].  Here are important ones to remember.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=icmpinfo" target="_top">V:0.05, I:0.3</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/i/icmpinfo.html" target="_top">84</a></td>
 <td align="left">
-    interpret ICMP messages
+    интерпретатор ICMP-сообщений
     </td>
 </tr>
 </tbody>
@@ -23363,8 +23375,8 @@ mail filter but it can be used as log analyzer.</p>
 Script started, file is typescript</pre>
 <p>Сделайте что-нибудь, затем нажмите <code class="literal">Ctrl-D</code> для выхода из
 <code class="literal">script</code>.</p>
-<pre class="screen">$ col -bx &lt;typescript &gt;cleanedfile
-$ vim cleanedfile</pre>
+<pre class="screen">$ col -bx &lt;typescript &gt;очищенный_файл
+$ vim очищенный_файл</pre>
 <p>Если <code class="literal">script</code> недоступен (например, в процессе загрузки, на
 стадии initramfs), вместо него можно использовать это:</p>
 <pre class="screen">$ sh -i 2&gt;&amp;1 | tee typescript</pre>
@@ -23433,7 +23445,7 @@ lenny' border="1">
     time style value
     </th>
 <th align="left">
-    locale
+    локаль
     </th>
 <th align="left">
     отображение времени и даты
@@ -23445,7 +23457,7 @@ lenny' border="1">
                   <code class="literal">iso</code>
                 </td>
 <td align="left">
-                  <span class="emphasis"><em>any</em></span>
+                  <span class="emphasis"><em>любая</em></span>
                 </td>
 <td align="left">
                   <code class="literal">01-19 00:15</code>
@@ -23456,7 +23468,7 @@ lenny' border="1">
                   <code class="literal">long-iso</code>
                 </td>
 <td align="left">
-                  <span class="emphasis"><em>any</em></span>
+                  <span class="emphasis"><em>любая</em></span>
                 </td>
 <td align="left">
                   <code class="literal">2009-01-19 00:15</code>
@@ -23467,7 +23479,7 @@ lenny' border="1">
                   <code class="literal">full-iso</code>
                 </td>
 <td align="left">
-                  <span class="emphasis"><em>any</em></span>
+                  <span class="emphasis"><em>любая</em></span>
                 </td>
 <td align="left">
                   <code class="literal">2009-01-19 00:15:16.000000000 +0900</code>
@@ -23511,7 +23523,7 @@ lenny' border="1">
                   <code class="literal">+%d.%m.%y %H:%M</code>
                 </td>
 <td align="left">
-                  <span class="emphasis"><em>any</em></span>
+                  <span class="emphasis"><em>любая</em></span>
                 </td>
 <td align="left">
                   <code class="literal">19.01.09 00:15</code>
@@ -23522,7 +23534,7 @@ lenny' border="1">
                   <code class="literal">+%d.%b.%y %H:%M</code>
                 </td>
 <td align="left">
-<code class="literal">C</code> or <code class="literal">en_US.UTF-8</code>
+<code class="literal">C</code> или <code class="literal">en_US.UTF-8</code>
     </td>
 <td align="left">
                   <code class="literal">19.Jan.09 00:15</code>
@@ -23563,7 +23575,7 @@ lenny' border="1">
 <pre class="screen">$ RED=$(printf "\x1b[31m")
 $ NORMAL=$(printf "\x1b[0m")
 $ REVERSE=$(printf "\x1b[7m")
-$ echo "${RED}RED-TEXT${NORMAL} ${REVERSE}REVERSE-TEXT${NORMAL}"</pre>
+$ echo \"${RED}RED-TEXT${NORMAL} ${REVERSE}REVERSE-TEXT${NORMAL}\"</pre>
 </div>
 <div class="section" title="9.2.7. Подсветка вывода команд">
 <div class="titlepage"><div><div><h3 class="title">
@@ -23778,7 +23790,7 @@ VCS. Руководство по установке и использовани�
 "<code class="literal">/usr/share/doc/etckeeper/README.gz</code>".</p>
 <p>Essentially, running "<code class="literal">sudo etckeeper init</code>" initializes
 the git repository for "<code class="literal">/etc</code>" just like the process
-explained in <a class="xref" href="#_git_for_recording_configuration_history" title="10.9.5. Git for recording configuration history">Раздел 10.9.5, «Git for recording configuration history»</a> but
+explained in <a class="xref" href="#_git_for_recording_configuration_history" title="10.9.5. Git для записи истории изменения конфигурационных файлов">Раздел 10.9.5, «Git для записи истории изменения конфигурационных файлов»</a> but
 with special hook scripts for more thorough setups.</p>
 <p>As you change your configuration, you can use <code class="literal">git</code>(1)
 normally to record them.  It automatically records changes nicely every time
@@ -23856,7 +23868,7 @@ Partition Table (GPT)</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=util-linux" target="_top">V:91, I:99</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/u/util-linux.html" target="_top">2216</a></td>
 <td align="left">
-    Not supported
+    не поддерживается
     </td>
 <td align="left">
     различные системные средства, в том числе <code class="literal">fdisk</code>(8) и
@@ -23871,7 +23883,7 @@ Partition Table (GPT)</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=parted" target="_top">V:1.1, I:9</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/p/parted.html" target="_top">280</a></td>
 <td align="left">
-    Supported
+    поддерживается
     </td>
 <td align="left">
     GNU Parted disk partition resizing program
@@ -23885,7 +23897,7 @@ Partition Table (GPT)</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=gparted" target="_top">V:3, I:34</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/gparted.html" target="_top">3568</a></td>
 <td align="left">
-    Supported
+    поддерживается
     </td>
 <td align="left">
     Редактор партиций для GNOME, на основе <code class="literal">libparted</code>
@@ -23899,7 +23911,7 @@ Partition Table (GPT)</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=qtparted" target="_top">V:0.14, I:1.2</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/q/qtparted.html" target="_top">704</a></td>
 <td align="left">
-    Supported
+    поддерживается
     </td>
 <td align="left">
     Редактор партиций для KDE, на основе <code class="literal">libparted</code>
@@ -23913,7 +23925,7 @@ Partition Table (GPT)</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=gptsync" target="_top">V:0.01, I:0.16</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/gptsync.html" target="_top">72</a></td>
 <td align="left">
-    Supported
+    поддерживается
     </td>
 <td align="left">
     synchronize classic MBR partition table with the GPT one
@@ -23927,7 +23939,7 @@ Partition Table (GPT)</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=kpartx" target="_top">V:1.0, I:1.7</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/k/kpartx.html" target="_top">132</a></td>
 <td align="left">
-    Supported
+    поддерживается
     </td>
 <td align="left">
     program to create device mappings for partitions
@@ -26340,23 +26352,23 @@ to different sound servers.</p>
 </div>
 <br class="table-break">
 </div>
-<div class="section" title="9.6.9. Disabling beep sounds">
+<div class="section" title="9.6.9. Отключение встроенного динамика (speaker)">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_disabling_beep_sounds"></a>9.6.9. Disabling beep sounds</h3></div></div></div>
-<p>One can always unplug the PC speaker to disable beep sounds.  Removing
-<code class="literal">pcspkr</code> kernel module does this for you.</p>
-<p>The following prevents the <code class="literal">readline</code>(3) program used by
-<code class="literal">bash</code>(1) to beep when encountering "<code class="literal">\a</code>"
-(ASCII=7).</p>
+<a name="_disabling_beep_sounds"></a>9.6.9. Отключение встроенного динамика (speaker)</h3></div></div></div>
+<p>Можно физически отключить динамик, чтобы избавиться от пищащих звуков. А
+можно выгрузить модуль ядра <code class="literal">pcspkr</code>.</p>
+<p>А таким способом можно запретить программе <code class="literal">readline</code>(3),
+используемой <code class="literal">bash</code>(1), пищать при встрече с символом
+"<code class="literal">\a</code>" (ASCII=7).</p>
 <pre class="screen">$ echo "set bell-style none"&gt;&gt; ~/.inputrc</pre>
 </div>
-<div class="section" title="9.6.10. Memory usage">
+<div class="section" title="9.6.10. Использование памяти">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_memory_usage"></a>9.6.10. Memory usage</h3></div></div></div>
-<p>The kernel boot message in the "<code class="literal">/var/log/dmesg</code>" contains
-the total exact size of available memory.</p>
-<p><code class="literal">free</code>(1) and <code class="literal">top</code>(1) display information
-on memory resources on the running system.</p>
+<a name="_memory_usage"></a>9.6.10. Использование памяти</h3></div></div></div>
+<p>Сообщение загрузки ядра в "<code class="literal">/var/log/dmesg</code>" содержит
+полное и точное количество доступной памяти.</p>
+<p><code class="literal">free</code>(1) и <code class="literal">top</code>(1) выводят информацию о
+ресурсах памяти на запущенной системе.</p>
 <pre class="screen">$ grep '\] Memory' /var/log/dmesg
 [    0.004000] Memory: 990528k/1016784k available (1975k kernel code, 25868k reserved, 931k data, 296k init)
 $ free -k
@@ -26366,22 +26378,23 @@ Mem:        997184     976928      20256          0     129592     171932
 Swap:      4545576          4    4545572</pre>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>Do not worry about the large size of "<code class="literal">used</code>" and the small
-size of "<code class="literal">free</code>" in the "<code class="literal">Mem:</code>" line, but
-read the one under them (675404 and 321780 in the example below) and relax.</p>
+<p>Не беспокойтесь о большом размере использованной ("<code class="literal">used</code>")
+и маленьком свободной ("<code class="literal">free</code>") в строке
+"<code class="literal">Mem:</code>"; взгляните на строчку ниже (675404 и 321780 в
+примере выше) и расслабьтесь.</p>
 </div>
-<p>For my MacBook with 1GB=1048576k DRAM (video system steals some of this), I
-see the following.</p>
+<p>У меня на MacBook'е с 1GB=1048576k DRAM (часть которой забирает
+видео-подсистема), выводится следующее:</p>
 <div class="table">
-<a name="listofmemorysizesreported"></a><p class="title"><b>Таблица 9.20. List of memory sizes reported</b></p>
-<div class="table-contents"><table summary="List of memory sizes reported" border="1">
+<a name="listofmemorysizesreported"></a><p class="title"><b>Таблица 9.20. Список выводимых размеров памяти</b></p>
+<div class="table-contents"><table summary="Список выводимых размеров памяти" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
 </colgroup>
 <thead><tr>
 <th align="left">
-    report
+    отчёт
     </th>
 <th align="left">
     размер
@@ -26390,7 +26403,7 @@ see the following.</p>
 <tbody>
 <tr>
 <td align="left">
-    Total size in dmesg
+    общее количество, dmesg
     </td>
 <td align="left">
     1016784k = 1GB - 31792k
@@ -26398,7 +26411,7 @@ see the following.</p>
 </tr>
 <tr>
 <td align="left">
-    Free in dmesg
+    свободно, dmesg
     </td>
 <td align="left">
     990528k
@@ -26406,7 +26419,7 @@ see the following.</p>
 </tr>
 <tr>
 <td align="left">
-    Total under shell
+    всего, из оболочки
     </td>
 <td align="left">
     997184k
@@ -26414,10 +26427,10 @@ see the following.</p>
 </tr>
 <tr>
 <td align="left">
-    Free under shell
+    свободно, из оболочки
     </td>
 <td align="left">
-    20256k (but effectively 321780k)
+    20256k (но в действительности 321780k)
     </td>
 </tr>
 </tbody>
@@ -26655,25 +26668,26 @@ trusted as the system security audit tool against malicious attacks.</p>
 ("<code class="literal">/usr/share/doc/linux-doc-2.6.*/Documentation/filesystems/*</code>")
 из пакета <code class="literal">linux-doc-2.6.*</code>.</p>
 </div>
-<div class="section" title="9.7.3. Kernel headers">
+<div class="section" title="9.7.3. Заголовки ядра">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_kernel_headers"></a>9.7.3. Kernel headers</h3></div></div></div>
-<p>Most <span class="strong"><strong>normal programs</strong></span> don't need kernel
-headers and in fact may break if you use them directly for compiling. They
-should be compiled against the headers in
-"<code class="literal">/usr/include/linux</code>" and
-"<code class="literal">/usr/include/asm</code>" provided by the
-<code class="literal">libc6-dev</code> package (created from the
-<code class="literal">glibc</code> source package) on the Debian system.</p>
+<a name="_kernel_headers"></a>9.7.3. Заголовки ядра</h3></div></div></div>
+<p>Большинство <span class="strong"><strong>обычных программ</strong></span> не нуждаются
+в заголовочных файлах ядра и могут не работать, если использовать эти файлы
+для компиляции. Таковые должны компилироваться с заголовками в
+"<code class="literal">/usr/include/linux</code>" и
+"<code class="literal">/usr/include/asm</code>", устанавливаемыми пакетом
+<code class="literal">libc6-dev</code> (который создан из исходного пакета
+<code class="literal">glibc</code>).</p>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
-<p>For compiling some kernel-specific programs such as the kernel modules from
-the external source and the automounter daemon (<code class="literal">amd</code>), you
-must include path to the corresponding kernel headers,
-e.g. "<code class="literal">-I/usr/src/linux-particular-version/include/</code>", to
-your command line. <code class="literal">module-assistant</code>(8) (or its short form
-<code class="literal">m-a</code>) helps users to build and install module package(s)
-easily for one or more custom kernels.</p>
+<p>Для компиляции некоторых программ, завязанных на ядро (например, модулей
+ядра из различных источников, либо службы для автомонтирования
+<code class="literal">amd</code>), вам нужно указывать путь к соответствующим
+заголовкам ядра (например так:
+"<code class="literal">-I/usr/src/linux-particular-version/include/</code>") в
+командной строке. <code class="literal">module-assistant</code>(8) (короткое название
+<code class="literal">m-a</code>) помогает пользователям легко собирать и
+устанавливать пакеты модулей для одного или нескольких ядер.</p>
 </div>
 </div>
 <div class="section" title="9.7.4. Компиляция ядра и модулей">
@@ -26875,11 +26889,11 @@ as you upgrade kernels.</p>
 конкретных случаев: <code class="literal">kernel-pkg.conf</code>(5),
 <code class="literal">kernel-img.conf</code>(5).</p>
 <p>Вот пример для amd64</p>
-<pre class="screen"># aptitude install linux-tree-&lt;version&gt;
+<pre class="screen"># aptitude install linux-tree-&lt;номер_версии&gt;
 $ cd /usr/src
-$ tar -xjvf linux-source-&lt;version&gt;.tar.bz2
-$ cd linux-source-&lt;version&gt;
-$ cp /boot/config-&lt;oldversion&gt; .config
+$ tar -xjvf linux-source-&lt;номер_версии&gt;.tar.bz2
+$ cd linux-source-&lt;номер_версии&gt;
+$ cp /boot/config-&lt;версия_старого_ядра&gt; .config
 $ make menuconfig
  ...
 $ make-kpkg clean
@@ -26920,18 +26934,18 @@ $ sudo apt-get autoremove</pre>
 неадаптированных для Debian. В этом случае вам нужно самим заботиться о
 деталях конфигурации. Вот этот способ:</p>
 <pre class="screen">$ cd /usr/src
-$ wget http://www.kernel.org/pub/linux/kernel/v2.6/linux-&lt;version&gt;.tar.bz2
-$ tar -xjvf linux-&lt;version&gt;.tar.bz2
-$ cd linux-&lt;version&gt;
-$ cp /boot/config-&lt;version&gt; .config
+$ wget http://www.kernel.org/pub/linux/kernel/v2.6/linux-&lt;номер_версии&gt;.tar.bz2
+$ tar -xjvf linux-&lt;номер_версии&gt;.tar.bz2
+$ cd linux-&lt;номер_версии&gt;
+$ cp /boot/config-&lt;номер_версии&gt; .config
 $ make menuconfig
  ...
 $ make dep; make bzImage
 $ make modules
-# cp ./arch/x86_64/boot/bzImage /boot/vmlinuz-&lt;version&gt;
+# cp ./arch/x86_64/boot/bzImage /boot/vmlinuz-&lt;номер_версии&gt;
 # make modules_install
 # depmod -a
-# update-initramfs -c -k &lt;version&gt;</pre>
+# update-initramfs -c -k &lt;номер_версии&gt;</pre>
 <p>Настройка загрузчика:</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
@@ -28089,7 +28103,7 @@ static data archive.</p>
 </div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>Version control system (VCS) tools in <a class="xref" href="#list-of-vcs" title="Таблица 10.16. List of version control system tools">Таблица 10.16, «List of version control system tools»</a> can
+<p>Version control system (VCS) tools in <a class="xref" href="#list-of-vcs" title="Таблица 10.16. Список средств VCS">Таблица 10.16, «Список средств VCS»</a> can
 function as the multi-way copy and synchronization tools.</p>
 </div>
 </div>
@@ -28794,7 +28808,7 @@ whenever I need a temporary snapshot backup.</p>
 <h3 class="title">Подсказка</h3>
 <p>For making snapshot history of a source file tree or a configuration file
 tree, it is easier and space efficient to use <code class="literal">git</code>(7) (see
-<a class="xref" href="#_git_for_recording_configuration_history" title="10.9.5. Git for recording configuration history">Раздел 10.9.5, «Git for recording configuration history»</a>).</p>
+<a class="xref" href="#_git_for_recording_configuration_history" title="10.9.5. Git для записи истории изменения конфигурационных файлов">Раздел 10.9.5, «Git для записи истории изменения конфигурационных файлов»</a>).</p>
 </div>
 </div>
 <div class="section" title="10.1.10. Съёмные устройства хранения данных">
@@ -30736,14 +30750,14 @@ integrity.</p>
 </div>
 </div>
 </div>
-<div class="section" title="10.5. Source code merge tools">
+<div class="section" title="10.5. Средства соединения файлов с исходным кодом (merge)">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
-<a name="_source_code_merge_tools"></a>10.5. Source code merge tools</h2></div></div></div>
-<p>There are many merge tools for the source code.  Following commands caught
-my eyes.</p>
+<a name="_source_code_merge_tools"></a>10.5. Средства соединения файлов с исходным кодом (merge)</h2></div></div></div>
+<p>Есть много средств объединить файлы с исходным кодом. Вот те, что попались
+мне на глаза.</p>
 <div class="table">
-<a name="listofsourcecodemergetools"></a><p class="title"><b>Таблица 10.15. List of source code merge tools</b></p>
-<div class="table-contents"><table summary="List of source code merge tools" border="1">
+<a name="listofsourcecodemergetools"></a><p class="title"><b>Таблица 10.15. Список средств соединения файлов с исходным кодом (merge)</b></p>
+<div class="table-contents"><table summary="Список средств соединения файлов с исходным кодом (merge)" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -30780,7 +30794,7 @@ my eyes.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=diff" target="_top">V:73, I:91</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/d/diff.html" target="_top">36</a></td>
 <td align="left">
-    compare files line by line
+    сравнивает файлы построчно
     </td>
 </tr>
 <tr>
@@ -30794,7 +30808,7 @@ my eyes.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=diff" target="_top">V:73, I:91</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/d/diff.html" target="_top">36</a></td>
 <td align="left">
-    compare and merges three files line by line
+    сравнивает и объединяет три файла построчно
     </td>
 </tr>
 <tr>
@@ -30808,7 +30822,7 @@ my eyes.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=vim" target="_top">V:14, I:32</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/v/vim.html" target="_top">1744</a></td>
 <td align="left">
-    compare 2 files side by side in vim
+    сравнение и редактирование 2 файлов в vim с отображением различий
     </td>
 </tr>
 <tr>
@@ -30822,7 +30836,7 @@ my eyes.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=patch" target="_top">V:10, I:92</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/p/patch.html" target="_top">244</a></td>
 <td align="left">
-    apply a diff file to an original
+    соединяет файл различий (diff-файл) с оригиналом
     </td>
 </tr>
 <tr>
@@ -30836,7 +30850,7 @@ my eyes.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=dpatch" target="_top">V:1.6, I:13</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/d/dpatch.html" target="_top">344</a></td>
 <td align="left">
-    manage series of patches for Debian package
+    управление заплатами (patch) для пакета Debian
     </td>
 </tr>
 <tr>
@@ -30850,7 +30864,7 @@ my eyes.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=diffstat" target="_top">V:2, I:15</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/d/diffstat.html" target="_top">84</a></td>
 <td align="left">
-    produce a histogram of changes by the diff
+    статистика изменений, вносимых diff-файлом
     </td>
 </tr>
 <tr>
@@ -30864,7 +30878,7 @@ my eyes.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=patchutils" target="_top">V:2, I:15</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/p/patchutils.html" target="_top">292</a></td>
 <td align="left">
-    create a cumulative patch from two incremental patches
+    создаёт одну совокупную заплату (patch) из двух последовательных
     </td>
 </tr>
 <tr>
@@ -30878,7 +30892,7 @@ my eyes.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=patchutils" target="_top">V:2, I:15</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/p/patchutils.html" target="_top">292</a></td>
 <td align="left">
-    extract a diff from an HTML page
+    извлекает diff-файл из HTML-страницы
     </td>
 </tr>
 <tr>
@@ -30892,7 +30906,7 @@ my eyes.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=patchutils" target="_top">V:2, I:15</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/p/patchutils.html" target="_top">292</a></td>
 <td align="left">
-    extract or excludes diffs from a diff file
+    извлекает/исключает отличия из diff-файла
     </td>
 </tr>
 <tr>
@@ -30906,8 +30920,8 @@ my eyes.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=patchutils" target="_top">V:2, I:15</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/p/patchutils.html" target="_top">292</a></td>
 <td align="left">
-    fix diff files created by CVS that <code class="literal">patch</code>(1)
-mis-interprets
+    исправляет diff-файлы, созданные CVS, которые не обрабатываются командой
+<code class="literal">patch</code>(1)
     </td>
 </tr>
 <tr>
@@ -30921,7 +30935,7 @@ mis-interprets
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=patchutils" target="_top">V:2, I:15</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/p/patchutils.html" target="_top">292</a></td>
 <td align="left">
-    exchange the order of two patches
+    меняет очерёдность двух заплат
     </td>
 </tr>
 <tr>
@@ -30949,7 +30963,7 @@ mis-interprets
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=patchutils" target="_top">V:2, I:15</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/p/patchutils.html" target="_top">292</a></td>
 <td align="left">
-    show differences between two unified diff files
+    показывает отличия между двумя diff-файлами
     </td>
 </tr>
 <tr>
@@ -30963,7 +30977,7 @@ mis-interprets
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=patchutils" target="_top">V:2, I:15</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/p/patchutils.html" target="_top">292</a></td>
 <td align="left">
-    show which files are modified by a patch
+    показывает, какие файлы изменены заплатой
     </td>
 </tr>
 <tr>
@@ -31191,18 +31205,18 @@ effectively using <code class="literal">diff3</code>(1) by the following.</p>
 <pre class="screen">$ diff3 -m file.mine file.old file.yours &gt; file</pre>
 </div>
 </div>
-<div class="section" title="10.6. Version control systems">
+<div class="section" title="10.6. Системы управления версиями (VCS)">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
-<a name="_version_control_systems"></a>10.6. Version control systems</h2></div></div></div>
-<p>Here is a summary of the <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8" target="_top">version
-control systems (VCS)</a> on the Debian system.</p>
+<a name="_version_control_systems"></a>10.6. Системы управления версиями (VCS)</h2></div></div></div>
+<p>Вот сводка по всем <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8" target="_top">системам
+управления версиями</a>, доступным в Debian.</p>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
-<p>If you are new to VCS systems, you should start learning with <span class="strong"><strong>Git</strong></span>, which is growing fast in popularity.</p>
+<p>Если вы ещё не пользовались системами VCS, начните изучение с <span class="strong"><strong>Git</strong></span>, который стремительно набирает популярность.</p>
 </div>
 <div class="table">
-<a name="list-of-vcs"></a><p class="title"><b>Таблица 10.16. List of version control system tools</b></p>
-<div class="table-contents"><table summary="List of version control system tools" border="1">
+<a name="list-of-vcs"></a><p class="title"><b>Таблица 10.16. Список средств VCS</b></p>
+<div class="table-contents"><table summary="Список средств VCS" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -31225,7 +31239,7 @@ control systems (VCS)</a> on the Debian system.</p>
     tool
     </th>
 <th align="left">
-    VCS type
+    тип хранилища VCS
     </th>
 <th align="left">
     комментарий
@@ -31243,10 +31257,10 @@ control systems (VCS)</a> on the Debian system.</p>
                 <a class="ulink" href="http://cssc.sourceforge.net/" target="_top">CSSC</a>
               </td>
 <td align="left">
-    local
+    локальное
     </td>
 <td align="left">
-    clone of the <a class="ulink" href="http://en.wikipedia.org/wiki/Source_Code_Control_System" target="_top">Unix SCCS</a> (deprecated)
+    вариант <a class="ulink" href="http://en.wikipedia.org/wiki/Source_Code_Control_System" target="_top">Unix SCCS</a> (устарело)
     </td>
 </tr>
 <tr>
@@ -31260,10 +31274,10 @@ control systems (VCS)</a> on the Debian system.</p>
                 <a class="ulink" href="http://ru.wikipedia.org/wiki/Revision_Control_System" target="_top">RCS</a>
               </td>
 <td align="left">
-    local
+    локальное
     </td>
 <td align="left">
-    "<a class="ulink" href="http://en.wikipedia.org/wiki/Source_Code_Control_System" target="_top">Unix SCCS</a> done right"
+    <a class="ulink" href="http://en.wikipedia.org/wiki/Source_Code_Control_System" target="_top">Unix SCCS</a>, сделанный как следует
     </td>
 </tr>
 <tr>
@@ -31277,10 +31291,10 @@ control systems (VCS)</a> on the Debian system.</p>
                 <a class="ulink" href="http://ru.wikipedia.org/wiki/CVS" target="_top">CVS</a>
               </td>
 <td align="left">
-    remote
+    удалённое
     </td>
 <td align="left">
-    previous standard remote VCS
+    в прошлом -- стандартная удалённая VCS
     </td>
 </tr>
 <tr>
@@ -31294,10 +31308,10 @@ control systems (VCS)</a> on the Debian system.</p>
                 <a class="ulink" href="http://ru.wikipedia.org/wiki/Subversion" target="_top">Subversion</a>
               </td>
 <td align="left">
-    remote
+    удалённое
     </td>
 <td align="left">
-    "CVS done right", the new de facto standard remote VCS
+    "CVS сделанный как следует", новый стандарт удалённых VCS де-факто
     </td>
 </tr>
 <tr>
@@ -31311,10 +31325,11 @@ control systems (VCS)</a> on the Debian system.</p>
                 <a class="ulink" href="http://ru.wikipedia.org/wiki/Git" target="_top">Git</a>
               </td>
 <td align="left">
-    distributed
+    распределённое
     </td>
 <td align="left">
-    fast DVCS in C (used by the Linux kernel and others)
+    быстрая DVCS, написана на C, используется разработчиками ядра Linux и
+многими другими
     </td>
 </tr>
 <tr>
@@ -31328,10 +31343,10 @@ control systems (VCS)</a> on the Debian system.</p>
                 <a class="ulink" href="http://ru.wikipedia.org/wiki/Mercurial" target="_top">Mercurial</a>
               </td>
 <td align="left">
-    distributed
+    распределённое
     </td>
 <td align="left">
-    DVCS in Python and some C
+    DVCS на Питоне и немного на C
     </td>
 </tr>
 <tr>
@@ -31345,7 +31360,7 @@ control systems (VCS)</a> on the Debian system.</p>
                 <a class="ulink" href="http://ru.wikipedia.org/wiki/Bazaar" target="_top">Bazaar</a>
               </td>
 <td align="left">
-    distributed
+    распределённое
     </td>
 <td align="left">
     DVCS influenced by <code class="literal">tla</code> written in Python (used by <a class="ulink" href="http://www.ubuntu.com/" target="_top">Ubuntu</a>)
@@ -31362,7 +31377,7 @@ control systems (VCS)</a> on the Debian system.</p>
                 <a class="ulink" href="http://ru.wikipedia.org/wiki/Darcs" target="_top">Darcs</a>
               </td>
 <td align="left">
-    distributed
+    распределённое
     </td>
 <td align="left">
     DVCS with smart algebra of patches (slow)
@@ -31379,7 +31394,7 @@ control systems (VCS)</a> on the Debian system.</p>
                 <a class="ulink" href="http://en.wikipedia.org/wiki/GNU_arch" target="_top">GNU arch</a>
               </td>
 <td align="left">
-    distributed
+    распределённое
     </td>
 <td align="left">
     DVCS mainly by Tom Lord (Historic)
@@ -31396,10 +31411,10 @@ control systems (VCS)</a> on the Debian system.</p>
                 <a class="ulink" href="http://en.wikipedia.org/wiki/Monotone_(software)" target="_top">Monotone</a>
               </td>
 <td align="left">
-    distributed
+    распределённое
     </td>
 <td align="left">
-    DVCS in C++
+    DVCS на C++
     </td>
 </tr>
 <tr>
@@ -31413,10 +31428,10 @@ control systems (VCS)</a> on the Debian system.</p>
     CVS, …
     </td>
 <td align="left">
-    remote
+    удалённое
     </td>
 <td align="left">
-    GUI display of VCS (CVS, Subversion, RCS) repository tree
+    GUI для хранилищ VCS (CVS, Subversion, RCS)
     </td>
 </tr>
 <tr>
@@ -31431,51 +31446,54 @@ control systems (VCS)</a> on the Debian system.</p>
     Git
     </td>
 <td align="left">
-    distributed
+    распределённое
     </td>
 <td align="left">
-    GUI display of VCS (Git) repository tree
+    GUI для хранилищ VCS (Git)
     </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<br class="table-break"><p>VCS is sometimes known as revision control system (RCS), or software
-configuration management (SCM).</p>
-<p>Distributed VCS such as Git is the tool of choice these days.  CVS and
-Subversion may still be useful to join some existing open source program
-activities.</p>
-<p>Debian provides free VCS services via <a class="ulink" href="http://alioth.debian.org/" target="_top">Debian Alioth service</a>.  It supports
-practically all VCSs. Its documentation can be found at <a class="ulink" href="http://wiki.debian.org/Alioth" target="_top">http://wiki.debian.org/Alioth</a> .</p>
+<br class="table-break"><p>VCS иногда называют системами управления редакциями (RCS) или системами
+конфигурационного управления (SCM).</p>
+<p>Распределённые VCS, такие, как Git -- это выбор наших дней. CVS и Subversion
+могут ещё быть полезными, чтобы присоединиться к разработке существующих
+открытых программ.</p>
+<p>Debian предоставляет бесплатную службу VCS -- <a class="ulink" href="http://alioth.debian.org/" target="_top">Debian Alioth</a>. Этот сервис поддерживает
+почти все VCS. Документацию по нему можно найти здесь: <a class="ulink" href="http://wiki.debian.org/Alioth" target="_top">http://wiki.debian.org/Alioth</a>.</p>
 <div class="caution" title="Предостережение" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Предостережение</h3>
-<p>The <code class="literal">git</code> package was "GNU Interactive Tools" and the
-<code class="literal">git-core</code> package was DVCS in <code class="literal">lenny</code>.</p>
+<p>В <code class="literal">lenny</code> система управления версиями Git входила в пакет
+<code class="literal">git-core</code>, в то время как пакет <code class="literal">git</code>
+включал в себя интерактивные средства GNU.</p>
 </div>
-<p>There are few basics for creating a shared access VCS archive.</p>
+<p>Основные правила создания архива VCS с разделяемым доступом.</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
-Use "<code class="literal">umask 002</code>" (see <a class="xref" href="#_control_of_permissions_for_newly_created_files_umask" title="1.2.4. Управление разрешениями создаваемых файлов: umask">Раздел 1.2.4, «Управление разрешениями создаваемых файлов: umask»</a>)
+Используйте "<code class="literal">umask 002</code>" (см. <a class="xref" href="#_control_of_permissions_for_newly_created_files_umask" title="1.2.4. Управление разрешениями создаваемых файлов: umask">Раздел 1.2.4, «Управление разрешениями создаваемых файлов: umask»</a>)
 </li>
 <li class="listitem">
-Make all VCS archive files belonging to a pertinent group
+Все файлы в архиве VCS должны принадлежать одной группе
 </li>
 <li class="listitem">
-Enable set group ID on all VCS archive directories (BSD-like file creation
-scheme, see <a class="xref" href="#_filesystem_permissions" title="1.2.3. Права доступа к файлам и каталогам">Раздел 1.2.3, «Права доступа к файлам и каталогам»</a>)
+Устанавливайте бит <code class="literal">set group ID</code> для всех каталогов архива
+VCS (для создания файлов как в системах BSD, см. <a class="xref" href="#_filesystem_permissions" title="1.2.3. Права доступа к файлам и каталогам">Раздел 1.2.3, «Права доступа к файлам и каталогам»</a>)
 </li>
 <li class="listitem">
-Make user sharing the VCS archive belonging to the group
+Включайте пользователя, разделяющего доступ к архиву VCS, в соответствующую
+группу
 </li>
 </ul></div>
-<div class="section" title="10.6.1. Comparison of VCS commands">
+<div class="section" title="10.6.1. Сравнение команд различных VCS">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_comparison_of_vcs_commands"></a>10.6.1. Comparison of VCS commands</h3></div></div></div>
-<p>Here is an oversimplified comparison of native VCS commands to provide the
-big picture. The typical command sequence may require options and arguments.</p>
+<a name="_comparison_of_vcs_commands"></a>10.6.1. Сравнение команд различных VCS</h3></div></div></div>
+<p>Вот очень упрощённое сравнение команд различных VCS, дающее их общую
+картину. На практике в используемой последовательности команд могут
+потребоваться ключи и параметры.</p>
 <div class="table">
-<a name="comparisonofnativevcscommands"></a><p class="title"><b>Таблица 10.17. Comparison of native VCS commands</b></p>
-<div class="table-contents"><table summary="Comparison of native VCS commands" border="1">
+<a name="comparisonofnativevcscommands"></a><p class="title"><b>Таблица 10.17. Сравнение команд различных VCS</b></p>
+<div class="table-contents"><table summary="Сравнение команд различных VCS" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -31508,7 +31526,7 @@ big picture. The typical command sequence may require options and arguments.</p>
                   <code class="literal">git init</code>
                 </td>
 <td align="left">
-    create the (local) repository
+    создать (локальное) хранилище
     </td>
 </tr>
 <tr>
@@ -31522,7 +31540,7 @@ big picture. The typical command sequence may require options and arguments.</p>
     -
     </td>
 <td align="left">
-    login to the remote repository
+    войти на удалённое хранилище
     </td>
 </tr>
 <tr>
@@ -31536,7 +31554,7 @@ big picture. The typical command sequence may require options and arguments.</p>
                   <code class="literal">git clone</code>
                 </td>
 <td align="left">
-    check out the remote repository as the working tree
+    получить содержимое удалённого хранилища в виде рабочего дерева (check out)
     </td>
 </tr>
 <tr>
@@ -31564,7 +31582,7 @@ big picture. The typical command sequence may require options and arguments.</p>
                   <code class="literal">git add .</code>
                 </td>
 <td align="left">
-    add file(s) in the working tree to the VCS
+    добавить файл(ы) в рабочее дерево хранилища VCS
     </td>
 </tr>
 <tr>
@@ -31578,7 +31596,7 @@ big picture. The typical command sequence may require options and arguments.</p>
                   <code class="literal">git rm</code>
                 </td>
 <td align="left">
-    remove file(s) in working tree from the VCS
+    удалить файл(ы) из рабочего дерева хранилища VCS
     </td>
 </tr>
 <tr>
@@ -31592,7 +31610,7 @@ big picture. The typical command sequence may require options and arguments.</p>
     -
     </td>
 <td align="left">
-    commit changes to the remote repository
+    "залить" изменения на удалённое хранилище
     </td>
 </tr>
 <tr>
@@ -31606,7 +31624,7 @@ big picture. The typical command sequence may require options and arguments.</p>
                   <code class="literal">git commit -a</code>
                 </td>
 <td align="left">
-    commit changes to the local repository
+    "залить" изменения в локальное хранилище
     </td>
 </tr>
 <tr>
@@ -31620,7 +31638,7 @@ big picture. The typical command sequence may require options and arguments.</p>
                   <code class="literal">git push</code>
                 </td>
 <td align="left">
-    update the remote repository by the local repository
+    обновить содержимое удалённого хранилища из локального хранилища
     </td>
 </tr>
 <tr>
@@ -31634,7 +31652,7 @@ big picture. The typical command sequence may require options and arguments.</p>
                   <code class="literal">git status</code>
                 </td>
 <td align="left">
-    display the working tree status from the VCS
+    отобразить состояние рабочего дерева VCS
     </td>
 </tr>
 <tr>
@@ -31648,7 +31666,7 @@ big picture. The typical command sequence may require options and arguments.</p>
                   <code class="literal">git diff</code>
                 </td>
 <td align="left">
-    diff &lt;reference_repository&gt; &lt;working_tree&gt;
+    diff &lt;ссылка_на_хранилище&gt; &lt;рабочее_дерево&gt;
     </td>
 </tr>
 <tr>
@@ -31676,7 +31694,7 @@ big picture. The typical command sequence may require options and arguments.</p>
                   <code class="literal">gitk</code>
                 </td>
 <td align="left">
-    GUI display of VCS repository tree
+    просмотр хранилища через GUI
     </td>
 </tr>
 </tbody>
@@ -31684,28 +31702,28 @@ big picture. The typical command sequence may require options and arguments.</p>
 </div>
 <br class="table-break"><div class="caution" title="Предостережение" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Предостережение</h3>
-<p>Invoking a <code class="literal">git</code> subcommand directly as
-"<code class="literal">git-xyz</code>" from the command line has been deprecated since
-early 2006.</p>
+<p>Использование подкоманд <code class="literal">git</code> вида
+"<code class="literal">git-имя_подкоманды</code>" из консоли осуждается с начала 2006
+года (deprecated).</p>
 </div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>GUI tools such as <code class="literal">tkcvs</code>(1) and <code class="literal">gitk</code>(1)
-really help you with tracking revision history of files.  The web interface
-provided by many public archives for browsing their repositories is also
-quite useful, too.</p>
+<p>Графические средства, такие, как <code class="literal">tkcvs</code>(1) и
+<code class="literal">gitk</code>(1), действительно могут помочь вам отслеживать
+историю редакций файлов. Web-интерфейс, предоставляемый многими
+общедоступными архивами для просмотра содержимого хранилищ также может быть
+полезным.</p>
 </div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>Git can work directly with different VCS repositories such as ones provided
-by CVS and Subversion, and provides the local repository for local changes
-with <code class="literal">git-cvs</code> and <code class="literal">git-svn</code> packages.
-See <a class="ulink" href="http://www.kernel.org/pub/software/scm/git/docs/gitcvs-migration.html" target="_top">git for CVS users</a>, and <a class="xref" href="#_git_for_the_subversion_repository" title="10.9.4. Git for the Subversion repository">Раздел 10.9.4, «Git for the Subversion repository»</a>.</p>
+<p>Git может напрямую работать с хранилищами различных VCS (например, с такими,
+как CVS и Subversion) и предоставляет локальное хранилище для локальных
+изменений (пакеты <code class="literal">git-cvs</code> и <code class="literal">git-svn</code>).</p>
 </div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>Git has commands which have no equivalents in CVS and Subversion: "fetch",
-"rebase", "cherry-pick", …</p>
+<p>Команды Git, не имеющие эквивалентов в CVS и Subversion: "fetch", "rebase",
+"cherry-pick", …</p>
 </div>
 </div>
 </div>
@@ -32152,7 +32170,7 @@ client.</p>
 <h3 class="title">Подсказка</h3>
 <p>Client commands offered by the &lt;package&gt;git-svn&lt;/package&gt;
 package may offer alternative work flow of Subversion using the
-&lt;prgn&gt;git&lt;/prgn&gt; command.  See <a class="xref" href="#_git_for_the_subversion_repository" title="10.9.4. Git for the Subversion repository">Раздел 10.9.4, «Git for the Subversion repository»</a>.</p>
+&lt;prgn&gt;git&lt;/prgn&gt; command.  See <a class="xref" href="#_git_for_the_subversion_repository" title="10.9.4. Git для хранилища Subversion">Раздел 10.9.4, «Git для хранилища Subversion»</a>.</p>
 </div>
 <p>Check all available modules from Subversion project pointed by URL
 "<code class="literal">file:///srv/svn/project</code>" by the following.</p>
@@ -32298,9 +32316,9 @@ svn(1))" border="1">
 <p>Git can do everything for both local and remote source code management.
 This means that you can record the source code changes without needing
 network connectivity to the remote repository.</p>
-<div class="section" title="10.9.1. Configuration of Git client">
+<div class="section" title="10.9.1. Настройка Git-клиента">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_configuration_of_git_client"></a>10.9.1. Configuration of Git client</h3></div></div></div>
+<a name="_configuration_of_git_client"></a>10.9.1. Настройка Git-клиента</h3></div></div></div>
 <p>You may wish to set several global configuration in
 "<code class="literal">~/.gitconfig</code>" such as your name and email address used
 by Git by the following.</p>
@@ -32313,17 +32331,17 @@ $ git config --global alias.co checkout</pre>
 <p>You can check your global configuration by the following.</p>
 <pre class="screen">$ git config --global --list</pre>
 </div>
-<div class="section" title="10.9.2. Git references">
+<div class="section" title="10.9.2. Ссылки по Git">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_git_references"></a>10.9.2. Git references</h3></div></div></div>
+<a name="_git_references"></a>10.9.2. Ссылки по Git</h3></div></div></div>
 <p>Загляните сюда:</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
-<a class="ulink" href="http://www.kernel.org/pub/software/scm/git/docs/git.html" target="_top">manpage: git(1)</a>
+<a class="ulink" href="http://www.kernel.org/pub/software/scm/git/docs/git.html" target="_top">man-страница: git(1)</a>
 (<code class="literal">/usr/share/doc/git-doc/git.html</code>)
 </li>
 <li class="listitem">
-<a class="ulink" href="http://www.kernel.org/pub/software/scm/git/docs/user-manual.html" target="_top">Git User's Manual</a>
+<a class="ulink" href="http://www.kernel.org/pub/software/scm/git/docs/user-manual.html" target="_top">Руководство пользователя Git</a>
 (<code class="literal">/usr/share/doc/git-doc/user-manual.html</code>)
 </li>
 <li class="listitem">
@@ -32340,7 +32358,7 @@ git: part two</a>
 Or So</a> (<code class="literal">/usr/share/doc/git-doc/everyday.html</code>)
 </li>
 <li class="listitem">
-<p class="simpara"><a class="ulink" href="http://www.kernel.org/pub/software/scm/git/docs/gitcvs-migration.html" target="_top">git for CVS users</a>
+<p class="simpara"><a class="ulink" href="http://www.kernel.org/pub/software/scm/git/docs/gitcvs-migration.html" target="_top">git для пользователей CVS</a>
 (<code class="literal">/usr/share/doc/git-doc/gitcvs-migration.html</code>)
 </p>
 <div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem">
@@ -32364,8 +32382,8 @@ available on the web</a>
 </ul></div>
 </li>
 </ul></div>
-<p><code class="literal">git-gui</code>(1) and <code class="literal">gitk</code>(1) commands make
-using Git very easy.</p>
+<p><code class="literal">git-gui</code>(1) и <code class="literal">gitk</code>(1) упрощают
+использование Git.</p>
 <div class="warning" title="Внимание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Внимание</h3>
 <p>Do not use the tag string with spaces in it even if some tools such as
@@ -32381,8 +32399,8 @@ using Git very easy.</p>
 copy of source tree without the network connection to the upstream.  Here
 are some packages and commands used with <code class="literal">git</code>(1).</p>
 <div class="table">
-<a name="listofgitrelatedkagesandcommands"></a><p class="title"><b>Таблица 10.20. List of git related packages and commands</b></p>
-<div class="table-contents"><table summary="List of git related packages and commands" border="1">
+<a name="listofgitrelatedkagesandcommands"></a><p class="title"><b>Таблица 10.20. Список пакетов и команд, связанных с Git</b></p>
+<div class="table-contents"><table summary="Список пакетов и команд, связанных с Git" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -32434,7 +32452,7 @@ are some packages and commands used with <code class="literal">git</code>(1).</p
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=gitmagic" target="_top">I:0.3</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/gitmagic.html" target="_top">920</a></td>
 <td align="left">
-    "Git Magic", easier to understand guide for Git
+    "Git Magic", более простое для понимания руководство по Git
     </td>
 </tr>
 <tr>
@@ -32448,7 +32466,7 @@ are some packages and commands used with <code class="literal">git</code>(1).</p
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=git" target="_top">V:3, I:9</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/git.html" target="_top">12564</a></td>
 <td align="left">
-    Git, the fast, scalable, distributed revision control system
+    Git -- быстрая, масштабируемая, распределённая система контроля версий
     </td>
 </tr>
 <tr>
@@ -32463,7 +32481,7 @@ are some packages and commands used with <code class="literal">git</code>(1).</p
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/gitk.html" target="_top">924
 928</a></td>
 <td align="left">
-    GUI Git repository browser with history
+    графический браузер хранилищ Git
     </td>
 </tr>
 <tr>
@@ -32478,7 +32496,7 @@ are some packages and commands used with <code class="literal">git</code>(1).</p
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/git-gui.html" target="_top">1628
 1632</a></td>
 <td align="left">
-    GUI for Git (No history)
+    графический интерфейс для Git (без истории)
     </td>
 </tr>
 <tr>
@@ -32493,7 +32511,7 @@ are some packages and commands used with <code class="literal">git</code>(1).</p
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/git-svn.html" target="_top">564
 568</a></td>
 <td align="left">
-    import the data out of Subversion into Git
+    перенос данных из Subversion в Git
     </td>
 </tr>
 <tr>
@@ -32508,7 +32526,7 @@ are some packages and commands used with <code class="literal">git</code>(1).</p
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/git-svn.html" target="_top">564
 568</a></td>
 <td align="left">
-    provide bidirectional operation between the Subversion and Git
+    обмен данными между хранилищами Subversion и Git
     </td>
 </tr>
 <tr>
@@ -32523,7 +32541,7 @@ are some packages and commands used with <code class="literal">git</code>(1).</p
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/git-cvs.html" target="_top">684
 688</a></td>
 <td align="left">
-    import the data out of CVS into Git
+    перенос данных из CVS в Git
     </td>
 </tr>
 <tr>
@@ -32553,7 +32571,7 @@ are some packages and commands used with <code class="literal">git</code>(1).</p
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/g/git-cvs.html" target="_top">684
 688</a></td>
 <td align="left">
-    CVS server emulator for Git
+    эмулятор сервера CVS для Git
     </td>
 </tr>
 <tr>
@@ -32631,58 +32649,60 @@ current state of the working directory, you can use "<code class="literal">git
 stash</code>".  See <code class="literal">git-stash</code>(1).</p>
 </div>
 </div>
-<div class="section" title="10.9.4. Git for the Subversion repository">
+<div class="section" title="10.9.4. Git для хранилища Subversion">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_git_for_the_subversion_repository"></a>10.9.4. Git for the Subversion repository</h3></div></div></div>
-<p>You can check out a Subversion repository at
-"<code class="literal">svn+ssh://svn.example.org/project/module/trunk</code>" to a
-local Git repository at "<code class="literal">./dest</code>" and commit back to the
-Subvesrion repository.  E.g.:</p>
+<a name="_git_for_the_subversion_repository"></a>10.9.4. Git для хранилища Subversion</h3></div></div></div>
+<p>Вы можете получать (check out) из хранилища Subversion (по адресу
+"<code class="literal">svn+ssh://svn.example.org/project/module/trunk</code>") в
+локальное хранилище Git (в каталоге "<code class="literal">./dest</code>"), а затем
+заливать (commit) обратно в Subversion:</p>
 <pre class="screen">$ git svn clone -s -rHEAD svn+ssh://svn.example.org/project dest
 $ cd dest
-... make changes
+... вносите изменения
 $ git commit -a
-... keep working locally with git
+... продолжаете работать с git локально
 $ git svn dcommit</pre>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>The use of "<code class="literal">-rHEAD</code>" enables us to avoid cloning entire
-historical contents from the Subvesrion repository.</p>
+<p>Ключ "<code class="literal">-rHEAD</code>" позволяет избежать копирование всей истории
+из хранилища Subversion.</p>
 </div>
 </div>
-<div class="section" title="10.9.5. Git for recording configuration history">
+<div class="section" title="10.9.5. Git для записи истории изменения конфигурационных файлов">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_git_for_recording_configuration_history"></a>10.9.5. Git for recording configuration history</h3></div></div></div>
-<p>You can manually record chronological history of configuration using <a class="ulink" href="http://ru.wikipedia.org/wiki/Git" target="_top">Git</a> tools.  Here is a simple example for your practice
-to record "<code class="literal">/etc/apt/</code>" contents.</p>
+<a name="_git_for_recording_configuration_history"></a>10.9.5. Git для записи истории изменения конфигурационных файлов</h3></div></div></div>
+<p>Средствами <a class="ulink" href="http://ru.wikipedia.org/wiki/Git" target="_top">Git</a> вы можете вручную сохранять
+историю настроек системы. Вот простой пример для записи содержимого
+"<code class="literal">/etc/apt/</code>".</p>
 <pre class="screen">$ cd /etc/apt/
 $ sudo git init
 $ sudo chmod 700 .git
 $ sudo git add .
 $ sudo git commit -a</pre>
-<p>Commit configuration with description.</p>
-<p>Make modification to the configuration files.</p>
+<p>Сохраните конфигурацию вместе с её описанием (commit).</p>
+<p>Внесите изменения в файлы настроек.</p>
 <pre class="screen">$ cd /etc/apt/
 $ sudo git commit -a</pre>
-<p>Commit configuration with description and continue your life.</p>
+<p>Сохраните новую конфигурацию (commit), добавив её описание, и живите себе
+дальше.</p>
 <pre class="screen">$ cd /etc/apt/
 $ sudo gitk --all</pre>
-<p>You have full configuration history with you.</p>
+<p>У вас имеется полная история изменения файлов.</p>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
-<p><code class="literal">sudo</code>(8) is needed to work with any file permissions of
-configuration data.  For user configuration data, you may skip
-<code class="literal">sudo</code>.</p>
+<p><code class="literal">sudo</code> здесь нужно для доступа к файлам с любыми
+разрешениями доступа. Для сохранения настроек своего пользователя вы можете
+обойтись без <code class="literal">sudo</code>(8).</p>
 </div>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
-<p>The "<code class="literal">chmod 700 .git</code>" command in the above example is
-needed to protect archive data from unauthorized read access.</p>
+<p>Команда "<code class="literal">chmod 700 .git</code>" в предыдущем примере нужна для
+защиты архива истории от неавторизованного доступа для чтения.</p>
 </div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>For more complete setup for recording configuration history, please look for
-the <code class="literal">etckeeper</code> package: <a class="xref" href="#_recording_changes_in_configuration_files" title="9.2.10. Запись изменений в файлах конфигурации">Раздел 9.2.10, «Запись изменений в файлах конфигурации»</a>.</p>
+<p>Для более полной настройки сохранения истории конфигурации взгляните на
+пакет <code class="literal">etckeeper</code>: <a class="xref" href="#_recording_changes_in_configuration_files" title="9.2.10. Запись изменений в файлах конфигурации">Раздел 9.2.10, «Запись изменений в файлах конфигурации»</a>.</p>
 </div>
 </div>
 </div>
@@ -38593,8 +38613,8 @@ Aoki (2001-2007)
 теряет актуальность с выходом этого текста, "Debian Reference (версия 2)"
 </li></ul></div>
 </li></ul></div>
-<p>The previous "Debian Reference (version 1)" was created with many
-contributors.</p>
+<p>Предыдущий "Справочник по Debian (версия 1)" был создан при помощи многих
+людей.</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
 the major contents contribution on network configuration topics by Thomas
@@ -38625,12 +38645,12 @@ backtrace</a> with consent by Ari Pollak, Loïc Minier, and Dafydd
 Harries.</p>
 <p>Contents of "Debian Reference (version 2)" are mostly my own work except as
 mentioned above.  These has been updated by the contributors too.</p>
-<p>The author, Osamu Aoki, thanks all those who helped make this document
-possible.</p>
+<p>Автор, Осаму Аоки, благодарит всех, с чьей помощью этот документ стал
+возможным.</p>
 </div>
-<div class="section" title="A.3. Document format">
+<div class="section" title="A.3. Формат документа">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
-<a name="_document_format"></a>A.3. Document format</h2></div></div></div>
+<a name="_document_format"></a>A.3. Формат документа</h2></div></div></div>
 <p>The source of the English original document is currently written in <a class="ulink" href="http://packages.debian.org/search?keywords=asciidoc" target="_top">AsciiDoc</a> text files.  <a class="ulink" href="http://packages.debian.org/search?keywords=asciidoc" target="_top">AsciiDoc</a> is used as convenience only since it is
 less typing than straight XML and supports table in the very intuitive
 format.  You should think XML and PO files as real source files.  Via build
