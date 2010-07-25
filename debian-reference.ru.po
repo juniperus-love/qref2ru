@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Справочник по Debian\n"
 "POT-Creation-Date: 2010-06-24 18:27+0500\n"
-"PO-Revision-Date: 2010-07-24 13:09+0400\n"
+"PO-Revision-Date: 2010-07-25 18:51+0400\n"
 "Last-Translator: Juniperus Love <qref2ru@gmail.com>\n"
 "Language-Team:\n"
 "Language: \n"
@@ -12949,13 +12949,13 @@ msgstr "<ulink url=\"&thedebianarchive;\">Архивы Debian</ulink> досту
 #. type: Content of: <book><chapter><simpara>
 #: debian-reference.en.xmlt:5042
 msgid "The Debian package management system, <emphasis role=\"strong\">when used properly</emphasis>, offers the user to install <emphasis role=\"strong\">consistent sets of binary packages</emphasis> to the system from the archive.  Currently, there are &all-packages; packages available for the &arch; architecture."
-msgstr "Система пакетов Debian, при <emphasis role=\"strong\">правильном использовании</emphasis>, позволяет устанавливать в систему наборы <emphasis role=\"strong\">совместимых между собой бинарных пакетов</emphasis> из архивов. На данный момент для платформы &arch; доступны &all-packages; пакетов."
+msgstr "Система пакетов Debian при <emphasis role=\"strong\">правильном использовании</emphasis> позволяет устанавливать в систему наборы <emphasis role=\"strong\">совместимых между собой бинарных пакетов</emphasis> из архивов. На данный момент для платформы &arch; доступны &all-packages; пакетов."
 
 # type: Content of: <book><chapter><simpara>
 #. type: Content of: <book><chapter><simpara>
 #: debian-reference.en.xmlt:5043
 msgid "The Debian package management system has a rich history and many choices for the front end user program and back end archive access method to be used.  Currently, we recommend <literal>aptitude</literal>(8) as the main front end program for the Debian package management activity."
-msgstr "Система управления пакетами Debian может использоваться через разные программы и интерфейсы, с различными методами доступа к архивам. Сейчас мы рекомендуем <literal>aptitude</literal>(8) в качестве основного фронт-энда к этой системе."
+msgstr "Система управления пакетами Debian может использоваться через разные программы и интерфейсы, с различными методами доступа к архивам. Сейчас мы рекомендуем <literal>aptitude</literal>(8) в качестве основного интерфейса к этой системе."
 
 # type: Content of: <book><chapter><table><title>
 #. type: Content of: <book><chapter><table><title>
@@ -12967,19 +12967,19 @@ msgstr "Список программ для управления пакетам
 #. type: Content of: <book><chapter><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:5073
 msgid "terminal-based package manager (current standard, front-end for <literal>apt</literal>)"
-msgstr "терминальная программа (текущий стандартный front-end для APT)"
+msgstr "терминальная программа (текущий стандартный интерфейс к <literal>apt</literal>)"
 
 # type: Content of: <book><chapter><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:5081
 msgid "Advanced Packaging Tool (APT), front-end for <literal>dpkg</literal> providing \"<literal>http</literal>\", \"<literal>ftp</literal>\", and \"<literal>file</literal>\" archive access methods (<literal>apt-get</literal>/<literal>apt-cache</literal> commands included)"
-msgstr "Интерфейс к <literal>dpkg</literal> в Debian. Поддерживает следующие методы доступа к архивам Debian: \"<literal>http</literal>\", \"<literal>ftp</literal>\", <literal>file</literal>\". Включеные команды: <literal>apt-get</literal>, <literal>apt-cache</literal>."
+msgstr "интерфейс к <literal>dpkg</literal>; поддерживает методы доступа к архивам: \"<literal>http</literal>\", \"<literal>ftp</literal>\", <literal>file</literal>\"; команды: <literal>apt-get</literal>, <literal>apt-cache</literal>"
 
 # type: Content of: <book><chapter><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:5089
 msgid "tool for selecting tasks for installation on Debian system (front-end for APT)"
-msgstr "средства выбора задач для установки системы Debian (front-end для APT)"
+msgstr "средство формирования набора пакетов на основе ожидаемых задач (интерфейс к APT)"
 
 # type: Content of: <book><chapter><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><table><tgroup><tbody><row><entry>
@@ -13069,7 +13069,7 @@ msgstr "Настройки, сделанные администратором с
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5183
 msgid "Each package comes with its own configuration script with standardized user interface called <literal>debconf</literal>(7) to help initial installation process of the package."
-msgstr "Каждый пакет содержит собственный скрипт конфигурации со стандартизированным пользовательским интерфейсом <literal>debconf</literal>(7), помогающий в первоначальной настройке пакета."
+msgstr "Каждый пакет содержит собственный сценарий конфигурации со стандартизированным пользовательским интерфейсом <literal>debconf</literal>(7), помогающий в первоначальной настройке пакета."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -13105,7 +13105,7 @@ msgstr "Основные предостережения"
 #. type: Content of: <book><chapter><section><section><warning><simpara>
 #: debian-reference.en.xmlt:5211
 msgid "Do not install packages from random mixture of suites.  It probably breaks the package consistency which requires deep system management knowledge, such as compiler <ulink url=\"&abi;\">ABI</ulink>, <ulink url=\"&library;\">library</ulink> version, interpreter features, etc."
-msgstr "Не устанавливайте пакетов из разнообразных случайных источников. Это нарушает согласованность пакетов, настройка которой требует глубоких знаний управления системой, связанных с <ulink url=\"&abi;\">ABI</ulink> компилятора, версиями <ulink url=\"&library;\">библиотек</ulink>, особенностями интерпретатора, и т.д."
+msgstr "Не устанавливайте пакетов из разнообразных случайных источников. Это нарушает согласованность пакетов, настройка которой требует глубоких знаний по управлению системой, связанных с <ulink url=\"&abi;\">ABI</ulink> компилятора, версиями <ulink url=\"&library;\">библиотек</ulink>, особенностями интерпретатора, и т.д."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -13159,7 +13159,7 @@ msgstr "Не удаляйте и не меняйте системные файл
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5252
 msgid "Do not overwrite system files by installing software programs directly compiled from source."
-msgstr "Не перезаписывайте файлов, созданных системой, если устанавливаете софт, собранный вами из исходников."
+msgstr "Не перезаписывайте системных файлов при установке ПО, скомпилированного вами из исходных кодов."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
@@ -13214,13 +13214,13 @@ msgstr "Несмотря на эти предупреждения, я знаю, 
 #. type: Content of: <book><chapter><section><section><caution><simpara>
 #: debian-reference.en.xmlt:5289
 msgid "For your <emphasis role=\"strong\">production server</emphasis>, the <literal>stable</literal> suite with the security updates is recommended.  The same can be said for desktop PCs on which you can spend limited administration efforts, e.g. for your mother's PC."
-msgstr "Для вашего <emphasis role=\"strong\">производственного сервера</emphasis> рекомендуется использовать стабильный (<literal>stable</literal>) выпуск системы с обновлениями безопасности. То же самое можно сказать про настольные ПК, к которому вы можете прилагать минимальные усилия по управления, например, компьютер вашей матушки."
+msgstr "Для вашего <emphasis role=\"strong\">производственного сервера</emphasis> рекомендуется использовать стабильный (<literal>stable</literal>) выпуск системы с обновлениями безопасности. То же самое можно сказать про настольные ПК, к которому вы можете прилагать минимальные усилия по управлению, например, компьютер вашей матушки."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:5291
 msgid "It takes no more than simply setting the distribution string in the \"<literal>/etc/apt/sources.list</literal>\" to the suite name: \"<literal>testing</literal>\" or \"<literal>unstable</literal>\"; or the codename: \"<literal>&codename-testing;</literal>\" or \"<literal>&codename-unstable;</literal>\". This makes you live <emphasis role=\"strong\">the life of eternal upgrades</emphasis>."
-msgstr "Достаточно изменить строчку <literal>deb</literal> в <literal>/etc/apt/sources.list</literal>\", чтобы она указывала на архив со статусом \"<literal>testing</literal>\" или \"<literal>unstable</literal>\" (либо с кодовым именем \"<literal>&codename-testing;</literal>\" или \"<literal>&codename-unstable;</literal>\"), и вот вы уже живёте <emphasis role=\"strong\">жизнью постоянных обновлений</emphasis>."
+msgstr "Достаточно изменить строчку \"<literal>deb</literal>\" в \"<literal>/etc/apt/sources.list</literal>\", чтобы она указывала на архив со статусом \"<literal>testing</literal>\" или \"<literal>unstable</literal>\" (либо с кодовым именем \"<literal>&codename-testing;</literal>\" или \"<literal>&codename-unstable;</literal>\"), и вот вы уже живёте <emphasis role=\"strong\">жизнью постоянных обновлений</emphasis>."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -13357,7 +13357,7 @@ msgstr "Первый аргумент включает URL корня архив
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5357
 msgid "The 2nd argument is the distribution name: either the suite name or the codename."
-msgstr "Второй аргумент -- это имя выпуска: имя серии (как \"<literal>stable</literal>\") или кодовое имя (как \"<literal>lenny</literal>\")."
+msgstr "Второй аргумент -- это имя выпуска: статус (как \"<literal>stable</literal>\") или кодовое имя (как \"<literal>lenny</literal>\")."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -13493,7 +13493,7 @@ msgstr "<literal>stable/updates</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:5451
 msgid "security updates for stable release (important)"
-msgstr "обновления безопасности тестируемого выпуска (важно)"
+msgstr "обновления безопасности для стабильного выпуска (важно)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -13584,7 +13584,7 @@ msgstr "В <literal>стабильном</literal> архиве ошибки, с
 #: debian-reference.en.xmlt:5514
 #| msgid "List of Debian archive sites"
 msgid "List of Debian archive area"
-msgstr "Список области архивов Debian (archive area)"
+msgstr "Список областей архивов Debian (archive area)"
 
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:5522 debian-reference.en.xmlt:14039
@@ -13663,7 +13663,7 @@ msgstr "несвободный по критериям DFSG"
 #: debian-reference.en.xmlt:5569
 #| msgid "Here the number of packages in the above is for the &arch; architecture.  Strictly speaking, only the <literal>main</literal> component archive shall be considered as the Debian system."
 msgid "Here the number of packages in the above is for the &arch; architecture.  Strictly speaking, only the <literal>main</literal> area archive shall be considered as the Debian system."
-msgstr "Статистика количества пакетов приводится для архитектуры &arch;. Строго говоря, только область \"<literal>main</literal>\" должна восприниматься как система Debian."
+msgstr "Статистика количества пакетов приводится для архитектуры &arch;. Строго говоря, только область \"<literal>main</literal>\" может рассматриваться как система Debian."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -13681,7 +13681,7 @@ msgstr "Каждый выпуск системы Debian (дистрибутив)
 #. type: Content of: <book><chapter><section><section><table><title>
 #: debian-reference.en.xmlt:5573
 msgid "The relationship between suite and codename"
-msgstr "Отношения между статусом и кодовым именем"
+msgstr "Отношения между статусом (suite) и кодовым именем (codename)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
@@ -13760,7 +13760,7 @@ msgstr "Строго говоря, согласно терминологии а�
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:5629
 msgid "Every time a new upload is done by the Debian developer (DD) to the <literal>unstable</literal> archive (via <ulink url=\"&incoming;\">incoming</ulink> processing), DD is required to ensure uploaded packages to be compatible with the latest set of packages in the latest <literal>unstable</literal> archive."
-msgstr "Каждый раз, когда новый пакет добавляется разработчиком Debian (мейнтейнером пакета -- maintainer) в архив \"<literal>unstable</literal>\" (с помощью <ulink url=\"&incoming;\">incoming</ulink>), он обязан убедиться, что загруженный пакет совместим с последним набором других пакетов в этом архиве."
+msgstr "Каждый раз, когда новый пакет добавляется разработчиком Debian (мейнтейнером, сопровождающим пакета -- maintainer) в архив \"<literal>unstable</literal>\" (с помощью <ulink url=\"&incoming;\">incoming</ulink>), он обязан убедиться, что загруженный пакет совместим с последним набором других пакетов в этом архиве."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -13772,13 +13772,13 @@ msgstr "Если мейнтейнер осознанно не сохраняет
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:5631
 msgid "Before a set of packages are moved by the Debian archive maintenance script from the <literal>unstable</literal> archive to the <literal>testing</literal> archive, the archive maintenance script not only checks the maturity (about 10 days old) and the status of the RC bug reports for the packages but also tries to ensure them to be compatible with the latest set of packages in the <literal>testing</literal> archive. This process makes the <literal>testing</literal> archive very current and usable."
-msgstr "Перед тем, как пакет будет перемещён из архива \"<literal>unstable</literal>\" в \"<literal>testing</literal>\", скрипт поддержки пакета не только проверяет \"зрелость\" пакета по времени (примерно 10 дней) и статус сообщений об ошибках, но и пытается убедиться в их совместимости с последним набором других пакетов в архиве. Этот процесс делает архив \"<literal>testing</literal>\" актуальным и готовым к использованию."
+msgstr "До того, как пакеты перемещёны из архива \"<literal>unstable</literal>\" в \"<literal>testing</literal>\", сценарий обслуживания архива не только проверяет их \"зрелость\" по времени (примерно 10 дней) и статус сообщений об ошибках, но и пытается убедиться в их совместимости с последним набором других пакетов в архиве. Этот процесс делает архив \"<literal>testing</literal>\" актуальным и готовым к использованию."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:5632
 msgid "Through the gradual archive freeze process led by the release team, the <literal>testing</literal> archive is matured to make it completely consistent and bug free with some manual interventions.  Then the new <literal>stable</literal> release is created by assigning the codename for the old <literal>testing</literal> archive to the new <literal>stable</literal> archive and creating the new codename for the new <literal>testing</literal> archive.  The initial contents of the new <literal>testing</literal> archive is exactly the same as that of the newly released <literal>stable</literal> archive."
-msgstr "С помощью постепенной \"заморозки\" пакетов, проводимой командой выпускающих релиз, архив \"<literal>testing</literal>\" доводится до зрелости и становится устойчивым и не содержащим известных ошибок. Тогда новый стабильный выпуск (<literal>stable</literal>) создаётся присвоением кодового названия старого тестируемого (<literal>testing</literal>) выпуска новому стабильному (<literal>stable</literal>). Начальное содержимое нового архива \"<literal>testing</literal>\" в этот момент то же самое, что и в только что вышедшем релизе \"<literal>stable</literal>\"."
+msgstr "С помощью постепенной \"заморозки\" пакетов, проводимой командой выпускающих релиз, архив \"<literal>testing</literal>\" доводится до зрелости и становится устойчивым и свободным от известных ошибок. Тогда новый стабильный выпуск (<literal>stable</literal>) создаётся присвоением кодового названия старого тестируемого (<literal>testing</literal>) выпуска новому стабильному (<literal>stable</literal>). Начальное содержимое нового архива \"<literal>testing</literal>\" в этот момент то же самое, что и в только что вышедшем релизе \"<literal>stable</literal>\"."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -13790,19 +13790,19 @@ msgstr "Архивы \"<literal>unstable</literal>\" и \"<literal>testing</lite
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5637
 msgid "Broken package upload to the archive (mostly for <literal>unstable</literal>)"
-msgstr "Брошенный пакет загружен в архив (чаще в <literal>unstable</literal>)."
+msgstr "Сломанный (broken) пакет загружен в архив (чаще в <literal>unstable</literal>)."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5642
 msgid "Delay of accepting the new packages to the archive (mostly for <literal>unstable</literal>)"
-msgstr "Задержка добавления нового пакета в архив (чаще для <literal>unstable</literal>)."
+msgstr "Задержка при добавлении новых пакетов в архив (чаще для <literal>unstable</literal>)."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5647
 msgid "Archive synchronization timing issue (both for <literal>testing</literal> and <literal>unstable</literal>)"
-msgstr "Причины, связанные с синхронизацией архива (как для <literal>testing</literal>, так и для <literal>unstable</literal>, синхронизация зеркал в разных странах, например)."
+msgstr "Причины, связанные с синхронизацией архива (как для <literal>testing</literal>, так и для <literal>unstable</literal>: синхронизация зеркалирующих сайтов в разных странах, например)."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -13820,13 +13820,13 @@ msgstr "Так что если вы решаете использовать эт
 #. type: Content of: <book><chapter><section><section><caution><simpara>
 #: debian-reference.en.xmlt:5658
 msgid "For about few months after a new <literal>stable</literal> release, most desktop users should use the <literal>stable</literal> archive with its security updates even if they usually use <literal>unstable</literal> or <literal>testing</literal> archives.  For this transition period, both <literal>unstable</literal> and <literal>testing</literal> archives are not good for most people. Your system is difficult to keep in good working condition with the <literal>unstable</literal> archive since it suffers surges of major upgrades for core packages.  The <literal>testing</literal> archive is not useful either since it contains mostly the same content as the <literal>stable</literal> archive without its security support (<ulink url=\"&debiantestingsectyannouncecaaibc;\">Debian testing-security-announce 2008-12</ulink>). After a month or so, the <literal>unstable</literal> archive may be usable if you are careful."
-msgstr "Примерно в течение нескольких месяцев после выхода нового стабильного релиза, большая часть пользователей должна использовать именно его, вместе с обновлениями безопасности. В этот переходный период нестабильный и тестируемый архивы действительно не готовы для большинства пользователей. Ваша система с трудом будет сохранять рабочее состояние с архивом \"<literal>unstable</literal>\", поскольку именно в этот период он подвергается большому потоку важных обновлений важнейших системных пакетов. Архив \"<literal>testing</literal>\" в этот период просто бесполезен, ибо имеет то же содержимое, что и \"<literal>stable</literal>\", но не предоставляет обновлений безопасности (Debian testing- security-announce 2008-12). В это же время, по причине большого количества пользователей \"<literal>stable</literal>\", выявляются и исправляются многие ошибки и выпускаются обновления к пакетам в \"<literal>stable</literal>\". Примерно через месяц архив \"<literal>unstable</literal>\" может уже использоваться с осторожностью."
+msgstr "Примерно в течение нескольких месяцев после выхода нового стабильного релиза, большая часть пользователей должна использовать именно его вместе с обновлениями безопасности. В этот переходный период нестабильный и тестируемый архивы действительно не готовы для большинства пользователей. Ваша система с трудом будет сохранять рабочее состояние с архивом \"<literal>unstable</literal>\", поскольку именно в этот период он подвергается большому потоку важных обновлений основных системных пакетов. Архив \"<literal>testing</literal>\" в этот период просто бесполезен, ибо имеет то же содержимое, что и \"<literal>stable</literal>\", но не предоставляет обновлений безопасности (Debian testing- security-announce 2008-12). В это же время, по причине большого количества пользователей \"<literal>stable</literal>\", выявляются и исправляются многие ошибки и выпускаются обновления к пакетам в \"<literal>stable</literal>\". Примерно через месяц архив \"<literal>unstable</literal>\" может уже использоваться с осторожностью."
 
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:5661
 msgid "When tracking the <literal>testing</literal> archive, problem caused by a removed package is usually worked around by installing corresponding package from the <literal>unstable</literal> archive which is uploaded for bug fix."
-msgstr "При использовании <literal>testing</literal>-архива, проблема, вызванная удалённым пакетом обычно решается установкой соответствующего пакета из <literal>unstable</literal>, который загружен с целью исправления ошибки."
+msgstr "При использовании архива <literal>testing</literal> проблема, вызванная отсутствием пакета, обычно решается установкой соответствующего пакета из <literal>unstable</literal>, который загружен с целью исправления ошибки."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -13964,7 +13964,7 @@ msgstr "\"Provides\""
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5782
 msgid "This is declared when this package provide all of the files and functionality in the listed packages."
-msgstr "Объявляется, когда пакет предоставляет все файле и функциональность перечисленных в этом поле пакетов."
+msgstr "Объявляется, когда пакет предоставляет все файлы и функциональность перечисленных в этом поле пакетов."
 
 # type: Content of: <book><chapter><section><section><note><simpara>
 #. type: Content of: <book><chapter><section><section><note><simpara>
@@ -14018,7 +14018,7 @@ msgstr "<emphasis role=\"strong\">Upgrade</emphasis> -- установка об�
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5819
 msgid "Chose candidate version which is usually the latest available version for all installed packages (see <xref linkend=\"_tweaking_candidate_version\"/> for exception)"
-msgstr "Выбрать версии, до которых нужно обновиться -- обычно это последние доступные версии для всех установленных пакетов (см. <xref linkend=\"_tweaking_candidate_version\"/> для списка исключений)."
+msgstr "Выбрать версии, до которых нужно обновиться -- обычно это последние доступные версии для всех установленных пакетов (см. <xref linkend=\"_tweaking_candidate_version\"/> -- создание списка исключений)."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><orderedlist><listitem><simpara>
@@ -14074,7 +14074,7 @@ msgstr "Выбрать перечисленные пакеты."
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5870
 msgid "Fetch selected binary packages from remote archive"
-msgstr "Принять решение об установке зависимостей."
+msgstr "Получить выбранные двоичные пакеты из удалённого архива"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -14110,7 +14110,7 @@ msgstr "<emphasis role=\"strong\">Purge</emphasis> -- удалить вмест�
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5947
 msgid "Remove installed files <emphasis role=\"strong\">including</emphasis> configuration files"
-msgstr "Удалить установленные файлы, <emphasis role=\"strong\">в том числе их конфиги</emphasis>."
+msgstr "Удалить установленные файлы, <emphasis role=\"strong\">в том числе их файлы конфигурации</emphasis>."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -14147,7 +14147,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:5966
 msgid "You may need to install the corresponding documentation package named with \"<literal>-doc</literal>\" suffix for detailed information."
-msgstr "Вам может потребоваться установить документацию для пакета, если она вынесена в отдельный пакет, с суффиксом \"<literal>-doc</literal>\" на конце."
+msgstr "Вам может потребоваться установить документацию для пакета, если она вынесена в отдельный пакет, с суффиксом \"<literal>-doc</literal>\" в имени."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -14351,7 +14351,7 @@ msgstr "<literal>apt-get remove foo</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:6092
 msgid "remove \"<literal>foo</literal>\" package while leaving its configuration files"
-msgstr "удалить пакет \"<literal>foo</literal>\", сохранив его конфиг-файлы"
+msgstr "удалить пакет \"<literal>foo</literal>\", сохранив его файлы конфигурации"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -14412,7 +14412,7 @@ msgstr "<literal>apt-get clean</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:6125
 msgid "clear out the local repository of retrieved package files completely"
-msgstr "удалить все копии полученных пакетов с локального хранилища"
+msgstr "удалить все копии полученных пакетов из локального хранилища"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -14574,13 +14574,13 @@ msgstr "показать коротко причины, по которым пр
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:6234
 msgid "See <literal>aptitude</literal>(8) and \"aptitude user's manual\" at \"<literal>/usr/share/doc/aptitude/README</literal>\" for more."
-msgstr "Смотрите <literal>aptitude</literal>(8) и \"<literal>aptitude user's manual</literal>\" в \"<literal>/usr/share/doc/ aptitude/README</literal>\" для подробностей."
+msgstr "Подробности смотрите в <literal>aptitude</literal>(8) и \"<literal>руководстве пользователя aptitude</literal>\" в \"<literal>/usr/share/doc/aptitude/README</literal>\"."
 
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:6236
 msgid "The <literal>dselect</literal> package is still available and was the preferred full screen interactive package management tool in previous releases."
-msgstr "В предыдущих выпусках Debian роль aptitude выполнял <literal>dselect</literal>, более примитивный фронт-энд к APT. Пакет dselect всё ещё доступен для установки и использования."
+msgstr "В предыдущих выпусках Debian роль aptitude выполнял <literal>dselect</literal>. Пакет dselect всё ещё доступен для установки и использования."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -14827,7 +14827,7 @@ msgstr "повторить последний поиск"
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:6408
 msgid "The file name specification of the command line and the menu prompt after pressing \"<literal>l</literal>\" and \"<literal>//</literal>\" take the aptitude regex as described below.  Aptitude regex can explicitly match a package name using a string started by \"<literal>~n</literal> and followed by the package name."
-msgstr "Ниже описывается, как aptitude использует регулярные выражения (это относится как к командам в шелле, так и к командам \"<literal>l</literal>\" и \"<literal>/</literal>\" в интерфейсе с меню). Среди десятков тысяч пакетов aptitude может точно находить нужный вам с помощью регулярных выражений, в которых можно задать разнообразные параметры поиска. Для поиска среди имён всех пакетов введите регулярное выражение сразу после <literal>~n</literal>."
+msgstr "Ниже описывается, как использовать регулярные выражения aptitude (это относится как к командной строке, так и к командам \"<literal>l</literal>\" и \"<literal>/</literal>\" в интерактивном интерфейсе). Регулярные выражения aptitude позволяют точно задать имя пакета с помощью строки, начинающейся с \"<literal>~n</literal>\" и продолжающеййся именем пакета."
 
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><tip><simpara>
@@ -14864,7 +14864,7 @@ msgstr "Опишем, что здесь к чему."
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:6421
 msgid "The \"current state\" flag (the first letter)"
-msgstr "Первая буква: флаг \"текущее состояние пакета\" (\"current state\")."
+msgstr "Первая буква: флаг \"текущее состояние\" (\"current state\")."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -14876,7 +14876,7 @@ msgstr "Вторая буква: флаг \"планируемое действ�
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:6431
 msgid "The \"automatic\" flag (the third letter)"
-msgstr "Третья буква: флаг \"автоматически\" (\"automatic\")."
+msgstr "Третья буква: флаг \"автоматическое действие\" (\"automatic\")."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -14918,7 +14918,7 @@ msgstr "Последняя доступная версия (\"<emphasis role=\"s
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:6459
 msgid "Several types of package views are available under the menu \"<literal>Views</literal>\"."
-msgstr "Есть несколько способов организации просмотра пакетов. Одни сложились как более удачные, другие нет. Все они доступны в меню \"<literal>Окна</literal>\" (\"<literal>Views</literal>\")."
+msgstr "Есть несколько способов просмотра пакетов. Одни сложились как более удачные, другие нет. Все они доступны в меню \"<literal>Окна</literal>\" (\"<literal>Views</literal>\")."
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
@@ -14955,7 +14955,7 @@ msgstr "<literal>Package View</literal> (Окно Пакета)"
 #: debian-reference.en.xmlt:6485 debian-reference.en.xmlt:6496
 #: debian-reference.en.xmlt:6507
 msgid "Good"
-msgstr "Хорошее"
+msgstr "хорошее"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -15015,7 +15015,7 @@ msgstr "<literal>Categorical Browser</literal> (Браузер категори�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:6529
 msgid "Deprecated"
-msgstr "Признан ненужным"
+msgstr "признан ненужным"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -15033,7 +15033,7 @@ msgstr "Пожалуйста, помогите нам <ulink url=\"&improvingtag
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:6541
 msgid "The standard \"<literal>Package View</literal>\" categorizes packages somewhat like <literal>dselect</literal> with few extra features."
-msgstr "Стандартное окно просмотра \"<literal>Окно Пакетов</literal>\" -- \"<literal>Package View</literal>\" разделяет пакеты по категориям примерно так же, как и dselect."
+msgstr "Стандартное окно просмотра \"<literal>Окно Пакетов</literal>\" (\"<literal>Package View</literal>\") разделяет пакеты по категориям примерно так же, как и dselect."
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
@@ -15184,7 +15184,7 @@ msgstr "\"<literal>N</literal>\" повторить последний поис�
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:6676
 msgid "The string for &lt;package_name&gt; is treated as the exact string match to the package name unless it is started explicitly with \"<literal>~</literal>\" to be the regex formula."
-msgstr "Строка &lt;имя_пакета&gt; должна точно соответствовать имени существующего пакета. Она будет истолкована как регулярное выражение, если только начинается с \"<literal>~</literal>\"."
+msgstr "Строка &lt;имя_пакета&gt; должна точно соответствовать имени существующего пакета. Она будет истолкована как регулярное выражение, если начинается с \"<literal>~</literal>\"."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -15196,7 +15196,7 @@ msgstr "Регулярные выражения в aptitude"
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:6681
 msgid "The aptitude regex formula is mutt-like extended <emphasis role=\"strong\">ERE</emphasis> (see <xref linkend=\"_regular_expressions\"/>) and the meanings of the <literal>aptitude</literal> specific special match rule extensions are as follows."
-msgstr "В <literal>aptitude</literal>(8) регулярные выражения похожи на своих сородичей из <literal>mutt</literal>. Они расширенные (ERE -- см. <xref linkend=\"_regular_expressions\"/>) и используют команду для поиска регулярного выражения только в определённых пакетах, типах пакетов или частях заголовков пакетов."
+msgstr "В <literal>aptitude</literal>(8) регулярные выражения похожи на своих сородичей из <literal>mutt</literal>. Они расширенные (ERE -- см. <xref linkend=\"_regular_expressions\"/>) и используют отдельную команду для поиска только в определённых типах пакетов или частях заголовков пакетов."
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
@@ -15460,7 +15460,7 @@ msgstr "<literal>~g</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:6856
 msgid "match packages with broken relation"
-msgstr "брошенная зависимость"
+msgstr "сломанная зависимость"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -15472,7 +15472,7 @@ msgstr "<literal>~b</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:6864
 msgid "match packages with broken depends/predepends/conflict"
-msgstr "брошенная зависимость/пре-зависимость или конфликт "
+msgstr "сломанная зависимость/пре-зависимость или конфликт "
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -15484,19 +15484,19 @@ msgstr "<literal>~B&lt;type&gt;</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:6872
 msgid "match packages from which relation &lt;type&gt; is defined to &lt;term&gt; package"
-msgstr ""
+msgstr "выбрать пакеты, объявляющие зависимость &lt;type&gt; от пакета с шаблоном имени &lt;term&gt;"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:6875
 msgid "<literal>~D[&lt;type&gt;:]&lt;term&gt;</literal>"
-msgstr "<literal>~D[&lt;type&gt;:]&lt;term&gt;</literal>"
+msgstr "<literal>~D[&lt;тип_зависимости&gt;:]&lt;шаблон_имени&gt;</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:6880
 msgid "match packages from which <emphasis role=\"strong\">broken</emphasis> relation &lt;type&gt; is defined to &lt;term&gt; package"
-msgstr "пакеты с брошенной зависимостью с типом &lt;type&gt; от пакета, соответствующему выражению &lt;term&gt;"
+msgstr "пакеты со сломанной зависимостью типа &lt;type&gt; от пакета с шаблоном имени &lt;term&gt;"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -15508,7 +15508,7 @@ msgstr "<literal>~DB[&lt;type&gt;:]&lt;term&gt;</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:6888
 msgid "match packages to which the &lt;term&gt; package defines relation &lt;type&gt;"
-msgstr "пакеты, к которым пакеты &lt;term&gt; имеют зависимость типа &lt;type&gt;"
+msgstr "пакеты, к которым пакет &lt;term&gt; объявляет зависимость типа &lt;type&gt;"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -15520,7 +15520,7 @@ msgstr "<literal>~R[&lt;type&gt;:]&lt;term&gt;</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:6896
 msgid "match packages to which the &lt;term&gt; package defines <emphasis role=\"strong\">broken</emphasis> relation &lt;type&gt;"
-msgstr "пакеты, к которым пакеты &lt;term&gt; имеют брошенную зависимость типа &lt;type&gt;"
+msgstr "пакеты, к которым пакет &lt;term&gt; объявляет сломанную зависимость типа &lt;type&gt;"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -15544,7 +15544,7 @@ msgstr "<literal>~R~i</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:6912
 msgid "match packages to which no other installed packages depend on"
-msgstr "пакет, от которых не зависят другие установленные пакеты "
+msgstr "пакеты, от которых не зависят никакие другие установленные пакеты "
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -15770,7 +15770,7 @@ msgstr "Aptitude имеет преимущества перед другими �
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7056
 msgid "<literal>aptitude</literal> removes unused auto installed packages automatically using its own extra layer of package state file (<literal>/var/lib/aptitude/pkgstates</literal>). (For new \"<literal>lenny</literal>\", other APT does the same.)"
-msgstr "<literal>aptitude</literal> удаляет не нужные больше автоматически установленные пакеты, используя собственную информацию об их статусе (который находится в <literal>/var/lib/aptitude/pkgstates</literal>). Хотя теперь в \"<literal>lenny</literal>\" другие средства APT ведут себя так же."
+msgstr "<literal>aptitude</literal> удаляет ненужные больше автоматически установленные пакеты, используя собственную информацию об их статусе (который находится в <literal>/var/lib/aptitude/pkgstates</literal>). Хотя теперь в \"<literal>lenny</literal>\" другие средства APT ведут себя так же."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -15782,7 +15782,7 @@ msgstr "<literal>aptitude</literal> позволяет просто решать
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7064
 msgid "<literal>aptitude</literal> makes it easy to keep track of obsolete software by listing under \"Obsolete and Locally Created Packages\"."
-msgstr "<literal>aptitude</literal> позволяет легко отслеживать пакеты, которые устарели либо были созданы локально (в группе \"Устаревшие и пакеты, созданные локально)."
+msgstr "<literal>aptitude</literal> позволяет легко отслеживать пакеты, которые устарели либо были созданы локально (в группе \"Устаревшие и пакеты, созданные локально\")."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -15818,7 +15818,7 @@ msgstr "В предыдущем выпуске системы -- \"<literal>etch
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:7085
 msgid "Anyway, <literal>aptitude</literal> is nice for interactive console use."
-msgstr "В любом случае, aptitude хороша для интерактивного использования в консоли."
+msgstr "В любом случае, aptitude удобно для интерактивного использования в консоли."
 
 # type: Content of: <book><chapter><section><title>
 #. type: Content of: <book><chapter><section><title>
@@ -15842,7 +15842,7 @@ msgstr "Поиск среди имён пакетов"
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:7093
 msgid "The following command lists packages with regex matching on package names."
-msgstr "Следующие команды выполняют поиск регулярного выражения по именам пакетов и выводят результат."
+msgstr "Следующая команда выполняет поиск регулярного выражения по именам пакетов и выводит результат."
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -15885,7 +15885,7 @@ msgstr "Удаление конфигураций уже удалённых па
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:7105
 msgid "You can purge all remaining configuration files of removed packages."
-msgstr "Вы можете удалить конфиги, оставшиеся после удаления пакетов."
+msgstr "Вы можете удалить конфигурационные файлы, оставшиеся после удаления пакетов."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -15904,7 +15904,7 @@ msgstr "# aptitude search '~c'"
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:7108
 msgid "If you think listed packages are OK to be purged, execute the following command."
-msgstr "Если вы уверены, что все эти пакеты не оставили <emphasis role=\"strong\">нужных вам</emphasis> конфигов, удалите их всех командой:"
+msgstr "Если вы уверены, что все эти пакеты не оставили <emphasis role=\"strong\">нужных вам</emphasis> файлов конфигурации, удалите их всех командой:"
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -16031,7 +16031,7 @@ msgstr "Апгрейд всей системы с помощью aptitude"
 #. type: Content of: <book><chapter><section><section><note><simpara>
 #: debian-reference.en.xmlt:7180
 msgid "When moving to a new release etc, you should consider to perform a clean installation of new system even though Debian is upgradable as described below.  This provides you a chance to remove garbages collected and exposes you to the best combination of latest packages.  Of course, you should make a full backup of system to a safe place (see <xref linkend=\"_backup_and_recovery\"/>) before doing this. I recommend to make a dual boot configuration using different partition to have the smoothest transition."
-msgstr "При переходе на новый выпуск системы, стоит подумать о возможности полной переустановки новой системы, несмотря на то, что её можно просто обновить, как описано ниже. Это может избавить вас от гор накопившегося мусора и позволит настроить лучшую комбинацию последних версий установленных программ. Конечно, в этом случае нужно сделать полную резервную копию старой системы и сохранить её в безопасном месте (см. <xref linkend=\"_backup_and_recovery\"/>) перед переустановкой. Я рекомендую установить новую версию на отдельной партиции с возможностью загрузки любой версии для более плавного перехода."
+msgstr "При переходе на новый выпуск системы стоит подумать о возможности полной переустановки системы, несмотря на то, что её можно просто обновить, как описано ниже. Это может избавить вас от гор накопившегося мусора и позволит настроить лучшую комбинацию последних версий установленных программ. Конечно, в этом случае нужно сделать полную резервную копию старой системы и сохранить её в безопасном месте (см. <xref linkend=\"_backup_and_recovery\"/>) перед переустановкой. Я рекомендую установить новую версию на отдельной партиции с возможностью загрузки любой версии для более плавного перехода."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -16151,7 +16151,7 @@ msgstr "При апргейде от одного стабильного вып�
 #. type: Content of: <book><chapter><section><section><caution><simpara>
 #: debian-reference.en.xmlt:7258
 msgid "In previous \"Release Notes\", GCC, Linux Kernel, initrd-tools, Glibc, Perl, APT tool chain, etc. have required some special attention for system wide upgrade."
-msgstr "В последних \"Release Note\" GCC, Linux Kernel, initrd-tools, Glibc, Perl, средства APT и др. требуют отдельного внимания в случае апгрейда системы."
+msgstr "В последних \"Release Notes\" GCC, ядро Linux, initrd-tools, Glibc, Perl, средства APT и др. требуют отдельного внимания в случае апгрейда системы."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -16241,7 +16241,7 @@ msgstr "<literal>apt-file search &lt;шаблон_имени_файла&gt;</lit
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7321
 msgid "list packages in archive which have matching file name"
-msgstr "поиск пакетов в архиве, содержащих файл с заданным именем"
+msgstr "поиск пакетов, содержащих файл с заданным именем"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16253,7 +16253,7 @@ msgstr "<literal>apt-file list &lt;шаблон_имени_пакета&gt;</lit
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7329
 msgid "list contents of matching packages in archive"
-msgstr "содержимое пакетов с заданным именем"
+msgstr "вывести содержимое пакетов с заданным именем"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16349,7 +16349,7 @@ msgstr "<literal>apt-cache showsrc &lt;имя_бинарного_пакета&gt
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7393
 msgid "show source package information of a binary package"
-msgstr "показать информацию о пакете с исходными кодами для заданного бинарного пакета"
+msgstr "показать информацию о пакете с исходными текстами для заданного бинарного пакета"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16391,7 +16391,7 @@ msgstr "получить пакет с исходным кодом с задан
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7422
 msgid "<literal>dpkg-source -x &lt;package_name&gt;_&lt;version&gt;-&lt;debian_version&gt;.dsc</literal>"
-msgstr "<literal>dpkg-source -x &lt;package_name&gt;_&lt;version&gt;- &lt;debian_version&gt;.dsc</literal>"
+msgstr "<literal>dpkg-source -x &lt;имя_пакета&gt;_&lt;версия&gt;- &lt;версия_в_debian&gt;.dsc</literal>"
 
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16410,7 +16410,7 @@ msgstr "<literal>debuild binary</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7433
 msgid "build package(s) from a local source tree"
-msgstr "собрать пакет(ы) из локального дерева с исходными кодами"
+msgstr "собрать пакет(ы) из локального дерева с исходными текстами"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16422,7 +16422,7 @@ msgstr "<literal>make-kpkg kernel_image</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7441
 msgid "build a kernel package from a kernel source tree"
-msgstr "собрать пакет с ядром из установленных исходников"
+msgstr "собрать пакет с ядром из установленных исходных текстов"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16434,13 +16434,13 @@ msgstr "<literal>make-kpkg --initrd kernel_image</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7449
 msgid "build a kernel package from a kernel source tree with initramfs enabled"
-msgstr "собрать пакет с ядром из установленных исходников с включенным initrd"
+msgstr "собрать пакет с ядром из установленных исходных текстов с включенным initrd"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7454
 msgid "<literal>dpkg -i &lt;package_name&gt;<emphasis>&lt;version&gt;-&lt;debian_version&gt;</emphasis>&lt;arch&gt;.deb</literal>"
-msgstr "<literal>dpkg -i &lt;package_name&gt; &lt;version&gt;-&lt;debian_version&gt; &lt;arch&gt;.deb</literal>"
+msgstr "<literal>dpkg -i &lt;имя_пакета&gt; &lt;версия&gt;-&lt;версия_в_debian&gt; &lt;архитектура&gt;.deb</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16452,13 +16452,13 @@ msgstr "установить пакет в систему"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7462
 msgid "<literal>debi &lt;package_name&gt;<emphasis>&lt;version&gt;-&lt;debian_version&gt;</emphasis>&lt;arch&gt;.dsc</literal>"
-msgstr "<literal>debi &lt;package_name&gt; &lt;version&gt;-&lt;debian_version&gt; &lt;arch&gt;.dsc</literal>"
+msgstr "<literal>debi &lt;имя_пакета&gt; &lt;версия&gt;-&lt;версия_в_debian&gt; &lt;архитектура&gt;.dsc</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7465
 msgid "install local package(s) to the system"
-msgstr "установить пакеты с исходниками"
+msgstr "установить пакеты с исходными текстами"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16488,7 +16488,7 @@ msgstr "установить статусы пакетов уровня dpkg с�
 #. type: Content of: <book><chapter><section><section><caution><simpara>
 #: debian-reference.en.xmlt:7488
 msgid "Lower level package tools such as \"<literal>dpkg -i …</literal>\" and \"<literal>debi …</literal>\" should be carefully used by the system administrator.  It does not automatically take care required package dependencies. Dpkg's commandline options \"<literal>--force-all</literal>\" and similar (see <literal>dpkg</literal>(1)) are intended to be used by experts only.  Using them without fully understanding their effects may break your whole system."
-msgstr "Низкоуровневые средства работы с пакетами (например, \"<literal>dpkg -i ...</literal>\" или \"<literal>debi ...</literal>\") должны использоваться с осторожностью, потому что они ни не проверяют зависимости. Параметр \"<literal>--force-all</literal>\" команды \"<literal>dpkg</literal>\"(1) и ей подобных предназначена для использования только специалистами в Debian: если вы не понимаете, как они работают, это может погубить всю систему."
+msgstr "Низкоуровневые средства работы с пакетами (например, \"<literal>dpkg -i ...</literal>\" или \"<literal>debi ...</literal>\") должны использоваться с осторожностью, потому что они не проверяют зависимости. Ключ \"<literal>--force-all</literal>\" команды \"<literal>dpkg</literal>\"(1) и ей подобных предназначена для использования только специалистами в Debian: если вы не понимаете, как они работают, это может погубить всю систему."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -16590,7 +16590,7 @@ msgstr "Многие предпочитают пользоваться <emphasis
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:7549
 msgid "The installation of the <literal>apt-listbugs</literal> package safeguards your system against critical bugs by checking Debian BTS automatically for critical bugs when upgrading with APT system."
-msgstr "<literal>apt-listbugs</literal> получает из Debian BTS (Bug Tracking System) информацию об ошибках в пакетах. Это средство можно использовать, чтобы обезопасить систему от наличия критических ошибок."
+msgstr "<literal>apt-listbugs</literal> получает из Debian BTS (Bug Tracking System) информацию об ошибках в пакетах. Это средство можно использовать, чтобы обезопасить систему от установки пакетов с критическими ошибами."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -16681,7 +16681,7 @@ msgstr "<literal>Release</literal>"
 #: debian-reference.en.xmlt:7592 debian-reference.en.xmlt:7603
 #: debian-reference.en.xmlt:7614
 msgid "top of distribution"
-msgstr "корневой каталог дистрибутива"
+msgstr "верхний каталог каждого конкретного выпуска Debian"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16711,14 +16711,14 @@ msgstr "<literal>Contents-&lt;архитектура&gt;</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7617
 msgid "list of all files for all the packages in the pertinent archive"
-msgstr "список всех файлов всех пакетов в архиве для этой архитектуры"
+msgstr "список всех файлов всех пакетов в соответствующем архиве"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7625
 #| msgid "top of each distribution/component/architecture combination"
 msgid "top of each distribution/area/architecture combination"
-msgstr ""
+msgstr "верхний каталог &lt;имя_выпуска&gt;/&lt;область_архива&gt;/&lt;архитектура_архива&gt;"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16737,7 +16737,7 @@ msgstr "<literal>Packages</literal>"
 #: debian-reference.en.xmlt:7636
 #| msgid "top of each distribution/component/binary-architecture combination"
 msgid "top of each distribution/area/binary-architecture combination"
-msgstr ""
+msgstr "верхний каталог &lt;имя_выпуска&gt;/&lt;область_архива&gt;/binary-&lt;архитектура&gt;"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16756,7 +16756,7 @@ msgstr "<literal>Sources</literal>"
 #: debian-reference.en.xmlt:7647
 #| msgid "top of each distribution/component/source combination"
 msgid "top of each distribution/area/source combination"
-msgstr ""
+msgstr "верхний каталог &lt;имя_выпуска&gt;/&lt;область_архива&gt;/source"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -16780,7 +16780,7 @@ msgstr "Файл верхнего уровня \"Release\" и аутентичн
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:7661
 msgid "The top level \"<literal>Release</literal>\" file is used for signing the archive under the <emphasis role=\"strong\">secure APT</emphasis> system."
-msgstr ""
+msgstr "Файл \"<literal>Release</literal>\" верхнего уровня используется для подписывания архива системой <emphasis role=\"strong\">secure APT</emphasis>."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -16822,7 +16822,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><note><simpara>
 #: debian-reference.en.xmlt:7677
 msgid "Here, you can find my rationale to use the \"suite\", and \"codeneme\" in <xref linkend=\"_debian_archive_basics\"/>.  The \"distribution\" is used when referring to both \"suite\" and \"codeneme\".  All archive \"area\" names offered by the archive are listed under \"Component\"."
-msgstr ""
+msgstr "Здесь можно видеть причины, по которым я использую термины \"статус\" (\"suite\") и \"кодовое имя\" (\"codename\") в <xref linkend=\"_debian_archive_basics\"/>. Слово \"выпуск\" (\"distribution\") используется, когда имеется ввиду и \"статус\" и \"кодовое имя\". Все имена \"областей\" архива (\"area\"), входящих в конкретный архив перечислены в графе \"Components\"."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -16911,7 +16911,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><caution><simpara>
 #: debian-reference.en.xmlt:7724
 msgid "For \"<literal>Archive:</literal>\" stanza, suite names (\"<literal>stable</literal>\", \"<literal>testing</literal>\", \"<literal>unstable</literal>\", …) are used in <ulink url=\"&thedebianarchive;\">the Debian archive</ulink> while codenames (\"<literal>dapper</literal>\", \"<literal>feisty</literal>\", \"<literal>gutsy</literal>\", \"<literal>hardy</literal>\", \"<literal>intrepid</literal>\", …) are used in <ulink url=\"&theubuntuarchive;\">the Ubuntu archive</ulink>."
-msgstr "Для записи \"<literal>Archive</literal>\" в <ulink url=\"&thedebianarchive;\">Debian</ulink> используются типы дистрибутивов (\"<literal>stable</literal>\", \"<literal>testing</literal>\", \"<literal>unstable</literal>\", ...). В системе <ulink url=\"&theubuntuarchive;\">Ubuntu</ulink> для этой записи используются имена дистрибутивов (\"<literal>dapper</literal>\", \"<literal>feisty</literal>\", \"<literal>gutsy</literal>\", \"<literal>hardy</literal>\", \"<literal>intrepid</literal>\", ...)."
+msgstr "Для записи \"<literal>Archive</literal>\" в <ulink url=\"&thedebianarchive;\">Debian</ulink> используются статусы (\"<literal>stable</literal>\", \"<literal>testing</literal>\", \"<literal>unstable</literal>\", ...). В системе <ulink url=\"&theubuntuarchive;\">Ubuntu</ulink> для этой записи используются кодовые имена (\"<literal>dapper</literal>\", \"<literal>feisty</literal>\", \"<literal>gutsy</literal>\", \"<literal>hardy</literal>\", \"<literal>intrepid</literal>\", ...)."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -16955,35 +16955,35 @@ msgstr "Получение мета-данных пакетов"
 #: debian-reference.en.xmlt:7737
 #| msgid "When APT tools, such as <literal>aptitude</literal>, <literal>apt-get</literal>, <literal>synaptic</literal>, <literal>apt-file</literal>, <literal>auto-apt</literal>…, are used, we need to update the local copies of the meta data containing the Debian archive information. These local copies have following file names corresponding to the specified <literal>distribution</literal>, <literal>component</literal>, and <literal>architecture</literal> names in the \"<literal>/etc/apt/sources.list</literal>\" (see <xref linkend=\"_debian_archive_basics\"/>)."
 msgid "When APT tools, such as <literal>aptitude</literal>, <literal>apt-get</literal>, <literal>synaptic</literal>, <literal>apt-file</literal>, <literal>auto-apt</literal>…, are used, we need to update the local copies of the meta data containing the Debian archive information. These local copies have following file names corresponding to the specified <literal>distribution</literal>, <literal>area</literal>, and <literal>architecture</literal> names in the \"<literal>/etc/apt/sources.list</literal>\" (see <xref linkend=\"_debian_archive_basics\"/>)."
-msgstr "При использовании средств APT (<literal>aptitude</literal>, <literal>apt-get</literal>, <literal>synaptic</literal>, <literal>apt-file</literal>, <literal>auto-apt</literal> ...) необходимо, чтобы локальные копии мета-данных архивов обновлялись. Эти локальные копии хранятся в \"<literal>/var/lib/apt/lists/</literal>\" и имеют имена, по которым можно определить имя <literal>выпуска</literal> (distribution), <literal>оласти</literal> (area) и <literal>архитектуры</literal>, для которой предназначен архив. Имена формируются в соответствии с записями в \"<literal>/etc/apt/sources.list</literal>\". (См. <xref linkend=\"_debian_archive_basics\"/>)"
+msgstr "При использовании средств APT (<literal>aptitude</literal>, <literal>apt-get</literal>, <literal>synaptic</literal>, <literal>apt-file</literal>, <literal>auto-apt</literal> …) необходимо, чтобы локальные копии мета-данных архивов обновлялись. Эти локальные копии хранятся в \"<literal>/var/lib/apt/lists/</literal>\" и используют имена, по которым можно определить имя <literal>выпуска</literal> (distribution), <literal>область</literal> (area) и <literal>архитектуру</literal>, для которой предназначен архив. Имена формируются в соответствии с записями в \"<literal>/etc/apt/sources.list</literal>\". (См. <xref linkend=\"_debian_archive_basics\"/>)"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7741
 msgid "\"<literal>/var/lib/apt/lists/ftp.us.debian.org_debian_dists_&lt;distribution&gt;_Release</literal>\""
-msgstr ""
+msgstr "\"<literal>/var/lib/apt/lists/ftp.us.debian.org_debian_dists_&lt;выпуск&gt;_Release</literal>\""
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7746
 msgid "\"<literal>/var/lib/apt/lists/ftp.us.debian.org_debian_dists_&lt;distribution&gt;_Release.gpg</literal>\""
-msgstr ""
+msgstr "\"<literal>/var/lib/apt/lists/ftp.us.debian.org_debian_dists_&lt;выпуск&gt;_Release.gpg</literal>\""
 
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7751
 msgid "\"<literal>/var/lib/apt/lists/ftp.us.debian.org_debian_dists_&lt;distribution&gt;_&lt;area&gt;_binary-&lt;architecture&gt;_Packages</literal>\""
-msgstr ""
+msgstr "\"<literal>/var/lib/apt/lists/ftp.us.debian.org_debian_dists_&lt;выпуск&gt;_&lt;область&gt;_binary-&lt;архитектура&gt;_Packages</literal>\""
 
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7756
 msgid "\"<literal>/var/lib/apt/lists/ftp.us.debian.org_debian_dists_&lt;distribution&gt;_&lt;area&gt;_source_Sources</literal>\""
-msgstr ""
+msgstr "\"<literal>/var/lib/apt/lists/ftp.us.debian.org_debian_dists_&lt;выпуск&gt;_&lt;область&gt;_source_Sources</literal>\""
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7761
 msgid "\"<literal>/var/cache/apt/apt-file/ftp.us.debian.org_debian_dists_&lt;distribution&gt;_Contents-&lt;architecture&gt;.gz</literal>\" (for <literal>apt-file</literal>)"
-msgstr ""
+msgstr "\"<literal>/var/cache/apt/apt-file/ftp.us.debian.org_debian_dists_&lt;выпуск&gt;_Contents-&lt;архитектура&gt;.gz</literal>\""
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -16995,13 +16995,13 @@ msgstr "Первые 4 типа файлов используются всеми
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:7766
 msgid "The \"<literal>Packages</literal>\" and \"<literal>Sources</literal>\" meta data contain \"<literal>Filename:</literal>\" stanza pointing to the file location of the binary and source packages.  Currently, these packages are located under the \"<literal>pool/</literal>\" directory tree for the improved transition over the releases."
-msgstr "\"<literal>Packages</literal>\" и \"<literal>Sources</literal>\" содержат запись \"<literal>Filename:</literal>\", указывающую на местоположение бинарных пакетов и пакетов с исходниками. В настоящее время они находятся в каталоге \"<literal>pool/</literal>\" для облегчения обновлений между релизами."
+msgstr "\"<literal>Packages</literal>\" и \"<literal>Sources</literal>\" содержат запись \"<literal>Filename:</literal>\", указывающую на местоположение бинарных пакетов и пакетов с исходными текстами. В настоящее время они находятся в каталоге \"<literal>pool/</literal>\" для облегчения обновлений между релизами."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:7767
 msgid "Local copies of \"<literal>Packages</literal>\" meta data can be interactively searched with the help of <literal>aptitude</literal>.  The specialized search command <literal>grep-dctrl</literal>(1) can search local copies of \"<literal>Packages</literal>\" and \"<literal>Sources</literal>\" meta data."
-msgstr "Локальные копии фалов \"<literal>Packages</literal>\" могут использоваться для поиска по пакетам, например, с помощью <literal>aptitude</literal>. Есть также специализированное средство <literal>grep-dctrl</literal>(1), которым можно \"обыскать\" файлы \"<literal>Packages</literal>\" и \"<literal>Sources</literal>\"."
+msgstr "Локальные копии файлов \"<literal>Packages</literal>\" могут использоваться для поиска по пакетам, например, с помощью <literal>aptitude</literal>. Есть также специализированное средство <literal>grep-dctrl</literal>(1), которым можно \"обыскать\" файлы \"<literal>Packages</literal>\" и \"<literal>Sources</literal>\"."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -17117,7 +17117,7 @@ msgstr "<literal>&lt;package-name&gt;_&lt;epoch&gt;:&lt;upstream-version&gt;-&lt
 #: debian-reference.en.xmlt:7827
 #| msgid "The source package (Debian changes)"
 msgid "The <literal>1.0</literal> source package (Debian changes)"
-msgstr ""
+msgstr "формат версии <literal>1.0</literal>: пакет с исходными текстами (изменения от разработчиков Debian)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17130,7 +17130,7 @@ msgstr ""
 #: debian-reference.en.xmlt:7835
 #| msgid "The source package (Debian changes)"
 msgid "The <literal>3.0 (quilt)</literal> source package (Debian changes)"
-msgstr ""
+msgstr "формат версии <literal>3.0 (quilt)</literal>: пакет с исходными текстами (изменения от разработчиков Debian)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17154,7 +17154,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:7853
 msgid "Here only the basic source package formats are described.  See more on <literal>dpkg-source</literal>(1)."
-msgstr ""
+msgstr "Здесь описаны лишь основные форматы пакетов с исходными текстами. См. <literal>dpkg-source</literal>(1)."
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
@@ -17190,7 +17190,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7880
 msgid "<literal>[a-z,A-Z,0-9,.,<literal>,-]</literal></literal>"
-msgstr ""
+msgstr "<literal>[a-z,A-Z,0-9,.,<literal>,-]</literal></literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17208,7 +17208,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7891
 msgid "<literal>[0-9]+:</literal>"
-msgstr ""
+msgstr "<literal>[0-9]+:</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17226,7 +17226,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7902
 msgid "<literal>[a-z,A-Z,0-9,.,<literal>,-,:]</literal></literal>"
-msgstr ""
+msgstr "<literal>[a-z,A-Z,0-9,.,<literal>,-,:]</literal></literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17238,7 +17238,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7913
 msgid "<literal>[a-z,A-Z,0-9,.,<literal>,~]</literal></literal>"
-msgstr ""
+msgstr "<literal>[a-z,A-Z,0-9,.,<literal>,~]</literal></literal>"
 
 # type: Content of: <book><chapter><section><section><note><simpara>
 #. type: Content of: <book><chapter><section><section><note><simpara>
@@ -17280,7 +17280,7 @@ msgstr "Распаковывает файл deb (как \"<literal>ar -x</litera
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7941
 msgid "Execute \"<literal>&lt;package_name&gt;.preinst</literal>\" using <literal>debconf</literal>(1)"
-msgstr "Выполняет скрипт \"<literal>&lt;имя_пакета&gt;.preinst</literal>\" с помощью <literal>debconf</literal>(1)."
+msgstr "Выполняет сценарий \"<literal>&lt;имя_пакета&gt;.preinst</literal>\" с помощью <literal>debconf</literal>(1)."
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
@@ -17292,7 +17292,7 @@ msgstr "Устанавливает содержимое пакета в сист
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7951
 msgid "Execute \"<literal>&lt;package_name&gt;.postinst</literal>\" using <literal>debconf</literal>(1)"
-msgstr "Выполняет \"<literal>&lt;имя_пакета&gt;.postinst</literal>\" с помощью <literal>debconf</literal>(1)."
+msgstr "Выполняет сценарий \"<literal>&lt;имя_пакета&gt;.postinst</literal>\" с помощью <literal>debconf</literal>(1)."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -17346,7 +17346,7 @@ msgstr "<literal>/var/lib/dpkg/info/&lt;имя_пакета&gt;.md5sums</literal
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7993
 msgid "list of MD5 hash values for files installed by the package"
-msgstr "хэши MD5 для устанавливаемых файлов"
+msgstr "список хэшей MD5 для файлов, устанавливаемых пакетом"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17358,7 +17358,7 @@ msgstr "<literal>/var/lib/dpkg/info/&lt;имя_пакета&gt;.preinst</literal
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:8001
 msgid "package script run before the package installation"
-msgstr "скрипт, выполняемый перед установкой пакета"
+msgstr "сценарий, выполняемый перед установкой пакета"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17370,7 +17370,7 @@ msgstr "<literal>/var/lib/dpkg/info/&lt;имя_пакета&gt;.postinst</litera
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:8009
 msgid "package script run after the package installation"
-msgstr "скрипт, выполняемый после установки пакета"
+msgstr "сценарий, выполняемый после установки пакета"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17382,7 +17382,7 @@ msgstr "<literal>/var/lib/dpkg/info/&lt;имя_пакета&gt;.prerm</literal>"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:8017
 msgid "package script run before the package removal"
-msgstr "скрипт, выполняемый перед удалением пакета"
+msgstr "сценарий, выполняемый перед удалением пакета"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17394,7 +17394,7 @@ msgstr "<literal>/var/lib/dpkg/info/&lt;имя_пакета&gt;.postrm</literal>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:8025
 msgid "package script run after the package removal"
-msgstr "скрипт, выполняемый после удаления пакета"
+msgstr "сценарий, выполняемый после удаления пакета"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17406,7 +17406,7 @@ msgstr "<literal>/var/lib/dpkg/info/&lt;имя_пакета&gt;.config</literal>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:8033
 msgid "package script for <literal>debconf</literal> system"
-msgstr "скрипт для системы <literal>debconf</literal>"
+msgstr "сценарий для системы <literal>debconf</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17424,7 +17424,7 @@ msgstr "информация об альтернативных средства�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:8046
 msgid "<literal>/var/lib/dpkg/available</literal>"
-msgstr ""
+msgstr "<literal>/var/lib/dpkg/available</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17448,7 +17448,7 @@ msgstr "информация об отклонённых файлах, испо�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:8062
 msgid "<literal>/var/lib/dpkg/statoverride</literal>"
-msgstr ""
+msgstr "<literal>/var/lib/dpkg/statoverride</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17539,6 +17539,17 @@ msgid ""
 "\n"
 "Enter to keep the default[*], or type selection number: 1"
 msgstr ""
+"$ ls -l $(type -p vi)\n"
+"lrwxrwxrwx 1 root root 20 2007-03-24 19:05 /usr/bin/vi -&gt; /etc/alternatives/vi\n"
+"$ sudo update-alternatives --display vi\n"
+"...\n"
+"$ sudo update-alternatives --config vi\n"
+"  Selection    Command\n"
+" ----------------------------------------------\n"
+"      1        /usr/bin/vim\n"
+"*+    2        /usr/bin/nvi\n"
+"\n"
+"Enter to keep the default[*], or type selection number: 1"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -17610,7 +17621,7 @@ msgstr "Несовместимости со старыми настройкам�
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:8140
 msgid "If a desktop GUI program experienced instability after significant upstream version upgrade, you should suspect interferences with old local configuration files created by it. If it is stable under newly created user account, this hypothesis is confirmed.  (This is a bug of packaging and usually avoided by the packager.)"
-msgstr "Если GUI-программа начинает вести себя нестабильно после серьёзного обновления версии разработчиков этой программы, нужно заподозрить старую конфигурацию, созданную этой программой. Если программа работает нормально под новой, созданной для её проверки учётной записью пользователя, то это предположение верно. (Это ошибка создания пакетов, которая обычно исправляется сопровождающим пакет.)"
+msgstr "Если GUI-программа начинает вести себя нестабильно после серьёзного обновления версии разработчиков этой программы (upstream), нужно заподозрить старую конфигурацию, созданную этой программой. Если программа работает нормально под новой, созданной для её проверки учётной записью пользователя, то это предположение верно. (Это ошибка создания пакетов, которая обычно исправляется сопровождающим пакет.)"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18323,6 +18334,9 @@ msgid ""
 "deb http://ftp.us.debian.org/debian/ unstable main contrib non-free\n"
 "deb http://security.debian.org/ testing/updates main contrib"
 msgstr ""
+"deb http://ftp.us.debian.org/debian/ testing main contrib non-free\n"
+"deb http://ftp.us.debian.org/debian/ unstable main contrib non-free\n"
+"deb http://security.debian.org/ testing/updates main contrib"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18343,6 +18357,13 @@ msgid ""
 "Pin: release a=unstable\n"
 "Pin-Priority: 200"
 msgstr ""
+"Package: *\n"
+"Pin: release a=testing\n"
+"Pin-Priority: 500\n"
+"\n"
+"Package: *\n"
+"Pin: release a=unstable\n"
+"Pin-Priority: 200"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18355,7 +18376,7 @@ msgstr ""
 #: debian-reference.en.xmlt:8540
 #, no-wrap
 msgid "$ sudo apt-get install -t unstable &lt;package-name&gt;"
-msgstr ""
+msgstr "$ sudo apt-get install -t unstable &lt;имя_пакета&gt;"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18400,6 +18421,13 @@ msgid ""
 "Pin: release a=unstable\n"
 "Pin-Priority: 700"
 msgstr ""
+"Package: &lt;package-1&gt;\n"
+"Pin: release a=unstable\n"
+"Pin-Priority: 700\n"
+"\n"
+"Package: &lt;package-2&gt;\n"
+"Pin: release a=unstable\n"
+"Pin-Priority: 700"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18420,6 +18448,13 @@ msgid ""
 "Pin: release a=unstable\n"
 "Pin-Priority: 700"
 msgstr ""
+"Package: debian-reference-en\n"
+"Pin: release a=unstable\n"
+"Pin-Priority: 700\n"
+"\n"
+"Package: debian-reference-common\n"
+"Pin: release a=unstable\n"
+"Pin-Priority: 700"
 
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><tip><simpara>
@@ -18442,6 +18477,9 @@ msgid ""
 "deb http://ftp.us.debian.org/debian/ experimental main contrib non-free\n"
 "deb http://security.debian.org/ testing/updates main contrib"
 msgstr ""
+"deb http://ftp.us.debian.org/debian/ unstable main contrib non-free\n"
+"deb http://ftp.us.debian.org/debian/ experimental main contrib non-free\n"
+"deb http://security.debian.org/ testing/updates main contrib"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18496,6 +18534,11 @@ msgid ""
 "deb http://volatile.debian.org/debian-volatile/ &codename-stable;/volatile-sloppy main contrib non-free\n"
 "deb http://backports.org/debian/ &codename-stable;-backports main contrib non-free"
 msgstr ""
+"deb http://ftp.us.debian.org/debian/ &codename-stable; main contrib non-free\n"
+"deb http://security.debian.org/ &codename-stable;/updates main contrib\n"
+"deb http://volatile.debian.org/debian-volatile/ &codename-stable;/volatile main contrib non-free\n"
+"deb http://volatile.debian.org/debian-volatile/ &codename-stable;/volatile-sloppy main contrib non-free\n"
+"deb http://backports.org/debian/ &codename-stable;-backports main contrib non-free"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18514,7 +18557,7 @@ msgstr "Итак, когда вам нужно установить пакет �
 #: debian-reference.en.xmlt:8596
 #, no-wrap
 msgid "$ sudo apt-get install -t &codename-stable;-backports &lt;package-name&gt;"
-msgstr ""
+msgstr "$ sudo apt-get install -t &codename-stable;-backports &lt;имя_пакета&gt;"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18535,6 +18578,13 @@ msgid ""
 "Pin: release o=volatile.debian.org\n"
 "Pin-Priority: 700"
 msgstr ""
+"Package: &lt;пакет-1&gt;\n"
+"Pin: release o=Backports.org archive\n"
+"Pin-Priority: 700\n"
+"\n"
+"Package: &lt;пакет-2&gt;\n"
+"Pin: release o=volatile.debian.org\n"
+"Pin-Priority: 700"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18563,6 +18613,21 @@ msgid ""
 "Pin: release a=&codename-stable;-sloppy, o=volatile.debian.org\n"
 "Pin-Priority: 200"
 msgstr ""
+"Package: *\n"
+"Pin: release a=stable , o=Debian\n"
+"Pin-Priority: 500\n"
+"\n"
+"Package: *\n"
+"Pin: release a=&codename-stable;, o=volatile.debian.org\n"
+"Pin-Priority: 500\n"
+"\n"
+"Package: *\n"
+"Pin: release a=&codename-stable;-backports, o=Backports.org archive\n"
+"Pin-Priority: 200\n"
+"\n"
+"Package: *\n"
+"Pin: release a=&codename-stable;-sloppy, o=volatile.debian.org\n"
+"Pin-Priority: 200"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18597,6 +18662,9 @@ msgid ""
 "APT::Periodic::Download-Upgradeable-Packages \"1\";\n"
 "APT::Periodic::Unattended-Upgrade \"1\";"
 msgstr ""
+"APT::Periodic::Update-Package-Lists \"1\";\n"
+"APT::Periodic::Download-Upgradeable-Packages \"1\";\n"
+"APT::Periodic::Unattended-Upgrade \"1\";"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18613,6 +18681,9 @@ msgid ""
 "APT::Periodic::Download-Upgradeable-Packages \"1\";\n"
 "APT::Periodic::Unattended-Upgrade \"0\";"
 msgstr ""
+"APT::Periodic::Update-Package-Lists \"1\";\n"
+"APT::Periodic::Download-Upgradeable-Packages \"1\";\n"
+"APT::Periodic::Unattended-Upgrade \"0\";"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -18631,7 +18702,7 @@ msgstr "Если вы хотите ограничить скорость, с к�
 #: debian-reference.en.xmlt:8638
 #, no-wrap
 msgid "APT::Acquire::http::Dl-Limit \"800\";"
-msgstr ""
+msgstr "APT::Acquire::http::Dl-Limit \"800\";"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -18662,7 +18733,7 @@ msgstr "Найдите в \"<literal>/etc/apt/sources.list</literal>\" стро�
 #: debian-reference.en.xmlt:8647
 #, no-wrap
 msgid "deb http://ftp.us.debian.org/debian/ &codename-unstable; main contrib non-free"
-msgstr ""
+msgstr "deb http://ftp.us.debian.org/debian/ &codename-unstable; main contrib non-free"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18675,7 +18746,7 @@ msgstr "Замените их на соответствующие строчки
 #: debian-reference.en.xmlt:8649
 #, no-wrap
 msgid "deb http://ftp.us.debian.org/debian/ &codename-testing; main contrib non-free"
-msgstr ""
+msgstr "deb http://ftp.us.debian.org/debian/ &codename-testing; main contrib non-free"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18692,6 +18763,9 @@ msgid ""
 "Pin: release a=testing\n"
 "Pin-Priority: 1010"
 msgstr ""
+"Package: *\n"
+"Pin: release a=testing\n"
+"Pin-Priority: 1010"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18753,6 +18827,12 @@ msgid ""
 " This is a dummy package which can be used to create Debian\n"
 " packages, which only contain dependency information."
 msgstr ""
+"Package: equivs\n"
+"Priority: extra\n"
+"Section: admin\n"
+"Description: Circumventing Debian package dependencies\n"
+" This is a dummy package which can be used to create Debian\n"
+" packages, which only contain dependency information."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -18777,7 +18857,7 @@ msgstr "Добавьте такие строчки в \"<literal>/etc/apt/source
 #: debian-reference.en.xmlt:8679
 #, no-wrap
 msgid "deb-src http://http.us.debian.org/debian unstable  main contrib non-free"
-msgstr ""
+msgstr "deb-src http://http.us.debian.org/debian unstable  main contrib non-free"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18797,6 +18877,12 @@ msgid ""
 "$ apt-get source foo\n"
 "$ cd foo*"
 msgstr ""
+"# apt-get update\n"
+"# apt-get dist-upgrade\n"
+"# apt-get install fakeroot devscripts build-essential\n"
+"$ apt-get build-dep foo\n"
+"$ apt-get source foo\n"
+"$ cd foo*"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18815,7 +18901,7 @@ msgstr "Выполните следующее."
 #: debian-reference.en.xmlt:8689 debian-reference.en.xmlt:30386
 #, no-wrap
 msgid "$ dch -i"
-msgstr ""
+msgstr "$ dch -i"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18838,6 +18924,9 @@ msgid ""
 "$ cd ..\n"
 "# debi foo*.changes"
 msgstr ""
+"$ debuild\n"
+"$ cd ..\n"
+"# debi foo*.changes"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -18891,7 +18980,7 @@ msgstr "Прокси, который скачивает нужные пакет�
 #. type: Content of: <book><chapter><section><section><caution><simpara>
 #: debian-reference.en.xmlt:8760
 msgid "When Debian reorganizes its archive structure, these specialized proxy tools tend to require code rewrites by the package maintainer and may not be functional for a while.  On the other hand, generic web (http) proxy servers are more robust and easier to cope with such changes."
-msgstr "Когда в Debian происходит изменение структуры архивов, этим специальным средствам могут также потребоваться изменения исходного кода и они могут некоторое время быть неработоспособны. С другой стороны, обычные http прокси-серверы легче перенастроить в случае таких изменений архивов."
+msgstr "Когда в Debian происходит изменение структуры архивов, этим специальным средствам могут также потребоваться изменения исходного текста и они могут некоторое время быть неработоспособны. С другой стороны, обычные http прокси-серверы легче перенастроить в случае таких изменений архивов."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -18927,7 +19016,7 @@ msgstr "Нам нужны пакеты: <literal>apt-utils</literal>, <literal>g
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:8784
 msgid "URL: \"<literal>http://www.example.com/~foo/</literal>\" ( → \"<literal>/home/foo/public_html/index.html</literal>\")"
-msgstr ""
+msgstr "URL: \"<literal>http://www.example.com/~foo/</literal>\" ( → \"<literal>/home/foo/public_html/index.html</literal>\")"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -18956,6 +19045,15 @@ msgid ""
 "ssb   2048g/6856F4A7 2008-08-14\n"
 "$ gpg --export -a 3A3CB5A6 &gt;foo.public.key"
 msgstr ""
+"$ ssh foo@www.example.com\n"
+"$ gpg --gen-key\n"
+"...\n"
+"$ gpg -K\n"
+"...\n"
+"sec   1024D/3A3CB5A6 2008-08-14\n"
+"uid                  Foo (ARCHIVE KEY) &lt;foo@www.example.com&gt;\n"
+"ssb   2048g/6856F4A7 2008-08-14\n"
+"$ gpg --export -a 3A3CB5A6 &gt;foo.public.key"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -19028,6 +19126,59 @@ msgid ""
 "};\n"
 "EOF"
 msgstr ""
+"$ umask 022\n"
+"$ mkdir -p ~/public_html/debian/pool/main\n"
+"$ mkdir -p ~/public_html/debian/dists/unstable/main/binary-amd64\n"
+"$ mkdir -p ~/public_html/debian/dists/unstable/main/source\n"
+"$ cd ~/public_html/debian\n"
+"$ cat &gt; dists/unstable/main/binary-amd64/Release &lt;&lt; EOF\n"
+"Archive: unstable\n"
+"Version: 4.0\n"
+"Component: main\n"
+"Origin: Foo\n"
+"Label: Foo\n"
+"Architecture: amd64\n"
+"EOF\n"
+"$ cat &gt; dists/unstable/main/source/Release &lt;&lt; EOF\n"
+"Archive: unstable\n"
+"Version: 4.0\n"
+"Component: main\n"
+"Origin: Foo\n"
+"Label: Foo\n"
+"Architecture: source\n"
+"EOF\n"
+"$ cat &gt;aptftp.conf &lt;&lt;EOF\n"
+"APT::FTPArchive::Release {\n"
+"  Origin \"Foo\";\n"
+"  Label \"Foo\";\n"
+"  Suite \"unstable\";\n"
+"  Codename \"sid\";\n"
+"  Architectures \"amd64\";\n"
+"  Components \"main\";\n"
+"  Description \"Public archive for Foo\";\n"
+"};\n"
+"EOF\n"
+"$ cat &gt;aptgenerate.conf &lt;&lt;EOF\n"
+"Dir::ArchiveDir \".\";\n"
+"Dir::CacheDir \".\";\n"
+"TreeDefault::Directory \"pool/\";\n"
+"TreeDefault::SrcDirectory \"pool/\";\n"
+"Default::Packages::Extensions \".deb\";\n"
+"Default::Packages::Compress \". gzip bzip2\";\n"
+"Default::Sources::Compress \"gzip bzip2\";\n"
+"Default::Contents::Compress \"gzip bzip2\";\n"
+"\n"
+"BinDirectory \"dists/unstable/main/binary-amd64\" {\n"
+"  Packages \"dists/unstable/main/binary-amd64/Packages\";\n"
+"  Contents \"dists/unstable/Contents-amd64\";\n"
+"  SrcPackages \"dists/unstable/main/source/Sources\";\n"
+"};\n"
+"\n"
+"Tree \"dists/unstable\" {\n"
+"  Sections \"main\";\n"
+"  Architectures \"amd64 source\";\n"
+"};\n"
+"EOF"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -19063,6 +19214,22 @@ msgid ""
 "  ssh foo@www.example.com  2&gt;/dev/null ;\n"
 "  echo 'Package archive created!'\";"
 msgstr ""
+"$cfg{'foo'} = {\n"
+"  fqdn =&gt; \"www.example.com\",\n"
+"  method =&gt; \"scpb\",\n"
+"  incoming =&gt; \"/home/foo/public_html/debian/pool/main\",\n"
+"  # The dinstall on ftp-master sends emails itself\n"
+"  dinstall_runs =&gt; 1,\n"
+"};\n"
+"\n"
+"$cfg{'foo'}{postupload}{'changes'} = \"\n"
+"  echo 'cd public_html/debian ;\n"
+"  apt-ftparchive generate -c=aptftp.conf aptgenerate.conf;\n"
+"  apt-ftparchive release -c=aptftp.conf dists/unstable &gt;dists/unstable/Release ;\n"
+"  rm -f dists/unstable/Release.gpg ;\n"
+"  gpg -u 3A3CB5A6 -bao dists/unstable/Release.gpg dists/unstable/Release'|\n"
+"  ssh foo@www.example.com  2&gt;/dev/null ;\n"
+"  echo 'Package archive created!'\";"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -19086,6 +19253,10 @@ msgid ""
 "   &gt;&gt; /etc/apt/sources.list\n"
 "# apt-key add foo.public.key"
 msgstr ""
+"$ sudo bash\n"
+"# echo \"deb http://www.example.com/~foo/debian/ unstable main\" \\\n"
+"   &gt;&gt; /etc/apt/sources.list\n"
+"# apt-key add foo.public.key"
 
 # type: Content of: <book><chapter><section><section><tip><simpara>
 #. type: Content of: <book><chapter><section><section><tip><simpara>
@@ -19113,6 +19284,8 @@ msgid ""
 "# dpkg --get-selections '*' &gt; selection.dpkg\n"
 "# debconf-get-selections    &gt; selection.debconf"
 msgstr ""
+"# dpkg --get-selections '*' &gt; selection.dpkg\n"
+"# debconf-get-selections    &gt; selection.debconf"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -19136,6 +19309,10 @@ msgid ""
 "# dpkg --set-selections  &lt; myselection.dpkg\n"
 "# apt-get -u dselect-upgrade    # or dselect install"
 msgstr ""
+"# dselect update\n"
+"# debconf-set-selections &lt; myselection.debconf\n"
+"# dpkg --set-selections  &lt; myselection.dpkg\n"
+"# apt-get -u dselect-upgrade    # либо dselect install"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -19189,6 +19366,16 @@ msgid ""
 "# tar xvzf control.tar.gz -C control\n"
 "# tar xvzf data.tar.gz -C data"
 msgstr ""
+"# ar x /path/to/dpkg_&lt;версия&gt;_&lt;архитектура&gt;.deb\n"
+"# ls\n"
+"total 24\n"
+"-rw-r--r-- 1 bozo bozo  1320 2007-05-07 00:11 control.tar.gz\n"
+"-rw-r--r-- 1 bozo bozo 12837 2007-05-07 00:11 data.tar.gz\n"
+"-rw-r--r-- 1 bozo bozo     4 2007-05-07 00:11 debian-binary\n"
+"# mkdir control\n"
+"# mkdir data\n"
+"# tar xvzf control.tar.gz -C control\n"
+"# tar xvzf data.tar.gz -C data"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -19242,7 +19429,7 @@ msgstr "Официальная и подробная документация п
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:8952
 msgid "<ulink url=\"&debianpolicymanuthedebianarchive;\">\"Debian Policy Manual Chapter 2 - The Debian Archive\"</ulink>,"
-msgstr ""
+msgstr "<ulink url=\"&debianpolicymanuthedebianarchive;\">\"Debian Policy Manual Chapter 2 - The Debian Archive\"</ulink>"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
@@ -19254,7 +19441,7 @@ msgstr "<ulink url=\"&debiandevelopersthedebianarchive;\">\"Debian Developer's R
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:8960
 msgid "<ulink url=\"&thedebiangnulinuebianftparchives;\">\"The Debian GNU/Linux FAQ, Chapter 5 - The Debian FTP archives\"</ulink>."
-msgstr ""
+msgstr "<ulink url=\"&thedebiangnulinuebianftparchives;\">\"The Debian GNU/Linux FAQ, Chapter 5 - The Debian FTP archives\"</ulink>"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -19266,7 +19453,7 @@ msgstr "Руководство по созданию пакетов Debian дл�
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:8971
 msgid "<ulink url=\"&debiannewmaintainersguide;\">\"Debian New Maintainers' Guide\"</ulink>."
-msgstr ""
+msgstr "<ulink url=\"&debiannewmaintainersguide;\">\"Debian New Maintainers' Guide\"</ulink>"
 
 # type: Content of: <book><chapter><title>
 #. type: Content of: <book><chapter><title>
