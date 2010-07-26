@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Справочник по Debian\n"
 "POT-Creation-Date: 2010-06-24 18:27+0500\n"
-"PO-Revision-Date: 2010-07-25 18:51+0400\n"
+"PO-Revision-Date: 2010-07-26 14:53+0400\n"
 "Last-Translator: Juniperus Love <qref2ru@gmail.com>\n"
 "Language-Team:\n"
 "Language: \n"
@@ -22417,142 +22417,142 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><title>
 #: debian-reference.en.xmlt:11019
 msgid "List of network configuration tools"
-msgstr ""
+msgstr "Список средств настройки сети"
 
 # type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:11029 debian-reference.en.xmlt:13524
 #: debian-reference.en.xmlt:13787
 msgid "packages"
-msgstr ""
+msgstr "пакеты"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11051
 msgid "config::ifupdown"
-msgstr ""
+msgstr "config::ifupdown"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11054
 msgid "standardized tool to bring up and down the network (Debian specific)"
-msgstr ""
+msgstr "стандартизированное средство включения/выключения интерфесов (специфично для Debian)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11065
 msgid "manage the wired network automatically"
-msgstr ""
+msgstr "автоматическое управление проводными интерфейсами"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11076
 msgid "network testing script to enhance \"<literal>ifupdown</literal>\" package"
-msgstr ""
+msgstr "сценарии проверки сети, дополняющие пакет \"<literal>ifupdown</literal>\""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11087
 msgid "set routing metrics for a network interface"
-msgstr ""
+msgstr "средство установки метрик (приоритетов) маршрутов"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11098
 msgid "mapping script to enhance \"<literal>ifupdown</literal>\" package via \"<literal>/etc/network/interfaces</literal>\" file"
-msgstr ""
+msgstr "сценарий для автоопределения сети, дополняющий \"<literal>ifupdown</literal>\" и использующий \"<literal>/etc/network/interfaces</literal>\""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11109
 msgid "mapping scripts to enhance \"<literal>ifupdown</literal>\" package"
-msgstr ""
+msgstr "сценарии автоопределения сети, дополняющие пакет \"<literal>ifupdown</literal>\""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11120
 msgid "Zugschlus' interface scripts for ifupdown's manual method"
-msgstr ""
+msgstr "сценарии для метода \"manual\" ifupdown"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11128
 msgid "config::NM"
-msgstr ""
+msgstr "config::NM"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11130
 msgid "<ulink url=\"&networkmanager;\">NetworkManager</ulink> (daemon): manage the network automatically"
-msgstr ""
+msgstr "<ulink url=\"&networkmanager;\">NetworkManager</ulink>: служба управления сетевыми подключениями"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11140
 msgid "<ulink url=\"&networkmanager;\">NetworkManager</ulink> (GNOME frontend)"
-msgstr ""
+msgstr "<ulink url=\"&networkmanager;\">NetworkManager</ulink> (интерфейс пользователя, GNOME)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11150
 msgid "<ulink url=\"&networkmanager;\">NetworkManager</ulink> (KDE frontend)"
-msgstr ""
+msgstr "<ulink url=\"&networkmanager;\">NetworkManager</ulink> (интерфейс пользователя, KDE)"
 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11160
 msgid "<ulink url=\"&networkmanager;\">NetworkManager</ulink> (command-line client)"
-msgstr ""
+msgstr "<ulink url=\"&networkmanager;\">NetworkManager</ulink> (клиент для командной строки)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11168
 msgid "config::wicd"
-msgstr ""
+msgstr "config::wicd"
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11171
 #| msgid "List of filesystem management packages"
 msgid "wired and wireless network manager (metapackage)"
-msgstr ""
+msgstr "управление проводными и беспроводными сетевыми подключениями (мета-пакет)"
 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11182
 msgid "wired and wireless network manager (command-line client)"
-msgstr ""
+msgstr "управление (бес)проводными сетевыми подключениями (клиент для командной строки)"
 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11193
 msgid "wired and wireless network manager (Curses client)"
-msgstr ""
+msgstr "управление (бес)проводными сетевыми подключениями (клиент Curses/Urwid)"
 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11204
 msgid "wired and wireless network manager (daemon)"
-msgstr ""
+msgstr "управление (бес)проводными сетевыми подключениями (служба)"
 
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11215
 msgid "wired and wireless network manager (GTK+ client)"
-msgstr ""
+msgstr "управление (бес)проводными сетевыми подключениями (клиент GTK+)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11223
 msgid "config::Netfilter"
-msgstr ""
+msgstr "config::Netfilter"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11226
 msgid "administration tools for packet filtering and NAT (<ulink url=\"&netfilter;\">Netfilter</ulink>)"
-msgstr ""
+msgstr "средства управления для пакетного фильтра и NAT (<ulink url=\"&netfilter;\">Netfilter</ulink>)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11234
 msgid "config::iproute2"
-msgstr ""
+msgstr "config::iproute2"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -22564,19 +22564,19 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11247
 msgid "rename network interfaces based on various static criteria: <literal>ifrename</literal>(8)"
-msgstr ""
+msgstr "переименование сетевого интерфейса по заданным правилам: <literal>ifrename</literal>(8)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11258
 msgid "display or change Ethernet device settings"
-msgstr ""
+msgstr "просмотр и настройка параметров устройств Ethernet"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11266
 msgid "test::iproute2"
-msgstr ""
+msgstr "test::iproute2"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -22600,7 +22600,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11299
 msgid "config::net-tools"
-msgstr ""
+msgstr "config::net-tools"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -22612,7 +22612,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11310
 msgid "test::net-tools"
-msgstr ""
+msgstr "test::net-tools"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -22636,13 +22636,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11343
 msgid "config::low-level"
-msgstr ""
+msgstr "config::low-level"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11346
 msgid "DHCP client"
-msgstr ""
+msgstr "DHCP-клиент"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -22666,7 +22666,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11387
 msgid "config::helper"
-msgstr ""
+msgstr "config::helper"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -22690,7 +22690,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11420
 msgid "test::low-level"
-msgstr ""
+msgstr "test::low-level"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -22899,7 +22899,7 @@ msgstr ""
 #: debian-reference.en.xmlt:11640
 #, no-wrap
 msgid "nameserver 192.168.11.1"
-msgstr ""
+msgstr "nameserver 192.168.11.1"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -22989,85 +22989,85 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11685
 msgid "A"
-msgstr ""
+msgstr "A"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11688
 msgid "10.x.x.x"
-msgstr ""
+msgstr "10.x.x.x"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11691
 msgid "255.0.0.0"
-msgstr ""
+msgstr "255.0.0.0"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11694
 msgid "/8"
-msgstr ""
+msgstr "/8"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11702
 msgid "B"
-msgstr ""
+msgstr "B"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11705
 msgid "172.16.x.x — 172.31.x.x"
-msgstr ""
+msgstr "172.16.x.x — 172.31.x.x"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11708
 msgid "255.255.0.0"
-msgstr ""
+msgstr "255.255.0.0"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11711
 msgid "/16"
-msgstr ""
+msgstr "/16"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11714
 msgid "16"
-msgstr ""
+msgstr "16"
 
 # type: Content of: <book><chapter><section><title>
 #. type: Content of: <book><chapter><section><title>
 #: debian-reference.en.xmlt:11719 debian-reference.en.xmlt:30294
 msgid "C"
-msgstr ""
+msgstr "C"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11722
 msgid "192.168.0.x — 192.168.255.x"
-msgstr ""
+msgstr "192.168.0.x — 192.168.255.x"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11725
 msgid "255.255.255.0"
-msgstr ""
+msgstr "255.255.255.0"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11728
 msgid "/24"
-msgstr ""
+msgstr "/24"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11731
 msgid "256"
-msgstr ""
+msgstr "256"
 
 # type: Content of: <book><chapter><section><section><note><simpara>
 #. type: Content of: <book><chapter><section><section><note><simpara>
@@ -23160,7 +23160,7 @@ msgstr ""
 #: debian-reference.en.xmlt:11784
 #, no-wrap
 msgid "$ sudo adduser foo netdev"
-msgstr ""
+msgstr "$ sudo adduser foo netdev"
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
@@ -23176,6 +23176,8 @@ msgid ""
 "auto lo\n"
 "iface lo inet loopback"
 msgstr ""
+"auto lo\n"
+"iface lo inet loopback"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
@@ -23278,6 +23280,11 @@ msgid ""
 "auto eth0\n"
 "iface eth0 inet dhcp"
 msgstr ""
+"auto lo\n"
+"iface lo inet loopback\n"
+"\n"
+"auto eth0\n"
+"iface eth0 inet dhcp"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
@@ -23324,13 +23331,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:11860
 msgid "PC"
-msgstr ""
+msgstr "интерфейсы PC"
 
 # type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:11863 debian-reference.en.xmlt:11917
 msgid "connection method"
-msgstr ""
+msgstr "способ соединения"
 
 # type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
@@ -23342,13 +23349,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11873
 msgid "Serial port (<literal>ppp0</literal>)"
-msgstr ""
+msgstr "Последовательный порт (<literal>ppp0</literal>)"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11876 debian-reference.en.xmlt:11930
 msgid "PPP"
-msgstr ""
+msgstr "PPP"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23360,13 +23367,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11884 debian-reference.en.xmlt:11895
 msgid "Ethernet port (<literal>eth0</literal>)"
-msgstr ""
+msgstr "Ethernet (<literal>eth0</literal>)"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11887
 msgid "PPPoE/DHCP/Static"
-msgstr ""
+msgstr "PPPoE/DHCP/Static"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23378,7 +23385,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11898
 msgid "DHCP/Static"
-msgstr ""
+msgstr "DHCP/Static"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23402,13 +23409,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:11920
 msgid "configuration"
-msgstr ""
+msgstr "настройка"
 
 # type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:11923
 msgid "backend package(s)"
-msgstr ""
+msgstr "пакеты для настройки"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23420,13 +23427,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11934
 msgid "<literal>pppconfig</literal>, <literal>ppp</literal>"
-msgstr ""
+msgstr "<literal>pppconfig</literal>, <literal>ppp</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11938
 msgid "PPP (alternative)"
-msgstr ""
+msgstr "PPP (другой способ)"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23438,13 +23445,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11942
 msgid "<literal>ppp</literal>, <literal>wvdial</literal>"
-msgstr ""
+msgstr "<literal>ppp</literal>, <literal>wvdial</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11946
 msgid "PPPoE"
-msgstr ""
+msgstr "PPPoE"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23456,55 +23463,55 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11950
 msgid "<literal>pppoeconf</literal>, <literal>ppp</literal>"
-msgstr ""
+msgstr "<literal>pppoeconf</literal>, <literal>ppp</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11954
 msgid "DHCP"
-msgstr ""
+msgstr "DHCP"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11957
 msgid "described in \"<literal>/etc/dhcp3/dhclient.conf</literal>\""
-msgstr ""
+msgstr "описана в \"<literal>/etc/dhcp3/dhclient.conf</literal>\""
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11960
 msgid "<literal>dhcp3-client</literal>"
-msgstr ""
+msgstr "<literal>dhcp3-client</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11965
 msgid "static IP (IPv4)"
-msgstr ""
+msgstr "статический IP (IPv4)"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11968 debian-reference.en.xmlt:11979
 msgid "described in \"<literal>/etc/network/interfaces</literal>\""
-msgstr ""
+msgstr "описана в \"<literal>/etc/network/interfaces</literal>\""
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11971
 msgid "<literal>net-tools</literal>"
-msgstr ""
+msgstr "<literal>net-tools</literal>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11976
 msgid "static IP (IPv6)"
-msgstr ""
+msgstr "статический IP (IPv6)"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:11982
 msgid "<literal>iproute</literal>"
-msgstr ""
+msgstr "<literal>iproute</literal>"
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
@@ -23528,7 +23535,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12007
 msgid "<ulink url=\"&pots;\">POTS</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&pots;\">POTS</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23540,7 +23547,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12015
 msgid "BB"
-msgstr ""
+msgstr "BB"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23576,7 +23583,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12039
 msgid "<ulink url=\"&lan;\">LAN</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&lan;\">LAN</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23588,7 +23595,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12047
 msgid "<ulink url=\"&wan;\">WAN</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&wan;\">WAN</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23601,7 +23608,7 @@ msgstr ""
 #: debian-reference.en.xmlt:12055 debian-reference.en.xmlt:16125
 #: debian-reference.en.xmlt:16337
 msgid "<ulink url=\"&dhcp;\">DHCP</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&dhcp;\">DHCP</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23613,7 +23620,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12063
 msgid "<ulink url=\"&ppp;\">PPP</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&ppp;\">PPP</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23625,7 +23632,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12071
 msgid "<ulink url=\"&pppoe;\">PPPoE</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&pppoe;\">PPPoE</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23637,7 +23644,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12079
 msgid "<ulink url=\"&isp;\">ISP</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&isp;\">ISP</ulink>"
 
 # type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><table><tgroup><tbody><row><entry>
@@ -23798,7 +23805,7 @@ msgstr ""
 #: debian-reference.en.xmlt:12188 debian-reference.en.xmlt:12278
 #: debian-reference.en.xmlt:12339
 msgid "<literal>/etc/ppp/chap-secret</literal>"
-msgstr ""
+msgstr "<literal>/etc/ppp/chap-secret</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -23829,12 +23836,15 @@ msgid ""
 "...\n"
 "$ sudo poff &lt;isp_name&gt;"
 msgstr ""
+"$ sudo pon &lt;isp_name&gt;\n"
+"...\n"
+"$ sudo poff &lt;isp_name&gt;"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:12204
 msgid "See \"<literal>/usr/share/doc/ppp/README.Debian.gz</literal>\"."
-msgstr ""
+msgstr "См. \"<literal>/usr/share/doc/ppp/README.Debian.gz</literal>\""
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -23870,7 +23880,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12246
 msgid "<literal>/etc/ppp/peers/wvdial</literal>"
-msgstr ""
+msgstr "<literal>/etc/ppp/peers/wvdial</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -23882,7 +23892,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12254
 msgid "<literal>/etc/wvdial.conf</literal>"
-msgstr ""
+msgstr "<literal>/etc/wvdial.conf</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -23899,12 +23909,15 @@ msgid ""
 "...\n"
 "$ sudo killall wvdial"
 msgstr ""
+"$ sudo wvdial\n"
+"...\n"
+"$ sudo killall wvdial"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:12291
 msgid "See <literal>wvdial</literal>(1) and <literal>wvdial.conf</literal>(5)."
-msgstr ""
+msgstr "См. <literal>wvdial</literal>(1) и <literal>wvdial.conf</literal>(5)."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -23934,7 +23947,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12315
 msgid "<literal>/etc/ppp/peers/dsl-provider</literal>"
-msgstr ""
+msgstr "<literal>/etc/ppp/peers/dsl-provider</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -23953,12 +23966,17 @@ msgid ""
 "$ sudo poff dsl-provider\n"
 "$ sudo /sbin/ifconfig eth0 down"
 msgstr ""
+"$ sudo /sbin/ifconfig eth0 up\n"
+"$ sudo pon dsl-provider\n"
+"...\n"
+"$ sudo poff dsl-provider\n"
+"$ sudo /sbin/ifconfig eth0 down"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:12354
 msgid "See \"<literal>/usr/share/doc/pppoeconf/README.Debian</literal>\"."
-msgstr ""
+msgstr "См. \"<literal>/usr/share/doc/pppoeconf/README.Debian</literal>\"."
 
 #. type: Content of: <book><chapter><section><title>
 #: debian-reference.en.xmlt:12358
@@ -24016,7 +24034,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12395 debian-reference.en.xmlt:13013
 msgid "<literal>ifup eth0</literal>"
-msgstr ""
+msgstr "<literal>ifup eth0</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -24028,7 +24046,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12403 debian-reference.en.xmlt:13021
 msgid "<literal>ifdown eth0</literal>"
-msgstr ""
+msgstr "<literal>ifdown eth0</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -24046,7 +24064,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><note><simpara>
 #: debian-reference.en.xmlt:12416
 msgid "There is no command <literal>ifupdown</literal>."
-msgstr ""
+msgstr "Не существует команды \"<literal>ifupdown</literal>\"."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -24218,6 +24236,9 @@ msgid ""
 "iface eth0 inet dhcp\n"
 " hostname \"mymachine\""
 msgstr ""
+"allow-hotplug eth0\n"
+"iface eth0 inet dhcp\n"
+" hostname \"mymachine\""
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -24251,6 +24272,14 @@ msgid ""
 " dns-domain lan\n"
 " dns-nameservers 192.168.11.1"
 msgstr ""
+"allow-hotplug eth0\n"
+"iface eth0 inet static\n"
+" address 192.168.11.100\n"
+" netmask 255.255.255.0\n"
+" broadcast 192.168.11.255\n"
+" gateway 192.168.11.1\n"
+" dns-domain lan\n"
+" dns-nameservers 192.168.11.1"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -24314,6 +24343,8 @@ msgid ""
 "nameserver 192.168.11.1\n"
 "domain lan"
 msgstr ""
+"nameserver 192.168.11.1\n"
+"domain lan"
 
 # type: Content of: <book><chapter><section><section><caution><simpara>
 #. type: Content of: <book><chapter><section><section><caution><simpara>
@@ -24367,7 +24398,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12604
 msgid "NWID"
-msgstr ""
+msgstr "NWID"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -24385,7 +24416,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12615
 msgid "(E)SSID"
-msgstr ""
+msgstr "(E)SSID"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -24403,7 +24434,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12626
 msgid "WEP, (WEP2)"
-msgstr ""
+msgstr "WEP, (WEP2)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -24421,7 +24452,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12637
 msgid "WPA"
-msgstr ""
+msgstr "WPA"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -24439,7 +24470,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12648
 msgid "WPA2"
-msgstr ""
+msgstr "WPA2"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -24493,7 +24524,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:12671
 msgid "See \"<literal>/usr/share/doc/wpasupplicant/README.modes.gz</literal>\"."
-msgstr ""
+msgstr "См. \"<literal>/usr/share/doc/wpasupplicant/README.modes.gz</literal>\"."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -24527,12 +24558,20 @@ msgid ""
 " wireless-defaultkey 2\n"
 " wireless-keymode open"
 msgstr ""
+"allow-hotplug eth0\n"
+"iface eth0 inet dhcp\n"
+" wireless-essid Home\n"
+" wireless-key1 0123-4567-89ab-cdef\n"
+" wireless-key2 12345678\n"
+" wireless-key3 s:password\n"
+" wireless-defaultkey 2\n"
+" wireless-keymode open"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:12688
 msgid "See \"<literal>/usr/share/doc/wireless-tools/README.Debian</literal>\"."
-msgstr ""
+msgstr "См. \"<literal>/usr/share/doc/wireless-tools/README.Debian</literal>\"."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -24572,7 +24611,7 @@ msgstr ""
 #: debian-reference.en.xmlt:12699
 #, no-wrap
 msgid "iface ppp0 inet wvdial"
-msgstr ""
+msgstr "iface ppp0 inet wvdial"
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -24625,7 +24664,7 @@ msgstr ""
 #: debian-reference.en.xmlt:12718
 #, no-wrap
 msgid "  inet addr:192.168.11.2  Bcast:192.168.11.255  Mask:255.255.255.0"
-msgstr ""
+msgstr "  inet addr:192.168.11.2  Bcast:192.168.11.255  Mask:255.255.255.0"
 
 # type: Content of: <book><chapter><section><section><note><simpara>
 #. type: Content of: <book><chapter><section><section><note><simpara>
@@ -24801,13 +24840,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:12807
 msgid "Install the <literal>ifplugd</literal> package."
-msgstr ""
+msgstr "Установите пакет <literal>ifplugd</literal>."
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:12812
 msgid "Run \"<literal>sudo dpkg-reconfigure ifplugd</literal>\"."
-msgstr ""
+msgstr "Запустите \"<literal>sudo dpkg-reconfigure ifplugd</literal>\"."
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
@@ -24973,6 +25012,14 @@ msgid ""
 " broadcast 192.168.0.255\n"
 " metric 1"
 msgstr ""
+"iface eth0 inet dhcp\n"
+" metric 0\n"
+"iface eth0:0 inet static\n"
+" address 192.168.0.1\n"
+" netmask 255.255.255.0\n"
+" network 192.168.0.0\n"
+" broadcast 192.168.0.255\n"
+" metric 1"
 
 # type: Content of: <book><chapter><section><section><caution><simpara>
 #. type: Content of: <book><chapter><section><section><caution><simpara>
@@ -25020,19 +25067,19 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12955
 msgid "<emphasis role=\"strong\">physical interface</emphasis> name"
-msgstr ""
+msgstr "имя <emphasis role=\"strong\">физического интерфейса</emphasis>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12957
 msgid "<emphasis role=\"strong\">network interface</emphasis> name"
-msgstr ""
+msgstr "имя <emphasis role=\"strong\">сетевого интерфейса</emphasis>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12959
 msgid "<literal>lo</literal>, <literal>eth0</literal>, <literal>&lt;interface_name&gt;</literal>"
-msgstr ""
+msgstr "<literal>lo</literal>, <literal>eth0</literal>, <literal>&lt;имя_интерфейса&gt;</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25050,7 +25097,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12967
 msgid "<emphasis role=\"strong\">network configuration</emphasis> name"
-msgstr ""
+msgstr "имя <emphasis role=\"strong\">сетевой конфигурации</emphasis>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25086,7 +25133,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:12997
 msgid "<literal>ifup eth0=config1</literal>"
-msgstr ""
+msgstr "<literal>ifup eth0=config1</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25098,7 +25145,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13005
 msgid "<literal>ifdown eth0=config1</literal>"
-msgstr ""
+msgstr "<literal>ifdown eth0=config1</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25159,7 +25206,7 @@ msgstr ""
 #: debian-reference.en.xmlt:13041
 #, no-wrap
 msgid "$ sudo ifup eth0"
-msgstr ""
+msgstr "$ sudo ifup eth0"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -25172,7 +25219,7 @@ msgstr ""
 #: debian-reference.en.xmlt:13043
 #, no-wrap
 msgid "$ sudo ifup eth0=$(echo -e '&lt;script_input1&gt; \\n &lt;script_input2&gt; \\n ...' | &lt;script_name&gt; eth0)"
-msgstr ""
+msgstr "$ sudo ifup eth0=$(echo -e '&lt;script_input1&gt; \\n &lt;script_input2&gt; \\n ...' | &lt;script_name&gt; eth0)"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -25264,6 +25311,9 @@ msgid ""
 "Password:\n"
 "..."
 msgstr ""
+"$ sudo ifup eth0=config1\n"
+"Password:\n"
+"..."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -25279,6 +25329,8 @@ msgid ""
 "$ sudo ifdown eth0=config1\n"
 "..."
 msgstr ""
+"$ sudo ifdown eth0=config1\n"
+"..."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -25300,6 +25352,8 @@ msgid ""
 "$ sudo ifup eth0=config2\n"
 "..."
 msgstr ""
+"$ sudo ifup eth0=config2\n"
+"..."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -25315,6 +25369,8 @@ msgid ""
 "$ sudo ifdown eth0=config2\n"
 "..."
 msgstr ""
+"$ sudo ifdown eth0=config2\n"
+"..."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -25336,6 +25392,8 @@ msgid ""
 "$ sudo ifup eth0=pppoe\n"
 "..."
 msgstr ""
+"$ sudo ifup eth0=pppoe\n"
+"..."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -25351,6 +25409,8 @@ msgid ""
 "$ sudo ifdown eth0=pppoe\n"
 "..."
 msgstr ""
+"$ sudo ifdown eth0=pppoe\n"
+"..."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -25372,6 +25432,8 @@ msgid ""
 "$ sudo ifup ppp0=pots\n"
 "..."
 msgstr ""
+"$ sudo ifup ppp0=pots\n"
+"..."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -25387,6 +25449,8 @@ msgid ""
 "$ sudo ifdown ppp0=pots\n"
 "..."
 msgstr ""
+"$ sudo ifdown ppp0=pots\n"
+"..."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -25428,7 +25492,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:13126
 msgid "environment variable"
-msgstr ""
+msgstr "переменная окружения"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
@@ -25440,7 +25504,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13136
 msgid "\"<literal>$IFACE</literal>\""
-msgstr ""
+msgstr "\"<literal>$IFACE</literal>\""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25452,7 +25516,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13144
 msgid "\"<literal>$LOGICAL</literal>\""
-msgstr ""
+msgstr "\"<literal>$LOGICAL</literal>\""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25464,7 +25528,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13152
 msgid "\"<literal>$ADDRFAM</literal>\""
-msgstr ""
+msgstr "\"<literal>$ADDRFAM</literal>\""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25476,7 +25540,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13160
 msgid "\"<literal>$METHOD</literal>\""
-msgstr ""
+msgstr "\"<literal>$METHOD</literal>\""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25488,7 +25552,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13168
 msgid "\"<literal>$MODE</literal>\""
-msgstr ""
+msgstr "\"<literal>$MODE</literal>\""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25500,7 +25564,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13176
 msgid "\"<literal>$PHASE</literal>\""
-msgstr ""
+msgstr "\"<literal>$PHASE</literal>\""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25512,7 +25576,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13184
 msgid "\"<literal>$VERBOSITY</literal>\""
-msgstr ""
+msgstr "\"<literal>$VERBOSITY</literal>\""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25524,7 +25588,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13192
 msgid "\"<literal>$PATH</literal>\""
-msgstr ""
+msgstr "\"<literal>$PATH</literal>\""
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25620,7 +25684,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:13243
 msgid "Iproute2 commands"
-msgstr ""
+msgstr "Команды iproute2"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -25656,13 +25720,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13266
 msgid "<literal>ifconfig</literal>(8)"
-msgstr ""
+msgstr "<literal>ifconfig</literal>(8)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13269
 msgid "<literal>ip addr</literal>"
-msgstr ""
+msgstr "<literal>ip addr</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25674,13 +25738,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13276
 msgid "<literal>route</literal>(8)"
-msgstr ""
+msgstr "<literal>route</literal>(8)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13279
 msgid "<literal>ip route</literal>"
-msgstr ""
+msgstr "<literal>ip route</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25692,13 +25756,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13286
 msgid "<literal>arp</literal>(8)"
-msgstr ""
+msgstr "<literal>arp</literal>(8)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13289 debian-reference.en.xmlt:13401
 msgid "<literal>ip neigh</literal>"
-msgstr ""
+msgstr "<literal>ip neigh</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25710,13 +25774,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13297
 msgid "<literal>ipmaddr</literal>"
-msgstr ""
+msgstr "<literal>ipmaddr</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13300
 msgid "<literal>ip maddr</literal>"
-msgstr ""
+msgstr "<literal>ip maddr</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25728,13 +25792,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13308
 msgid "<literal>iptunnel</literal>"
-msgstr ""
+msgstr "<literal>iptunnel</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13311
 msgid "<literal>ip tunnel</literal>"
-msgstr ""
+msgstr "<literal>ip tunnel</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25746,13 +25810,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13318
 msgid "<literal>nameif</literal>(8)"
-msgstr ""
+msgstr "<literal>nameif</literal>(8)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13320
 msgid "<literal>ifrename</literal>(8)"
-msgstr ""
+msgstr "<literal>ifrename</literal>(8)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25764,13 +25828,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13327
 msgid "<literal>mii-tool</literal>(8)"
-msgstr ""
+msgstr "<literal>mii-tool</literal>(8)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13329
 msgid "<literal>ethtool</literal>(8)"
-msgstr ""
+msgstr "<literal>ethtool</literal>(8)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25806,7 +25870,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13361
 msgid "<literal>ifconfig</literal>"
-msgstr ""
+msgstr "<literal>ifconfig</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25818,13 +25882,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13369
 msgid "<literal>ip addr show</literal>"
-msgstr ""
+msgstr "<literal>ip addr show</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13377
 msgid "<literal>route -n</literal>"
-msgstr ""
+msgstr "<literal>route -n</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25836,13 +25900,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13385
 msgid "<literal>ip route show</literal>"
-msgstr ""
+msgstr "<literal>ip route show</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13393
 msgid "<literal>arp</literal>"
-msgstr ""
+msgstr "<literal>arp</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25854,7 +25918,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13409
 msgid "<literal>plog</literal>"
-msgstr ""
+msgstr "<literal>plog</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25866,7 +25930,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13417
 msgid "<literal>ping yahoo.com</literal>"
-msgstr ""
+msgstr "<literal>ping yahoo.com</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25878,7 +25942,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13425
 msgid "<literal>whois yahoo.com</literal>"
-msgstr ""
+msgstr "<literal>whois yahoo.com</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25890,7 +25954,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13433
 msgid "<literal>traceroute yahoo.com</literal>"
-msgstr ""
+msgstr "<literal>traceroute yahoo.com</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25902,13 +25966,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13441
 msgid "<literal>tracepath yahoo.com</literal>"
-msgstr ""
+msgstr "<literal>tracepath yahoo.com</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13449
 msgid "<literal>mtr yahoo.com</literal>"
-msgstr ""
+msgstr "<literal>mtr yahoo.com</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25932,7 +25996,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13465
 msgid "<literal>iptables -L -n</literal>"
-msgstr ""
+msgstr "<literal>iptables -L -n</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25944,7 +26008,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13473
 msgid "<literal>netstat -a</literal>"
-msgstr ""
+msgstr "<literal>netstat -a</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25956,7 +26020,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13481
 msgid "<literal>netstat -l --inet</literal>"
-msgstr ""
+msgstr "<literal>netstat -l --inet</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25968,7 +26032,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13489
 msgid "<literal>netstat -ln --tcp</literal>"
-msgstr ""
+msgstr "<literal>netstat -ln --tcp</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -25980,7 +26044,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13497
 msgid "<literal>dlint example.com</literal>"
-msgstr ""
+msgstr "<literal>dlint example.com</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -26096,6 +26160,12 @@ msgid ""
 "--- www.debian.org ping statistics ---\n"
 "0 packets transmitted, 0 received, +1 errors"
 msgstr ""
+"$ ping -c 1 -s $((1500-28)) -M do www.debian.org\n"
+"PING www.debian.org (194.109.137.218) 1472(1500) bytes of data.\n"
+"From 192.168.11.2 icmp_seq=1 Frag needed and DF set (mtu = 1454)\n"
+"\n"
+"--- www.debian.org ping statistics ---\n"
+"0 packets transmitted, 0 received, +1 errors"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -26137,7 +26207,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:13649
 msgid "MTU"
-msgstr ""
+msgstr "MTU"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
@@ -26155,7 +26225,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13662
 msgid "576"
-msgstr ""
+msgstr "576"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -26173,7 +26243,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13673
 msgid "1500"
-msgstr ""
+msgstr "1500"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -26191,7 +26261,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13684
 msgid "1492 (=1500-8)"
-msgstr ""
+msgstr "1492 (=1500-8)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -26209,7 +26279,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13695
 msgid "1462 (=48*31-18-8)"
-msgstr ""
+msgstr "1462 (=48*31-18-8)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -26227,7 +26297,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:13706
 msgid "1454 (=48*31-8-18-8)"
-msgstr ""
+msgstr "1454 (=48*31-8-18-8)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -26286,6 +26356,9 @@ msgid ""
 " hostname \"mymachine\"\n"
 " pre-up /sbin/ifconfig $IFACE mtu 1454"
 msgstr ""
+"iface eth0 inet dhcp\n"
+" hostname \"mymachine\"\n"
+" pre-up /sbin/ifconfig $IFACE mtu 1454"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -26307,6 +26380,14 @@ msgid ""
 " dns-domain lan\n"
 " dns-nameservers 192.168.11.1"
 msgstr ""
+"iface eth0 inet static\n"
+" address 192.168.11.100\n"
+" netmask 255.255.255.0\n"
+" broadcast 192.168.11.255\n"
+" gateway 192.168.11.1\n"
+" mtu 1454\n"
+" dns-domain lan\n"
+" dns-nameservers 192.168.11.1"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -26319,7 +26400,7 @@ msgstr ""
 #: debian-reference.en.xmlt:13751
 #, no-wrap
 msgid "mtu 1454"
-msgstr ""
+msgstr "mtu 1454"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -26331,13 +26412,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:13756
 msgid "MSS = MTU - 40 for IPv4"
-msgstr ""
+msgstr "MSS = MTU - 40 для IPv4"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:13761
 msgid "MSS = MTU - 60 for IPv6"
-msgstr ""
+msgstr "MSS = MTU - 60 для IPv6"
 
 #. type: Content of: <book><chapter><section><section><note><simpara>
 #: debian-reference.en.xmlt:13766
@@ -26420,19 +26501,19 @@ msgstr ""
 #. type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:13840
 msgid "<ulink url=\"&linuxnetworkingconceptshowto;\">Linux Networking-concepts HOWTO</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&linuxnetworkingconceptshowto;\">Linux Networking-concepts HOWTO</ulink>"
 
 # type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:13845
 msgid "<ulink url=\"&linuxcepacketfilteringhowto;\">Linux 2.4 Packet Filtering HOWTO</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&linuxcepacketfilteringhowto;\">Linux 2.4 Packet Filtering HOWTO</ulink>"
 
 # type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:13850
 msgid "<ulink url=\"&linuxcenathowto;\">Linux 2.4 NAT HOWTO</ulink>"
-msgstr ""
+msgstr "<ulink url=\"&linuxcenathowto;\">Linux 2.4 NAT HOWTO</ulink>"
 
 # type: Content of: <book><chapter><section><tip><simpara>
 #. type: Content of: <book><chapter><section><tip><simpara>

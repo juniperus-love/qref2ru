@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="debian-reference.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
 <meta name="description" content="Это свободная книга, вы можете распространять её на условиях любой DFSG-совместимой версии GNU General Public License (в соответствии с Debian Free Software Guidelines -- DFSG).">
-<link rel="home" href="#id2690455" title="Справочник по Debian">
+<link rel="home" href="#id3072544" title="Справочник по Debian">
 <link rel="next" href="#_preface" title="Введение">
 <link rel="preface" href="#_preface" title="Введение">
 <link rel="chapter" href="#_gnu_linux_tutorials" title="Глава 1. Основы работы в GNU/Linux">
@@ -26,13 +26,13 @@
 <div class="titlepage">
 <div>
 <div><h1 class="title">
-<a name="id2690455"></a>Справочник по Debian</h1></div>
+<a name="id3072544"></a>Справочник по Debian</h1></div>
 <div><div class="author"><h3 class="author">
 <span class="firstname">Osamu</span> <span class="surname">Aoki</span>
 </h3></div></div>
 <div><p class="copyright">Copyright © 2007-2009 Osamu Aoki</p></div>
 <div><div class="legalnotice" title="Авторские права">
-<a name="id2690502"></a><p>Этот Справочник по Debian (v2) (2010-07-25 14:51:09 UTC) предоставляет широкий обзор
+<a name="id3072591"></a><p>Этот Справочник по Debian (v2) (2010-07-26 11:37:52 UTC) предоставляет широкий обзор
 системы Debian в форме руководства пользователя после
 установки. Рассматриваются многие аспекты управления системой на примерах в
 командной строке.</p>
@@ -326,7 +326,7 @@ Free Software Guidelines -- DFSG).</p>
 </dl></dd>
 <dt><span class="section"><a href="#_the_low_level_network_configuration">5.7. The low level network configuration</a></span></dt>
 <dd><dl>
-<dt><span class="section"><a href="#_iproute2_commands">5.7.1. Iproute2 commands</a></span></dt>
+<dt><span class="section"><a href="#_iproute2_commands">5.7.1. Команды iproute2</a></span></dt>
 <dt><span class="section"><a href="#_safe_low_level_network_operations">5.7.2. Safe low level network operations</a></span></dt>
 </dl></dd>
 <dt><span class="section"><a href="#_network_optimization">5.8. Network optimization</a></span></dt>
@@ -836,7 +836,7 @@ Free Software Guidelines -- DFSG).</p>
 </dt>
 <dt>4.8. <a href="#listoftoolstoprosecuritymeasures">Средства для применения особых мер безопасности</a>
 </dt>
-<dt>5.1. <a href="#listofnetworkconfigurationtools">List of network configuration tools</a>
+<dt>5.1. <a href="#listofnetworkconfigurationtools">Список средств настройки сети</a>
 </dt>
 <dt>5.2. <a href="#listofnetworkaddressranges">List of network address ranges</a>
 </dt>
@@ -1107,7 +1107,7 @@ scenarios</a>
 <div class="titlepage"><div><div><h2 class="title">
 <a name="_preface"></a>Введение</h2></div></div></div>
 <p>В этом <a class="ulink" href="http://www.debian.org/doc/manuals/debian-reference/" target="_top">Справочнике по Debian (версия
-2)</a> (2010-07-25 14:51:09 UTC) мы стремимся предоставить широкий обзор правил и
+2)</a> (2010-07-26 11:37:52 UTC) мы стремимся предоставить широкий обзор правил и
 возможностей администрирования (настройки и управления) уже установленной
 системы Debian.</p>
 <p>Справочник предназначен для тех начинающих изучение Debian, кто не готов
@@ -13547,8 +13547,8 @@ Guide</a>.</p>
 <a name="_the_basic_network_infrastructure"></a>5.1. The basic network infrastructure</h2></div></div></div>
 <p>Let's review the basic network infrastructure on the modern Debian system.</p>
 <div class="table">
-<a name="listofnetworkconfigurationtools"></a><p class="title"><b>Таблица 5.1. List of network configuration tools</b></p>
-<div class="table-contents"><table summary="List of network configuration tools" border="1">
+<a name="listofnetworkconfigurationtools"></a><p class="title"><b>Таблица 5.1. Список средств настройки сети</b></p>
+<div class="table-contents"><table summary="Список средств настройки сети" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -13558,7 +13558,7 @@ Guide</a>.</p>
 </colgroup>
 <thead><tr>
 <th align="left">
-    packages
+    пакеты
     </th>
 <th align="left">
     popcon
@@ -13585,7 +13585,8 @@ Guide</a>.</p>
     config::ifupdown
     </td>
 <td align="left">
-    standardized tool to bring up and down the network (Debian specific)
+    стандартизированное средство включения/выключения интерфесов (специфично для
+Debian)
     </td>
 </tr>
 <tr>
@@ -13599,7 +13600,7 @@ Guide</a>.</p>
     , ,
     </td>
 <td align="left">
-    manage the wired network automatically
+    автоматическое управление проводными интерфейсами
     </td>
 </tr>
 <tr>
@@ -13613,7 +13614,7 @@ Guide</a>.</p>
     , ,
     </td>
 <td align="left">
-    network testing script to enhance "<code class="literal">ifupdown</code>" package
+    сценарии проверки сети, дополняющие пакет "<code class="literal">ifupdown</code>"
     </td>
 </tr>
 <tr>
@@ -13627,7 +13628,7 @@ Guide</a>.</p>
     , ,
     </td>
 <td align="left">
-    set routing metrics for a network interface
+    средство установки метрик (приоритетов) маршрутов
     </td>
 </tr>
 <tr>
@@ -13641,8 +13642,8 @@ Guide</a>.</p>
     , ,
     </td>
 <td align="left">
-    mapping script to enhance "<code class="literal">ifupdown</code>" package via
-"<code class="literal">/etc/network/interfaces</code>" file
+    сценарий для автоопределения сети, дополняющий "<code class="literal">ifupdown</code>"
+и использующий "<code class="literal">/etc/network/interfaces</code>"
     </td>
 </tr>
 <tr>
@@ -13656,7 +13657,8 @@ Guide</a>.</p>
     , ,
     </td>
 <td align="left">
-    mapping scripts to enhance "<code class="literal">ifupdown</code>" package
+    сценарии автоопределения сети, дополняющие пакет
+"<code class="literal">ifupdown</code>"
     </td>
 </tr>
 <tr>
@@ -13670,7 +13672,7 @@ Guide</a>.</p>
     , ,
     </td>
 <td align="left">
-    Zugschlus' interface scripts for ifupdown's manual method
+    сценарии для метода "manual" ifupdown
     </td>
 </tr>
 <tr>
@@ -13684,8 +13686,8 @@ Guide</a>.</p>
     config::NM
     </td>
 <td align="left">
-<a class="ulink" href="http://ru.wikipedia.org/wiki/NetworkManager" target="_top">NetworkManager</a> (daemon): manage the
-network automatically
+<a class="ulink" href="http://ru.wikipedia.org/wiki/NetworkManager" target="_top">NetworkManager</a>: служба управления
+сетевыми подключениями
     </td>
 </tr>
 <tr>
@@ -13699,7 +13701,8 @@ network automatically
     , ,
     </td>
 <td align="left">
-<a class="ulink" href="http://ru.wikipedia.org/wiki/NetworkManager" target="_top">NetworkManager</a> (GNOME frontend)
+<a class="ulink" href="http://ru.wikipedia.org/wiki/NetworkManager" target="_top">NetworkManager</a> (интерфейс
+пользователя, GNOME)
     </td>
 </tr>
 <tr>
@@ -13713,7 +13716,8 @@ network automatically
     , ,
     </td>
 <td align="left">
-<a class="ulink" href="http://ru.wikipedia.org/wiki/NetworkManager" target="_top">NetworkManager</a> (KDE frontend)
+<a class="ulink" href="http://ru.wikipedia.org/wiki/NetworkManager" target="_top">NetworkManager</a> (интерфейс
+пользователя, KDE)
     </td>
 </tr>
 <tr>
@@ -13727,7 +13731,8 @@ network automatically
     , ,
     </td>
 <td align="left">
-<a class="ulink" href="http://ru.wikipedia.org/wiki/NetworkManager" target="_top">NetworkManager</a> (command-line client)
+<a class="ulink" href="http://ru.wikipedia.org/wiki/NetworkManager" target="_top">NetworkManager</a> (клиент для командной
+строки)
     </td>
 </tr>
 <tr>
@@ -13741,7 +13746,7 @@ network automatically
     config::wicd
     </td>
 <td align="left">
-    wired and wireless network manager (metapackage)
+    управление проводными и беспроводными сетевыми подключениями (мета-пакет)
     </td>
 </tr>
 <tr>
@@ -13755,7 +13760,8 @@ network automatically
     , ,
     </td>
 <td align="left">
-    wired and wireless network manager (command-line client)
+    управление (бес)проводными сетевыми подключениями (клиент для командной
+строки)
     </td>
 </tr>
 <tr>
@@ -13769,7 +13775,7 @@ network automatically
     , ,
     </td>
 <td align="left">
-    wired and wireless network manager (Curses client)
+    управление (бес)проводными сетевыми подключениями (клиент Curses/Urwid)
     </td>
 </tr>
 <tr>
@@ -13783,7 +13789,7 @@ network automatically
     , ,
     </td>
 <td align="left">
-    wired and wireless network manager (daemon)
+    управление (бес)проводными сетевыми подключениями (служба)
     </td>
 </tr>
 <tr>
@@ -13797,7 +13803,7 @@ network automatically
     , ,
     </td>
 <td align="left">
-    wired and wireless network manager (GTK+ client)
+    управление (бес)проводными сетевыми подключениями (клиент GTK+)
     </td>
 </tr>
 <tr>
@@ -13811,7 +13817,7 @@ network automatically
     config::Netfilter
     </td>
 <td align="left">
-    administration tools for packet filtering and NAT (<a class="ulink" href="http://ru.wikipedia.org/wiki/Netfilter" target="_top">Netfilter</a>)
+    средства управления для пакетного фильтра и NAT (<a class="ulink" href="http://ru.wikipedia.org/wiki/Netfilter" target="_top">Netfilter</a>)
     </td>
 </tr>
 <tr>
@@ -13840,7 +13846,7 @@ configuration: <code class="literal">ip</code>(8), <code class="literal">tc</cod
     , ,
     </td>
 <td align="left">
-    rename network interfaces based on various static criteria:
+    переименование сетевого интерфейса по заданным правилам:
 <code class="literal">ifrename</code>(8)
     </td>
 </tr>
@@ -13855,7 +13861,7 @@ configuration: <code class="literal">ip</code>(8), <code class="literal">tc</cod
     , ,
     </td>
 <td align="left">
-    display or change Ethernet device settings
+    просмотр и настройка параметров устройств Ethernet
     </td>
 </tr>
 <tr>
@@ -13970,7 +13976,7 @@ address</a> (legacy, GNU)
     config::low-level
     </td>
 <td align="left">
-    DHCP client
+    DHCP-клиент
     </td>
 </tr>
 <tr>
@@ -14612,7 +14618,7 @@ your needs, you should use the legacy network connection and configuration
 method which combines many simpler tools.</p>
 <p>The legacy network connection is specific for each method (see <a class="xref" href="#_the_network_connection_method_legacy" title="5.4. The network connection method (legacy)">Раздел 5.4, «The network connection method (legacy)»</a>).</p>
 <p>There are 2 types of programs for the low level network configuration on
-Linux (see <a class="xref" href="#_iproute2_commands" title="5.7.1. Iproute2 commands">Раздел 5.7.1, «Iproute2 commands»</a>).</p>
+Linux (see <a class="xref" href="#_iproute2_commands" title="5.7.1. Команды iproute2">Раздел 5.7.1, «Команды iproute2»</a>).</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
 Old <a class="ulink" href="http://www.linuxfoundation.org/en/Net:Net-tools" target="_top">net-tools</a> programs
@@ -14673,10 +14679,10 @@ summarized as the following.</p>
 </colgroup>
 <thead><tr>
 <th align="left">
-    PC
+    интерфейсы PC
     </th>
 <th align="left">
-    connection method
+    способ соединения
     </th>
 <th align="left">
     connection path
@@ -14685,7 +14691,7 @@ summarized as the following.</p>
 <tbody>
 <tr>
 <td align="left">
-    Serial port (<code class="literal">ppp0</code>)
+    Последовательный порт (<code class="literal">ppp0</code>)
     </td>
 <td align="left">
     PPP
@@ -14696,7 +14702,7 @@ summarized as the following.</p>
 </tr>
 <tr>
 <td align="left">
-    Ethernet port (<code class="literal">eth0</code>)
+    Ethernet (<code class="literal">eth0</code>)
     </td>
 <td align="left">
     PPPoE/DHCP/Static
@@ -14707,7 +14713,7 @@ summarized as the following.</p>
 </tr>
 <tr>
 <td align="left">
-    Ethernet port (<code class="literal">eth0</code>)
+    Ethernet (<code class="literal">eth0</code>)
     </td>
 <td align="left">
     DHCP/Static
@@ -14731,13 +14737,13 @@ address translation (NAT)</a> (⇔ BB-modem …)
 </colgroup>
 <thead><tr>
 <th align="left">
-    connection method
+    способ соединения
     </th>
 <th align="left">
-    configuration
+    настройка
     </th>
 <th align="left">
-    backend package(s)
+    пакеты для настройки
     </th>
 </tr></thead>
 <tbody>
@@ -14754,7 +14760,7 @@ address translation (NAT)</a> (⇔ BB-modem …)
 </tr>
 <tr>
 <td align="left">
-    PPP (alternative)
+    PPP (другой способ)
     </td>
 <td align="left">
 <code class="literal">wvdialconf</code> to create heuristic chat
@@ -14779,7 +14785,7 @@ address translation (NAT)</a> (⇔ BB-modem …)
     DHCP
     </td>
 <td align="left">
-    described in "<code class="literal">/etc/dhcp3/dhclient.conf</code>"
+    описана в "<code class="literal">/etc/dhcp3/dhclient.conf</code>"
     </td>
 <td align="left">
                 <code class="literal">dhcp3-client</code>
@@ -14787,10 +14793,10 @@ address translation (NAT)</a> (⇔ BB-modem …)
 </tr>
 <tr>
 <td align="left">
-    static IP (IPv4)
+    статический IP (IPv4)
     </td>
 <td align="left">
-    described in "<code class="literal">/etc/network/interfaces</code>"
+    описана в "<code class="literal">/etc/network/interfaces</code>"
     </td>
 <td align="left">
                 <code class="literal">net-tools</code>
@@ -14798,10 +14804,10 @@ address translation (NAT)</a> (⇔ BB-modem …)
 </tr>
 <tr>
 <td align="left">
-    static IP (IPv6)
+    статический IP (IPv6)
     </td>
 <td align="left">
-    described in "<code class="literal">/etc/network/interfaces</code>"
+    описана в "<code class="literal">/etc/network/interfaces</code>"
     </td>
 <td align="left">
                 <code class="literal">iproute</code>
@@ -15042,7 +15048,7 @@ the following.</p>
 <pre class="screen">$ sudo pon &lt;isp_name&gt;
 ...
 $ sudo poff &lt;isp_name&gt;</pre>
-<p>See "<code class="literal">/usr/share/doc/ppp/README.Debian.gz</code>".</p>
+<p>См. "<code class="literal">/usr/share/doc/ppp/README.Debian.gz</code>"</p>
 </div>
 <div class="section" title="5.4.4. The alternative PPP connection with wvdialconf">
 <div class="titlepage"><div><div><h3 class="title">
@@ -15133,7 +15139,7 @@ the following.</p>
 <pre class="screen">$ sudo wvdial
 ...
 $ sudo killall wvdial</pre>
-<p>See <code class="literal">wvdial</code>(1) and <code class="literal">wvdial.conf</code>(5).</p>
+<p>См. <code class="literal">wvdial</code>(1) и <code class="literal">wvdial.conf</code>(5).</p>
 </div>
 <div class="section" title="5.4.5. The PPPoE connection with pppoeconf">
 <div class="titlepage"><div><div><h3 class="title">
@@ -15202,7 +15208,7 @@ $ sudo pon dsl-provider
 ...
 $ sudo poff dsl-provider
 $ sudo /sbin/ifconfig eth0 down</pre>
-<p>See "<code class="literal">/usr/share/doc/pppoeconf/README.Debian</code>".</p>
+<p>См. "<code class="literal">/usr/share/doc/pppoeconf/README.Debian</code>".</p>
 </div>
 </div>
 <div class="section" title="5.5. The basic network configuration with ifupdown (legacy)">
@@ -15284,7 +15290,7 @@ configure an interface in <span class="strong"><strong>up</strong></span> state.
 </div>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
-<p>There is no command <code class="literal">ifupdown</code>.</p>
+<p>Не существует команды "<code class="literal">ifupdown</code>".</p>
 </div>
 </div>
 <div class="section" title='5.5.2. The basic syntax of "/etc/network/interfaces"'>
@@ -15582,7 +15588,7 @@ iface ath0 inet dhcp
  wpa-ssid homezone
  # hexadecimal psk is encoded from a plaintext passphrase
  wpa-psk 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f</pre>
-<p>See "<code class="literal">/usr/share/doc/wpasupplicant/README.modes.gz</code>".</p>
+<p>См. "<code class="literal">/usr/share/doc/wpasupplicant/README.modes.gz</code>".</p>
 </div>
 <div class="section" title="5.5.8. The wireless LAN interface with WEP">
 <div class="titlepage"><div><div><h3 class="title">
@@ -15606,7 +15612,7 @@ iface eth0 inet dhcp
  wireless-key3 s:password
  wireless-defaultkey 2
  wireless-keymode open</pre>
-<p>See "<code class="literal">/usr/share/doc/wireless-tools/README.Debian</code>".</p>
+<p>См. "<code class="literal">/usr/share/doc/wireless-tools/README.Debian</code>".</p>
 </div>
 <div class="section" title="5.5.9. The PPP connection">
 <div class="titlepage"><div><div><h3 class="title">
@@ -15768,10 +15774,10 @@ Keep stanza in "<code class="literal">/etc/network/interfaces</code>": "<code cl
 eth0 inet …</code>" and "<code class="literal">mapping …</code>".
 </li>
 <li class="listitem">
-Install the <code class="literal">ifplugd</code> package.
+Установите пакет <code class="literal">ifplugd</code>.
 </li>
 <li class="listitem">
-Run "<code class="literal">sudo dpkg-reconfigure ifplugd</code>".
+Запустите "<code class="literal">sudo dpkg-reconfigure ifplugd</code>".
 </li>
 <li class="listitem">
 Put <code class="literal">eth0</code> as the "static interfaces to be watched by
@@ -15917,15 +15923,13 @@ used in <code class="literal">ifup</code>(8) and <code class="literal">interface
 </tr></thead>
 <tbody>
 <tr>
-<td align="left">
-<span class="strong"><strong>physical interface</strong></span> name
+<td align="left">имя <span class="strong"><strong>физического интерфейса</strong></span>
     </td>
-<td align="left">
-<span class="strong"><strong>network interface</strong></span> name
+<td align="left">имя <span class="strong"><strong>сетевого интерфейса</strong></span>
     </td>
 <td align="left">
 <code class="literal">lo</code>, <code class="literal">eth0</code>,
-<code class="literal">&lt;interface_name&gt;</code>
+<code class="literal">&lt;имя_интерфейса&gt;</code>
 </td>
 <td align="left">
     name given by the Linux kernel (using <code class="literal">udev</code> mechanism)
@@ -15935,8 +15939,7 @@ used in <code class="literal">ifup</code>(8) and <code class="literal">interface
 <td align="left">
 <span class="strong"><strong>logical interface</strong></span> name
     </td>
-<td align="left">
-<span class="strong"><strong>network configuration</strong></span> name
+<td align="left">имя <span class="strong"><strong>сетевой конфигурации</strong></span>
     </td>
 <td align="left">
 <code class="literal">config1</code>, <code class="literal">config2</code>,
@@ -16157,7 +16160,7 @@ variables to scripts.</p>
 </colgroup>
 <thead><tr>
 <th align="left">
-    environment variable
+    переменная окружения
     </th>
 <th align="left">
     value passed
@@ -16315,9 +16318,9 @@ option lines to be repeated.</p>
 <div class="section" title="5.7. The low level network configuration">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
 <a name="_the_low_level_network_configuration"></a>5.7. The low level network configuration</h2></div></div></div>
-<div class="section" title="5.7.1. Iproute2 commands">
+<div class="section" title="5.7.1. Команды iproute2">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_iproute2_commands"></a>5.7.1. Iproute2 commands</h3></div></div></div>
+<a name="_iproute2_commands"></a>5.7.1. Команды iproute2</h3></div></div></div>
 <p><a class="ulink" href="http://www.linuxfoundation.org/en/Net:Iproute2" target="_top">Iproute2</a> commands offer complete low-level
 network configuration capabilities. Here is a translation table from
 obsolete <a class="ulink" href="http://www.linuxfoundation.org/en/Net:Net-tools" target="_top">net-tools</a> commands to new <a class="ulink" href="http://www.linuxfoundation.org/en/Net:Iproute2" target="_top">iproute2</a> etc. commands.</p>
@@ -16623,7 +16626,7 @@ touch only subjects pertinent to the consumer grade connection.</p>
 </colgroup>
 <thead><tr>
 <th align="left">
-    packages
+    пакеты
     </th>
 <th align="left">
     popcon
@@ -16905,10 +16908,10 @@ used as an alternative measure of packet size.  The relationship between MSS
 and MTU are the following.</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
-MSS = MTU - 40 for IPv4
+MSS = MTU - 40 для IPv4
 </li>
 <li class="listitem">
-MSS = MTU - 60 for IPv6
+MSS = MTU - 60 для IPv6
 </li>
 </ul></div>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
@@ -16946,7 +16949,7 @@ well even for my LAN connected by the fast 1G bps FTTP service.</p>
 </colgroup>
 <thead><tr>
 <th align="left">
-    packages
+    пакеты
     </th>
 <th align="left">
     popcon
