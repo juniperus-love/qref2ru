@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="debian-reference.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
 <meta name="description" content="Это свободная книга, вы можете распространять её на условиях любой DFSG-совместимой версии GNU General Public License (в соответствии с Debian Free Software Guidelines -- DFSG).">
-<link rel="home" href="#id2970757" title="Справочник по Debian">
+<link rel="home" href="#id2966319" title="Справочник по Debian">
 <link rel="next" href="#_preface" title="Введение">
 <link rel="preface" href="#_preface" title="Введение">
 <link rel="chapter" href="#_gnu_linux_tutorials" title="Глава 1. Основы работы в GNU/Linux">
@@ -26,13 +26,13 @@
 <div class="titlepage">
 <div>
 <div><h1 class="title">
-<a name="id2970757"></a>Справочник по Debian</h1></div>
+<a name="id2966319"></a>Справочник по Debian</h1></div>
 <div><div class="author"><h3 class="author">
 <span class="firstname">Osamu</span> <span class="surname">Aoki</span>
 </h3></div></div>
 <div><p class="copyright">Copyright © 2007-2009 Osamu Aoki</p></div>
 <div><div class="legalnotice" title="Авторские права">
-<a name="id2970804"></a><p>Этот Справочник по Debian (v2) (2010-07-31 13:11:45 UTC) предоставляет широкий обзор
+<a name="id2966366"></a><p>Этот Справочник по Debian (v2) (2010-08-20 19:07:55 UTC) предоставляет широкий обзор
 системы Debian в форме руководства пользователя после
 установки. Рассматриваются многие аспекты управления системой на примерах в
 командной строке.</p>
@@ -71,7 +71,7 @@ Free Software Guidelines -- DFSG).</p>
 <dd><dl>
 <dt><span class="section"><a href="#_the_shell_prompt">1.1.1. Приглашение командной строки</a></span></dt>
 <dt><span class="section"><a href="#_the_shell_prompt_under_x">1.1.2. Командная строка в X Window</a></span></dt>
-<dt><span class="section"><a href="#_the_root_account">1.1.3. Учётная запись администратора системы (the root account)</a></span></dt>
+<dt><span class="section"><a href="#_the_root_account">1.1.3. Учётная запись администратора системы (root account)</a></span></dt>
 <dt><span class="section"><a href="#_the_root_shell_prompt">1.1.4. Приглашение командной строки суперпользователя</a></span></dt>
 <dt><span class="section"><a href="#_gui_system_administration_tools">1.1.5. Средства администрирования в GUI</a></span></dt>
 <dt><span class="section"><a href="#_virtual_consoles">1.1.6. Виртуальные терминалы</a></span></dt>
@@ -279,14 +279,14 @@ Free Software Guidelines -- DFSG).</p>
 <dd><dl>
 <dt><span class="section"><a href="#_the_basic_network_infrastructure">5.1. The basic network infrastructure</a></span></dt>
 <dd><dl>
-<dt><span class="section"><a href="#_the_domain_name">5.1.1. The domain name</a></span></dt>
+<dt><span class="section"><a href="#_the_domain_name">5.1.1. Доменное имя</a></span></dt>
 <dt><span class="section"><a href="#_the_hostname_resolution">5.1.2. The hostname resolution</a></span></dt>
-<dt><span class="section"><a href="#_the_network_interface_name">5.1.3. The network interface name</a></span></dt>
-<dt><span class="section"><a href="#_the_network_address_range_for_the_lan">5.1.4. The network address range for the LAN</a></span></dt>
-<dt><span class="section"><a href="#_the_network_device_support">5.1.5. The network device support</a></span></dt>
+<dt><span class="section"><a href="#_the_network_interface_name">5.1.3. Имя сетевого интерфейса</a></span></dt>
+<dt><span class="section"><a href="#_the_network_address_range_for_the_lan">5.1.4. Диапазоны сетевых адресов для ЛВС</a></span></dt>
+<dt><span class="section"><a href="#_the_network_device_support">5.1.5. Поддержка сетевых устройств</a></span></dt>
 </dl></dd>
-<dt><span class="section"><a href="#_the_modern_network_configuration_for_desktop">5.2. The modern network configuration for desktop</a></span></dt>
-<dd><dl><dt><span class="section"><a href="#_gui_network_configuration_tools">5.2.1. GUI network configuration tools</a></span></dt></dl></dd>
+<dt><span class="section"><a href="#_the_modern_network_configuration_for_desktop">5.2. Современная конфигурация сети для настольного компьютера</a></span></dt>
+<dd><dl><dt><span class="section"><a href="#_gui_network_configuration_tools">5.2.1. Графические средства настройки сети</a></span></dt></dl></dd>
 <dt><span class="section"><a href="#_the_legacy_network_connection_and_configuration">5.3. The legacy network connection and configuration</a></span></dt>
 <dt><span class="section"><a href="#_the_network_connection_method_legacy">5.4. The network connection method (legacy)</a></span></dt>
 <dd><dl>
@@ -327,12 +327,12 @@ Free Software Guidelines -- DFSG).</p>
 <dt><span class="section"><a href="#_the_low_level_network_configuration">5.7. The low level network configuration</a></span></dt>
 <dd><dl>
 <dt><span class="section"><a href="#_iproute2_commands">5.7.1. Команды iproute2</a></span></dt>
-<dt><span class="section"><a href="#_safe_low_level_network_operations">5.7.2. Safe low level network operations</a></span></dt>
+<dt><span class="section"><a href="#_safe_low_level_network_operations">5.7.2. Безопасные низкоуровневые операции с сетью</a></span></dt>
 </dl></dd>
 <dt><span class="section"><a href="#_network_optimization">5.8. Network optimization</a></span></dt>
 <dd><dl>
 <dt><span class="section"><a href="#_finding_optimal_mtu">5.8.1. Finding optimal MTU</a></span></dt>
-<dt><span class="section"><a href="#_setting_mtu">5.8.2. Setting MTU</a></span></dt>
+<dt><span class="section"><a href="#_setting_mtu">5.8.2. Установка MTU</a></span></dt>
 <dt><span class="section"><a href="#_wan_tcp_optimization">5.8.3. WAN TCP optimization</a></span></dt>
 </dl></dd>
 <dt><span class="section"><a href="#_netfilter_infrastructure">5.9. Netfilter infrastructure</a></span></dt>
@@ -360,23 +360,23 @@ Free Software Guidelines -- DFSG).</p>
 <dt><span class="section"><a href="#_getmail_configuration">6.5.1. Настройка getmail</a></span></dt>
 <dt><span class="section"><a href="#_fetchmail_configuration">6.5.2. Настройка fetchmail</a></span></dt>
 </dl></dd>
-<dt><span class="section"><a href="#_mail_delivery_agent_mda_with_filter">6.6. Mail delivery agent (MDA) with filter</a></span></dt>
+<dt><span class="section"><a href="#_mail_delivery_agent_mda_with_filter">6.6. Агент доставки (MDA) с поддержкой фильтрации</a></span></dt>
 <dd><dl>
 <dt><span class="section"><a href="#_maildrop_configuration">6.6.1. Настройка maildrop</a></span></dt>
 <dt><span class="section"><a href="#_procmail_configuration">6.6.2. Настройка procmail</a></span></dt>
-<dt><span class="section"><a href="#_redeliver_mbox_contents">6.6.3. Redeliver mbox contents</a></span></dt>
+<dt><span class="section"><a href="#_redeliver_mbox_contents">6.6.3. Перераспределение содержимого mbox</a></span></dt>
 </dl></dd>
 <dt><span class="section"><a href="#_pop3_imap4_server">6.7. Сервер POP3/IMAP4</a></span></dt>
 <dt><span class="section"><a href="#_the_print_server_and_utility">6.8. The print server and utility</a></span></dt>
 <dt><span class="section"><a href="#_the_remote_access_server_and_utility_ssh">6.9. Сервер удалённого доступа и утилиты для него (SSH)</a></span></dt>
 <dd><dl>
-<dt><span class="section"><a href="#_basics_of_ssh">6.9.1. Basics of SSH</a></span></dt>
+<dt><span class="section"><a href="#_basics_of_ssh">6.9.1. Основы SSH</a></span></dt>
 <dt><span class="section"><a href="#_port_forwarding_for_smtp_pop3_tunneling">6.9.2. Port forwarding for SMTP/POP3 tunneling</a></span></dt>
-<dt><span class="section"><a href="#_connecting_without_remote_passwords">6.9.3. Connecting without remote passwords</a></span></dt>
-<dt><span class="section"><a href="#_dealing_with_alien_ssh_clients">6.9.4. Dealing with alien SSH clients</a></span></dt>
-<dt><span class="section"><a href="#_setting_up_ssh_agent">6.9.5. Setting up ssh-agent</a></span></dt>
+<dt><span class="section"><a href="#_connecting_without_remote_passwords">6.9.3. Соединение без ввода пароля</a></span></dt>
+<dt><span class="section"><a href="#_dealing_with_alien_ssh_clients">6.9.4. SSH-клиенты для других ОС</a></span></dt>
+<dt><span class="section"><a href="#_setting_up_ssh_agent">6.9.5. Настройка ssh-agent</a></span></dt>
 <dt><span class="section"><a href="#_how_to_shutdown_the_remote_system_on_ssh">6.9.6. Как выключить удалённую систему по SSH</a></span></dt>
-<dt><span class="section"><a href="#_troubleshooting_ssh">6.9.7. Troubleshooting SSH</a></span></dt>
+<dt><span class="section"><a href="#_troubleshooting_ssh">6.9.7. Решение трудностей с SSH</a></span></dt>
 </dl></dd>
 <dt><span class="section"><a href="#_other_network_application_servers">6.10. Другие серверы сетевых приложений</a></span></dt>
 <dt><span class="section"><a href="#_other_network_application_clients">6.11. Другие клиенты сетевых приложений</a></span></dt>
@@ -385,7 +385,7 @@ Free Software Guidelines -- DFSG).</p>
 <dt><span class="chapter"><a href="#_the_x_window_system">7. Система X Window</a></span></dt>
 <dd><dl>
 <dt><span class="section"><a href="#_key_packages">7.1. Ключевые пакеты</a></span></dt>
-<dt><span class="section"><a href="#_setting_up_desktop_environment">7.2. Настройка окружения рабочего стола</a></span></dt>
+<dt><span class="section"><a href="#_setting_up_desktop_environment">7.2. Настройка среды рабочего стола</a></span></dt>
 <dd><dl>
 <dt><span class="section"><a href="#_debian_menu">7.2.1. Меню Debian</a></span></dt>
 <dt><span class="section"><a href="#_freedesktop_org_menu">7.2.2. Меню Freedesktop.org</a></span></dt>
@@ -694,7 +694,7 @@ Free Software Guidelines -- DFSG).</p>
 <dt><span class="section"><a href="#_check_dependency_on_libraries">12.4.6. Проверка зависимостей от библиотек</a></span></dt>
 <dt><span class="section"><a href="#_memory_leak_detection_tools">12.4.7. Средства обнаружения утечек памяти</a></span></dt>
 <dt><span class="section"><a href="#_static_code_analysis_tools">12.4.8. Инструменты для анализа статичного кода</a></span></dt>
-<dt><span class="section"><a href="#_disassemble_binary">12.4.9. Дизассемблирование бинарника</a></span></dt>
+<dt><span class="section"><a href="#_disassemble_binary">12.4.9. Дизассемблирование двоичного файла</a></span></dt>
 </dl></dd>
 <dt><span class="section"><a href="#_flex_8212_a_better_lex">12.5. Flex -- улучшенный Lex</a></span></dt>
 <dt><span class="section"><a href="#_bison_8212_a_better_yacc">12.6. Bison -- улучшенный Yacc</a></span></dt>
@@ -838,7 +838,7 @@ Free Software Guidelines -- DFSG).</p>
 </dt>
 <dt>5.1. <a href="#listofnetworkconfigurationtools">Список средств настройки сети</a>
 </dt>
-<dt>5.2. <a href="#listofnetworkaddressranges">List of network address ranges</a>
+<dt>5.2. <a href="#listofnetworkaddressranges">Список диапазонов сетевых адресов</a>
 </dt>
 <dt>5.3. <a href="#listofnetworkcondconnectionpaths">List of network connection methods and connection paths</a>
 </dt>
@@ -868,7 +868,7 @@ connection with pppconfig</a>
 <dt>5.15. <a href="#translationtableiprouteccommands">Translation table from obsolete <code class="literal">net-tools</code> commands to new
 <code class="literal">iproute2</code> commands</a>
 </dt>
-<dt>5.16. <a href="#listoflowlevelnetworkcommands">List of low level network commands</a>
+<dt>5.16. <a href="#listoflowlevelnetworkcommands">Список низкоуровневых сетевых команд</a>
 </dt>
 <dt>5.17. <a href="#listofnetworkoptimizationtools">List of network optimization tools</a>
 </dt>
@@ -894,7 +894,7 @@ connection with pppconfig</a>
 </dt>
 <dt>6.9. <a href="#listofremotemailforwardutilities">Список средств получения и перенаправления почты</a>
 </dt>
-<dt>6.10. <a href="#listofmdawithfilter">List of MDA with filter</a>
+<dt>6.10. <a href="#listofmdawithfilter">Список агентов доставки (MDA) с поддержкой фильтрации</a>
 </dt>
 <dt>6.11. <a href="#listofpopdimapeservers">Список серверов POP3/IMAP4</a>
 </dt>
@@ -902,13 +902,13 @@ connection with pppconfig</a>
 </dt>
 <dt>6.13. <a href="#listofremoteaccerverandutilities">Сервер и утилиты для удалённого доступа</a>
 </dt>
-<dt>6.14. <a href="#listofsshauthenttocolsandmethods">List of SSH authentication protocols and methods</a>
+<dt>6.14. <a href="#listofsshauthenttocolsandmethods">Список протоколов и методов аутентификации в SSH</a>
 </dt>
 <dt>6.15. <a href="#listofsshconfigurationfiles">Список конфигурационных файлов SSH</a>
 </dt>
-<dt>6.16. <a href="#listofsshclientstartupexamples">List of SSH client startup examples</a>
+<dt>6.16. <a href="#listofsshclientstartupexamples">Список примеров запуска SSH-клиента</a>
 </dt>
-<dt>6.17. <a href="#listoffreesshcliorotherplatforms">List of free SSH clients for other platforms</a>
+<dt>6.17. <a href="#listoffreesshcliorotherplatforms">Список свободных SSH-клиентов для других платформ</a>
 </dt>
 <dt>6.18. <a href="#listofothernetwoplicationservers">Список других серверов сетевых приложений</a>
 </dt>
@@ -916,7 +916,7 @@ connection with pppconfig</a>
 </dt>
 <dt>6.20. <a href="#listofpopularrfcs">Список широко известных RFC</a>
 </dt>
-<dt>7.1. <a href="#listofkeymetapackagesforxwindow">Список ключевых (мета)пакетов для X Window</a>
+<dt>7.1. <a href="#listofkeymetapackagesforxwindow">Список ключевых (мета)пакетов X Window</a>
 </dt>
 <dt>7.2. <a href="#listofserverclientterminology">Список терминологии X Window с точки зрения клиента и сервера</a>
 </dt>
@@ -934,7 +934,7 @@ Type 1</a>
 </dt>
 <dt>7.8. <a href="#listofbasicxofficeapplications">Список основных офисных приложений X Window</a>
 </dt>
-<dt>7.9. <a href="#listofbasicxutilityapplications">Список основных полезных приложений X Window</a>
+<dt>7.9. <a href="#listofbasicxutilityapplications">Список полезных приложений X Window</a>
 </dt>
 <dt>8.1. <a href="#listofkeyboardreigurationmethods">Способы перенастройки клавиатуры</a>
 </dt>
@@ -1107,7 +1107,7 @@ scenarios</a>
 <div class="titlepage"><div><div><h2 class="title">
 <a name="_preface"></a>Введение</h2></div></div></div>
 <p>В этом <a class="ulink" href="http://www.debian.org/doc/manuals/debian-reference/" target="_top">Справочнике по Debian (версия
-2)</a> (2010-07-31 13:11:45 UTC) мы стремимся предоставить широкий обзор правил и
+2)</a> (2010-08-20 19:07:55 UTC) мы стремимся предоставить широкий обзор правил и
 возможностей администрирования (настройки и управления) уже установленной
 системы Debian.</p>
 <p>Справочник предназначен для тех начинающих изучение Debian, кто не готов
@@ -1147,16 +1147,16 @@ Free Software Guidelines, DFSG</a>).
 Интернете: <a class="ulink" href="http://www.debian.org" target="_top">http://www.debian.org</a>
 </li>
 <li class="listitem">
-В дистрибутив входит большое количество скомпилированного (готового
-к использованию) высококачественного ПО.
+В дистрибутив входит большое количество скомпилированного (готового к
+использованию) высококачественного ПО.
 </li>
 <li class="listitem">
-Особое внимание к стабильности и безопасности системы, вместе с возможностью
-легко получить обновления, связанные с безопасностью.
+Особое внимание уделяется стабильности и безопасности системы, а также
+легкости получения обновлений, связанных с безопасностью.
 </li>
 <li class="listitem">
-Особое внимание к возможности легко обновлять ПО до последних версий,
-доступных в нестабильной (<code class="literal">unstable</code>) и тестируемой
+Особое внимание уделяется возможности легко обновлять ПО до последних
+версий, доступных в нестабильной (<code class="literal">unstable</code>) и тестируемой
 (<code class="literal">testing</code>) версиях системы.
 </li>
 <li class="listitem">
@@ -1519,9 +1519,9 @@ GNOME такая программа должна вызываться из ме�
 <code class="literal">fluxbox</code>), меню может вызываться щелчком мыши по любой
 точке экрана.</p>
 </div>
-<div class="section" title="1.1.3. Учётная запись администратора системы (the root account)">
+<div class="section" title="1.1.3. Учётная запись администратора системы (root account)">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_the_root_account"></a>1.1.3. Учётная запись администратора системы (the root account)</h3></div></div></div>
+<a name="_the_root_account"></a>1.1.3. Учётная запись администратора системы (root account)</h3></div></div></div>
 <p>Эта учётная запись (root) называется также "<a class="ulink" href="http://ru.wikipedia.org/wiki/Root" target="_top">суперпользователем</a>" или "привилегированным
 пользователем". Зайдя под этой учётной записью, вы можете выполнять
 следующие (по сути, неограниченные) действия:</p>
@@ -1667,7 +1667,7 @@ Window, если на экране есть критичные данные, п�
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_recovering_a_sane_console"></a>1.1.9. Если экран "замусорился"</h3></div></div></div>
 <p>Если экран "взбесился" и выводит кучу мусора (например, после вывода на него
-какого-нибудь бинарного файла командой "<code class="literal">cat</code>"), введите
+какого-нибудь двоичного файла командой "<code class="literal">cat</code>"), введите
 команду "<code class="literal">reset</code>" и нажмите "<code class="literal">Enter</code>",
 даже если вы не видите, что набиваете. Также может пригодиться команда
 "<code class="literal">clear</code>" для очистки экрана.</p>
@@ -1946,7 +1946,7 @@ Window, если на экране есть критичные данные, п�
 </tbody>
 </table></div>
 </div>
-<br class="table-break"><p>Для установки любых этих и других пакетов используйте команду</p>
+<br class="table-break"><p>Для установки этих и любых других пакетов используйте команду</p>
 <pre class="screen"># aptitude install имя_пакета</pre>
 </div>
 <div class="section" title="1.1.11. Дополнительные пользовательские учётные записи">
@@ -1998,8 +1998,7 @@ pinguin выполнять любую команду от имени root по �
 <p>Административные привилегии в данном контексте означают конкретного
 человека, которому разрешено выполнять задачи администрирования
 системы. Никогда не давайте таких прав менеджерам IT-отдела или начальству,
-если только они действительно не авторизованы и способны выполнять эти
-задачи.</p>
+разве что если они действительно должны и способны выполнять эти задачи.</p>
 </div>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
@@ -3299,11 +3298,11 @@ mc становится первой "дружественной" средой �
 F1. Поиграйтесь с MC, используя клавиши F1-F9 и клавиши-стрелки. </p>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
-<p>В некоторых эмуляторах терминал, например в
+<p>В некоторых эмуляторах терминала, например в
 <code class="literal">gnome-terminal</code>(1), функциональные клавиши могут
 использоваться, это часто мешает работе разных консольных программ, которые
 используют эти клавиши. В случае с gnome-terminal можно переназначить или
-выключить горячие клавиши в меню "Правка" -&gt; "Комбинации клавиш". Hint:
+выключить горячие клавиши в меню "Правка" -&gt; "Комбинации клавиш". Подсказка:
 используйте Backspace, чтобы отключить горячую клавишу.</p>
 </div>
 <p>Если на экран выводится куча мусора (например, из-за проблем с кодировкой),
@@ -3985,7 +3984,7 @@ less нажмите "<code class="literal">h</code>". Перед тем, как 
 красивого вывода: чтобы использовать эту возможность, добавьте
 "<code class="literal">eval $(lesspipe)</code>" или "<code class="literal">eval
 $(lessfile)</code>" к стартовым скриптам. (Подробней читайте в
-"<code class="literal">/usr/share/doc/less/LESSOPEN</code>".</p>
+"<code class="literal">/usr/share/doc/less/LESSOPEN</code>").</p>
 </div>
 <div class="section" title="1.4.6. Текстовый редактор">
 <div class="titlepage"><div><div><h3 class="title">
@@ -4001,12 +4000,12 @@ $(lessfile)</code>" к стартовым скриптам. (Подробней 
 <p>Если же ваш выбор будет в пользу <a class="ulink" href="http://ru.wikipedia.org/wiki/Emacs" target="_top">Emacs</a> или
 <a class="ulink" href="http://ru.wikipedia.org/wiki/XEmacs" target="_top">XEmacs</a>, это тоже хорошее решение, в частности,
 для программирования. Emacs изобилует надстройками, включая функциональность
-ньюс-ридера, почтового клиента, редактора каталогов и т.д. При использовании
-для программирования или редактирования скриптов, он распознаёт форматы
-файлов и пытается оказывать помощь. Некоторые находят Emacs единственной
-нужной программой в системе Linux. Десять минут изучения Emacs сейчас может
-впоследствии сэкономить часы. Очень рекомендуется иметь Руководство по GNU
-Emacs в качестве справочника при изучении.</p>
+для чтения новостей, почтового клиента, редактора каталогов и т.д. При
+использовании для программирования или редактирования скриптов, он
+распознаёт форматы файлов и пытается оказывать помощь. Некоторые находят
+Emacs единственной нужной программой в системе Linux. Десять минут изучения
+Emacs сейчас может впоследствии сэкономить часы. Очень рекомендуется иметь
+Руководство по GNU Emacs в качестве справочника при изучении.</p>
 <p>Все эти программы обычно идут вместе с обучающей программой. Запустите Vim
 командой "<code class="literal">vim</code>" и нажмите
 <code class="literal">F1</code>. Прочитайте внимательно хотя бы первые 35 строчек. А
@@ -6657,7 +6656,7 @@ APT)
 (либо с кодовым именем "<code class="literal">squeeze</code>" или
 "<code class="literal">sid</code>"), и вот вы уже живёте <span class="strong"><strong>жизнью постоянных обновлений</strong></span>.</p>
 <p>Использование <code class="literal">testing</code> или <code class="literal">unstable</code>
-<span class="strong"><strong>интересно</strong></span> но рискованно. Даже не смотря
+<span class="strong"><strong>интересно</strong></span>, но рискованно. Даже несмотря
 на то, что система <code class="literal">unstable</code> выглядит обычно очень
 стабильно, бывают проблемы с некоторыми пакетами, и некоторые из них совсем
 не просто решить. Это может причинить вам <span class="strong"><strong>большие
@@ -7102,7 +7101,7 @@ codenames have been used in the past?"</a></p>
 </li>
 <li class="listitem">
 Внеочередное изменение архива, например, для удаления пакета (главным
-образом, для тестирования).
+образом, <code class="literal">testing</code>).
 </li>
 </ul></div>
 <p>Так что если вы решаете использовать эти архивы, вы должны быть в состоянии
@@ -8702,27 +8701,29 @@ Type "<code class="literal">l</code>" to enter the package display limit as
 "<code class="literal">Tasks</code>" as manual installed.
 </li>
 <li class="listitem">
-Exit <code class="literal">aptitude</code>.
+Выйдите из <code class="literal">aptitude</code>.
 </li>
 <li class="listitem">
-Start "<code class="literal">apt-get -s autoremove|less</code>" as root to check what
-are not used.
+Запустите "<code class="literal">apt-get -s autoremove|less</code>" от имени
+суперпользователя для вывода пакетов, которые не нужны по мнению системы
+APT.
 </li>
 <li class="listitem">
-Restart <code class="literal">aptitude</code> in interactive mode and mark needed
-packages as "<code class="literal">m</code>".
+Снова запустите <code class="literal">aptitude</code> в интерактивном режиме и
+пометьте нужные в системе пакеты меткой "<code class="literal">m</code>".
 </li>
 <li class="listitem">
-Restart "<code class="literal">apt-get -s autoremove|less</code>" as root to recheck
-REMOVED contain only expected packages.
+Снова запустите "<code class="literal">apt-get -s autoremove|less</code>" как root,
+чтобы убедиться, что на УДАЛЕНИЕ назначены ТОЛЬКО НЕНУЖНЫЕ ВАМ пакеты.
 </li>
 <li class="listitem">
-Start "<code class="literal">apt-get autoremove|less</code>" as root to autoremove
-unused packages.
+Запустите "<code class="literal">apt-get autoremove|less</code>" от имени
+суперпользователя, чтобы автоматически удалить неиспользуемые пакеты.
 </li>
 </ol></div>
-<p>The "<code class="literal">m</code>" action over "<code class="literal">Tasks</code>" is an
-optional one to prevent mass package removal situation in future.</p>
+<p>Выделение "<code class="literal">Задач</code>" ("<code class="literal">Tasks</code>") клавишей
+"<code class="literal">m</code>" (метка "Вручную") может быть полезно, чтобы избежать
+массового удаления пакетов в будущем.</p>
 </div>
 <div class="section" title="2.3.5. Апгрейд всей системы с помощью aptitude">
 <div class="titlepage"><div><div><h3 class="title">
@@ -8813,7 +8814,7 @@ update</code>".
 </ol></div>
 <div class="caution" title="Предостережение" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Предостережение</h3>
-<p>При апргейде от одного стабильного выпуска к другому небезопасно пропускать
+<p>При апгрейде от одного стабильного выпуска к другому небезопасно пропускать
 тот стабильный выпуск, который вышел между ними, если такой был.</p>
 </div>
 <div class="caution" title="Предостережение" style="margin-left: 0.5in; margin-right: 0.5in;">
@@ -9499,7 +9500,7 @@ yes</code>", приоритет (Pin-Priority) по-умолчанию раве�
 </tr>
 <tr>
 <td align="left">
-    Бинарный пакет (<code class="literal">deb</code>)
+    Бинарный пакет (<code class="literal">udeb</code>)
     </td>
 <td align="left">
                   <code class="literal">&lt;package-name&gt;_&lt;epoch&gt;:&lt;upstream-version&gt;-&lt;debian.version&gt;-&lt;architecture&gt;.udeb</code>
@@ -9892,8 +9893,8 @@ dpkg-statoverride, то заданные значения будут сброш�
 исправляется сопровождающим пакет.)</p>
 <p>Чтобы восстановить стабильность в этом случае, переместите работающую
 конфигурацию в свой профиль и перезапустите программу. Вам может
-потребоваться заглянуть в старые конфиги, чтобы восстановить нужную
-работоспособность, так что не удаляйте их сразу.</p>
+потребоваться заглянуть в старые конфигурационные файлы, чтобы восстановить
+нужную работоспособность, так что не удаляйте их сразу.</p>
 </div>
 <div class="section" title="2.6.2. Различные пакеты, устанавливающие файлы с одинаковыми именами">
 <div class="titlepage"><div><div><h3 class="title">
@@ -10279,9 +10280,9 @@ defined in the "<code class="literal">/etc/apt/sources.list</code>" file as the
 Pin-Priority of the package is larger than 1000, this version restriction
 for <span class="strong"><strong>upgrading</strong></span> is dropped to enable
 downgrading (see <a class="xref" href="#_emergency_downgrading" title="2.7.7. Аварийный откат системы">Раздел 2.7.7, «Аварийный откат системы»</a>).</p>
-<p>Pin-Priority value of each package is defined by "Pin-Priority" entries in
-the "<code class="literal">/etc/apt/preferences</code>" file or uses its default
-value.</p>
+<p>Значение Pin-Priority каждого пакета определяется записями "Pin-Priority" в
+файле "<code class="literal">/etc/apt/preferences</code>", либо используется значение
+по умолчанию.</p>
 <div class="table">
 <a name="listofthedefaultackagesourcetype"></a><p class="title"><b>Таблица 2.18. Список значений Pin-Priority по умолчанию для каждого типа источника пакета</b></p>
 <div class="table-contents"><table summary="Список значений Pin-Priority по умолчанию для каждого типа источника пакета" border="1">
@@ -10337,11 +10338,11 @@ value.</p>
 several methods.</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
-"<code class="literal">/etc/apt/apt.conf</code>" configuration file with
-"<code class="literal">APT::Default-Release "stable";</code>" line
+в конфигурационном файле "<code class="literal">/etc/apt/apt.conf</code>", например,
+строчкой "<code class="literal">APT::Default-Release "stable";</code>"
 </li>
 <li class="listitem">
-command line option, e.g., "<code class="literal">apt-get install -t testing
+параметром командной строки, например "<code class="literal">apt-get install -t testing
 some-package</code>"
 </li>
 </ul></div>
@@ -10647,8 +10648,8 @@ Pin-Priority: 1010</pre>
 <div class="section" title="2.7.9. Пакет equivs">
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_the_equivs_package"></a>2.7.9. Пакет equivs</h3></div></div></div>
-<p>Если вы собираете программу из исходников чтобы заменить пакет Debian, самым
-хорошим результатом будет создание "дебианизированного" пакета
+<p>Если вы собираете программу из исходных текстов, чтобы заменить пакет
+Debian, самым хорошим результатом будет создание "дебианизированного" пакета
 (<code class="literal">*.deb</code>) и использование собственного архива.</p>
 <p>Если вместо этого вы решаете устанавливать собранную программу в
 "<code class="literal">/usr/local</code>", вам может потребоваться пакет
@@ -10665,8 +10666,8 @@ Description: Circumventing Debian package dependencies
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_porting_a_package_to_the_stable_system"></a>2.7.10. Портирование пакета для стабильной системы</h3></div></div></div>
 <p>Хороший способ частично обновить <code class="literal">stable</code>-систему --
-собрать нужные пакеты из исходников. Это не требует обновления множества
-пакетов из-за зависимостей.</p>
+собрать нужные пакеты из исходных текстов. Это не требует обновления
+множества пакетов из-за зависимостей.</p>
 <p>Добавьте такие строчки в "<code class="literal">/etc/apt/sources.list</code>"
 стабильной системы.</p>
 <pre class="screen">deb-src http://http.us.debian.org/debian unstable  main contrib non-free</pre>
@@ -10947,7 +10948,7 @@ Hat, <code class="literal">slp</code> из Stampede, <code class="literal">tgz</
 смысл использовать <code class="literal">alien</code>(1) разве что для несвободных
 (non-free) пакетов с недоступными исходными текстами, которые однако
 соответствуют LSB или статически линкованы (statically linked). Свободное ПО
-устанавливайте из исходников, создавая настоящие пакеты Debian.</p>
+устанавливайте из исходных текстов, создавая пакеты Debian.</p>
 </div>
 </div>
 <div class="section" title="2.7.15. Распаковка пакетов без dpkg">
@@ -13019,7 +13020,8 @@ Debian)
 <a name="_the_modern_centralized_system_management"></a>4.5.2. Современное централизованное управление системой</h3></div></div></div>
 <p>Централизованное управление развёртывается с помощью сервера <a class="ulink" href="http://ru.wikipedia.org/wiki/LDAP" target="_top">LDAP (Lightweith Directory Access
 Protocol)</a> для администрирования многих Unix-подобных и прочих систем
-в сети. Реализация этой системы с открытыми исходниками называется <a class="ulink" href="http://www.openldap.org/" target="_top">OpenLDAP</a>.</p>
+в сети. Реализация этой системы с открытыми исходными текстами называется
+<a class="ulink" href="http://www.openldap.org/" target="_top">OpenLDAP</a>.</p>
 <p>Сервер LDAP предоставляет информацию о пользователях, получая её с помощью
 своих модулей для PAM и NSS (в Debian эти модули находятся в пакетах
 <code class="literal">libpam-ldap</code> и <code class="literal">libnss-ldap</code>). Для
@@ -13193,7 +13195,7 @@ Debian), любую команду можно выполнить под руто
 <p>См. также <a class="xref" href="#_the_runlevel_management_example" title="3.5.3. Пример настройки уровня выполнения">Раздел 3.5.3, «Пример настройки уровня выполнения»</a>, <a class="xref" href="#_the_default_parameter_for_each_init_script" title="3.5.4. Параметры для init-скриптов">Раздел 3.5.4, «Параметры для init-скриптов»</a>, <a class="xref" href="#_configuration_files_accessed_by_the_pam_and_nss" title="4.5.1. Файлы настроек PAM и NSS">Раздел 4.5.1, «Файлы настроек PAM и NSS»</a>, <a class="xref" href="#_network_service_initialization" title="3.5.8. Запуск сетевых служб">Раздел 3.5.8, «Запуск сетевых служб»</a>, и <a class="xref" href="#_netfilter_infrastructure" title="5.9. Netfilter infrastructure">Раздел 5.9, «Netfilter infrastructure»</a>.</p>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>Службы <a class="ulink" href="http://ru.wikipedia.org/wiki/Sun_RPC" target="_top">Sun RPC</a> нужны для <a class="ulink" href="http://ru.wikipedia.org/wiki/Network_File_System" target="_top">NFS</a> и других програм, использующих удалённый вызов
+<p>Службы <a class="ulink" href="http://ru.wikipedia.org/wiki/Sun_RPC" target="_top">Sun RPC</a> нужны для <a class="ulink" href="http://ru.wikipedia.org/wiki/Network_File_System" target="_top">NFS</a> и других программ, использующих удалённый вызов
 процедур (RPC).</p>
 </div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
@@ -13876,8 +13878,7 @@ configuration: <code class="literal">ip</code>(8), <code class="literal">tc</cod
     test::iproute2
     </td>
 <td align="left">
-    test network reachability of a remote host by <a class="ulink" href="http://en.wikipedia.org/wiki/Hostname" target="_top">hostname</a> or <a class="ulink" href="http://ru.wikipedia.org/wiki/IP-%D0%B0%D0%B4%D1%80%D0%B5%D1%81" target="_top">IP
-address</a> (<a class="ulink" href="http://www.linuxfoundation.org/en/Net:Iproute2" target="_top">iproute2</a>)
+    инструменты для проверки достижимости узла в сети по его <a class="ulink" href="http://en.wikipedia.org/wiki/Hostname" target="_top">имени</a> или <a class="ulink" href="http://ru.wikipedia.org/wiki/IP-%D0%B0%D0%B4%D1%80%D0%B5%D1%81" target="_top">IP-адресу</a> (<a class="ulink" href="http://www.linuxfoundation.org/en/Net:Iproute2" target="_top">iproute2</a>)
     </td>
 </tr>
 <tr>
@@ -13891,7 +13892,7 @@ address</a> (<a class="ulink" href="http://www.linuxfoundation.org/en/Net:Iprout
     , ,
     </td>
 <td align="left">
-    test network reachability of a remote host specified by the <a class="ulink" href="http://ru.wikipedia.org/wiki/ARP" target="_top">ARP</a> address
+    проверка достижимости узла в сети по его <a class="ulink" href="http://ru.wikipedia.org/wiki/ARP" target="_top">ARP</a>-адресу
     </td>
 </tr>
 <tr>
@@ -13905,7 +13906,7 @@ address</a> (<a class="ulink" href="http://www.linuxfoundation.org/en/Net:Iprout
     , ,
     </td>
 <td align="left">
-    trace the network path to a remote host
+    отслеживает маршрут, который проходят пакеты по сети IPv4/IPv6
     </td>
 </tr>
 <tr>
@@ -13919,8 +13920,8 @@ address</a> (<a class="ulink" href="http://www.linuxfoundation.org/en/Net:Iprout
     config::net-tools
     </td>
 <td align="left">
-    NET-3 networking toolkit (<a class="ulink" href="http://www.linuxfoundation.org/en/Net:Net-tools" target="_top">net-tools</a>, IPv4
-network configuration): <code class="literal">ifconfig</code>(8) etc.
+    сетевой инструментарий NET-3 (<a class="ulink" href="http://www.linuxfoundation.org/en/Net:Net-tools" target="_top">net-tools</a>,
+настройка IPv4): <code class="literal">ifconfig</code>(8) и т.п.
     </td>
 </tr>
 <tr>
@@ -13934,8 +13935,7 @@ network configuration): <code class="literal">ifconfig</code>(8) etc.
     test::net-tools
     </td>
 <td align="left">
-    test network reachability of a remote host by <a class="ulink" href="http://en.wikipedia.org/wiki/Hostname" target="_top">hostname</a> or <a class="ulink" href="http://ru.wikipedia.org/wiki/IP-%D0%B0%D0%B4%D1%80%D0%B5%D1%81" target="_top">IP
-address</a> (legacy, GNU)
+    проверка сетевой доступности удалённого узла по <a class="ulink" href="http://en.wikipedia.org/wiki/Hostname" target="_top">имени узла</a> или его <a class="ulink" href="http://ru.wikipedia.org/wiki/IP-%D0%B0%D0%B4%D1%80%D0%B5%D1%81" target="_top">IP-адресу</a> (GNU)
     </td>
 </tr>
 <tr>
@@ -13949,7 +13949,7 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    test network reachability of a remote host specified by the <a class="ulink" href="http://ru.wikipedia.org/wiki/ARP" target="_top">ARP</a> address (legacy)
+    проверка сетевой доступности удалённого узла по его <a class="ulink" href="http://ru.wikipedia.org/wiki/ARP" target="_top">ARP</a>-адресу
     </td>
 </tr>
 <tr>
@@ -13963,7 +13963,7 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    trace the network path to a remote host (legacy, console)
+    отслеживает маршрут, который проходят пакеты по сети
     </td>
 </tr>
 <tr>
@@ -14019,7 +14019,7 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    PPP/PPPoE connection with <code class="literal">chat</code>
+    соединение PPP/PPPoE командой <code class="literal">chat</code>
     </td>
 </tr>
 <tr>
@@ -14033,7 +14033,7 @@ address</a> (legacy, GNU)
     config::helper
     </td>
 <td align="left">
-    configuration helper for PPPoE connection
+    средство помощи в настройке соединения PPPoE
     </td>
 </tr>
 <tr>
@@ -14047,7 +14047,8 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    configuration helper for PPP connection with <code class="literal">chat</code>
+    средство помощи в настройке соединения PPP создаваемого
+<code class="literal">chat</code>
     </td>
 </tr>
 <tr>
@@ -14061,8 +14062,8 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    configuration helper for PPP connection with <code class="literal">wvdial</code> and
-<code class="literal">ppp</code>
+    средство помощи в настройке соединения PPP, создаваемого
+<code class="literal">wvdial</code> и <code class="literal">ppp</code>
     </td>
 </tr>
 <tr>
@@ -14076,7 +14077,7 @@ address</a> (legacy, GNU)
     test::low-level
     </td>
 <td align="left">
-    trace the network path to a remote host (curses)
+    отслеживает маршрут, который проходят пакеты по сети (curses)
     </td>
 </tr>
 <tr>
@@ -14090,7 +14091,7 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    trace the network path to a remote host (curses and GTK+)
+    отслеживает маршрут, который проходят пакеты по сети (curses и GTK+)
     </td>
 </tr>
 <tr>
@@ -14104,7 +14105,7 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    tools for common network information operations (GNOME)
+    инструмент для вывода информации о сети (GNOME)
     </td>
 </tr>
 <tr>
@@ -14118,7 +14119,7 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    network mapper / port scanner (<a class="ulink" href="http://ru.wikipedia.org/wiki/Nmap" target="_top">Nmap</a>, console)
+    сетевой сканер <a class="ulink" href="http://ru.wikipedia.org/wiki/Nmap" target="_top">Nmap</a> (консольный)
     </td>
 </tr>
 <tr>
@@ -14132,7 +14133,7 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    network mapper / port scanner (GTK+)
+    графическая оболочка для nmap (GTK+)
     </td>
 </tr>
 <tr>
@@ -14146,7 +14147,7 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    network mapper / port scanner (KDE)
+    графическая оболочка для nmap (KDE)
     </td>
 </tr>
 <tr>
@@ -14160,7 +14161,8 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    network traffic analyzer (<a class="ulink" href="http://ru.wikipedia.org/wiki/Tcpdump" target="_top">Tcpdump</a>, console)
+    анализатор сетевого трафика (<a class="ulink" href="http://ru.wikipedia.org/wiki/Tcpdump" target="_top">Tcpdump</a>, для
+консоли)
     </td>
 </tr>
 <tr>
@@ -14174,7 +14176,8 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    network traffic analyzer (<a class="ulink" href="http://ru.wikipedia.org/wiki/Wireshark" target="_top">Wireshark</a>, GTK+)
+    анализатор сетевого трафика (<a class="ulink" href="http://ru.wikipedia.org/wiki/Wireshark" target="_top">Wireshark</a>,
+GTK+)
     </td>
 </tr>
 <tr>
@@ -14188,7 +14191,7 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    network traffic analyzer (console)
+    анализатор сетевого трафика (для консоли)
     </td>
 </tr>
 <tr>
@@ -14202,7 +14205,7 @@ address</a> (legacy, GNU)
     , ,
     </td>
 <td align="left">
-    monitoring and management system for hosts, services and networks (<a class="ulink" href="http://ru.wikipedia.org/wiki/Nagios" target="_top">Nagios</a>)
+    система мониторинга и управления узлами, службами и сетями (<a class="ulink" href="http://ru.wikipedia.org/wiki/Nagios" target="_top">Nagios</a>)
     </td>
 </tr>
 <tr>
@@ -14231,7 +14234,7 @@ output
     , ,
     </td>
 <td align="left">
-    flexible network intrusion detection system (<a class="ulink" href="http://ru.wikipedia.org/wiki/Snort" target="_top">Snort</a>)
+    гибкая система для определения сетевых атак (<a class="ulink" href="http://ru.wikipedia.org/wiki/Snort" target="_top">Snort</a>)
     </td>
 </tr>
 <tr>
@@ -14245,7 +14248,7 @@ output
     , ,
     </td>
 <td align="left">
-    display network usage in web browser
+    показывает использование сети в веб-браузере
     </td>
 </tr>
 <tr>
@@ -14259,9 +14262,8 @@ output
     , ,
     </td>
 <td align="left">
-    network clients provided with <a class="ulink" href="http://ru.wikipedia.org/wiki/BIND" target="_top">BIND</a>:
-<code class="literal">nslookup</code>(8), <code class="literal">nsupdate</code>(8),
-<code class="literal">dig</code>(8)
+    клиентские программы из поставки BIND: <code class="literal">nslookup</code>(8),
+<code class="literal">nsupdate</code>(8), <code class="literal">dig</code>(8)
     </td>
 </tr>
 <tr>
@@ -14275,8 +14277,8 @@ output
     , ,
     </td>
 <td align="left">
-    check <a class="ulink" href="http://ru.wikipedia.org/wiki/DNS" target="_top">DNS</a> zone information using nameserver
-lookups
+    проверяет информацию о зоне <a class="ulink" href="http://ru.wikipedia.org/wiki/DNS" target="_top">DNS</a> с помощью
+запросов к серверу имён
     </td>
 </tr>
 <tr>
@@ -14290,20 +14292,21 @@ lookups
     , ,
     </td>
 <td align="left">
-    trace a chain of <a class="ulink" href="http://ru.wikipedia.org/wiki/DNS" target="_top">DNS</a> servers to the source
+    отслеживает цепочку <a class="ulink" href="http://ru.wikipedia.org/wiki/DNS" target="_top">DNS</a>-серверов вплоть до
+авторитетного сервера
     </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<br class="table-break"><div class="section" title="5.1.1. The domain name">
+<br class="table-break"><div class="section" title="5.1.1. Доменное имя">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_the_domain_name"></a>5.1.1. The domain name</h3></div></div></div>
-<p>The naming for the domain name is a tricky one for the normal PC workstation
-users.  The PC workstation may be mobile one hopping around the network or
-located behind the NAT firewall inaccessible from the Internet. For such
-case, you may not want the domain name to be a valid domain name to avoid
-name collision.</p>
+<a name="_the_domain_name"></a>5.1.1. Доменное имя</h3></div></div></div>
+<p>Система доменных имён весьма замысловата с точки зрения обычных
+пользователей рабочих станций. Рабочая станция может быть мобильной и
+выходить в сеть из разных точек, или располагаться за фаерволом с NAT и быть
+недоступной из Интернета. В этом случае вы не сможете иметь правильное
+доменное имя.</p>
 <p>According to <a class="ulink" href="http://tools.ietf.org/html/rfc2606" target="_top">rfc2606</a>,
 "<code class="literal">invalid</code>" seems to be a choice for the <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC%D0%B5%D0%BD_%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%B5%D0%B3%D0%BE_%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F" target="_top">top level domain (TLD)</a> to construct domain
 names that are sure to be invalid from the Internet.</p>
@@ -14387,9 +14390,9 @@ The "<code class="literal">/etc/nsswitch.conf</code>" file should have stanza li
 "<code class="literal">hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4</code>"
 to enable this functionality.</p>
 </div>
-<div class="section" title="5.1.3. The network interface name">
+<div class="section" title="5.1.3. Имя сетевого интерфейса">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_the_network_interface_name"></a>5.1.3. The network interface name</h3></div></div></div>
+<a name="_the_network_interface_name"></a>5.1.3. Имя сетевого интерфейса</h3></div></div></div>
 <p>The network interface name, e.g. <code class="literal">eth0</code>, is assigned to
 each hardware in the Linux kernel through the user space configuration
 mechanism, <code class="literal">udev</code> (see <a class="xref" href="#_the_udev_system" title="3.5.11. Система udev">Раздел 3.5.11, «Система udev»</a>),
@@ -14412,16 +14415,16 @@ name "PCI device" as <code class="literal">eth0</code> and configure it as the p
 network interface.</p>
 </div>
 </div>
-<div class="section" title="5.1.4. The network address range for the LAN">
+<div class="section" title="5.1.4. Диапазоны сетевых адресов для ЛВС">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_the_network_address_range_for_the_lan"></a>5.1.4. The network address range for the LAN</h3></div></div></div>
+<a name="_the_network_address_range_for_the_lan"></a>5.1.4. Диапазоны сетевых адресов для ЛВС</h3></div></div></div>
 <p>Let us be reminded of the IPv4 32 bit address ranges in each class reserved
 for use on the <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%81%D0%B5%D1%82%D1%8C" target="_top">local area networks
 (LANs)</a> by <a class="ulink" href="http://tools.ietf.org/html/rfc1918" target="_top">rfc1918</a>.  These addresses
 are guaranteed not to conflict with any addresses on the Internet proper.</p>
 <div class="table">
-<a name="listofnetworkaddressranges"></a><p class="title"><b>Таблица 5.2. List of network address ranges</b></p>
-<div class="table-contents"><table summary="List of network address ranges" border="1">
+<a name="listofnetworkaddressranges"></a><p class="title"><b>Таблица 5.2. Список диапазонов сетевых адресов</b></p>
+<div class="table-contents"><table summary="Список диапазонов сетевых адресов" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -14431,19 +14434,19 @@ are guaranteed not to conflict with any addresses on the Internet proper.</p>
 </colgroup>
 <thead><tr>
 <th align="left">
-    Class
+    класс
     </th>
 <th align="left">
-    network addresses
+    адреса сети
     </th>
 <th align="left">
-    net mask
+    маска сети
     </th>
 <th align="left">
-    net mask /bits
+    маска сети /бит
     </th>
 <th align="left">
-    # of subnets
+    # подсетей
     </th>
 </tr></thead>
 <tbody>
@@ -14510,77 +14513,74 @@ Translation(NAT)</a>.  The broadband router usually performs NAT for the
 consumer LAN environment.</p>
 </div>
 </div>
-<div class="section" title="5.1.5. The network device support">
+<div class="section" title="5.1.5. Поддержка сетевых устройств">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_the_network_device_support"></a>5.1.5. The network device support</h3></div></div></div>
-<p>Although most hardware devices are supported by the Debian system, there are
-some network devices which require <a class="ulink" href="http://www.debian.org/social_contract#guidelines" target="_top">DSFG</a> non-free
-external hardware drivers to support them.  Please see <a class="xref" href="#_non_free_hardware_drivers" title="9.7.8. Non-free драйвера устройств">Раздел 9.7.8, «Non-free драйвера устройств»</a>.</p>
+<a name="_the_network_device_support"></a>5.1.5. Поддержка сетевых устройств</h3></div></div></div>
+<p>Хотя большая часть аппаратного обеспечения поддерживается в системе Debian,
+есть некоторые сетевые устройства, требующие не-свободных по <a class="ulink" href="http://www.debian.org/social_contract#guidelines" target="_top">DFSG</a> драйверов. См. <a class="xref" href="#_non_free_hardware_drivers" title="9.7.8. Non-free драйвера устройств">Раздел 9.7.8, «Non-free драйвера устройств»</a>.</p>
 </div>
 </div>
-<div class="section" title="5.2. The modern network configuration for desktop">
+<div class="section" title="5.2. Современная конфигурация сети для настольного компьютера">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
-<a name="_the_modern_network_configuration_for_desktop"></a>5.2. The modern network configuration for desktop</h2></div></div></div>
-<p>Debian <code class="literal">squeeze</code> systems can manage the network connection
-via management <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BC%D0%BE%D0%BD_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0)" target="_top">daemon</a> software such as <a class="ulink" href="http://ru.wikipedia.org/wiki/NetworkManager" target="_top">NetworkManager (NM)</a> (network-manager and
-associated packages) or <a class="ulink" href="http://en.wikipedia.org/wiki/Wicd_(Linux_Network_Manager)" target="_top">Wicd</a> (wicd and
-associated packages).</p>
+<a name="_the_modern_network_configuration_for_desktop"></a>5.2. Современная конфигурация сети для настольного компьютера</h2></div></div></div>
+<p>В Debian <code class="literal">squeeze</code> сетевое соединение может управляться
+специальной <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BC%D0%BE%D0%BD_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0)" target="_top">службой</a>, такой, как <a class="ulink" href="http://ru.wikipedia.org/wiki/NetworkManager" target="_top">NetworkManager (NM)</a> (пакет network-manager
+и др.) или <a class="ulink" href="http://en.wikipedia.org/wiki/Wicd_(Linux_Network_Manager)" target="_top">Wicd</a> (пакет wicd и др.).</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
-They come with their own <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81_%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F" target="_top">GUI</a> and command-line
-programs as their user interfaces.
+Они содержат собственные <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81_%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F" target="_top">графические</a> и консольные
+программы пользовательского интерфейса.
 </li>
 <li class="listitem">
-They come with their own <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BC%D0%BE%D0%BD_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0)" target="_top">daemon</a> as their
-backend system.
+Они включают собственную <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BC%D0%BE%D0%BD_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0)" target="_top">службу</a>, которая и
+выполняет все действия.
 </li>
 <li class="listitem">
-They allow easy connection of your system to the Internet.
+Они позволяют легко подключить вашу систему к Интернету.
 </li>
 <li class="listitem">
-They allow easy management of wired and wireless network configuration.
+Они позволяют легко управлять конфигурацией проводных и беспроводных
+соединений.
 </li>
 <li class="listitem">
-They allow us to configure network independent of the legacy
-<code class="literal">ifupdown</code> package.
+Они позволяют нам настраивать сеть независимо от основного пакета
+<code class="literal">ifupdown</code>.
 </li>
 </ul></div>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
-<p>Do not use these automatic network configuration tools for servers.  These
-are aimed primarily for mobile desktop users on laptops.</p>
+<p>Не используйте эти автоматические средства на серверах. Они предназначены в
+первую очередь для пользователей настольных компьютеров и ноутбуков.</p>
 </div>
-<p>These modern network configuration tools need to be configured properly to
-avoid conflicting with the legacy <code class="literal">ifupdown</code> package and
-its configuration file "<code class="literal">/etc/network/interfaces</code>".</p>
-<div class="section" title="5.2.1. GUI network configuration tools">
+<p>Однако, эти средства настройки сети сами должны быть настроены верно, чтобы
+не возникало конфликтов с основным пакетом <code class="literal">ifupdown</code> и его
+конфигурационным файлом "<code class="literal">/etc/network/interfaces</code>".</p>
+<div class="section" title="5.2.1. Графические средства настройки сети">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_gui_network_configuration_tools"></a>5.2.1. GUI network configuration tools</h3></div></div></div>
-<p>Official documentations for NM and Wicd on Debian are provided in
-"<code class="literal">/usr/share/doc/network-manager/README.Debian</code>" and
-"<code class="literal">/usr/share/doc/wicd/README.Debian</code>", respectively.</p>
+<a name="_gui_network_configuration_tools"></a>5.2.1. Графические средства настройки сети</h3></div></div></div>
+<p>Официальная документация для NM и Wicd в Debian находится в
+"<code class="literal">/usr/share/doc/network-manager/README.Debian</code>" и
+"<code class="literal">/usr/share/doc/wicd/README.Debian</code>" соответственно.</p>
 <p>Essentially, the network configuration for desktop is done as follows.</p>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
 <p class="simpara">
-Make desktop user, e.g. <code class="literal">foo</code>, belong to group
-"<code class="literal">netdev</code>" by the following (Alternatively, do it
-automatically via <a class="ulink" href="http://ru.wikipedia.org/wiki/D-Bus" target="_top">D-bus</a> under modern desktop
-environments such as GNOME and KDE).
+Добавьте вашего пользователя, например <code class="literal">foo</code>, в группу
+"<code class="literal">netdev</code>" так (либо сделайте это автоматически с <a class="ulink" href="http://ru.wikipedia.org/wiki/D-Bus" target="_top">D-bus</a> в современных окружениях GNOME и KDE):
 </p>
 <pre class="screen">$ sudo adduser foo netdev</pre>
 </li>
 <li class="listitem">
 <p class="simpara">
-Keep configuration of "<code class="literal">/etc/network/interfaces</code>" as simple
-as the the following.
+Оставьте конфигурационный файл "<code class="literal">/etc/network/interfaces</code>"
+совсем простым, как здесь:
 </p>
 <pre class="screen">auto lo
 iface lo inet loopback</pre>
 </li>
 <li class="listitem">
 <p class="simpara">
-Restart NM or Wicd by the following.
+Перезапустите NM или Wicd так:
 </p>
 <pre class="screen">$ sudo /etc/init.d/network-manager restart</pre>
 <pre class="screen">$ sudo /etc/init.d/wicd restart</pre>
@@ -14619,7 +14619,7 @@ esoteric configurations of legacy <code class="literal">ifupdown</code> in
 <div class="section" title="5.3. The legacy network connection and configuration">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
 <a name="_the_legacy_network_connection_and_configuration"></a>5.3. The legacy network connection and configuration</h2></div></div></div>
-<p>When the method described in <a class="xref" href="#_the_modern_network_configuration_for_desktop" title="5.2. The modern network configuration for desktop">Раздел 5.2, «The modern network configuration for desktop»</a> does not suffice
+<p>When the method described in <a class="xref" href="#_the_modern_network_configuration_for_desktop" title="5.2. Современная конфигурация сети для настольного компьютера">Раздел 5.2, «Современная конфигурация сети для настольного компьютера»</a> does not suffice
 your needs, you should use the legacy network connection and configuration
 method which combines many simpler tools.</p>
 <p>The legacy network connection is specific for each method (see <a class="xref" href="#_the_network_connection_method_legacy" title="5.4. The network connection method (legacy)">Раздел 5.4, «The network connection method (legacy)»</a>).</p>
@@ -14671,7 +14671,7 @@ LAN.  These are relatively difficult to use but play well with existing
 <p>The connection test method described in this section are meant for testing
 purposes.  It is not meant to be used directly for the daily network
 connection.  You are advised to use them via NM, Wicd, or the
-<code class="literal">ifupdown</code> package (see <a class="xref" href="#_the_modern_network_configuration_for_desktop" title="5.2. The modern network configuration for desktop">Раздел 5.2, «The modern network configuration for desktop»</a> and <a class="xref" href="#_the_basic_network_configuration_with_ifupdown_legacy" title="5.5. The basic network configuration with ifupdown (legacy)">Раздел 5.5, «The basic network configuration with ifupdown (legacy)»</a>).</p>
+<code class="literal">ifupdown</code> package (see <a class="xref" href="#_the_modern_network_configuration_for_desktop" title="5.2. Современная конфигурация сети для настольного компьютера">Раздел 5.2, «Современная конфигурация сети для настольного компьютера»</a> and <a class="xref" href="#_the_basic_network_configuration_with_ifupdown_legacy" title="5.5. The basic network configuration with ifupdown (legacy)">Раздел 5.5, «The basic network configuration with ifupdown (legacy)»</a>).</p>
 </div>
 <p>The typical network connection method and connection path for a PC can be
 summarized as the following.</p>
@@ -15508,7 +15508,7 @@ internal device used only by <a class="ulink" href="http://en.wikipedia.org/wiki
     аббревиатура
     </th>
 <th align="left">
-    full word
+    расшифровка
     </th>
 <th align="left">
     значение
@@ -15764,7 +15764,7 @@ situation worse by using information below.</p>
 <p>The <code class="literal">ifplugd</code> package is older automatic network
 configuration tool which can manage only Ethernet connections. This solves
 unplugged/replugged Ethernet cable issues for mobile PC etc.  If you have
-<a class="ulink" href="http://ru.wikipedia.org/wiki/NetworkManager" target="_top">NetworkManager</a> or <a class="ulink" href="http://en.wikipedia.org/wiki/Wicd_(Linux_Network_Manager)" target="_top">Wicd</a> (see <a class="xref" href="#_the_modern_network_configuration_for_desktop" title="5.2. The modern network configuration for desktop">Раздел 5.2, «The modern network configuration for desktop»</a>) installed, you do
+<a class="ulink" href="http://ru.wikipedia.org/wiki/NetworkManager" target="_top">NetworkManager</a> or <a class="ulink" href="http://en.wikipedia.org/wiki/Wicd_(Linux_Network_Manager)" target="_top">Wicd</a> (see <a class="xref" href="#_the_modern_network_configuration_for_desktop" title="5.2. Современная конфигурация сети для настольного компьютера">Раздел 5.2, «Современная конфигурация сети для настольного компьютера»</a>) installed, you do
 not need this package.</p>
 <p>This package runs <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BC%D0%BE%D0%BD_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0)" target="_top">daemon</a> and replaces
 <span class="strong"><strong>auto</strong></span> or <span class="strong"><strong>allow-hotplug</strong></span> functionalities (see <a class="xref" href="#list-of-stanzas-in-eni" title='Таблица 5.10. List of stanzas in "/etc/network/interfaces"'>Таблица 5.10, «List of stanzas in "<code class="literal">/etc/network/interfaces</code>"»</a>) and starts interfaces upon their
@@ -16170,7 +16170,7 @@ variables to scripts.</p>
     переменная окружения
     </th>
 <th align="left">
-    value passed
+    описание передаваемого значения
     </th>
 </tr></thead>
 <tbody>
@@ -16179,7 +16179,7 @@ variables to scripts.</p>
     "<code class="literal">$IFACE</code>"
     </td>
 <td align="left">
-    physical name (interface name) of the interface being processed
+    имя физического интерфейса, с которым сейчас выполняются действия
     </td>
 </tr>
 <tr>
@@ -16211,7 +16211,7 @@ variables to scripts.</p>
     "<code class="literal">$MODE</code>"
     </td>
 <td align="left">
-    "start" if run from <code class="literal">ifup</code>, "stop" if run from
+    "start", если выполняется <code class="literal">ifup</code>; "stop", если выполняется
 <code class="literal">ifdown</code>
     </td>
 </tr>
@@ -16230,8 +16230,8 @@ distinguishing the <code class="literal">pre-up</code>, <code class="literal">po
     "<code class="literal">$VERBOSITY</code>"
     </td>
 <td align="left">
-    indicates whether "<code class="literal">--verbose</code>" was used; set to 1 if so, 0
-if not
+    показывает, задан ли ключ "<code class="literal">--verbose</code>": 1 если да, 0 если
+нет
     </td>
 </tr>
 <tr>
@@ -16239,16 +16239,16 @@ if not
     "<code class="literal">$PATH</code>"
     </td>
 <td align="left">
-    command search path:
+    путь поиска команд:
 "<code class="literal">/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin</code>"
     </td>
 </tr>
 <tr>
 <td align="left">
-    "<code class="literal">$IF_&lt;OPTION&gt;</code>"
+    "<code class="literal">$IF_&lt;имя_параметра_iface&gt;</code>"
     </td>
 <td align="left">
-    value for the corresponding option under the <span class="strong"><strong><code class="literal">iface</code></strong></span> stanza
+    значение соответствующего параметра в записи <span class="strong"><strong><code class="literal">iface</code></strong></span>
     </td>
 </tr>
 </tbody>
@@ -16435,14 +16435,14 @@ iproute2 commands" border="1">
 </div>
 <br class="table-break"><p>See <code class="literal">ip</code>(8) and <a class="ulink" href="http://www.policyrouting.org/iproute2.doc.html" target="_top">IPROUTE2 Utility Suite Howto</a>.</p>
 </div>
-<div class="section" title="5.7.2. Safe low level network operations">
+<div class="section" title="5.7.2. Безопасные низкоуровневые операции с сетью">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_safe_low_level_network_operations"></a>5.7.2. Safe low level network operations</h3></div></div></div>
-<p>You may use low level network commands as follows safely since they do not
-change network configuration.</p>
+<a name="_safe_low_level_network_operations"></a>5.7.2. Безопасные низкоуровневые операции с сетью</h3></div></div></div>
+<p>Вы можете безопасно использовать следующие низкоуровневые команды, поскольку
+они не изменяют сетевой конфигурации.</p>
 <div class="table">
-<a name="listoflowlevelnetworkcommands"></a><p class="title"><b>Таблица 5.16. List of low level network commands</b></p>
-<div class="table-contents"><table summary="List of low level network commands" border="1">
+<a name="listoflowlevelnetworkcommands"></a><p class="title"><b>Таблица 5.16. Список низкоуровневых сетевых команд</b></p>
+<div class="table-contents"><table summary="Список низкоуровневых сетевых команд" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -16461,7 +16461,7 @@ change network configuration.</p>
                   <code class="literal">ifconfig</code>
                 </td>
 <td align="left">
-    display the link and address status of active interfaces
+    отобразить информацию об активных интерфейсах и их адресах
     </td>
 </tr>
 <tr>
@@ -16469,7 +16469,7 @@ change network configuration.</p>
                   <code class="literal">ip addr show</code>
                 </td>
 <td align="left">
-    display the link and address status of active interfaces
+    отобразить информацию об активных интерфейсах и их адресах
     </td>
 </tr>
 <tr>
@@ -16477,7 +16477,7 @@ change network configuration.</p>
                   <code class="literal">route -n</code>
                 </td>
 <td align="left">
-    display all the routing table in numerical addresses
+    вывести таблицу маршрутов
     </td>
 </tr>
 <tr>
@@ -16485,7 +16485,7 @@ change network configuration.</p>
                   <code class="literal">ip route show</code>
                 </td>
 <td align="left">
-    display all the routing table in numerical addresses
+    вывести таблицу маршрутов
     </td>
 </tr>
 <tr>
@@ -16493,8 +16493,7 @@ change network configuration.</p>
                   <code class="literal">arp</code>
                 </td>
 <td align="left">
-    display the current content of the <a class="ulink" href="http://ru.wikipedia.org/wiki/ARP" target="_top">ARP</a> cache
-tables
+    вывести текущее содержимое <a class="ulink" href="http://ru.wikipedia.org/wiki/ARP" target="_top">ARP</a>-таблиц
     </td>
 </tr>
 <tr>
@@ -16502,8 +16501,7 @@ tables
                   <code class="literal">ip neigh</code>
                 </td>
 <td align="left">
-    display the current content of the <a class="ulink" href="http://ru.wikipedia.org/wiki/ARP" target="_top">ARP</a> cache
-tables
+    вывести текущее содержимое <a class="ulink" href="http://ru.wikipedia.org/wiki/ARP" target="_top">ARP</a>-таблиц
     </td>
 </tr>
 <tr>
@@ -16511,7 +16509,7 @@ tables
                   <code class="literal">plog</code>
                 </td>
 <td align="left">
-    display ppp daemon log
+    вывести журнал службы ppp
     </td>
 </tr>
 <tr>
@@ -16519,7 +16517,7 @@ tables
                   <code class="literal">ping yahoo.com</code>
                 </td>
 <td align="left">
-    check the Internet connection to "<code class="literal">yahoo.com</code>"
+    проверить связь с "<code class="literal">yahoo.com</code>"
     </td>
 </tr>
 <tr>
@@ -16527,7 +16525,8 @@ tables
                   <code class="literal">whois yahoo.com</code>
                 </td>
 <td align="left">
-    check who registered "<code class="literal">yahoo.com</code>" in the domains database
+    проверить, кто зарегистрировал "<code class="literal">yahoo.com</code>" в базе
+доменных имён
     </td>
 </tr>
 <tr>
@@ -16535,7 +16534,7 @@ tables
                   <code class="literal">traceroute yahoo.com</code>
                 </td>
 <td align="left">
-    trace the Internet connection to "<code class="literal">yahoo.com</code>"
+    отследить маршрут до "<code class="literal">yahoo.com</code>"
     </td>
 </tr>
 <tr>
@@ -16543,7 +16542,7 @@ tables
                   <code class="literal">tracepath yahoo.com</code>
                 </td>
 <td align="left">
-    trace the Internet connection to "<code class="literal">yahoo.com</code>"
+    отследить маршрут до "<code class="literal">yahoo.com</code>"
     </td>
 </tr>
 <tr>
@@ -16570,7 +16569,7 @@ a "<code class="literal">a</code>", "<code class="literal">mx</code>", or
                   <code class="literal">iptables -L -n</code>
                 </td>
 <td align="left">
-    check packet filter
+    вывести список правил фаервола
     </td>
 </tr>
 <tr>
@@ -16578,7 +16577,7 @@ a "<code class="literal">a</code>", "<code class="literal">mx</code>", or
                   <code class="literal">netstat -a</code>
                 </td>
 <td align="left">
-    find all open ports
+    вывести список открытых портов
     </td>
 </tr>
 <tr>
@@ -16586,7 +16585,7 @@ a "<code class="literal">a</code>", "<code class="literal">mx</code>", or
                   <code class="literal">netstat -l --inet</code>
                 </td>
 <td align="left">
-    find listening ports
+    вывести список портов, ожидающих соединения (listening)
     </td>
 </tr>
 <tr>
@@ -16594,7 +16593,7 @@ a "<code class="literal">a</code>", "<code class="literal">mx</code>", or
                   <code class="literal">netstat -ln --tcp</code>
                 </td>
 <td align="left">
-    find listening TCP ports (numeric)
+    вывести список TCP-портов, ожидающих соединения
     </td>
 </tr>
 <tr>
@@ -16882,9 +16881,9 @@ The bigger MTU value is generally better when other limitations are met.
 </li>
 </ul></div>
 </div>
-<div class="section" title="5.8.2. Setting MTU">
+<div class="section" title="5.8.2. Установка MTU">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_setting_mtu"></a>5.8.2. Setting MTU</h3></div></div></div>
+<a name="_setting_mtu"></a>5.8.2. Установка MTU</h3></div></div></div>
 <p>Here are examples for setting the MTU value from its default 1500 to 1454.</p>
 <p>For the DHCP (see <a class="xref" href="#_the_network_interface_served_by_the_dhcp" title="5.5.4. The network interface served by the DHCP">Раздел 5.5.4, «The network interface served by the DHCP»</a>), you can replace
 pertinent <span class="strong"><strong><code class="literal">iface</code></strong></span> stanza
@@ -17501,7 +17500,7 @@ SSL</a>.</p>
 POP3-сервера провайдера программой для получения почты (см. <a class="xref" href="#_the_remote_mail_retrieval_and_forward_utility" title="6.5. Средства доставки и перенаправления почты">Раздел 6.5, «Средства доставки и перенаправления почты»</a>), сохраняющей её
 в локальный почтовый ящик. Если нужно фильтровать почту, используйте агент
 доставки почты (MDA), поддерживающий фильтрацию, для раскладывания почты по
-отдельным ящикам (см. <a class="xref" href="#_mail_delivery_agent_mda_with_filter" title="6.6. Mail delivery agent (MDA) with filter">Раздел 6.6, «Mail delivery agent (MDA) with filter»</a>). Этот тип конфигурации
+отдельным ящикам (см. <a class="xref" href="#_mail_delivery_agent_mda_with_filter" title="6.6. Агент доставки (MDA) с поддержкой фильтрации">Раздел 6.6, «Агент доставки (MDA) с поддержкой фильтрации»</a>). Этот тип конфигурации
 популярен среди пользователей простых консольных почтовых агентов, как
 <code class="literal">mutt</code>(1) или <code class="literal">gnus</code>(1), хотя она возможна
 с любым почтовым агентом (см. <a class="xref" href="#_mail_user_agent_mua" title="6.4. Почтовая программа пользователя (MUA)">Раздел 6.4, «Почтовая программа пользователя (MUA)»</a>). В
@@ -17973,7 +17972,7 @@ smtp99.hostname.dom has address 123.234.123.89</pre>
 такими командами:</p>
 <pre class="screen">$ sudo /etc/init.d/postfix stop
 $ sudo dpkg-reconfigure postfix</pre>
-<p>В мень "Общий тип почтовой настройки" выберите "Интернет со smart-хостом".</p>
+<p>В меню "Общий тип почтовой настройки" выберите "Интернет со smart-хостом".</p>
 <p>Установите "Релейный хост SMTP (пусто, если нет):" --
 "<code class="literal">[smtp.hostname.dom]:587</code>" и настройте его так:</p>
 <pre class="screen">$ sudo postconf -e 'smtp_sender_dependent_authentication = yes'
@@ -18552,10 +18551,10 @@ delivered_to = False
 message_log = ~/.getmail/log/pop3_name.log</pre>
 <p>И настройте его так:</p>
 <pre class="screen">$ chmod 0600 $HOME/.getmail/config/*</pre>
-<p>Schedule "<code class="literal">/usr/local/bin/getmails</code>" to run every 15
-minutes with <code class="literal">cron</code>(8) by executing "<code class="literal">sudo crontab
--e -u &lt;user_name&gt;</code>" and adding following to user's cron
-entry.</p>
+<p>Назначьте запуск "<code class="literal">/usr/local/bin/getmails</code>" по расписанию
+каждые 15 минут с помощью <code class="literal">cron</code>(8), выполнив
+"<code class="literal">sudo crontab -e -u &lt;имя_пользователя&gt;</code>" и добавив
+такую строчку:</p>
 <pre class="screen">5,20,35,50 * * * * /usr/local/bin/getmails --quiet</pre>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
@@ -18577,20 +18576,21 @@ to archive accessed messages and not to delete them. See also <a class="ulink" h
 "<code class="literal">/usr/share/doc/fetchmail/examples/fetchmailrc.example</code>".</p>
 </div>
 </div>
-<div class="section" title="6.6. Mail delivery agent (MDA) with filter">
+<div class="section" title="6.6. Агент доставки (MDA) с поддержкой фильтрации">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
-<a name="_mail_delivery_agent_mda_with_filter"></a>6.6. Mail delivery agent (MDA) with filter</h2></div></div></div>
-<p>Most MTA programs, such as <code class="literal">postfix</code> and
-<code class="literal">exim4</code>, function as MDA (mail delivery agent). There are
-specialized MDA with filtering capabilities.</p>
-<p>Although <code class="literal">procmail</code>(1) has been de facto standard for MDA
-with filter on GNU/Linux, author likes <code class="literal">maildrop</code>(1) now.
-Whichever filtering utilities are used, it is good idea to configure system
-to deliver filtered mails to a <a class="ulink" href="http://ru.wikipedia.org/wiki/Maildir" target="_top">qmail-style
-Maildir</a>.</p>
+<a name="_mail_delivery_agent_mda_with_filter"></a>6.6. Агент доставки (MDA) с поддержкой фильтрации</h2></div></div></div>
+<p>Большинство почтовых серверов (MTA), например <code class="literal">postfix</code> и
+<code class="literal">exim4</code>, могут выполнять функции MDA (агента доставки
+почты). Существуют также специальные агенты доставки с возможностью
+фильтрации.</p>
+<p>Хотя <code class="literal">procmail</code>(1) был "де факто" стандартом агента
+доставки с поддержкой фильтрации, автор сейчас предпочитает
+<code class="literal">maildrop</code>(1). Независимо от ваших средств фильтрации,
+хорошая мысль -- настроить систему на доставку отфильтрованной почты в
+каталог <a class="ulink" href="http://ru.wikipedia.org/wiki/Maildir" target="_top">Maildir в стиле qmail</a>.</p>
 <div class="table">
-<a name="listofmdawithfilter"></a><p class="title"><b>Таблица 6.10. List of MDA with filter</b></p>
-<div class="table-contents"><table summary="List of MDA with filter" border="1">
+<a name="listofmdawithfilter"></a><p class="title"><b>Таблица 6.10. Список агентов доставки (MDA) с поддержкой фильтрации</b></p>
+<div class="table-contents"><table summary="Список агентов доставки (MDA) с поддержкой фильтрации" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -18620,7 +18620,7 @@ Maildir</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=procmail" target="_top">V:17, I:85</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/p/procmail.html" target="_top">368</a></td>
 <td align="left">
-    MDA with filter (old)
+    MDA с фильтрацией (старый)
     </td>
 </tr>
 <tr>
@@ -18631,7 +18631,7 @@ Maildir</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=mailagent" target="_top">V:0.4, I:5</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/m/mailagent.html" target="_top">1692</a></td>
 <td align="left">
-    MDA with Perl filter
+    MDA с фильтром на Perl
     </td>
 </tr>
 <tr>
@@ -18642,7 +18642,7 @@ Maildir</a>.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=maildrop" target="_top">V:0.3, I:0.8</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/m/maildrop.html" target="_top">1000</a></td>
 <td align="left">
-    MDA with structured filtering language
+    MDA со структурированным языком фильтрации
     </td>
 </tr>
 </tbody>
@@ -18739,10 +18739,10 @@ to "$MAILROOT/$MAILBOX/"
 exit</pre>
 <div class="warning" title="Внимание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Внимание</h3>
-<p>Unlike <code class="literal">procmail</code>, <code class="literal">maildrop</code> does not
-create missing maildir directories automatically.  You must create them
-manually using <code class="literal">maildirmake</code>(1) in advance as in the
-example "<code class="literal">$HOME/.mailfilter</code>".</p>
+<p>В отличие от <code class="literal">procmail</code>, <code class="literal">maildrop</code> не
+создаёт недостающих каталогов maildir автоматически. Вам нужно создать их
+вручную командой <code class="literal">maildirmake</code>(1), как показано в примере
+"<code class="literal">$HOME/.mailfilter</code>".</p>
 </div>
 </div>
 <div class="section" title="6.6.2. Настройка procmail">
@@ -18791,9 +18791,9 @@ mailing-list/
 :0
 Inbox/</pre>
 </div>
-<div class="section" title="6.6.3. Redeliver mbox contents">
+<div class="section" title="6.6.3. Перераспределение содержимого mbox">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_redeliver_mbox_contents"></a>6.6.3. Redeliver mbox contents</h3></div></div></div>
+<a name="_redeliver_mbox_contents"></a>6.6.3. Перераспределение содержимого mbox</h3></div></div></div>
 <p>You need to manually deliver mails to the sorted mailboxes in your home
 directory from "<code class="literal">/var/mail/&lt;username&gt;</code>" if your home
 directory became full and <code class="literal">procmail</code>(1) failed.  After
@@ -18847,7 +18847,7 @@ delivering mail to LAN clients.</p>
     POP3
     </td>
 <td align="left">
-    Qualcomm enhanced BSD POP3 server
+    BSD POP3-сервер с некоторыми расширениями
     </td>
 </tr>
 <tr>
@@ -18861,7 +18861,7 @@ delivering mail to LAN clients.</p>
     POP3
     </td>
 <td align="left">
-    Courier mail server - POP3 server (maildir format only)
+    почтовый сервер Courier -- POP3-сервер (поддерживается только maildir)
     </td>
 </tr>
 <tr>
@@ -18875,7 +18875,7 @@ delivering mail to LAN clients.</p>
     POP3
     </td>
 <td align="left">
-    The University of Washington POP2 and POP3 server
+    POP2 и POP3-сервер Вашингтонского университета
     </td>
 </tr>
 <tr>
@@ -18889,7 +18889,7 @@ delivering mail to LAN clients.</p>
     POP3
     </td>
 <td align="left">
-    Cyrus mail system (POP3 support)
+    почтовая система Cyrus (поддержка POP3)
     </td>
 </tr>
 <tr>
@@ -18917,7 +18917,7 @@ delivering mail to LAN clients.</p>
     IMAP
     </td>
 <td align="left">
-    Courier mail server - IMAP server (maildir format only)
+    почтовый сервер Courier -- IMAP-сервер (поддерживается только maildir)
     </td>
 </tr>
 <tr>
@@ -18931,7 +18931,7 @@ delivering mail to LAN clients.</p>
     IMAP
     </td>
 <td align="left">
-    The University of Washington IMAP server
+    IMAP-сервер Вашингтонского университета
     </td>
 </tr>
 <tr>
@@ -18945,7 +18945,7 @@ delivering mail to LAN clients.</p>
     IMAP
     </td>
 <td align="left">
-    Cyrus mail system (IMAP support)
+    почтовая система Cyrus (поддержка IMAP)
     </td>
 </tr>
 </tbody>
@@ -19106,10 +19106,10 @@ CUPS: <code class="literal">lp</code>(1), <code class="literal">lpstat</code>(1)
 <div class="section" title="6.9. Сервер удалённого доступа и утилиты для него (SSH)">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
 <a name="_the_remote_access_server_and_utility_ssh"></a>6.9. Сервер удалённого доступа и утилиты для него (SSH)</h2></div></div></div>
-<p>The <a class="ulink" href="http://ru.wikipedia.org/wiki/SSH" target="_top">Secure SHell</a> (SSH) is the <span class="strong"><strong>secure</strong></span> way to connect over the Internet.  A free
-version of SSH called <a class="ulink" href="http://www.openssh.org/" target="_top">OpenSSH</a> is available as
-<code class="literal">openssh-client</code> and <code class="literal">openssh-server</code>
-packages in Debian.</p>
+<p><a class="ulink" href="http://ru.wikipedia.org/wiki/SSH" target="_top">Secure SHell</a> (SSH) -- это <span class="strong"><strong>защищённый</strong></span> способ соединения в Интернете. Свободная
+версия SSH называется <a class="ulink" href="http://www.openssh.org/" target="_top">OpenSSH</a> и доступна в
+пакетах <code class="literal">openssh-client</code> и
+<code class="literal">openssh-server</code>.</p>
 <div class="table">
 <a name="listofremoteaccerverandutilities"></a><p class="title"><b>Таблица 6.13. Сервер и утилиты для удалённого доступа</b></p>
 <div class="table-contents"><table summary="Сервер и утилиты для удалённого доступа" border="1">
@@ -19149,7 +19149,7 @@ packages in Debian.</p>
 <code class="literal">ssh</code>(1)
     </td>
 <td align="left">
-    Клиент защищённой оболочки
+    клиент защищённой оболочки
     </td>
 </tr>
 <tr>
@@ -19163,7 +19163,7 @@ packages in Debian.</p>
 <code class="literal">sshd</code>(8)
     </td>
 <td align="left">
-    Сервер защищённой оболочки
+    сервер защищённой оболочки
     </td>
 </tr>
 <tr>
@@ -19177,7 +19177,8 @@ packages in Debian.</p>
 <code class="literal">ssh-askpass-fullscreen</code>(1)
     </td>
 <td align="left">
-    asks user for a pass phrase for ssh-add (GNOME2)
+    запрашивает у пользователя секретную фразу (pass phrase) для ssh-add
+(GNOME2)
     </td>
 </tr>
 <tr>
@@ -19191,7 +19192,8 @@ packages in Debian.</p>
 <code class="literal">ssh-askpass</code>(1)
     </td>
 <td align="left">
-    asks user for a pass phrase for ssh-add (plain X)
+    запрашивает у пользователя секретную фразу (pass phrase) для ssh-add (X,
+GUI)
     </td>
 </tr>
 </tbody>
@@ -19199,26 +19201,25 @@ packages in Debian.</p>
 </div>
 <br class="table-break"><div class="caution" title="Предостережение" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Предостережение</h3>
-<p>See <a class="xref" href="#_extra_security_measures_for_the_internet" title="4.7.3. Особые меры безопасности в Интернете">Раздел 4.7.3, «Особые меры безопасности в Интернете»</a> if your SSH
-is accessible from the Internet.</p>
+<p>Если ваш SSH-сервер доступен из Интернета, прочтите <a class="xref" href="#_extra_security_measures_for_the_internet" title="4.7.3. Особые меры безопасности в Интернете">Раздел 4.7.3, «Особые меры безопасности в Интернете»</a>.</p>
 </div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>Please use the <code class="literal">screen</code>(1) program to enable remote shell
-process to survive the interrupted connection (see <a class="xref" href="#_the_screen_program" title="9.1. Программа screen">Раздел 9.1, «Программа screen»</a>).</p>
+<p>Пользуйтесь программой <code class="literal">screen</code>(1) чтобы ваша удалённая
+оболочка "выживала" в случае обрывов соединения (см. <a class="xref" href="#_the_screen_program" title="9.1. Программа screen">Раздел 9.1, «Программа screen»</a>).</p>
 </div>
-<div class="section" title="6.9.1. Basics of SSH">
+<div class="section" title="6.9.1. Основы SSH">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_basics_of_ssh"></a>6.9.1. Basics of SSH</h3></div></div></div>
+<a name="_basics_of_ssh"></a>6.9.1. Основы SSH</h3></div></div></div>
 <div class="warning" title="Внимание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Внимание</h3>
-<p>"<code class="literal">/etc/ssh/sshd_not_to_be_run</code>" must not be present if one
-wishes to run the OpenSSH server.</p>
+<p>Если сервер OpenSSH должен запускаться и работать, то файл
+"<code class="literal">/etc/ssh/sshd_not_to_be_run</code>" должен отсутствовать.</p>
 </div>
-<p>SSH has two authentication protocols.</p>
+<p>SSH поддерживает два протокола аутентификации.</p>
 <div class="table">
-<a name="listofsshauthenttocolsandmethods"></a><p class="title"><b>Таблица 6.14. List of SSH authentication protocols and methods</b></p>
-<div class="table-contents"><table summary="List of SSH authentication protocols and methods" border="1">
+<a name="listofsshauthenttocolsandmethods"></a><p class="title"><b>Таблица 6.14. Список протоколов и методов аутентификации в SSH</b></p>
+<div class="table-contents"><table summary="Список протоколов и методов аутентификации в SSH" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -19226,10 +19227,10 @@ wishes to run the OpenSSH server.</p>
 </colgroup>
 <thead><tr>
 <th align="left">
-    SSH protocol
+    протокол SSH
     </th>
 <th align="left">
-    SSH method
+    метод авторизации
     </th>
 <th align="left">
     описание
@@ -19244,7 +19245,7 @@ wishes to run the OpenSSH server.</p>
     "<code class="literal">RSAAuthentication</code>"
     </td>
 <td align="left">
-    RSA identity key based user authentication
+    аутентификация по ключу RSA
     </td>
 </tr>
 <tr>
@@ -19255,7 +19256,7 @@ wishes to run the OpenSSH server.</p>
     "<code class="literal">RhostsAuthentication</code>"
     </td>
 <td align="left">
-    "<code class="literal">.rhosts</code>" based host authentication (insecure, disabled)
+    аутентификация по "<code class="literal">.rhosts</code>" (небезопасно, выключено)
     </td>
 </tr>
 <tr>
@@ -19266,8 +19267,7 @@ wishes to run the OpenSSH server.</p>
     "<code class="literal">RhostsRSAAuthentication</code>"
     </td>
 <td align="left">
-    "<code class="literal">.rhosts</code>" based host authentication combined with RSA
-host key (disabled)
+    аутентификация по "<code class="literal">.rhosts</code>" вместе с RSA (выключено)
     </td>
 </tr>
 <tr>
@@ -19278,7 +19278,7 @@ host key (disabled)
     "<code class="literal">ChallengeResponseAuthentication</code>"
     </td>
 <td align="left">
-    RSA challenge-response authentication
+    аутентификация вызова-ответа (challenge-response) RSA
     </td>
 </tr>
 <tr>
@@ -19289,7 +19289,7 @@ host key (disabled)
     "<code class="literal">PasswordAuthentication</code>"
     </td>
 <td align="left">
-    password based authentication
+    аутентификация по паролю
     </td>
 </tr>
 <tr>
@@ -19300,7 +19300,7 @@ host key (disabled)
     "<code class="literal">PubkeyAuthentication</code>"
     </td>
 <td align="left">
-    public key based user authentication
+    аутентификация по общедоступному ключу
     </td>
 </tr>
 <tr>
@@ -19335,7 +19335,7 @@ authentication (disabled)
     "<code class="literal">PasswordAuthentication</code>"
     </td>
 <td align="left">
-    password based authentication
+    аутентификация по паролю
     </td>
 </tr>
 </tbody>
@@ -19343,12 +19343,13 @@ authentication (disabled)
 </div>
 <br class="table-break"><div class="caution" title="Предостережение" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Предостережение</h3>
-<p>Be careful about these differences if you are using a non-Debian system.</p>
+<p>Будьте внимательны к этим различиями, если используемая система -- не
+Debian.</p>
 </div>
-<p>See "<code class="literal">/usr/share/doc/ssh/README.Debian.gz</code>",
+<p>Подробнее смотрите в
+"<code class="literal">/usr/share/doc/ssh/README.Debian.gz</code>",
 <code class="literal">ssh</code>(1), <code class="literal">sshd</code>(8),
-<code class="literal">ssh-agent</code>(1), and <code class="literal">ssh-keygen</code>(1) for
-details.</p>
+<code class="literal">ssh-agent</code>(1) и <code class="literal">ssh-keygen</code>(1).</p>
 <p>Вот ключевые конфигурационные файлы.</p>
 <div class="table">
 <a name="listofsshconfigurationfiles"></a><p class="title"><b>Таблица 6.15. Список конфигурационных файлов SSH</b></p>
@@ -19371,7 +19372,7 @@ details.</p>
                   <code class="literal">/etc/ssh/ssh_config</code>
                 </td>
 <td align="left">
-    SSH client defaults, see <code class="literal">ssh_config</code>(5)
+    настройки SSH-клиента по-умолчанию, см. <code class="literal">ssh_config</code>(5)
     </td>
 </tr>
 <tr>
@@ -19379,7 +19380,7 @@ details.</p>
                   <code class="literal">/etc/ssh/sshd_config</code>
                 </td>
 <td align="left">
-    SSH server defaults, see <code class="literal">sshd_config</code>(5)
+    конфигурация SSH-сервера по-умолчанию, см. <code class="literal">sshd_config</code>(5)
     </td>
 </tr>
 <tr>
@@ -19387,8 +19388,8 @@ details.</p>
                   <code class="literal">~/.ssh/authorized_keys</code>
                 </td>
 <td align="left">
-    default public SSH keys that clients use to connect to this account on this
-SSH server
+    общедоступные ключи SSH, которые клиенты используют для соединения с этой
+учётной записью на этом сервере
     </td>
 </tr>
 <tr>
@@ -19396,7 +19397,7 @@ SSH server
                   <code class="literal">~/.ssh/identity</code>
                 </td>
 <td align="left">
-    secret SSH-1 RSA key of the user
+    секретный ключ SSH-1 RSA этого пользователя
     </td>
 </tr>
 <tr>
@@ -19404,7 +19405,7 @@ SSH server
                   <code class="literal">~/.ssh/id_rsa</code>
                 </td>
 <td align="left">
-    secret SSH-2 RSA key of the user
+    секретный ключ SSH-2 RSA этого пользователя
     </td>
 </tr>
 <tr>
@@ -19412,7 +19413,7 @@ SSH server
                   <code class="literal">~/.ssh/id_dsa</code>
                 </td>
 <td align="left">
-    secret SSH-2 DSA key of the user
+    секретный ключ SSH-2 DSQ этого пользователя
     </td>
 </tr>
 </tbody>
@@ -19420,13 +19421,14 @@ SSH server
 </div>
 <br class="table-break"><div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>See <code class="literal">ssh-keygen</code>(1), <code class="literal">ssh-add</code>(1) and
-<code class="literal">ssh-agent</code>(1) for how to use public and secret SSH keys.</p>
+<p>О том, как использовать общедоступные и секретные ключи SSH читайте в
+<code class="literal">ssh-keygen</code>(1), <code class="literal">ssh-add</code>(1) и
+<code class="literal">ssh-agent</code>(1).</p>
 </div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>Make sure to verify settings by testing the connection.  In case of any
-problem, use "<code class="literal">ssh -v</code>".</p>
+<p>Внимательно перепроверяйте настройки -- тестируйте соединение. В случае
+любых проблем используйте "<code class="literal">ssh -v</code>".</p>
 </div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
@@ -19441,8 +19443,8 @@ specific commands.  See <code class="literal">sshd</code>(8) for details.</p>
 </div>
 <p>The following starts an <code class="literal">ssh</code>(1) connection from a client.</p>
 <div class="table">
-<a name="listofsshclientstartupexamples"></a><p class="title"><b>Таблица 6.16. List of SSH client startup examples</b></p>
-<div class="table-contents"><table summary="List of SSH client startup examples" border="1">
+<a name="listofsshclientstartupexamples"></a><p class="title"><b>Таблица 6.16. Список примеров запуска SSH-клиента</b></p>
+<div class="table-contents"><table summary="Список примеров запуска SSH-клиента" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -19461,7 +19463,7 @@ specific commands.  See <code class="literal">sshd</code>(8) for details.</p>
                   <code class="literal">ssh username@hostname.domain.ext</code>
                 </td>
 <td align="left">
-    connect with default mode
+    соединиться в режиме по-умолчанию
     </td>
 </tr>
 <tr>
@@ -19469,7 +19471,7 @@ specific commands.  See <code class="literal">sshd</code>(8) for details.</p>
                   <code class="literal">ssh -v username@hostname.domain.ext</code>
                 </td>
 <td align="left">
-    connect with default mode with debugging messages
+    соединиться в режиме по-умолчанию с выводом отладочных сообщений
     </td>
 </tr>
 <tr>
@@ -19477,7 +19479,7 @@ specific commands.  See <code class="literal">sshd</code>(8) for details.</p>
                   <code class="literal">ssh -1 username@hostname.domain.ext</code>
                 </td>
 <td align="left">
-    force to connect with SSH version 1
+    принудительно использовать протокол первой версии для соединения 
     </td>
 </tr>
 <tr>
@@ -19486,7 +19488,7 @@ specific commands.  See <code class="literal">sshd</code>(8) for details.</p>
 hostname.domain.ext</code>
                 </td>
 <td align="left">
-    force to use password with SSH version 1
+    использовать SSH первой версии, авторизоваться по паролю
     </td>
 </tr>
 <tr>
@@ -19495,7 +19497,7 @@ hostname.domain.ext</code>
 hostname.domain.ext</code>
                 </td>
 <td align="left">
-    force to use password with SSH version 2
+    использовать SSH-2, авторизоваться по паролю
     </td>
 </tr>
 </tbody>
@@ -19529,58 +19531,57 @@ Internet.  Set the "<code class="literal">AllowTcpForwarding</code>" entry to
 "<code class="literal">yes</code>" in "<code class="literal">/etc/ssh/sshd_config</code>" of the
 remote host.</p>
 </div>
-<div class="section" title="6.9.3. Connecting without remote passwords">
+<div class="section" title="6.9.3. Соединение без ввода пароля">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_connecting_without_remote_passwords"></a>6.9.3. Connecting without remote passwords</h3></div></div></div>
-<p>One can avoid having to remember passwords for remote systems by using
-"<code class="literal">RSAAuthentication</code>" (SSH-1 protocol) or
-"<code class="literal">PubkeyAuthentication</code>" (SSH-2 protocol).</p>
-<p>On the remote system, set the respective entries,
-"<code class="literal">RSAAuthentication yes</code>" or "<code class="literal">PubkeyAuthentication
-yes</code>", in "<code class="literal">/etc/ssh/sshd_config</code>".</p>
-<p>Generate authentication keys locally and install the public key on the
-remote system by the following.</p>
+<a name="_connecting_without_remote_passwords"></a>6.9.3. Соединение без ввода пароля</h3></div></div></div>
+<p>Можно избавиться от запоминания паролей удалённых систем, если использовать
+"<code class="literal">RSAAuthentication</code>" (для SSH-1) или
+<code class="literal">RSAAuthentication</code>" (для SSH-2).</p>
+<p>Добавьте в файл "<code class="literal">/etc/ssh/sshd_config</code>" удалённой системы
+соответствующие настройки: "<code class="literal">RSAAuthentication yes</code>" или
+"<code class="literal">PubkeyAuthentication yes</code>".</p>
+<p>Сгенерируйте ключи аутентификации локально и установите общедоступный ключ
+(public key) на удалённую систему так:</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-"<code class="literal">RSAAuthentication</code>": RSA key for SSH-1 (deprecated
-because it is superseded.)
+"<code class="literal">RSAAuthentication</code>": ключ RSA для SSH-1 (осуждается,
+вытеснено другими методами)
 </li></ul></div>
 <pre class="screen">$ ssh-keygen
-$ cat .ssh/identity.pub | ssh user1@remote \"cat - &gt;&gt;.ssh/authorized_keys\"</pre>
+$ cat .ssh/identity.pub | ssh user1@remote "cat - &gt;&gt;.ssh/authorized_keys"</pre>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-"<code class="literal">PubkeyAuthentication</code>": RSA key for SSH-2
+"<code class="literal">PubkeyAuthentication</code>": ключ RSA для SSH-2
 </li></ul></div>
 <pre class="screen">$ ssh-keygen -t rsa
-$ cat .ssh/id_rsa.pub | ssh user1@remote \"cat - &gt;&gt;.ssh/authorized_keys\"</pre>
+$ cat .ssh/id_rsa.pub | ssh user1@remote "cat - &gt;&gt;.ssh/authorized_keys"</pre>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-"<code class="literal">PubkeyAuthentication</code>": DSA key for SSH-2 (deprecated
-because it is slow.)
+"<code class="literal">PubkeyAuthentication</code>": ключ DSA для SSH-2 (осуждается за
+низкую скорость)
 </li></ul></div>
 <pre class="screen">$ ssh-keygen -t dsa
-$ cat .ssh/id_dsa.pub | ssh user1@remote \"cat - &gt;&gt;.ssh/authorized_keys\"</pre>
+$ cat .ssh/id_dsa.pub | ssh user1@remote "cat - &gt;&gt;.ssh/authorized_keys"</pre>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>Use of DSA key for SSH-2 is deprecated because key is smaller and
-slow. There are no more reasons to work around RSA patent using DSA since it
-has been expired.  DSA stands for <a class="ulink" href="http://ru.wikipedia.org/wiki/DSA" target="_top">Digital Signature Algorithm</a> and
-slow. Also see <a class="ulink" href="http://www.debian.org/security/2008/dsa-1571" target="_top">DSA-1571-1</a>.</p>
+<p>Ключи DSA для SSH-2 меньше и они медленные. К тому же нет больше причин
+"обходить" патент RSA, который завершился. DSA означает <a class="ulink" href="http://ru.wikipedia.org/wiki/DSA" target="_top">Digital Signature Algorithm</a>, он
+медленный. См. также <a class="ulink" href="http://www.debian.org/security/2008/dsa-1571" target="_top">DSA-1571-1</a>.</p>
 </div>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
-<p>For "<code class="literal">HostbasedAuthentication</code>" to work in SSH-2, you must
-adjust the settings of "<code class="literal">HostbasedAuthentication</code>" to
-"<code class="literal">yes</code>" in both "<code class="literal">/etc/ssh/sshd_config</code>"
-on the server host and "<code class="literal">/etc/ssh/ssh_config</code>" or
-"<code class="literal">~/.ssh/config</code>" on the client host.</p>
+<p>Чтобы "<code class="literal">HostbasedAuthentication</code>" работала в SSH-2, нужно
+установить параметр <code class="literal">HostbasedAuthentication</code>" в значение
+"<code class="literal">yes</code>" в файлах "<code class="literal">/etc/ssh/sshd_config</code>"
+на сервере и "<code class="literal">/etc/ssh/ssh_config</code>" или
+"<code class="literal">~/.ssh/config</code>" на узле клиента.</p>
 </div>
 </div>
-<div class="section" title="6.9.4. Dealing with alien SSH clients">
+<div class="section" title="6.9.4. SSH-клиенты для других ОС">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_dealing_with_alien_ssh_clients"></a>6.9.4. Dealing with alien SSH clients</h3></div></div></div>
-<p>There are some free <a class="ulink" href="http://ru.wikipedia.org/wiki/SSH" target="_top">SSH</a> clients available for
-other platforms.</p>
+<a name="_dealing_with_alien_ssh_clients"></a>6.9.4. SSH-клиенты для других ОС</h3></div></div></div>
+<p>Существуют несколько свободных <a class="ulink" href="http://ru.wikipedia.org/wiki/SSH" target="_top">SSH</a>-клиентов для
+других платформ.</p>
 <div class="table">
-<a name="listoffreesshcliorotherplatforms"></a><p class="title"><b>Таблица 6.17. List of free SSH clients for other platforms</b></p>
-<div class="table-contents"><table summary="List of free SSH clients for other platforms" border="1">
+<a name="listoffreesshcliorotherplatforms"></a><p class="title"><b>Таблица 6.17. Список свободных SSH-клиентов для других платформ</b></p>
+<div class="table-contents"><table summary="Список свободных SSH-клиентов для других платформ" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -19590,7 +19591,7 @@ other platforms.</p>
     окружение
     </th>
 <th align="left">
-    free SSH program
+    свободная программа SSH
     </th>
 </tr></thead>
 <tbody>
@@ -19608,7 +19609,7 @@ other platforms.</p>
     Windows (cygwin)
     </td>
 <td align="left">
-    SSH in cygwin (<a class="ulink" href="http://www.cygwin.com/" target="_top">http://www.cygwin.com/</a>) (GPL)
+    SSH в cygwin (<a class="ulink" href="http://www.cygwin.com/" target="_top">http://www.cygwin.com/</a>) (GPL)
     </td>
 </tr>
 <tr>
@@ -19625,7 +19626,7 @@ other platforms.</p>
     Mac OS X
     </td>
 <td align="left">
-    OpenSSH; use <code class="literal">ssh</code> in the Terminal application (GPL)
+    OpenSSH; используйте <code class="literal">ssh</code> в приложении "Terminal" (GPL)
     </td>
 </tr>
 </tbody>
@@ -19633,26 +19634,28 @@ other platforms.</p>
 </div>
 <br class="table-break">
 </div>
-<div class="section" title="6.9.5. Setting up ssh-agent">
+<div class="section" title="6.9.5. Настройка ssh-agent">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_setting_up_ssh_agent"></a>6.9.5. Setting up ssh-agent</h3></div></div></div>
-<p>It is safer to protect your SSH authentication secret keys with a pass
-phrase.  If a pass phrase was not set, use "<code class="literal">ssh-keygen
--p</code>" to set it.</p>
-<p>Place your public SSH key (e.g.  "<code class="literal">~/.ssh/id_rsa.pub</code>")
-into "<code class="literal">~/.ssh/authorized_keys</code>" on a remote host using a
-password-based connection to the remote host as described above.</p>
+<a name="_setting_up_ssh_agent"></a>6.9.5. Настройка ssh-agent</h3></div></div></div>
+<p>Безопасней защитить ваши секретные ключи SSH с помощью секретной фразы (pass
+phrase). Если такой фразы пока нет, создайте её командой
+"<code class="literal">ssh-keygen -p</code>".</p>
+<p>Поместите ваш общедоступный ключ SSH (то есть
+"<code class="literal">~/.ssh/id_rsa.pub</code>") в файл
+"<code class="literal">~/.ssh/authorized_keys</code>" удалённого узла, соединившись
+сперва с авторизацией по паролю:</p>
 <pre class="screen">$ ssh-agent bash
 $ ssh-add ~/.ssh/id_rsa
 Enter passphrase for /home/&lt;имя_пользователя&gt;/.ssh/id_rsa:
 Identity added: /home/&lt;имя_пользователя&gt;/.ssh/id_rsa (/home/&lt;имя_пользователя&gt;/.ssh/id_rsa)</pre>
-<p>No remote password needed from here on for the next command.</p>
+<p>Теперь ввод пароля не нужен для такой, например, команды:</p>
 <pre class="screen">$ scp foo &lt;имя_пользователя&gt;@адрес.удалённого.узла:foo</pre>
-<p>Press ^D to terminating ssh-agent session.</p>
-<p>For the X server, the normal Debian startup script executes
-<code class="literal">ssh-agent</code> as the parent process.  So you only need to
-execute <code class="literal">ssh-add</code> once. For more, read
-<code class="literal">ssh-agent</code>(1)and <code class="literal">ssh-add</code>(1).</p>
+<p>Для завершения сессии ssh-agent нажмите ^D.</p>
+<p>В Debian сценарий запуска X-сессии выполняет команду
+<code class="literal">ssh-agent</code> в качестве родительского процесса. Так что вам
+остаётся только единожды за сессию выполнить команду
+<code class="literal">ssh-add</code>. Подробности смотрите в
+<code class="literal">ssh-agent</code>(1) и <code class="literal">ssh-add</code>(1).</p>
 </div>
 <div class="section" title="6.9.6. Как выключить удалённую систему по SSH">
 <div class="titlepage"><div><div><h3 class="title">
@@ -19664,20 +19667,22 @@ execute <code class="literal">ssh-add</code> once. For more, read
 <p>Другой способ -- выполнить "<code class="literal">shutdown -h now</code>" в
 <code class="literal">screen</code>(1) (см. <a class="xref" href="#_the_screen_program" title="9.1. Программа screen">Раздел 9.1, «Программа screen»</a>).</p>
 </div>
-<div class="section" title="6.9.7. Troubleshooting SSH">
+<div class="section" title="6.9.7. Решение трудностей с SSH">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_troubleshooting_ssh"></a>6.9.7. Troubleshooting SSH</h3></div></div></div>
-<p>If you have problems, check the permissions of configuration files and run
-<code class="literal">ssh</code> with the "<code class="literal">-v</code>" option.</p>
-<p>Use the "<code class="literal">-P</code>" option if you are root and have trouble with
-a firewall; this avoids the use of server ports 1 — 1023.</p>
-<p>If <code class="literal">ssh</code> connections to a remote site suddenly stop
-working, it may be the result of tinkering by the sysadmin, most likely a
-change in "<code class="literal">host_key</code>" during system maintenance.  After
-making sure this is the case and nobody is trying to fake the remote host by
-some clever hack, one can regain a connection by removing the
-"<code class="literal">host_key</code>" entry from
-"<code class="literal">~/.ssh/known_hosts</code>" on the local host.</p>
+<a name="_troubleshooting_ssh"></a>6.9.7. Решение трудностей с SSH</h3></div></div></div>
+<p>Если возникают проблемы, проверьте разрешения конфигурационных файлов и
+запустите <code class="literal">ssh</code> с ключом "<code class="literal">-v</code>".</p>
+<p>Если вы -- суперпользователь, и возникают проблемы с фаерволом, попробуйте
+ключ "<code class="literal">-P</code>", чтобы не использовать привилегированные порты
+1 -- 1023.</p>
+<p>Если <code class="literal">ssh</code>-соединение с удалённым узлом вдруг перестаёт
+устанавливаться, это может быть делом рук тамошнего системного
+администратора, вероятно, изменившего "<code class="literal">host_key</code>" в
+процессе своей работы. Убедившись, что вероятная причина именно в этом (а не
+в чьей-то хитроумной попытке "подменить" собой удалённый узел), можно
+восстановить работоспособность, удалив из локального файла
+"<code class="literal">~/.ssh/known_hosts</code>" запись "<code class="literal">host_key</code>"
+удалённого узла.</p>
 </div>
 </div>
 <div class="section" title="6.10. Другие серверы сетевых приложений">
@@ -20295,17 +20300,17 @@ Extensions (MIME)</a>
 <div class="chapter" title="Глава 7. Система X Window">
 <div class="titlepage"><div><div><h2 class="title">
 <a name="_the_x_window_system"></a>Глава 7. Система X Window</h2></div></div></div>
-<p>В Debian входит система <a class="ulink" href="http://ru.wikipedia.org/wiki/X_Window_System" target="_top">X Window</a>,
-основанная на исходных текстах <a class="ulink" href="http://www.x.org/" target="_top">X.Org</a>. По
-состоянию на июль 2009, использовались версии: X11R7.1(etch),
-X11R7.3(lenny), X11R7.3(squeeze) и X11R7.4(sid).</p>
+<p>Система <a class="ulink" href="http://ru.wikipedia.org/wiki/X_Window_System" target="_top">X Window</a>, входящая в Debian,
+основана на исходных текстах <a class="ulink" href="http://www.x.org/" target="_top">X.Org</a>. По состоянию
+на июль 2009, использовались версии: X11R7.1(etch), X11R7.3(lenny),
+X11R7.3(squeeze) и X11R7.4(sid).</p>
 <div class="section" title="7.1. Ключевые пакеты">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
 <a name="_key_packages"></a>7.1. Ключевые пакеты</h2></div></div></div>
-<p>Вот несколько (мета)пакетов для упрощения установки</p>
+<p>Вот несколько (мета)пакетов, упрощающих установку</p>
 <div class="table">
-<a name="listofkeymetapackagesforxwindow"></a><p class="title"><b>Таблица 7.1. Список ключевых (мета)пакетов для X Window</b></p>
-<div class="table-contents"><table summary="Список ключевых (мета)пакетов для X Window" border="1">
+<a name="listofkeymetapackagesforxwindow"></a><p class="title"><b>Таблица 7.1. Список ключевых (мета)пакетов X Window</b></p>
+<div class="table-contents"><table summary="Список ключевых (мета)пакетов X Window" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -20391,7 +20396,7 @@ X11R7.3(lenny), X11R7.3(squeeze) и X11R7.4(sid).</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=menu" target="_top">V:28, I:52</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/m/menu.html" target="_top">2024</a></td>
 <td align="left">
-    создаёт меню Debian для всех того желающих приложений
+    включает в меню Debian все поддерживающие его приложения
     </td>
 </tr>
 <tr>
@@ -20414,7 +20419,7 @@ X11R7.3(lenny), X11R7.3(squeeze) и X11R7.4(sid).</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=menu-xdg" target="_top">I:48</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/m/menu-xdg.html" target="_top">76</a></td>
 <td align="left">
-    преобразует структуру меню Debian в структуру меню <a class="ulink" href="http://ru.wikipedia.org/wiki/Freedesktop.org" target="_top">freedesktop.org</a>
+    преобразует описания меню Debian в формат xdg от <a class="ulink" href="http://ru.wikipedia.org/wiki/Freedesktop.org" target="_top">freedesktop.org</a>
     </td>
 </tr>
 <tr>
@@ -20483,20 +20488,19 @@ X11R7.3(lenny), X11R7.3(squeeze) и X11R7.4(sid).</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=fluxbox" target="_top">V:0.9, I:3</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/f/fluxbox.html" target="_top">3796</a></td>
 <td align="left">
-<a class="ulink" href="http://ru.wikipedia.org/wiki/Fluxbox" target="_top">Fluxbox</a> -- хорошо настраиваемый и
-нетребовательный к ресурсам <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80_%D0%BE%D0%BA%D0%BE%D0%BD_X_Window_System" target="_top">оконный
-менеджер</a>
+<a class="ulink" href="http://ru.wikipedia.org/wiki/Fluxbox" target="_top">Fluxbox</a> -- гибкий и нетребовательный к
+ресурсам <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80_%D0%BE%D0%BA%D0%BE%D0%BD_X_Window_System" target="_top">оконный менеджер</a>
 </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<br class="table-break"><p>Основы системы X Window можно узнать из <code class="literal">X</code>(7) и <a class="ulink" href="http://www.tldp.org/HOWTO/XWindow-User-HOWTO.html" target="_top">LDP XWindow-User-HOWTO</a>.</p>
+<br class="table-break"><p>Основы X Window описаны в <code class="literal">X</code>(7) и <a class="ulink" href="http://www.tldp.org/HOWTO/XWindow-User-HOWTO.html" target="_top">LDP XWindow-User-HOWTO</a>.</p>
 </div>
-<div class="section" title="7.2. Настройка окружения рабочего стола">
+<div class="section" title="7.2. Настройка среды рабочего стола">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
-<a name="_setting_up_desktop_environment"></a>7.2. Настройка окружения рабочего стола</h2></div></div></div>
-<p>Обычно <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%A1%D1%80%D0%B5%D0%B4%D0%B0_%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B5%D0%B3%D0%BE_%D1%81%D1%82%D0%BE%D0%BB%D0%B0" target="_top">окружение рабочего стола</a>
+<a name="_setting_up_desktop_environment"></a>7.2. Настройка среды рабочего стола</h2></div></div></div>
+<p>Обычно <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%A1%D1%80%D0%B5%D0%B4%D0%B0_%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B5%D0%B3%D0%BE_%D1%81%D1%82%D0%BE%D0%BB%D0%B0" target="_top">среда рабочего стола</a>
 представляет собой комбинацию <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80_%D0%BE%D0%BA%D0%BE%D0%BD_X_Window_System" target="_top">оконного
 менеджера</a>, файлового менеджера и набора совместимых вспомогательных
 программ.</p>
@@ -20512,9 +20516,9 @@ conflicts.  When deselecting (meta)packages, you must select certain
 packages providing their dependencies manually to avoid them deleted
 automatically.</p>
 </div>
-<p>В качестве альтернативного варианта вы можете вручную установить простую
+<p>В качестве альтернативного варианта вы можете вручную настроить простую
 среду, содержащую только <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80_%D0%BE%D0%BA%D0%BE%D0%BD_X_Window_System" target="_top">оконный
-менеджер</a>.</p>
+менеджер</a>, например, <a class="ulink" href="http://ru.wikipedia.org/wiki/Fluxbox" target="_top">Fluxbox</a>.</p>
 <p>Cписок оконных менеджеров для X Window и ссылки на руководства по их
 использованию смотрите <a class="ulink" href="http://www.xwinman.org" target="_top">здесь</a>.</p>
 <div class="section" title="7.2.1. Меню Debian">
@@ -20547,8 +20551,8 @@ automatically.</p>
 выбрать "Debian".</p>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>Похожие действия могут оказаться вам нужными и в других окружениях рабочего
-стола, соответствующих стандарту Freedesktop.org.</p>
+<p>Похожие действия могут потребоваться и в других окружениях рабочего стола,
+соответствующих стандарту Freedesktop.org.</p>
 </div>
 </div>
 </div>
@@ -20589,7 +20593,7 @@ automatically.</p>
                 <span class="strong"><strong>X-клиент</strong></span>
               </td>
 <td align="left">
-    программа, запущенная на <span class="strong"><strong>удалённой
+    программа, работающая на <span class="strong"><strong>удалённой
 системе</strong></span>, обрабатывающей данные и соединённой с X-сервером
     </td>
 </tr>
@@ -20598,8 +20602,8 @@ automatically.</p>
                 <span class="strong"><strong>сервер приложения</strong></span>
               </td>
 <td align="left">
-    программа, работающая <span class="strong"><strong>удалённой системе</strong></span>,
-обрабатывающей данные и соединённой с клиентами
+    программа, работающая на <span class="strong"><strong>удалённой
+системе</strong></span>, обрабатывающей данные и соединённой с клиентами
     </td>
 </tr>
 <tr>
@@ -20954,7 +20958,7 @@ x-session-manager</code>".</p>
 <div class="section" title="7.5.1. Запуск X-сессии с помощью gdm">
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_starting_x_session_with_gdm"></a>7.5.1. Запуск X-сессии с помощью gdm</h3></div></div></div>
-<p><code class="literal">gdm</code>(1) позволяет выбрать тип сессии (или среду: <a class="xref" href="#_setting_up_desktop_environment" title="7.2. Настройка окружения рабочего стола">Раздел 7.2, «Настройка окружения рабочего стола»</a>) и язык (или локаль: <a class="xref" href="#_the_locale" title="8.3. Локаль">Раздел 8.3, «Локаль»</a>) из своего меню. Выбранные значения по-умолчанию
+<p><code class="literal">gdm</code>(1) позволяет выбрать тип сессии (или среду: <a class="xref" href="#_setting_up_desktop_environment" title="7.2. Настройка среды рабочего стола">Раздел 7.2, «Настройка среды рабочего стола»</a>) и язык (или локаль: <a class="xref" href="#_the_locale" title="8.3. Локаль">Раздел 8.3, «Локаль»</a>) из своего меню. Выбранные значения по-умолчанию
 хранятся в "<code class="literal">~/.dmrc</code>" и выглядят так:</p>
 <pre class="screen">[Desktop]
 Session=default
@@ -21506,7 +21510,7 @@ ttf-mscorefonts-installer </a> <a class="ulink" href="http://bugs.debian.org/ttf
     </td>
 <td align="left">
 <a class="ulink" href="http://dejavu-fonts.org" target="_top">DejaVu</a>, <a class="ulink" href="http://www.gnome.org/fonts/" target="_top">Bitstream
-Vera</a> со символами Unicode
+Vera</a> с символами Unicode
     </td>
 </tr>
 <tr>
@@ -22085,8 +22089,8 @@ Japanese centric fonts over Chinese ones using
 <a name="_x_utility_applications"></a>7.7.2. Полезные инструменты для X Window (утилиты)</h3></div></div></div>
 <p>Вот список основных полезных средств для X Window, попавшихся мне на глаза.</p>
 <div class="table">
-<a name="listofbasicxutilityapplications"></a><p class="title"><b>Таблица 7.9. Список основных полезных приложений X Window</b></p>
-<div class="table-contents"><table summary="Список основных полезных приложений X Window" border="1">
+<a name="listofbasicxutilityapplications"></a><p class="title"><b>Таблица 7.9. Список полезных приложений X Window</b></p>
+<div class="table-contents"><table summary="Список полезных приложений X Window" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -22151,7 +22155,7 @@ Japanese centric fonts over Chinese ones using
     GNOME
     </td>
 <td align="left">
-    Почтовая программа, календарь и ежедневник, средство управления задачами.
+    почтовая программа, календарь и ежедневник, средство управления задачами.
     </td>
 </tr>
 <tr>
@@ -22165,7 +22169,7 @@ Japanese centric fonts over Chinese ones using
     KDE
     </td>
 <td align="left">
-    Почтовая программа, календарь и ежедневник, средство управления задачами.
+    почтовая программа, календарь и ежедневник, средство управления задачами.
     </td>
 </tr>
 <tr>
@@ -22353,8 +22357,8 @@ GNOME вполне приемлемо, поскольку в GNOME нет ана
 root. Вам следует всегда пользоваться самым низким из возможных уровней
 привилегий, например, учётной записью обычного пользователя.</p>
 </div>
-<p>Простые способы запустить конкретный X-клиент, например,
-"<code class="literal">foo</code>", от имени root состоят в использовании команды
+<p>Вот простые способы запустить конкретный X-клиент, например,
+"<code class="literal">foo</code>", от имени суперпользователя с помощью
 <code class="literal">sudo</code>(8):</p>
 <pre class="screen">$ sudo foo &amp;</pre>
 <pre class="screen">$ sudo -s
@@ -22364,18 +22368,19 @@ root. Вам следует всегда пользоваться самым н�
 # foo &amp;</pre>
 <div class="caution" title="Предостережение" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Предостережение</h3>
-<p>Использование <code class="literal">ssh</code>(1) только для указанной здесь цели
-равнозначно пустой трате ресурсов.</p>
+<p>Использование <code class="literal">ssh</code>(1) в последнем примере -- пустая трата
+ресурсов.</p>
 </div>
 <p>Чтобы разрешить X-клиентам соединяться с X-сервером, учтите:</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
-Переменные окружения старого пользователя "<code class="literal">$XAUTHORITY</code>" и
-"<code class="literal">$DISPLAY</code>" должны быть скопированы новому пользователю.
+Переменные окружения пользователя X-сервера "<code class="literal">$XAUTHORITY</code>"
+и "<code class="literal">$DISPLAY</code>" должны быть скопированы пользователю
+X-клиента.
 </li>
 <li class="listitem">
 Файл, на который указывает "<code class="literal">$XAUTHORITY</code>" должен быть
-доступен для чтения новым пользователем.
+доступен для чтения пользователю X-клиента.
 </li>
 </ul></div>
 <p>Пакет <code class="literal">gksu</code> (popcon: V:24, I:47) -- специальное
@@ -26862,7 +26867,7 @@ trusted as the system security audit tool against malicious attacks.</p>
     N/A
     </td>
 <td align="left">
-    мета-пакет с исходниками ядра и патчами (особенность Debian)
+    исходные тексты ядра и заплаты (мета-пакет, только в Debian)
     </td>
 </tr>
 </tbody>
@@ -26948,7 +26953,7 @@ $ sudo apt-get autoremove</pre>
 <div class="section" title="9.7.7. Компиляция ядра: обычный способ">
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_compiling_the_kernel_source_classic_method"></a>9.7.7. Компиляция ядра: обычный способ</h3></div></div></div>
-<p>Вы можете также собрать ядро из исходников <a class="ulink" href="http://www.kernel.org/" target="_top">разработчиков ядра</a>,
+<p>Вы можете также собрать ядро из исходных текстов <a class="ulink" href="http://www.kernel.org/" target="_top">разработчиков ядра</a>,
 неадаптированных для Debian. В этом случае вам нужно самим заботиться о
 деталях конфигурации. Вот этот способ:</p>
 <pre class="screen">$ cd /usr/src
@@ -27508,7 +27513,7 @@ copied.</p>
 создание системы в chroot и сборка пакета внутри него. Это идеальная
 система, чтобы проверить, что зависимости, нужные для сборки
 (build-dependency), в порядке и быть уверенным, что те зависимости, которые
-не являются нобходимыми, отсутствуют в итоговом пакете.</p>
+не являются необходимыми, отсутствуют в итоговом пакете.</p>
 </div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
@@ -27566,7 +27571,7 @@ Debian.</p>
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
 <a name="_sharing_copying_and_archiving"></a>10.1. Предоставление доступа, копирование и архивирование</h2></div></div></div>
 <p>Безопасность данных и предоставление контролируемого доступа к ним требует
-внимания с некольких точек зрения.</p>
+внимания с нескольких точек зрения.</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
 Создание архива данных
@@ -29544,7 +29549,7 @@ ISO9660, "<code class="literal">cd.iso</code>", записывается на н
 <div class="section" title="10.3. Двоичные данные">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
 <a name="_the_binary_data"></a>10.3. Двоичные данные</h2></div></div></div>
-<p>Здесь обсуждается прямый манипуляции двоичными данными на устройстве
+<p>Здесь рассказывается о манипуляциях двоичными данными на устройстве
 хранения. См. также <a class="xref" href="#_data_storage_tips" title="9.3. Советы по работе с дисками и разделами">Раздел 9.3, «Советы по работе с дисками и разделами»</a>.</p>
 <div class="section" title="10.3.1. Просмотр и редактирование двоичных данных">
 <div class="titlepage"><div><div><h3 class="title">
@@ -33282,7 +33287,7 @@ done</pre>
 </tr>
 <tr>
 <td align="left">
-    заменить пробелы табами
+    заменить пробелы знаками табуляции
     </td>
 <td align="left">
     "<code class="literal">col -h</code>"
@@ -33591,7 +33596,7 @@ eucJP, соответственно, откроется по такой кома
     highlight
     </td>
 <td align="left">
-    макрос Vim, конвертирующий исходный код в HTML "<code class="literal">:source
+    макрос Vim, конвертирующий исходный текст в HTML "<code class="literal">:source
 $VIMRUNTIME/syntax/html.vim</code>"
     </td>
 </tr>
@@ -33606,7 +33611,7 @@ $VIMRUNTIME/syntax/html.vim</code>"
     c→html
     </td>
 <td align="left">
-    форматирует исходники на C в HTML и latex (написан на C)
+    форматирует исходный текст на C в HTML и latex (написан на C)
     </td>
 </tr>
 <tr>
@@ -33620,7 +33625,7 @@ $VIMRUNTIME/syntax/html.vim</code>"
     highlight
     </td>
 <td align="left">
-    форматирует различные исходники в TeX (написан на C)
+    форматирует исходный текст на разных языках в TeX (написан на C)
     </td>
 </tr>
 <tr>
@@ -33634,8 +33639,8 @@ $VIMRUNTIME/syntax/html.vim</code>"
     highlight
     </td>
 <td align="left">
-    форматирует различные исходники в HTML, XHTML, LaTeX, Texinfo, DocBook,
-добавляет коды подсветки ANSI (на C++)
+    форматирует исходный текст на разных языках в HTML, XHTML, LaTeX, Texinfo,
+DocBook, добавляет коды подсветки ANSI (на C++)
     </td>
 </tr>
 <tr>
@@ -33649,7 +33654,7 @@ $VIMRUNTIME/syntax/html.vim</code>"
     highlight
     </td>
 <td align="left">
-    форматирует исходники в HTML, XHTML, RTF, LaTeX, TeX или XSL-FO файлы,
+    форматирует исходный текст в HTML, XHTML, RTF, LaTeX, TeX или XSL-FO файлы,
 поддерживает подсветку (C++)
     </td>
 </tr>
@@ -36533,7 +36538,7 @@ DSFG.</p>
 </div>
 <div class="caution" title="Предостережение" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Предостережение</h3>
-<p>Собранные вами из исходников программы устанавливайте в
+<p>Собранные вами из исходных текстов программы устанавливайте в
 "<code class="literal">/usr/local</code>" или "<code class="literal">/opt</code>", чтобы
 избежать повреждения системных программ.</p>
 </div>
@@ -36631,7 +36636,7 @@ shell. См. "Shell Mistakes" (<a class="ulink" href="http://www.greenend.org.uk
     восьмеричный формат: "<code class="literal">\377</code>"
     </td>
 <td align="left">
-    шестнадцатиричный формат: "<code class="literal">\xff</code>"
+    шестнадцатеричный формат: "<code class="literal">\xff</code>"
     </td>
 </tr>
 </tbody>
@@ -38171,9 +38176,9 @@ Window, вы видите такое сообщение:</p>
 </div>
 <br class="table-break">
 </div>
-<div class="section" title="12.4.9. Дизассемблирование бинарника">
+<div class="section" title="12.4.9. Дизассемблирование двоичного файла">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_disassemble_binary"></a>12.4.9. Дизассемблирование бинарника</h3></div></div></div>
+<a name="_disassemble_binary"></a>12.4.9. Дизассемблирование двоичного файла</h3></div></div></div>
 <p>Можно дизассемблировать бинарный файл с помощью
 <code class="literal">objdump</code>(1) так:</p>
 <pre class="screen">$  objdump -m i386 -b binary -D /usr/lib/grub/x86_64-pc/stage1</pre>
@@ -38635,47 +38640,47 @@ Aoki (2001-2007)
 людей.</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
-the major contents contribution on network configuration topics by Thomas
-Hood
+значительный вклад в главы о конфигурации сети внёс Томас Худ (Thomas Hood)
 </li>
 <li class="listitem">
-significant contents contribution on X and VCS related topics by Brian
-Nelson
+значительный вклад в главы о X Window и VCS -- Брайан Нельсон (Brian Nelson)
 </li>
 <li class="listitem">
-the help on the build scripts and many content corrections by Jens Seidel
+помощь в создании сценариев сборки и многие правки -- Jens Seidel
 </li>
 <li class="listitem">
-extensive proofreading by David Sewell
+основательное редактирование - Дэвид Сюэлл (David Sewell)
 </li>
 <li class="listitem">
-many contributions by the translators, contributors, and bug reporters
+большой вклад от переводчиков, от тех, кто дополнял текст и сообщал об
+ошибках
 </li>
 </ul></div>
-<p>Many manual pages and info pages on the Debian system were used as the
-primary references to write this document.  To the extent Osamu Aoki
-considered within the <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%B1%D1%80%D0%BE%D1%81%D0%BE%D0%B2%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%B5_%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" target="_top">fair use</a>, many parts of
-them, especially command definitions, were used as phrase pieces after
-careful editorial efforts to fit them into the style and the objective of
-this document.</p>
-<p>The gdb debugger description was expanded using <a class="ulink" href="http://wiki.debian.org/HowToGetABacktrace" target="_top">Debian wiki contents on
-backtrace</a> with consent by Ari Pollak, Loïc Minier, and Dafydd
-Harries.</p>
-<p>Contents of "Debian Reference (version 2)" are mostly my own work except as
-mentioned above.  These has been updated by the contributors too.</p>
-<p>Автор, Осаму Аоки, благодарит всех, с чьей помощью этот документ стал
-возможным.</p>
+<p>Основными источниками при создании этого документа послужили справочные
+(man) и info-страницы. В пределах, которые Осаму Аоки счёл честными, многие
+их части, особенно описания команд, были использованы практически без
+изменений, за исключением незначительной обработки для соответствия стилю и
+целям документа.</p>
+<p>Описание отладчика gdb было дополнено содержимым <a class="ulink" href="http://wiki.debian.org/HowToGetABacktrace" target="_top">Debian wiki</a> с разрешения Ари
+Поллак, Луи Миньера и Давида Гарриса (Ari Pollak, Lois Minier, Dafydd
+Harries).</p>
+<p>"Справочник по Debian (версия 2)" -- в основном, моя собственная работа, за
+исключением упомянутого выше. Он обновляется также при участии многих людей.</p>
+<p>Автор, Осаму Аоки, благодарит всех, с чьей помощью создание этого документа
+стало возможным.</p>
 </div>
 <div class="section" title="A.3. Формат документа">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
 <a name="_document_format"></a>A.3. Формат документа</h2></div></div></div>
-<p>The source of the English original document is currently written in <a class="ulink" href="http://packages.debian.org/search?keywords=asciidoc" target="_top">AsciiDoc</a> text files.  <a class="ulink" href="http://packages.debian.org/search?keywords=asciidoc" target="_top">AsciiDoc</a> is used as convenience only since it is
-less typing than straight XML and supports table in the very intuitive
-format.  You should think XML and PO files as real source files.  Via build
-script, it is converted to DocBook XML format and automatically generated
-data are inserted to form a final Docbook XML source. This final Docbook XML
-source can be converted to HTML, plain text, PostScript, and PDF. Currently,
-only HTML and plain text conversions are enabled.</p>
+<p>Исходный текст английского оригинала этого документа сейчас написан в
+формате AsciiDoc. AsciiDoc использован только ради удобства, так как он
+требует меньше набора, чем чистый XML и поддерживает таблицы в простом
+формате. Однако как настоящий исходный текст следует воспринимать файлы XML
+и PO: с помощью сценариев сборки, текст AsciiDoc конвертируется в формат
+DocBook XML, затем вставляются автоматически сгенерированные данные,
+создавая результат -- исходный текст в формате DocBook XML. Этот исходный
+текст можно легко конвертировать в HTML, простой текст, PostScript и
+PDF. Сейчас подключено конвертирование только в HTML и простой текст.</p>
 </div>
 </div>
 </div></body>

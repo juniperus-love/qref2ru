@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Справочник по Debian\n"
 "POT-Creation-Date: 2010-07-26 20:45+0500\n"
-"PO-Revision-Date: 2010-08-05 18:27+0400\n"
+"PO-Revision-Date: 2010-08-20 23:06+0400\n"
 "Last-Translator: Juniperus Love <qref2ru@gmail.com>\n"
 "Language-Team:\n"
 "Language: \n"
@@ -4220,19 +4220,19 @@ msgstr "Система создаётся усилиями добровольн�
 #. type: Content of: <book><preface><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:827
 msgid "Large number of pre-compiled high quality softwares"
-msgstr "В дистрибутив входит большое количество скомпилированного (готового          к использованию) высококачественного ПО."
+msgstr "В дистрибутив входит большое количество скомпилированного (готового к использованию) высококачественного ПО."
 
 # type: Content of: <book><preface><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><preface><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:832
 msgid "Focus on stability and security with easy access to the security updates"
-msgstr "Особое внимание к стабильности и безопасности системы, вместе с возможностью легко получить обновления, связанные с безопасностью."
+msgstr "Особое внимание уделяется стабильности и безопасности системы, а также легкости получения обновлений, связанных с безопасностью."
 
 # type: Content of: <book><preface><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><preface><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:837
 msgid "Focus on smooth upgrade to latest softwares with <literal>unstable</literal> and <literal>testing</literal> archives"
-msgstr "Особое внимание к возможности легко обновлять ПО до последних версий, доступных в нестабильной (<literal>unstable</literal>) и тестируемой (<literal>testing</literal>) версиях системы."
+msgstr "Особое внимание уделяется возможности легко обновлять ПО до последних версий, доступных в нестабильной (<literal>unstable</literal>) и тестируемой (<literal>testing</literal>) версиях системы."
 
 # type: Content of: <book><preface><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><preface><section><itemizedlist><listitem><simpara>
@@ -6643,7 +6643,7 @@ msgstr "Linux: Rute User's Tutorial and Exposition (non-free)"
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:1386
 msgid "You can install some of these packages by the following."
-msgstr "Для установки любых этих и других пакетов используйте команду"
+msgstr "Для установки этих и любых других пакетов используйте команду"
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -6744,7 +6744,7 @@ msgstr "Пароль и учётная запись пользователя (в
 #. type: Content of: <book><chapter><section><section><caution><simpara>
 #: debian-reference.en.xmlt:1411
 msgid "Administrative privilege in this context belongs to someone authorized to perform the system administration task on the workstation.  Never give some manager in the Admin department of your company or your boss such privilege unless they are authorized and capable."
-msgstr "Административные привилегии в данном контексте означают конкретного человека, которому разрешено выполнять задачи администрирования системы. Никогда не давайте таких прав менеджерам IT-отдела или начальству, если только они действительно не авторизованы и способны выполнять эти задачи."
+msgstr "Административные привилегии в данном контексте означают конкретного человека, которому разрешено выполнять задачи администрирования системы. Никогда не давайте таких прав менеджерам IT-отдела или начальству, разве что если они действительно должны и способны выполнять эти задачи."
 
 # type: Content of: <book><chapter><section><section><note><simpara>
 #. type: Content of: <book><chapter><section><section><note><simpara>
@@ -8535,7 +8535,7 @@ msgstr "MC заботится о всех операциях с файлами, 
 #. type: Content of: <book><chapter><section><section><note><simpara>
 #: debian-reference.en.xmlt:2441
 msgid "In some consoles such as <literal>gnome-terminal</literal>(1), key strokes of function-keys may be stolen by the console program.  You can disable these features by \"Edit\" → \"Keyboard Shortcuts\" for <literal>gnome-terminal</literal>."
-msgstr "В некоторых эмуляторах терминал, например в <literal>gnome-terminal</literal>(1), функциональные клавиши могут использоваться, это часто мешает работе разных консольных программ, которые используют эти клавиши. В случае с gnome-terminal можно переназначить или выключить горячие клавиши в меню \"Правка\" -> \"Комбинации клавиш\". Hint: используйте Backspace, чтобы отключить горячую клавишу."
+msgstr "В некоторых эмуляторах терминала, например в <literal>gnome-terminal</literal>(1), функциональные клавиши могут использоваться, это часто мешает работе разных консольных программ, которые используют эти клавиши. В случае с gnome-terminal можно переназначить или выключить горячие клавиши в меню \"Правка\" -> \"Комбинации клавиш\". Подсказка: используйте Backspace, чтобы отключить горячую клавишу."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -9377,10 +9377,11 @@ msgid "The pager"
 msgstr "Пейджер (pager) -- программа просмотра файлов"
 
 # type: Content of: <book><chapter><section><section><simpara>
+# Возможно, стоит таки следовать структуре оригинала в переводе?
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:3008
 msgid "<literal>less</literal>(1) is the enhanced pager (file content browser).  Hit \"<literal>h</literal>\" for help.  It can do much more than <literal>more</literal>(1) and can be supercharged by executing \"<literal>eval $(lesspipe)</literal>\" or \"<literal>eval $(lessfile)</literal>\" in the shell startup script. See more in \"<literal>/usr/share/doc/lessf/LESSOPEN</literal>\".  The \"<literal>-R</literal>\" option allows raw character output and enables ANSI color escape sequences.  See <literal>less</literal>(1)."
-msgstr "<literal>less</literal>(1) -- это больше, чем <literal>more</literal>(1), простейший инструмент просмотра содержимого файлов. Для получения справки в less нажмите \"<literal>h</literal>\". Перед тем, как показать содержимое файла, <literal>less</literal>(1) может подготовить его для правильного и красивого вывода: чтобы использовать эту возможность, добавьте \"<literal>eval $(lesspipe)</literal>\" или \"<literal>eval $(lessfile)</literal>\" к стартовым скриптам. (Подробней читайте в \"<literal>/usr/share/doc/less/LESSOPEN</literal>\"."
+msgstr "<literal>less</literal>(1) -- это больше, чем <literal>more</literal>(1), простейший инструмент просмотра содержимого файлов. Для получения справки в less нажмите \"<literal>h</literal>\". Перед тем, как показать содержимое файла, <literal>less</literal>(1) может подготовить его для правильного и красивого вывода: чтобы использовать эту возможность, добавьте \"<literal>eval $(lesspipe)</literal>\" или \"<literal>eval $(lessfile)</literal>\" к стартовым скриптам. (Подробней читайте в \"<literal>/usr/share/doc/less/LESSOPEN</literal>\")."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -13224,7 +13225,7 @@ msgstr "Достаточно изменить строчку \"<literal>deb</lit
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:5292
 msgid "The use of <literal>testing</literal> or <literal>unstable</literal> is <emphasis role=\"strong\">a lot of fun</emphasis> but comes with some risks.  Even though the <literal>unstable</literal> suite of Debian system looks very stable for most of the times, there have been some package problems on the <literal>testing</literal> and <literal>unstable</literal> suite of Debian system and a few of them were not so trivial to resolve. It may be <emphasis role=\"strong\">quite painful</emphasis> for you. Sometimes, you may have a broken package or missing functionality for a few weeks."
-msgstr "Использование <literal>testing</literal> или <literal>unstable</literal> <emphasis role=\"strong\">интересно</emphasis> но рискованно. Даже не смотря на то, что система <literal>unstable</literal> выглядит обычно очень стабильно, бывают проблемы с некоторыми пакетами, и некоторые из них совсем не просто решить. Это может причинить вам <emphasis role=\"strong\">большие неудобства</emphasis>. Пакет, которым вы пользуетесь, может оказаться в нерабочем состоянии. Требуемая функциональность может отсутствовать неделями."
+msgstr "Использование <literal>testing</literal> или <literal>unstable</literal> <emphasis role=\"strong\">интересно</emphasis>, но рискованно. Даже несмотря на то, что система <literal>unstable</literal> выглядит обычно очень стабильно, бывают проблемы с некоторыми пакетами, и некоторые из них совсем не просто решить. Это может причинить вам <emphasis role=\"strong\">большие неудобства</emphasis>. Пакет, которым вы пользуетесь, может оказаться в нерабочем состоянии. Требуемая функциональность может отсутствовать неделями."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -13799,7 +13800,7 @@ msgstr "Причины, связанные с синхронизацией ар�
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5652
 msgid "Manual intervention to the archive such as package removal (more for <literal>testing</literal>) etc."
-msgstr "Внеочередное изменение архива, например, для удаления пакета (главным образом, для тестирования)."
+msgstr "Внеочередное изменение архива, например, для удаления пакета (главным образом, <literal>testing</literal>)."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -15979,37 +15980,37 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7151
 msgid "Exit <literal>aptitude</literal>."
-msgstr ""
+msgstr "Выйдите из <literal>aptitude</literal>."
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7156
 msgid "Start \"<literal>apt-get -s autoremove|less</literal>\" as root to check what are not used."
-msgstr ""
+msgstr "Запустите \"<literal>apt-get -s autoremove|less</literal>\" от имени суперпользователя для вывода пакетов, которые не нужны по мнению системы APT."
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7161
 msgid "Restart <literal>aptitude</literal> in interactive mode and mark needed packages as \"<literal>m</literal>\"."
-msgstr ""
+msgstr "Снова запустите <literal>aptitude</literal> в интерактивном режиме и пометьте нужные в системе пакеты меткой \"<literal>m</literal>\"."
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7166
 msgid "Restart \"<literal>apt-get -s autoremove|less</literal>\" as root to recheck REMOVED contain only expected packages."
-msgstr ""
+msgstr "Снова запустите \"<literal>apt-get -s autoremove|less</literal>\" как root, чтобы убедиться, что на УДАЛЕНИЕ назначены ТОЛЬКО НЕНУЖНЫЕ ВАМ пакеты."
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7171
 msgid "Start \"<literal>apt-get autoremove|less</literal>\" as root to autoremove unused packages."
-msgstr ""
+msgstr "Запустите \"<literal>apt-get autoremove|less</literal>\" от имени суперпользователя, чтобы автоматически удалить неиспользуемые пакеты."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:7175
 msgid "The \"<literal>m</literal>\" action over \"<literal>Tasks</literal>\" is an optional one to prevent mass package removal situation in future."
-msgstr ""
+msgstr "Выделение \"<literal>Задач</literal>\" (\"<literal>Tasks</literal>\") клавишей \"<literal>m</literal>\" (метка \"Вручную\") может быть полезно, чтобы избежать массового удаления пакетов в будущем."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -16135,7 +16136,7 @@ msgstr "Наконец, выполните \"<literal>aptitude full-upgrade</lit
 #. type: Content of: <book><chapter><section><section><caution><simpara>
 #: debian-reference.en.xmlt:7255
 msgid "It is not wise to skip major Debian release when upgrading between <literal>stable</literal> releases."
-msgstr "При апргейде от одного стабильного выпуска к другому небезопасно пропускать тот стабильный выпуск, который вышел между ними, если такой был."
+msgstr "При апгрейде от одного стабильного выпуска к другому небезопасно пропускать тот стабильный выпуск, который вышел между ними, если такой был."
 
 # type: Content of: <book><chapter><section><section><caution><simpara>
 #. type: Content of: <book><chapter><section><section><caution><simpara>
@@ -17076,7 +17077,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:7811
 msgid "The binary package (a.k.a <literal>udeb</literal>)"
-msgstr "Бинарный пакет (<literal>deb</literal>)"
+msgstr "Бинарный пакет (<literal>udeb</literal>)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -17417,7 +17418,7 @@ msgstr "информация о доступности для всех паке�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:8054
 msgid "<literal>/var/lib/dpkg/diversions</literal>"
-msgstr ""
+msgstr "<literal>/var/lib/dpkg/diversions</literal>"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -18178,7 +18179,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:8437
 msgid "Pin-Priority value of each package is defined by \"Pin-Priority\" entries in the \"<literal>/etc/apt/preferences</literal>\" file or uses its default value."
-msgstr ""
+msgstr "Значение Pin-Priority каждого пакета определяется записями \"Pin-Priority\" в файле \"<literal>/etc/apt/preferences</literal>\", либо используется значение по умолчанию."
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
@@ -18250,13 +18251,13 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:8489
 msgid "\"<literal>/etc/apt/apt.conf</literal>\" configuration file with \"<literal>APT::Default-Release \"stable\";</literal>\" line"
-msgstr ""
+msgstr "в конфигурационном файле \"<literal>/etc/apt/apt.conf</literal>\", например, строчкой \"<literal>APT::Default-Release \"stable\";</literal>\""
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:8494
 msgid "command line option, e.g., \"<literal>apt-get install -t testing some-package</literal>\""
-msgstr ""
+msgstr "параметром командной строки, например \"<literal>apt-get install -t testing some-package</literal>\""
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
