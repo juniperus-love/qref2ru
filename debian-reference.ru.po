@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Справочник по Debian\n"
 "POT-Creation-Date: 2010-07-26 20:45+0500\n"
-"PO-Revision-Date: 2010-08-20 23:06+0400\n"
+"PO-Revision-Date: 2010-08-21 11:05+0400\n"
 "Last-Translator: Juniperus Love <qref2ru@gmail.com>\n"
 "Language-Team:\n"
 "Language: \n"
@@ -4388,7 +4388,7 @@ msgstr "Соглашения, принятые в документе"
 #. type: Content of: <book><preface><section><section><simpara>
 #: debian-reference.en.xmlt:943
 msgid "This document provides information through the following simplified presentation style with <literal>bash</literal>(1) shell command examples."
-msgstr "Этот \"Справочник по Debian\" предоставляет информацию в виде коротких скриптов для командного интерпретатора <literal>Bash</literal> и комментариев к ним."
+msgstr "Этот \"Справочник по Debian\" предоставляет информацию в виде коротких сценариев для командного интерпретатора <literal>Bash</literal> и комментариев к ним."
 
 # type: Content of: <book><preface><section><section><screen>
 #. type: Content of: <book><preface><section><section><screen>
@@ -7483,7 +7483,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:1838
 msgid "If you need to access information displayed by \"<literal>ls -l</literal>\" in shell script, you should use pertinent commands such as <literal>test</literal>(1), <literal>stat</literal>(1) and <literal>readlink</literal>(1).  The shell builtin such as \"<literal>[</literal>\" or \"<literal>test</literal>\" may be used too."
-msgstr "Для выполнения проверок, связанных со свойствами файла в скриптах, можно использовать команды <literal>test</literal>(1), <literal>stat</literal>(1) и <literal>readlink</literal>(1). Также часто используется встроенная команда shell -- \"<literal>[</literal>\" или \"<literal>test</literal>\"."
+msgstr "Для выполнения проверок, связанных со свойствами файла, в сценариях можно использовать команды <literal>test</literal>(1), <literal>stat</literal>(1) и <literal>readlink</literal>(1). Также часто используется встроенная команда оболочки -- \"<literal>[</literal>\" или \"<literal>test</literal>\"."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -9000,7 +9000,7 @@ msgstr "<ulink url=\"&tenexcshell;\">TENEX C Shell</ulink>: расширенна
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:2714
 msgid "Debian <ulink url=\"&almquistshell;\">Almquist Shell</ulink>, good for shell script"
-msgstr "Debian <ulink url=\"&almquistshell;\">Almquist Shell</ulink>, хорош для скриптов"
+msgstr "Debian <ulink url=\"&almquistshell;\">Almquist Shell</ulink>, хорош для сценариев"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -9381,7 +9381,7 @@ msgstr "Пейджер (pager) -- программа просмотра файл
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:3008
 msgid "<literal>less</literal>(1) is the enhanced pager (file content browser).  Hit \"<literal>h</literal>\" for help.  It can do much more than <literal>more</literal>(1) and can be supercharged by executing \"<literal>eval $(lesspipe)</literal>\" or \"<literal>eval $(lessfile)</literal>\" in the shell startup script. See more in \"<literal>/usr/share/doc/lessf/LESSOPEN</literal>\".  The \"<literal>-R</literal>\" option allows raw character output and enables ANSI color escape sequences.  See <literal>less</literal>(1)."
-msgstr "<literal>less</literal>(1) -- это больше, чем <literal>more</literal>(1), простейший инструмент просмотра содержимого файлов. Для получения справки в less нажмите \"<literal>h</literal>\". Перед тем, как показать содержимое файла, <literal>less</literal>(1) может подготовить его для правильного и красивого вывода: чтобы использовать эту возможность, добавьте \"<literal>eval $(lesspipe)</literal>\" или \"<literal>eval $(lessfile)</literal>\" к стартовым скриптам. (Подробней читайте в \"<literal>/usr/share/doc/less/LESSOPEN</literal>\")."
+msgstr "<literal>less</literal>(1) -- это больше, чем <literal>more</literal>(1), простейший инструмент просмотра содержимого файлов. Для получения справки в less нажмите \"<literal>h</literal>\". Перед тем, как показать содержимое файла, <literal>less</literal>(1) может подготовить его для правильного и красивого вывода: чтобы использовать эту возможность, добавьте \"<literal>eval $(lesspipe)</literal>\" или \"<literal>eval $(lessfile)</literal>\" к стартовым сценариям. (Подробней читайте в \"<literal>/usr/share/doc/less/LESSOPEN</literal>\")."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -9405,7 +9405,7 @@ msgstr "Я думаю, лучше начать с команд Vim, поскол
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:3014
 msgid "If you chose either <ulink url=\"&emacs;\">Emacs</ulink> or <ulink url=\"&xemacs;\">XEmacs</ulink> instead as your choice of the editor, that is another good choice indeed, particularly for programming.  Emacs has a plethora of other features as well, including functioning as a newsreader, directory editor, mail program, etc.  When used for programming or editing shell scripts, it intelligently recognizes the format of what you are working on, and tries to provide assistance.  Some people maintain that the only program they need on Linux is Emacs.  Ten minutes learning Emacs now can save hours later.  Having the GNU Emacs manual for reference when learning Emacs is highly recommended."
-msgstr "Если же ваш выбор будет в пользу <ulink url=\"&emacs;\">Emacs</ulink> или <ulink url=\"&xemacs;\">XEmacs</ulink>, это тоже хорошее решение, в частности, для программирования. Emacs изобилует надстройками, включая функциональность для чтения новостей, почтового клиента, редактора каталогов и т.д. При использовании для программирования или редактирования скриптов, он распознаёт форматы файлов и пытается оказывать помощь. Некоторые находят Emacs единственной нужной программой в системе Linux. Десять минут изучения Emacs сейчас может впоследствии сэкономить часы. Очень рекомендуется иметь Руководство по GNU Emacs в качестве справочника при изучении."
+msgstr "Если же ваш выбор будет в пользу <ulink url=\"&emacs;\">Emacs</ulink> или <ulink url=\"&xemacs;\">XEmacs</ulink>, это тоже хорошее решение, в частности, для программирования. Emacs изобилует надстройками, включая функциональность для чтения новостей, почтового клиента, редактора каталогов и т.д. При использовании для программирования или редактирования сценариев, он распознаёт форматы файлов и пытается оказывать помощь. Некоторые находят Emacs единственной нужной программой в системе Linux. Десять минут изучения Emacs сейчас может впоследствии сэкономить часы. Очень рекомендуется иметь Руководство по GNU Emacs в качестве справочника при изучении."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -10870,7 +10870,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:3869
 msgid "As you can see here, the output of command is affected by the environment variable to produce French output.  If you want the environment variable to be inherited to subprocesses (e.g., when calling shell script), you need to <emphasis role=\"strong\">export</emphasis> it instead by the following."
-msgstr "Как видите, вывод команды сильно зависит от переменной среды, в данном случае язык вывода меняется на французский. Если нужно, чтобы переменная окружения была \"видна\" для запускаемых процессов (например, для скриптов), её нужно <emphasis role=\"strong\">экспортировать</emphasis>:"
+msgstr "Как видите, вывод команды сильно зависит от переменной среды, в данном случае язык вывода меняется на французский. Если нужно, чтобы переменная окружения была \"видна\" для запускаемых процессов (например, для сценариев), её нужно <emphasis role=\"strong\">экспортировать</emphasis>:"
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -12630,7 +12630,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:4841
 msgid "Script snippets for piping commands"
-msgstr "Обрывки скриптов для цепочек команд"
+msgstr "Обрывки сценариев для цепочек команд"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -12648,7 +12648,7 @@ msgstr "Приёмы перенаправления команд"
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #: debian-reference.en.xmlt:4851
 msgid "script snippet (type in one line)"
-msgstr "кусочек скрипта (пишите в одну строку)"
+msgstr "отрывок сценария (пишите в одну строку)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><thead><row><entry>
@@ -12918,7 +12918,7 @@ msgstr "Скрипт из одной строчки может \"пройтис�
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:5031
 msgid "When using the shell interactive mode becomes too complicated, please consider to write a shell script (see <xref linkend=\"_the_shell_script\"/>)."
-msgstr "Когда становится сложно дать команду в одну строчку, можно написать скрипт. См. <xref linkend=\"_the_shell_script\"/>."
+msgstr "Когда становится сложно дать команду в одну строчку, можно создать сценарий. См. <xref linkend=\"_the_shell_script\"/>."
 
 # type: Content of: <book><chapter><title>
 #. type: Content of: <book><chapter><title>
@@ -14035,7 +14035,7 @@ msgstr "Распаковать полученный пакет."
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5839 debian-reference.en.xmlt:5880
 msgid "Run <emphasis role=\"strong\">preinst</emphasis> script"
-msgstr "Выполнить скрипт \"<emphasis role=\"strong\">preinst</emphasis>\" пакета."
+msgstr "Выполнить сценарий \"<emphasis role=\"strong\">preinst</emphasis>\" пакета."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><orderedlist><listitem><simpara>
@@ -14047,7 +14047,7 @@ msgstr "Установить файлы в положенные им места.
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5849 debian-reference.en.xmlt:5890
 msgid "Run <emphasis role=\"strong\">postinst</emphasis> script"
-msgstr "Выполнить скрипт \"<emphasis role=\"strong\">postinst</emphasis>\"."
+msgstr "Выполнить сценарий \"<emphasis role=\"strong\">postinst</emphasis>\"."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -14078,7 +14078,7 @@ msgstr "<emphasis role=\"strong\">Remove</emphasis> -- удаление паке
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5911 debian-reference.en.xmlt:5942
 msgid "Run <emphasis role=\"strong\">prerm</emphasis> script"
-msgstr "Выполнить скрипт \"<emphasis role=\"strong\">prerm</emphasis>\" пакета."
+msgstr "Выполнить сценарий \"<emphasis role=\"strong\">prerm</emphasis>\" пакета."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><orderedlist><listitem><simpara>
@@ -14090,7 +14090,7 @@ msgstr "Удалить установленные файлы, <emphasis role=\"s
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:5921 debian-reference.en.xmlt:5952
 msgid "Run <emphasis role=\"strong\">postrm</emphasis> script"
-msgstr "Выполнить скрипт \"<literal>postrm</literal>\" пакета."
+msgstr "Выполнить сценарий \"<literal>postrm</literal>\" пакета."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -16514,7 +16514,7 @@ msgstr "<literal>configure-debian</literal>(8) из одноимённого п�
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:7511
 msgid "<literal>dpkg-reconfigure</literal>(8) runs package scripts using <literal>debconf</literal>(1) as its backend."
-msgstr "<literal>dpkg-reconfigure</literal>(8) запускает установочные скрипты пакетов, используя систему <literal>debconf</literal>(1)."
+msgstr "<literal>dpkg-reconfigure</literal>(8) запускает установочные сценарии пакетов, используя систему <literal>debconf</literal>(1)."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -16610,13 +16610,13 @@ msgstr "<literal>grep-dctrl</literal>(1), <literal>grep-status</literal>(1) и <
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:7556
 msgid "The \"<literal>dpkg -S &lt;file_name_pattern&gt;</literal>\" can be used search package names which contain files with the matching name installed by <literal>dpkg</literal>.  But this overlooks files created by the maintainer scripts."
-msgstr "\"<literal>dpkg -S &lt;шаблон_имени_файла&gt;</literal>\" ищет имена пакетов, содержащих файлы с заданным шаблоном именем (среди установленных с помощью <literal>dpkg</literal>). Файлы, созданные установочными скриптами не учитываются (они не входят в пакет, а создаются при установке)."
+msgstr "\"<literal>dpkg -S &lt;шаблон_имени_файла&gt;</literal>\" ищет имена пакетов, содержащих файлы с заданным шаблоном именем (среди установленных с помощью <literal>dpkg</literal>). Файлы, созданные установочными сценариями, не учитываются (они не входят в пакет, а создаются при установке)."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:7557
 msgid "If you need to make more elaborate search on the dpkg meta data, you need to run \"<literal>grep -e regex_pattern *</literal>\" command in the \"<literal>/var/lib/dpkg/info/</literal>\" directory.  This makes you search words mentioned in package scripts and installation query texts."
-msgstr "Если вам нужно выполнить ещё более сложный поиск, используйте \"<literal>grep -e шаблон *</literal>\" в каталоге \"<literal>/var/lib/dpkg/info/</literal>\". Это позволит \"обыскать\" установочные скрипты и диалоги."
+msgstr "Если вам нужно выполнить ещё более сложный поиск, используйте \"<literal>grep -e шаблон *</literal>\" в каталоге \"<literal>/var/lib/dpkg/info/</literal>\". Это позволит \"обыскать\" установочные сценарии и диалоги."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -17573,7 +17573,7 @@ msgstr "Команда dpkg-divert"
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:8129
 msgid "File <emphasis role=\"strong\">diversions</emphasis> provided by the <literal>dpkg-divert</literal>(8) command are a way of forcing <literal>dpkg</literal>(1) not to install a file into its default location, but to a <emphasis role=\"strong\">diverted</emphasis> location.  The use of <literal>dpkg-divert</literal> is meant for the package maintenance scripts.  Its casual use by the system administrator is deprecated."
-msgstr "При установке пакетов существует способ заставить некоторые файлы устанавливаться в нужные места, а не по-умолчанию. Это делается с помощью команды <literal>dpkg-divert</literal>, которая сохранит заданные значения в файле <emphasis role=\"strong\">diversions</emphasis>. Однако <literal>dpkg-divert</literal> предназначен для использования установочными скриптами пакетов, но не системным администратором."
+msgstr "При установке пакетов существует способ заставить некоторые файлы устанавливаться в нужные места, а не по-умолчанию. Это делается с помощью команды <literal>dpkg-divert</literal>, которая сохранит заданные значения в файле <emphasis role=\"strong\">diversions</emphasis>. Однако <literal>dpkg-divert</literal> предназначен для использования в установочных сценариях пакетов, а не системным администратором."
 
 # type: Content of: <book><chapter><section><title>
 #. type: Content of: <book><chapter><section><title>
@@ -17633,7 +17633,7 @@ msgstr "Ошибки сопровождающего пакет (мейнтейн
 #. type: Content of: <book><chapter><section><section><caution><simpara>
 #: debian-reference.en.xmlt:8148
 msgid "The use of third party packages introduces significant system risks via maintainer scripts which are run with root privilege and can do anything to your system.  The <literal>dpkg</literal>(1) command only protects against overwriting by the unpacking."
-msgstr "Использование пакетов из несовместимых или непредназначенных для Debian архивов ведёт к опасности, связанной с запуском установочных скриптов, которые выполняются от имени root и могут выполнить любые действия в вашей системе. Только команда <literal>dpkg</literal>(1) защищает от файлы от перезаписи во время распаковки."
+msgstr "Использование пакетов из несовместимых или непредназначенных для Debian архивов ведёт к опасности, связанной с запуском установочных сценариев, которые выполняются от имени суперпользователя и могут выполнить любые действия в вашей системе. Только команда <literal>dpkg</literal>(1) защищает от файлы от перезаписи во время распаковки."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -17652,19 +17652,19 @@ msgstr "$ sudo dpkg -P &lt;старый_пакет&gt;"
 #. type: Content of: <book><chapter><section><section><title>
 #: debian-reference.en.xmlt:8154
 msgid "Fixing broken package script"
-msgstr "Как исправить неработающий установочный скрипт"
+msgstr "Как исправить неработающий установочный сценарий"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:8155
 msgid "When a command in the package script returns error for some reason and the script exits with error, the package management system aborts their action and ends up with partially installed packages.  When a package contains bugs in its removal scripts, the package may become impossible to remove and quite nasty."
-msgstr "Когда команда в установочном скрипте возвращает ошибку по какой-либо причине и скрипта аварийно завершается, система управления пакетами останавливает все свои действия завершается, лишь частично установив пакеты. Когда в скриптах удаления пакета оказывается ошибка, этот пакет становится невозможно удалить."
+msgstr "Когда команда в установочном сценарии возвращает ошибку по какой-либо причине и сценарий аварийно завершается, система управления пакетами останавливает все свои действия завершается, лишь частично установив пакеты. Когда в сценариях удаления пакета оказывается ошибка, этот пакет становится невозможно удалить."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:8156
 msgid "For the package script problem of \"<literal>&lt;package_name&gt;</literal>\", you should look into following package scripts."
-msgstr "В этом случае, если возникли проблемы с пакетом \"<literal>&lt;имя_пакета&gt;</literal>\", вам нужно заглянуть в следующие скрипты установки."
+msgstr "В этом случае, если возникли проблемы с пакетом \"<literal>&lt;имя_пакета&gt;</literal>\", вам нужно заглянуть в следующие установочные сценарии."
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><simpara>
@@ -18627,7 +18627,7 @@ msgstr "Автоматическое получение и обновление 
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:8625
 msgid "The <literal>apt</literal> package comes with its own cron script \"<literal>/etc/cron.daily/apt</literal>\" to support the automatic download of packages.  This script can be enhanced to perform the automatic upgrade of packages by installing the <literal>unattended-upgrades</literal> package. These can be customized by parameters in \"<literal>/etc/apt/apt.conf.d/02backup</literal>\" and \"<literal>/etc/apt/apt.conf.d/50unattended-upgrades</literal>\" as described in \"<literal>/usr/share/doc/unattended-upgrades/README</literal>\"."
-msgstr "Пакет <literal>apt</literal> содержит собственный скрипт для <literal>cron</literal>: \"<literal>/etc/cron.daily/apt</literal>\", который поддерживает автоматическое получение пакетов. Этот скрипт может автоматически устанавливать обновления, если для этого установлен пакет <literal>unattended-upgrades</literal>. Настройки находятся в \"<literal>/etc/apt/apt.conf.d/02backup</literal>\" и \"<literal>/etc/apt/apt.conf.d/50unattended-upgrades</literal>\" и описаны в \"<literal>/usr/share/doc/unattended-upgrades/README</literal>\"."
+msgstr "Пакет <literal>apt</literal> содержит собственный сценарий для <literal>cron</literal>: \"<literal>/etc/cron.daily/apt</literal>\", который поддерживает автоматическое получение пакетов. Этот сценарий может автоматически устанавливать обновления, если для этого установлен пакет <literal>unattended-upgrades</literal>. Настройки находятся в \"<literal>/etc/apt/apt.conf.d/02backup</literal>\" и \"<literal>/etc/apt/apt.conf.d/50unattended-upgrades</literal>\" и описаны в \"<literal>/usr/share/doc/unattended-upgrades/README</literal>\"."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -18777,7 +18777,7 @@ msgstr "Кто закачал пакет?"
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:8662
 msgid "Although the maintainer name listed in \"<literal>/var/lib/dpkg/available</literal>\" and \"<literal>/usr/share/doc/package_name/changelog</literal>\" provide some information on \"who is behind the packaging activity\", the actual uploader of the package is somewhat obscure.  <literal>who-uploads</literal>(1) in the <literal>devscripts</literal> package identifies the actual uploader of Debian source packages."
-msgstr "Хотя имя мейнтейнера, указанное в \"<literal>/var/lib/dpkg/available</literal>\" и \"<literal>/usr/share/doc/package_name/changelog</literal>\" даёт понять, кто управляет изменениями в пакетах, закачать пакет в архив может и кто-то другой. Узнать, кто же это был, можно с помощью скрипта <literal>who-uploads</literal>(1), который входит в пакет <literal>devscripts</literal>."
+msgstr "Хотя имя мейнтейнера, указанное в \"<literal>/var/lib/dpkg/available</literal>\" и \"<literal>/usr/share/doc/package_name/changelog</literal>\" даёт понять, кто управляет изменениями в пакетах, закачать пакет в архив может и кто-то другой. Узнать, кто же это был, можно с помощью сценария <literal>who-uploads</literal>(1), который входит в пакет <literal>devscripts</literal>."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -19217,7 +19217,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:8876
 msgid "The <emphasis role=\"strong\">postupload</emphasis> hook script initiated by <literal>dupload</literal>(1) creates updated archive files for each upload."
-msgstr "Скрипт <emphasis role=\"strong\">pustupload</emphasis>, вызываемый из <literal>dupload</literal>(1), обновляет данные архива."
+msgstr "Сценарий <emphasis role=\"strong\">postupload</emphasis>, вызываемый из <literal>dupload</literal>(1), обновляет данные архива."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -19870,13 +19870,13 @@ msgstr "Термин \"мини-система Debian\" придуман авт�
 #. type: Content of: <book><chapter><section><simpara>
 #: debian-reference.en.xmlt:9268
 msgid "The \"<literal>/init</literal>\" script is executed as the first program in this root filesystem on the memory.  It is a shell script program which initializes the kernel in user space and hands control over to the next stage. This mini-Debian system offers flexibility to the boot process such as adding kernel modules before the main boot process or mounting the root filesystem as an encrypted one."
-msgstr "Мини-система Debian -- третий этап загрузки, который получает управление от загрузчика и передаёт его программам запуска основной системы Debian. Этот этап может отсутствовать в системе, но используется в Debian по-умолчанию. После загрузки ядра запускается скрипт \"<literal>/init</literal>\" из образа мини-системы <literal>initrd</literal> в памяти. Он настраивает (включает) параметры ядра в пользовательской области (user space) и передаёт управление следующему этапу. Мини-система предоставляет возможность добавить нужные модули до того, как главный загрузочный процесс начнёт, например, подключать корневую файловую систему как зашифрованную."
+msgstr "Мини-система Debian -- третий этап загрузки, который получает управление от загрузчика и передаёт его программам запуска основной системы Debian. Этот этап может отсутствовать в системе, но используется в Debian по-умолчанию. После загрузки ядра запускается сценарий \"<literal>/init</literal>\" из образа мини-системы <literal>initrd</literal> в памяти. Он настраивает (включает) параметры ядра в пользовательской области (user space) и передаёт управление следующему этапу. Мини-система предоставляет возможность добавить нужные модули до того, как главный загрузочный процесс начнёт, например, подключать корневую файловую систему как зашифрованную."
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
 #: debian-reference.en.xmlt:9269
 msgid "You can interrupt this part of the boot process to gain root shell by providing \"<literal>break=init</literal>\" etc. to the kernel boot parameter. See the \"<literal>/init</literal>\" script for more break conditions.  This shell environment is sophisticated enough to make a good inspection of your machine's hardware."
-msgstr "Вы можете прервать этот этап загрузки и получить командную строку, добавив параметр ядра \"<literal>break=init</literal>\". См. скрипт \"<literal>/init</literal>\" о других случаях остановки. Это окружение командной строки достаточно сложное, чтобы определить установленное оборудование."
+msgstr "Вы можете прервать этот этап загрузки и получить командную строку, добавив параметр ядра \"<literal>break=init</literal>\". См. сценарий \"<literal>/init</literal>\" о других случаях остановки. Это окружение командной строки достаточно сложное, чтобы определить установленное оборудование."
 
 # type: Content of: <book><chapter><section><simpara>
 #. type: Content of: <book><chapter><section><simpara>
@@ -20034,7 +20034,7 @@ msgstr "Уровень выполнения, на который система 
 #. type: Content of: <book><chapter><section><simpara>
 #: debian-reference.en.xmlt:9443
 msgid "All actual script files executed by the init system are located in the directory \"<literal>/etc/init.d/</literal>\"."
-msgstr "Все скрипты, вызываемые при инициализации системы, находятся в \"<literal>/etc/init.d/</literal>\"."
+msgstr "Все сценарии, вызываемые при инициализации системы, находятся в \"<literal>/etc/init.d/</literal>\"."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -20046,7 +20046,7 @@ msgstr "Уровни выполнения (runlevels)"
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:9446
 msgid "Each <ulink url=\"&runlevel;\">runlevel</ulink> uses a directory for its configuration and has specific meaning as the following."
-msgstr "Каждый <ulink url=\"&runlevel;\">уровень выполнения</ulink> использует каталог, где находятся настраивающие его скрипты. Каждый уровень выполнения имеет свои задачи."
+msgstr "Для каждого <ulink url=\"&runlevel;\">уровень выполнения</ulink> существует каталог, где находятся настраивающие его сценарии. Каждый уровень выполнения имеет свои задачи."
 
 # type: Content of: <book><chapter><section><section><table><title>
 #. type: Content of: <book><chapter><section><section><table><title>
@@ -20300,7 +20300,7 @@ msgstr "В <literal>squeeze</literal> вместо старого, алфави�
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:9616
 msgid "The name of the symlink in each runlevel directory has the form \"<literal>S&lt;2-digit-number&gt;&lt;original-name&gt;</literal>\" or \"<literal>K&lt;2-digit-number&gt;&lt;original-name&gt;</literal>\". The 2-digit-number is used to determine the order in which to run the scripts. \"<literal>S</literal>\" is for \"Start\" and \"<literal>K</literal>\" is for \"Kill\"."
-msgstr "В каталогах уровней выполнения \"<literal>/etc/rc&lt;уровень&gt;.d</literal>\" находятся сим-линки с именами в следующем формате: \"<literal>S&lt;2-значное_число&gt;&lt;имя скрипта&gt;</literal>\" или \"<literal>K&lt;2-значное_число&gt;&lt;имя_скрипта&gt;</literal>\". 2-значное число определяет очерёдность запуска скрипта (меньший номер вызывается первым), а \"<literal>S</literal>\" и \"<literal>K</literal>\" означают запуск или остановку службы (\"Start\" или \"Kill\")."
+msgstr "В каталогах уровней выполнения \"<literal>/etc/rc&lt;уровень&gt;.d</literal>\" находятся символические ссылки с именами в следующем формате: \"<literal>S&lt;2-значное_число&gt;&lt;имя_сценария&gt;</literal>\" или \"<literal>K&lt;2-значное_число&gt;&lt;имя_сценария&gt;</literal>\". 2-значное число определяет очерёдность запуска сценария (меньший номер вызывается первым), а \"<literal>S</literal>\" и \"<literal>K</literal>\" означают запуск или остановку (\"Start\" или \"Kill\")."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -20312,13 +20312,13 @@ msgstr "Если \"<literal>CONCURRENCY=none</literal>\", то <literal>init</li
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:9621
 msgid "The script names starting with a \"<literal>K</literal>\" in \"<literal>/etc/rc&lt;n&gt;.d/</literal>\" are executed in alphabetical order with the single argument \"<literal>stop</literal>\". (killing services)"
-msgstr "Скрипты с именами \"<literal>K</literal>\" в \"<literal>/etc/rc&lt;n&gt;.d/</literal>\" выполняются по порядку с единственным параметром \"<literal>stop</literal>\" (остановка сервисов)."
+msgstr "Сценарии с именами \"<literal>K</literal>\" в \"<literal>/etc/rc&lt;n&gt;.d/</literal>\" выполняются по порядку с единственным параметром \"<literal>stop</literal>\" (остановка сервисов)."
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:9626
 msgid "The script names starting with an \"<literal>S</literal>\" in \"<literal>/etc/rc&lt;n&gt;.d/</literal>\" are executed in alphabetical order with the single argument \"<literal>start</literal>\". (starting services)"
-msgstr "Скрипты с именами \"<literal>S</literal>\" в \"<literal>/etc/rc&lt;n&gt;.d/</literal>\" выполняются по порядку с единственным параметром \"<literal>start</literal>\" (запуск сервисов)."
+msgstr "Сценарии с именами \"<literal>S</literal>\" в \"<literal>/etc/rc&lt;n&gt;.d/</literal>\" выполняются по порядку с единственным параметром \"<literal>start</literal>\" (запуск сервисов)."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -20406,7 +20406,7 @@ msgstr "Параметры для init-скриптов"
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:9663
 msgid "The default parameter for each init script in \"<literal>/etc/init.d/</literal>\" is given by the corresponding file in \"<literal>/etc/default/</literal>\" which contains environment variable assignments <emphasis role=\"strong\">only</emphasis>. This choice of directory name is specific to the Debian system.  It is roughly the equivalent of the \"<literal>/etc/sysconfig</literal>\" directory found in <ulink url=\"&redhatlinux;\">Red Hat Linux</ulink> and other distributions.  For example, \"<literal>/etc/default/cron</literal>\" can be used to control how \"<literal>/etc/init.d/cron</literal>\" works."
-msgstr "Параметры для скриптов в \"<literal>/etc/init.d/</literal>\" берутся из соответствующих файлов в \"<literal>/etc/default/</literal>\", содержащих <emphasis role=\"strong\">только</emphasis> переменные окружения. Это имя каталога -- особенность Debian. Он делает примерно то же, что каталог \"<literal>/etc/sysconfig</literal>\" в <ulink url=\"&redhatlinux;\">Red Hat</ulink> и других дистрибутивах. Например, \"<literal>/etc/default/cron</literal>\" можно использовать для настройки поведения \"<literal>/etc/init.d/cron</literal>\"."
+msgstr "Параметры для сценариев в \"<literal>/etc/init.d/</literal>\" берутся из соответствующих файлов в \"<literal>/etc/default/</literal>\", содержащих <emphasis role=\"strong\">только</emphasis> переменные окружения. Это имя каталога -- особенность Debian. Он делает примерно то же, что каталог \"<literal>/etc/sysconfig</literal>\" в <ulink url=\"&redhatlinux;\">Red Hat</ulink> и других дистрибутивах. Например, \"<literal>/etc/default/cron</literal>\" можно использовать для настройки поведения \"<literal>/etc/init.d/cron</literal>\"."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -20418,7 +20418,7 @@ msgstr "В \"<literal>/etc/default/rcS</literal>\" можно настраива
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:9665
 msgid "If you cannot get the behavior you want by changing such variables then you may <ulink url=\"&modifytheinitscripts;\">modify the init scripts</ulink> themselves.  These are configuration files editable by system administrators."
-msgstr "Если не получается добиться нужного поведения с помощью этих параметров, можно отредактировать сами скрипты в \"<literal>/etc/init.d/</literal>\". Они редактируемы для системного администратора."
+msgstr "Если не получается добиться нужного поведения с помощью этих параметров, можно отредактировать сами сценарии в \"<literal>/etc/init.d/</literal>\". Они редактируемы для системного администратора."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -20430,7 +20430,7 @@ msgstr "Имя системы (hostname)"
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:9669
 msgid "The kernel maintains the system <emphasis role=\"strong\">hostname</emphasis>.  The init script in runlevel S which is symlinked to \"<literal>/etc/init.d/hostname.sh</literal>\" sets the system hostname at boot time (using the <literal>hostname</literal> command) to the name stored in \"<literal>/etc/hostname</literal>\".  This file should contain <emphasis role=\"strong\">only</emphasis> the system hostname, not a fully qualified domain name."
-msgstr "Ядро поддерживает имя системы в сети -- <emphasis role=\"strong\">hostname</emphasis>. Оно устанавливается на уровне \"<literal>S</literal>\" скриптом \"<literal>/etc/init.d/hostname.sh</literal>\" при загрузки системы с помощью команды \"<literal>hostname</literal>\" согласно имени, содержащемуся в \"<literal>/etc/hostname</literal>\". Этот файл должен содержать <emphasis role=\"strong\">только</emphasis> имя hostname, без имени домена."
+msgstr "Ядро поддерживает имя системы в сети -- <emphasis role=\"strong\">hostname</emphasis>. Оно устанавливается на уровне \"<literal>S</literal>\" сценарием \"<literal>/etc/init.d/hostname.sh</literal>\" при загрузки системы с помощью команды \"<literal>hostname</literal>\" согласно имени, содержащемуся в \"<literal>/etc/hostname</literal>\". Этот файл должен содержать <emphasis role=\"strong\">только</emphasis> имя hostname, без имени домена."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -20520,7 +20520,7 @@ msgstr "Многие сетевые службы (см. <xref linkend=\"_network
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:9712
 msgid "Some network services can be started on demand using the <ulink url=\"&superserver;\">super-server</ulink> <literal>inetd</literal> (or its equivalents).  The <literal>inetd</literal> is started at boot time by \"<literal>/etc/rc2.d/S20inetd</literal>\" (for RUNLEVEL=2) which is a symlink to \"<literal>/etc/init.d/inetd</literal>\".  Essentially, <literal>inetd</literal> allows one running daemon to invoke several others, reducing load on the system."
-msgstr "Некоторые службы могут запускаться по требованию <ulink url=\"&superserver;\">супер-сервером</ulink> inetd (или его аналогом). Inetd запускается во время загрузки скриптом \"<literal>/etc/init.d/inetd</literal>\", на который указывает символическая ссылка \"<literal>/etc/rc2.d/S20inetd</literal>\" (для RUNLEVEL=2). Демон <literal>inetd</literal> запускает другие сетевые службы, как только они потребуются, снижая нагрузку на систему."
+msgstr "Некоторые службы могут запускаться по требованию <ulink url=\"&superserver;\">супер-сервером</ulink> inetd (или его аналогом). Inetd запускается во время загрузки сценарием \"<literal>/etc/init.d/inetd</literal>\", на который указывает символическая ссылка \"<literal>/etc/rc2.d/S20inetd</literal>\" (для RUNLEVEL=2). Демон <literal>inetd</literal> запускает другие сетевые службы, как только они потребуются, снижая нагрузку на систему."
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -30100,13 +30100,13 @@ msgstr "Из командной строки -- командой <literal>startx
 #. type: Content of: <book><chapter><section><itemizedlist><listitem><simpara>
 #: debian-reference.en.xmlt:16893
 msgid "One of the <ulink url=\"&xdisplaymanager;\">X display manager</ulink> daemon programs <literal>*dm</literal> started from the end of the start up script in \"<literal>/etc/rc?.d/</literal>\" (\"<literal>?</literal>\" corresponding to the runlevel) directory"
-msgstr "В качестве службы (при запуске всей системы, например): скрипт в каталоге \"<literal>/etc/rc?.d/</literal>\" (где \"<literal>?</literal>\" -- уровень выполнения, runlevel) в конце своей работы запускает <ulink url=\"&xdisplaymanager;\">дисплейный менеджер</ulink>, который обычно имеет название <literal>*dm</literal>."
+msgstr "В качестве службы (при запуске всей системы, например): сценарий в каталоге \"<literal>/etc/rc?.d/</literal>\" (где \"<literal>?</literal>\" -- уровень выполнения, runlevel) в конце своей работы запускает <ulink url=\"&xdisplaymanager;\">дисплейный менеджер</ulink>, который обычно имеет название <literal>*dm</literal>."
 
 # type: Content of: <book><chapter><section><tip><simpara>
 #. type: Content of: <book><chapter><section><tip><simpara>
 #: debian-reference.en.xmlt:16898
 msgid "The start up script for the display manager daemons checks the content of the \"<literal>/etc/X11/default-display-manager</literal>\" file before actually executing themselves.  This ensures to have only one <ulink url=\"&xdisplaymanager;\">X display manager</ulink> daemon program activated."
-msgstr "Скрипт, запускающий конкретный дисплейный менеджер, проверяет содержимое файла \"<literal>/etc/X11/default-display-manager</literal>\", до того, как запустить свой. Этим удостоверяется, что есть только один используемый <ulink url=\"&xdisplaymanager;\">дисплейный менеджер</ulink>."
+msgstr "Сценарий, запускающий конкретный дисплейный менеджер, проверяет содержимое файла \"<literal>/etc/X11/default-display-manager</literal>\", до того, как запустить свой. Этим удостоверяется, что есть только один используемый <ulink url=\"&xdisplaymanager;\">дисплейный менеджер</ulink>."
 
 # type: Content of: <book><chapter><section><tip><simpara>
 #. type: Content of: <book><chapter><section><tip><simpara>
@@ -30124,13 +30124,13 @@ msgstr "По-существу, во всех этих способах выпо�
 #. type: Content of: <book><chapter><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:16907
 msgid "The script specified as the argument of \"<literal>/etc/X11/Xsession</literal>\" by the X display manager, if it is defined."
-msgstr "Скрипт, заданный как аргумент для \"<literal>/etc/X11/Xsession</literal>\" дисплейным менеджером, если он определён."
+msgstr "Сценарий, заданный как аргумент для \"<literal>/etc/X11/Xsession</literal>\" дисплейным менеджером, если он определён."
 
 # type: Content of: <book><chapter><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><orderedlist><listitem><simpara>
 #: debian-reference.en.xmlt:16912
 msgid "The \"<literal>~/.xsession</literal>\" or \"<literal>~/.Xsession</literal>\" script, if it is defined."
-msgstr "Скрипт \"<literal>~/.xsession</literal>\" или \"<literal>~/.Xsession</literal>\", если определён."
+msgstr "Сценарий \"<literal>~/.xsession</literal>\" или \"<literal>~/.Xsession</literal>\", если определён."
 
 # type: Content of: <book><chapter><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><orderedlist><listitem><simpara>
@@ -30311,7 +30311,7 @@ msgstr "Защищённый терминал, подключенный чере
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:16985
 msgid "If you want to add similar feature to your normal display manager <literal>gdm</literal>, create executable shell script at \"<literal>/usr/local/bin/ssh-session</literal>\" as the following."
-msgstr "Если вы хотите добавить похожую возможность к вашему обычному оконному менеджеру, например, <literal>gdm</literal>, создайте исполняемый скрипт shell, \"<literal>/usr/local/bin/ssh-session</literal>\" с таким содержанием:"
+msgstr "Если вы хотите добавить похожую возможность к вашему обычному оконному менеджеру, например, <literal>gdm</literal>, создайте исполняемый сценарий оболочки \"<literal>/usr/local/bin/ssh-session</literal>\" с таким содержанием:"
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -34593,7 +34593,7 @@ msgstr "Вот пример для GNOME, как создать значок д�
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:20309
 msgid "Create an executable program \"<literal>mc-term</literal>\" by the following."
-msgstr "Создадим скрипт \"<literal>mc-term</literal>\":"
+msgstr "Создадим сценарий \"<literal>mc-term</literal>\":"
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -34760,7 +34760,7 @@ msgstr "Пакет <literal>debianutils</literal> предлагает сред�
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:20423
 msgid "In order to run a console application such as <literal>mutt</literal> under X as your preferred application, you should create an X application as following and set \"<literal>/usr/local/bin/mutt-term</literal>\" as your preferred application to be started as described."
-msgstr "Чтобы запускать консольные приложения, такие как <literal>mutt</literal> под X Window в качестве предпочтительного, нужно создать скрипт запуска и сделать его предпочтительным приложением. Вот способ:"
+msgstr "Чтобы запускать консольные приложения, такие как <literal>mutt</literal> под X Window в качестве предпочтительных, нужно создать сценарий запуска и сделать его предпочтительным приложением. Вот способ:"
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -34938,7 +34938,7 @@ msgstr "Для системы, не запущенной постоянно, у�
 #. type: Content of: <book><chapter><section><section><tip><simpara>
 #: debian-reference.en.xmlt:20521
 msgid "For scheduled system maintenance scripts, you can run them periodically from root account by placing such scripts in \"<literal>/etc/cron.hourly/</literal>\", \"<literal>/etc/cron.daily/</literal>\", \"<literal>/etc/cron.weekly/</literal>\", or \"<literal>/etc/cron.monthly/</literal>\".  Execution timings of these scripts can be customized by \"<literal>/etc/crontab</literal>\" and \"<literal>/etc/anacrontab</literal>\"."
-msgstr "Системно-важные скрипты, должные запускаться по расписанию от имени root, следует поместить в каталоги \"<literal>/etc/cron.hourly/</literal>\", \"<literal>/etc/cron.daily/</literal>\", \"<literal>/etc/cron.weekly/</literal>\" или \"<literal>/etc/cron.monthly/</literal>\". Время запуска таких скриптов можно настроить в \"<literal>/etc/crontab</literal>\" и \"<literal>/etc/anacrontab</literal>\"."
+msgstr "Системно-важные сценарии, должные запускаться по расписанию от имени root, следует поместить в каталоги \"<literal>/etc/cron.hourly/</literal>\", \"<literal>/etc/cron.daily/</literal>\", \"<literal>/etc/cron.weekly/</literal>\" или \"<literal>/etc/cron.monthly/</literal>\". Время запуска таких сценариев можно настроить в \"<literal>/etc/crontab</literal>\" и \"<literal>/etc/anacrontab</literal>\"."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
@@ -36101,7 +36101,7 @@ msgstr "<ulink url=\"&dynamickernelmodulesupportdkms;\">поддержка ди�
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:21578
 msgid "helper scripts for a Debian Package maintainer (Debian specific)"
-msgstr "скрипты, облегчающие жизнь сопровождающего пакет Debian (особенность Debian)"
+msgstr "сценарии, облегчающие жизнь сопровождающего пакет Debian (особенность Debian)"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -36395,7 +36395,7 @@ msgstr "специальное средство для выполнения па
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: debian-reference.en.xmlt:21754
 msgid "tool for building Debian binary packages from Debian sources"
-msgstr "средство сборки бинарных пакетов Debian из исходников Debian"
+msgstr "средство сборки бинарных пакетов Debian из исходных текстов Debian"
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -37277,13 +37277,13 @@ msgstr "<literal>cp</literal>(1), <literal>scp</literal>(1) и <literal>tar</lit
 #. type: Content of: <book><chapter><section><section><note><simpara>
 #: debian-reference.en.xmlt:22426
 msgid "<literal>cpio</literal>(1) and <literal>afio</literal>(1) are designed to be used with <literal>find</literal>(1) and other commands and suitable for creating backup scripts since the file selection part of the script can be tested independently."
-msgstr "<literal>cpio</literal>(1) и <literal>afio</literal>(1) созданы для использования вместе с <literal>find</literal>(1) и другими командами; они подходят для скриптов резервного копирования, поскольку та часть скрипта, которая выбирает файл, может быть протестирована отдельно."
+msgstr "<literal>cpio</literal>(1) и <literal>afio</literal>(1) созданы для использования вместе с <literal>find</literal>(1) и другими командами; они подходят для сценариев резервного копирования, поскольку та часть сценария, которая выбирает файл, может быть протестирована отдельно."
 
 # type: Content of: <book><chapter><section><section><note><simpara>
 #. type: Content of: <book><chapter><section><section><note><simpara>
 #: debian-reference.en.xmlt:22429
 msgid "<literal>afio</literal>(1) compresses each file in the archive.  This makes <literal>afio</literal> to be much safer for the file corruption than the globally compressed <literal>tar</literal> or <literal>cpio</literal> archives and to be <emphasis role=\"strong\">the best archive engine</emphasis> for the backup script."
-msgstr "<literal>afio</literal>(1) сжимает отдельно каждый файл в архиве. Благодаря этому использовать <literal>afio</literal> безопасней, чем <literal>tar</literal> или <literal>cpio</literal>: отдельная ошибка не приведёт к порче всего архива. <literal>afio</literal>(1) -- <emphasis role=\"strong\">лучшее средство архивирования</emphasis> для скриптов резервного копирования."
+msgstr "<literal>afio</literal>(1) сжимает отдельно каждый файл в архиве. Благодаря этому использовать <literal>afio</literal> безопасней, чем <literal>tar</literal> или <literal>cpio</literal>: отдельная ошибка не приведёт к порче всего архива. <literal>afio</literal>(1) -- <emphasis role=\"strong\">лучшее средство архивирования</emphasis> для сценариев резервного копирования."
 
 # type: Content of: <book><chapter><section><section><note><simpara>
 #. type: Content of: <book><chapter><section><section><note><simpara>
@@ -43633,7 +43633,7 @@ msgstr "Преобразование имён файлов с помощью ico
 #. type: Content of: <book><chapter><section><section><simpara>
 #: debian-reference.en.xmlt:26618
 msgid "Here is an example script to convert encoding of file names from ones created under older OS to modern UTF-8 ones in a single directory."
-msgstr "Вот пример скрипта, который изменяет кодировку имён файлов, созданных в старой ОС, на UTF-8. Обрабатываются файлы в одном каталоге."
+msgstr "Вот пример сценария, который изменяет кодировку имён файлов, созданных в старой ОС, на UTF-8. Обрабатываются файлы в одном каталоге."
 
 # type: Content of: <book><chapter><section><section><screen>
 #. type: Content of: <book><chapter><section><section><screen>
@@ -46397,7 +46397,7 @@ msgstr "Разбор существующих сценариев оболочк�
 #. type: Content of: <book><chapter><section><simpara>
 #: debian-reference.en.xmlt:29271
 msgid "Unlike shell interactive mode (see <xref linkend=\"_the_simple_shell_command\"/> and <xref linkend=\"_unix_like_text_processing\"/>), shell scripts frequently use parameters, conditionals, and loops."
-msgstr "В отличие от интерактивного режима (см. <xref linkend=\"_the_simple_shell_command\"/> и <xref linkend=\"_unix_like_text_processing\"/>), в скриптах shell часто используются параметры, условия и циклы."
+msgstr "В отличие от интерактивного режима (см. <xref linkend=\"_the_simple_shell_command\"/> и <xref linkend=\"_unix_like_text_processing\"/>), в сценариях оболочки часто используются параметры, условия и циклы."
 
 # type: Content of: <book><chapter><section><section><title>
 #. type: Content of: <book><chapter><section><section><title>
