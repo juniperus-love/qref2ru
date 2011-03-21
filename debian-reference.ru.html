@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="debian-reference.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
 <meta name="description" content="Это свободная книга, вы можете распространять её на условиях любой DFSG-совместимой версии GNU General Public License (в соответствии с Debian Free Software Guidelines -- DFSG).">
-<link rel="home" href="#id2963340" title="Справочник по Debian">
+<link rel="home" href="#id2958698" title="Справочник по Debian">
 <link rel="next" href="#_preface" title="Введение">
 <link rel="preface" href="#_preface" title="Введение">
 <link rel="chapter" href="#_gnu_linux_tutorials" title="Глава 1. Основы работы в GNU/Linux">
@@ -26,13 +26,13 @@
 <div class="titlepage">
 <div>
 <div><h1 class="title">
-<a name="id2963340"></a>Справочник по Debian</h1></div>
+<a name="id2958698"></a>Справочник по Debian</h1></div>
 <div><div class="author"><h3 class="author">
 <span class="firstname">Osamu</span> <span class="surname">Aoki</span>
 </h3></div></div>
 <div><p class="copyright">Copyright © 2007-2010 Osamu Aoki</p></div>
 <div><div class="legalnotice" title="Авторские права">
-<a name="id2963387"></a><p>Этот Справочник по Debian (v2) (2011-03-20 05:23:57 UTC) предоставляет широкий обзор
+<a name="id2958745"></a><p>Этот Справочник по Debian (v2) (2011-03-21 07:30:46 UTC) предоставляет широкий обзор
 системы Debian в форме руководства пользователя после
 установки. Рассматриваются многие аспекты управления системой на примерах в
 командной строке.</p>
@@ -593,19 +593,19 @@ Free Software Guidelines -- DFSG).</p>
 </dl></dd>
 <dt><span class="section"><a href="#_source_code_merge_tools">10.5. Средства для объединения файлов с исходным кодом (merge)</a></span></dt>
 <dd><dl>
-<dt><span class="section"><a href="#_extracting_differences_for_source_files">10.5.1. Извлечение отличий между файлами с исходным кодом</a></span></dt>
-<dt><span class="section"><a href="#_merging_updates_for_source_files">10.5.2. Merging updates for source files</a></span></dt>
-<dt><span class="section"><a href="#_updating_via_3_way_merge">10.5.3. Updating via 3-way-merge</a></span></dt>
+<dt><span class="section"><a href="#_extracting_differences_for_source_files">10.5.1. Извлечение отличий между файлами с исходным кодом (diff)</a></span></dt>
+<dt><span class="section"><a href="#_merging_updates_for_source_files">10.5.2. Наложение заплат (patch)</a></span></dt>
+<dt><span class="section"><a href="#_updating_via_3_way_merge">10.5.3. Трёхстороннее слияние с diff3 (3-way-merge)</a></span></dt>
 </dl></dd>
 <dt><span class="section"><a href="#_version_control_systems">10.6. Системы управления версиями (VCS)</a></span></dt>
 <dd><dl><dt><span class="section"><a href="#_comparison_of_vcs_commands">10.6.1. Сравнение команд различных VCS</a></span></dt></dl></dd>
 <dt><span class="section"><a href="#_cvs">10.7. CVS</a></span></dt>
 <dd><dl>
-<dt><span class="section"><a href="#_configuration_of_cvs_repository">10.7.1. Настройка хранилища CVS</a></span></dt>
+<dt><span class="section"><a href="#_configuration_of_cvs_repository">10.7.1. Настройка репозитория CVS</a></span></dt>
 <dt><span class="section"><a href="#_local_access_to_cvs">10.7.2. Локальный доступ к CVS</a></span></dt>
 <dt><span class="section"><a href="#_remote_access_to_cvs_with_pserver">10.7.3. Удалённый доступ к CVS с помощьюч pserver</a></span></dt>
 <dt><span class="section"><a href="#_remote_access_to_cvs_with_ssh">10.7.4. Удалённый доступ к CVS по ssh</a></span></dt>
-<dt><span class="section"><a href="#_importing_a_new_source_to_cvs">10.7.5. Importing a new source to CVS</a></span></dt>
+<dt><span class="section"><a href="#_importing_a_new_source_to_cvs">10.7.5. Помещение файлов в репозиторий</a></span></dt>
 <dt><span class="section"><a href="#_file_permissions_in_cvs_repository">10.7.6. Разрешения на доступ к файлам в хранилище CVS</a></span></dt>
 <dt><span class="section"><a href="#_work_flow_of_cvs">10.7.7. Рабочий процесс использования CVS</a></span></dt>
 <dt><span class="section"><a href="#_latest_files_from_cvs">10.7.8. Latest files from CVS</a></span></dt>
@@ -1021,7 +1021,7 @@ Type 1</a>
 </dt>
 <dt>10.15. <a href="#listofsourcecodemergetools">Список средств соединения файлов с исходным кодом (merge)</a>
 </dt>
-<dt>10.16. <a href="#list-of-vcs">Список средств VCS</a>
+<dt>10.16. <a href="#list-of-vcs">Список систем управления версиями (VCS)</a>
 </dt>
 <dt>10.17. <a href="#comparisonofnativevcscommands">Сравнение команд различных VCS</a>
 </dt>
@@ -1108,7 +1108,7 @@ Type 1</a>
 <div class="titlepage"><div><div><h2 class="title">
 <a name="_preface"></a>Введение</h2></div></div></div>
 <p>В этом <a class="ulink" href="http://www.debian.org/doc/manuals/debian-reference/" target="_top">Справочнике по Debian (версия
-2)</a> (2011-03-20 05:23:57 UTC) мы стремимся предоставить широкий обзор правил и
+2)</a> (2011-03-21 07:30:46 UTC) мы стремимся предоставить широкий обзор правил и
 возможностей администрирования (настройки и управления) уже установленной
 системы Debian.</p>
 <p>Справочник предназначен для тех начинающих изучение Debian, кто не готов
@@ -2117,10 +2117,10 @@ directory"), имя которого и есть "<code class="literal">/</code>
 буквы или символы в имени файла, на практике это плохая идея. Лучше избегать
 использовать символы, которые часто имеют специальное значение в командой
 строке, включая пробелы, символы табуляции, перевода строки и другие
-спецсимволы: <code class="literal">{ } ( ) [ ] ' ` " \ / &gt; &lt; | ; ! # &amp; ^ * % @
-$</code> . Если вы хотите отделить слова в имени, лучше используйте
-точку, дефис или подчеркивание. Вы можете также начинать каждое слово с
-большой буквы: "<code class="literal">ВотТак</code>". </p>
+специальные символы: <code class="literal">{ } ( ) [ ] ' ` " \ / &gt; &lt; | ; ! # &amp;
+^ * % @ $</code> . Если вы хотите отделить слова в имени, лучше
+используйте точку, дефис или подчеркивание. Вы можете также начинать каждое
+слово с большой буквы: "<code class="literal">ВотТак</code>". </p>
 </div>
 <div class="note" title="Замечание" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Замечание</h3>
@@ -28153,7 +28153,7 @@ the static data archive.</p>
 </div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>Системы VCS (см. <a class="xref" href="#list-of-vcs" title="Таблица 10.16. Список средств VCS">Таблица 10.16, «Список средств VCS»</a>) могут использоваться для
+<p>Системы VCS (см. <a class="xref" href="#list-of-vcs" title="Таблица 10.16. Список систем управления версиями (VCS)">Таблица 10.16, «Список систем управления версиями (VCS)»</a>) могут использоваться для
 копирования и синхронизации.</p>
 </div>
 </div>
@@ -28191,7 +28191,8 @@ $ afio -ivZ archive.afio</pre>
 <p><code class="literal">rsync</code>(8):</p>
 <pre class="screen"># cd ./source; rsync -av . /dest
 # cd ./source; rsync -av . user@host.dom:/dest</pre>
-<p>You can alternatively use "a trailing slash on the source directory" syntax.</p>
+<p>Также вы можете использовать другой способ записи: со знаком "/" после имени
+каталога-источника.</p>
 <pre class="screen"># rsync -av ./source/ /dest
 # rsync -av ./source/ user@host.dom:/dest</pre>
 <p>Для GNU <code class="literal">cp</code>(1) и openSSH <code class="literal">scp</code>(1):</p>
@@ -28259,26 +28260,29 @@ $ afio -ivZ archive.afio</pre>
 после этой точки.
 </li>
 <li class="listitem">
-"<code class="literal">-name</code>" matches the base of the filename with shell glob
-(see <a class="xref" href="#_shell_glob" title="1.5.6. Шаблоны для имён файлов (shell glob)">Раздел 1.5.6, «Шаблоны для имён файлов (shell glob)»</a>) but it also matches its initial
-"<code class="literal">.</code>" with metacharacters such as "<code class="literal">*</code>"
-and "<code class="literal">?</code>". (New <a class="ulink" href="http://ru.wikipedia.org/wiki/POSIX" target="_top">POSIX</a> feature)
+"<code class="literal">-name</code>" отбирает базовое имя файла по шаблону (см. <a class="xref" href="#_shell_glob" title="1.5.6. Шаблоны для имён файлов (shell glob)">Раздел 1.5.6, «Шаблоны для имён файлов (shell glob)»</a>); в отличие от шаблонов оболочки, файл с начальной
+точкой "<code class="literal">.</code>" в имени подходит под шаблоны
+"<code class="literal">*</code>" и "<code class="literal">?</code>". (Новое требование <a class="ulink" href="http://ru.wikipedia.org/wiki/POSIX" target="_top">POSIX</a>.)
 </li>
 <li class="listitem">
-"<code class="literal">-regex</code>" matches the full path with emacs style <span class="strong"><strong>BRE</strong></span> (see <a class="xref" href="#_regular_expressions" title="1.6.2. Регулярные выражения">Раздел 1.6.2, «Регулярные выражения»</a>) as
-default.
+"<code class="literal">-regex</code>" поиск по регулярному выражению в полном имени
+файла;
+отбирает файл, если его абсолютный путь подходит под регулярное выражение;
+по умолчанию используются <span class="strong"><strong>BRE</strong></span> в стиле
+Emacs (см. <a class="xref" href="#_regular_expressions" title="1.6.2. Регулярные выражения">Раздел 1.6.2, «Регулярные выражения»</a>).
 </li>
 <li class="listitem">
-"<code class="literal">-size</code>" matches the file based on the file size (value
-precedented with "<code class="literal">+</code>" for larger, precedented with
-"<code class="literal">-</code>" for smaller)
+"<code class="literal">-size</code>" отбирает файл с подходящим размером
+("<code class="literal">+</code>" перед размером отбирает большие, а
+"<code class="literal">-</code>" -- меньшие файлы).
 </li>
 <li class="listitem">
-"<code class="literal">-newer</code>" matches the file newer than the one specified in
-its argument.
+"<code class="literal">-newer</code>" отбирает файл, если он новее, чем файл,
+указанный в значении этого ключа.
 </li>
 <li class="listitem">
-"<code class="literal">-print0</code>" always returns logical <span class="strong"><strong>TRUE</strong></span> and print the full filename (<a class="ulink" href="http://en.wikipedia.org/wiki/Null_character" target="_top">null terminated</a>) on the standard output.
+"<code class="literal">-print0</code>" всегда возвращает логическое <span class="strong"><strong>TRUE</strong></span> и выводит полное имя файла на стандартный
+вывод без перевода строки (с "null character" на конце).
 </li>
 </ul></div>
 <p><code class="literal">find</code>(1) часто используется в стиле, насыщенном идиомами,
@@ -28479,7 +28483,7 @@ Debian.</p>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=rdiff-backup" target="_top">V:1.4, I:3</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/r/rdiff-backup.html" target="_top">804</a></td>
 <td align="left">
-    (remote) incremental backup
+    (удалённое) инкрементное резервное копирование
     </td>
 </tr>
 <tr>
@@ -28701,8 +28705,9 @@ system
 </ul></div>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>See files in "<code class="literal">/usr/share/doc/dump/</code>" and <a class="ulink" href="http://dump.sourceforge.net/isdumpdeprecated.html" target="_top">"Is dump really deprecated?"</a> to lean
-about the <code class="literal">dump</code> package.</p>
+<p>Читайте документацию в "<code class="literal">/usr/share/doc/dump/</code>" и статью
+<a class="ulink" href="http://dump.sourceforge.net/isdumpdeprecated.html" target="_top">"Действительно ли dump не
+нужен?"</a>, чтобы больше узнать о пакете <code class="literal">dump</code>.</p>
 </div>
 </div>
 <div class="section" title="10.1.8. Пример сценария для резервного копирования">
@@ -29059,7 +29064,7 @@ Linux поддерживается пакетом <a class="ulink" href="http://
                   <a class="ulink" href="http://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_Minix" target="_top">файловая система MINIX</a>
                 </td>
 <td align="left">
-    space efficient unix file data storage on the floppy disk
+    эффективное использование флоппи-дисков для хранения файлов Unix
     </td>
 </tr>
 <tr>
@@ -29226,20 +29231,20 @@ HOWTO and Reference Guide</a> из пакета <code class="literal">samba-doc<
 </table></div>
 </div>
 <br class="table-break"><p>Хотя эти файловые системы, подключаемые через сеть, и способы обмена файлами
-по сети очень удобны, они могут быть небезопасны. Соединение можно защитить
-с помощью:</p>
+по сети очень удобны, они могут быть небезопасны. Способы защитить
+соединение:</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
-шифрования <a class="ulink" href="http://ru.wikipedia.org/wiki/TLS" target="_top">SSL/TLS</a>
+шифровать его с <a class="ulink" href="http://ru.wikipedia.org/wiki/TLS" target="_top">SSL/TLS</a>
 </li>
 <li class="listitem">
-туннеллирования <a class="ulink" href="http://ru.wikipedia.org/wiki/SSH" target="_top">SSH</a>
+создать туннель <a class="ulink" href="http://ru.wikipedia.org/wiki/SSH" target="_top">SSH</a>
 </li>
 <li class="listitem">
-туннеллирования <a class="ulink" href="http://ru.wikipedia.org/wiki/VPN" target="_top">VPN</a>
+создать туннель <a class="ulink" href="http://ru.wikipedia.org/wiki/VPN" target="_top">VPN</a>
 </li>
 <li class="listitem">
-Limit it behind the secure firewall
+ограничить его защищённым фаерволом
 </li>
 </ul></div>
 <p>См. также <a class="xref" href="#_other_network_application_servers" title="6.10. Другие серверы сетевых приложений">Раздел 6.10, «Другие серверы сетевых приложений»</a> и <a class="xref" href="#_other_network_application_clients" title="6.11. Другие клиенты сетевых приложений">Раздел 6.11, «Другие клиенты сетевых приложений»</a>.</p>
@@ -29768,8 +29773,8 @@ OCTAL, …)
 <p>Software <a class="ulink" href="http://ru.wikipedia.org/wiki/RAID" target="_top">RAID</a> systems offered by the Linux
 kernel provide data redundancy in the kernel filesystem level to achieve
 high levels of storage reliability.</p>
-<p>There are tools to add data redundancy to files in application program level
-to achieve high levels of storage reliability, too.</p>
+<p>Также есть способы добавить избыточность к отдельным файлам на уровне
+прикладной программы для повышения надёжности хранения.</p>
 <div class="table">
 <a name="listoftoolstoaddedundancytofiles"></a><p class="title"><b>Таблица 10.9. List of tools to add data redundancy to files</b></p>
 <div class="table-contents"><table summary="List of tools to add data redundancy to files" border="1">
@@ -30612,7 +30617,7 @@ total 0
 <tbody>
 <tr>
 <td align="left">
-                  <code class="literal">gpg -a -s file</code>
+                  <code class="literal">gpg -a -s &lt;файл&gt;</code>
                 </td>
 <td align="left">
     sign file into <a class="ulink" href="http://ru.wikipedia.org/wiki/ASCII" target="_top">ASCII</a> armored file.asc
@@ -30620,7 +30625,7 @@ total 0
 </tr>
 <tr>
 <td align="left">
-                  <code class="literal">gpg --armor --sign file</code>
+                  <code class="literal">gpg --armor --sign &lt;файл&gt;</code>
                 </td>
 <td align="left">
     , ,
@@ -30628,18 +30633,19 @@ total 0
 </tr>
 <tr>
 <td align="left">
-                  <code class="literal">gpg --clearsign file</code>
+                  <code class="literal">gpg --clearsign &lt;файл&gt;</code>
                 </td>
 <td align="left">
-    clear-sign message
+    подписать сообщение прозрачной подписью
     </td>
 </tr>
 <tr>
 <td align="left">
-                  <code class="literal">gpg --clearsign file|mail foo@example.org</code>
+                  <code class="literal">gpg --clearsign &lt;файл&gt;|mail foo@example.org</code>
                 </td>
 <td align="left">
-    mail a clear-signed message to <code class="literal">foo@example.org</code>
+    отправить сообщение, подписанное прозрачной подписью, на
+<code class="literal">foo@example.org</code>
     </td>
 </tr>
 <tr>
@@ -30647,28 +30653,28 @@ total 0
                   <code class="literal">gpg --clearsign --not-dash-escaped patchfile</code>
                 </td>
 <td align="left">
-    clear-sign patchfile
+    подписать прозрачной подписью файл с заплаткой (patch-file)
     </td>
 </tr>
 <tr>
 <td align="left">
-                  <code class="literal">gpg --verify file</code>
+                  <code class="literal">gpg --verify &lt;файл&gt;</code>
                 </td>
 <td align="left">
-    verify clear-signed file
+    проверить прозрачную подпись в файле
     </td>
 </tr>
 <tr>
 <td align="left">
-                  <code class="literal">gpg -o file.sig -b file</code>
+                  <code class="literal">gpg -o &lt;файл&gt;.sig -b &lt;файл&gt;</code>
                 </td>
 <td align="left">
-    create detached signature
+    создать подпись, отделённую (detached) от файла
     </td>
 </tr>
 <tr>
 <td align="left">
-                  <code class="literal">gpg -o file.sig --detach-sig file</code>
+                  <code class="literal">gpg -o &lt;файл&gt;.sig --detach-sig &lt;файл&gt;</code>
                 </td>
 <td align="left">
     , ,
@@ -30676,10 +30682,10 @@ total 0
 </tr>
 <tr>
 <td align="left">
-                  <code class="literal">gpg --verify file.sig file</code>
+                  <code class="literal">gpg --verify &lt;файл&gt;.sig &lt;файл&gt;</code>
                 </td>
 <td align="left">
-    verify file with file.sig
+    проверить подпись &lt;файл&gt;.sig от &lt;файла&gt;
     </td>
 </tr>
 <tr>
@@ -30708,7 +30714,7 @@ total 0
 </tr>
 <tr>
 <td align="left">
-                  <code class="literal">gpg -o crypt_file.gpg -c file</code>
+                  <code class="literal">gpg -o &lt;зашифрованный_файл&gt;.gpg -c &lt;файл&gt;</code>
                 </td>
 <td align="left">
     symmetric encryption from file to crypt_file.gpg
@@ -30716,7 +30722,8 @@ total 0
 </tr>
 <tr>
 <td align="left">
-                  <code class="literal">gpg -o crypt_file.gpg --symmetric file</code>
+                  <code class="literal">gpg -o &lt;зашифрованный_файл&gt;.gpg --symmetric
+&lt;файл&gt;</code>
                 </td>
 <td align="left">
     , ,
@@ -30724,7 +30731,7 @@ total 0
 </tr>
 <tr>
 <td align="left">
-                  <code class="literal">gpg -o crypt_file.asc -a -c file</code>
+                  <code class="literal">gpg -o &lt;зашифрованный_файл&gt;.asc -a -c &lt;файл&gt;</code>
                 </td>
 <td align="left">
     symmetric encryption intended for name from file to <a class="ulink" href="http://ru.wikipedia.org/wiki/ASCII" target="_top">ASCII</a> armored crypt_file.asc
@@ -30732,7 +30739,8 @@ total 0
 </tr>
 <tr>
 <td align="left">
-                  <code class="literal">gpg -o file -d crypt_file.gpg -r name</code>
+                  <code class="literal">gpg -o &lt;файл&gt; -d &lt;зашифрованный_файл&gt;.gpg -r
+&lt;имя&gt;</code>
                 </td>
 <td align="left">
     расшифровка файла
@@ -30740,7 +30748,8 @@ total 0
 </tr>
 <tr>
 <td align="left">
-                  <code class="literal">gpg -o file --decrypt crypt_file.gpg</code>
+                  <code class="literal">gpg -o &lt;файл&gt; --decrypt
+&lt;зашифрованный_файл&gt;.gpg</code>
                 </td>
 <td align="left">
     , ,
@@ -30763,9 +30772,9 @@ set pgp_verify_sig=n</pre>
 <div class="section" title="10.4.4. Использование GnuPG в Vim">
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_using_gnupg_with_vim"></a>10.4.4. Использование GnuPG в Vim</h3></div></div></div>
-<p>The <code class="literal">gnupg</code> plugin let you run GnuPG transparently for
-files with extension "<code class="literal">.gpg</code>", "<code class="literal">.asc</code>",
-and "<code class="literal">.ppg</code>".</p>
+<p>Модуль <code class="literal">gnupg</code> позволяет прозрачно запускать GnuPG при
+обращении к файлам с расширениями "<code class="literal">.gpg</code>",
+"<code class="literal">.asc</code>" и "<code class="literal">.ppg</code>".</p>
 <pre class="screen"># aptitude install vim-scripts vim-addon-manager
 $ vim-addons install gnup</pre>
 </div>
@@ -30989,7 +30998,7 @@ bar: O</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=patchutils" target="_top">V:1.8, I:14</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/p/patchutils.html" target="_top">292</a></td>
 <td align="left">
-    show which files are modified by a patch matching a regex
+    показать, какие файлы изменены заплаткой, содержащей регулярное выражение
     </td>
 </tr>
 <tr>
@@ -31087,7 +31096,7 @@ bar: O</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=wiggle" target="_top">V:0.01, I:0.11</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/w/wiggle.html" target="_top">232</a></td>
 <td align="left">
-    apply rejected patches
+    приложить отклонённые заплаты
     </td>
 </tr>
 <tr>
@@ -31101,7 +31110,7 @@ bar: O</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=quilt" target="_top">V:1.5, I:9</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/q/quilt.html" target="_top">872</a></td>
 <td align="left">
-    manage series of patches
+    управление набором заплат
     </td>
 </tr>
 <tr>
@@ -31115,7 +31124,7 @@ bar: O</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=meld" target="_top">V:0.7, I:2</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/m/meld.html" target="_top">2576</a></td>
 <td align="left">
-    compare and merge files (GTK)
+    сразвнение и объединение файлов (GTK)
     </td>
 </tr>
 <tr>
@@ -31129,7 +31138,7 @@ bar: O</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=xxdiff" target="_top">V:0.2, I:1.3</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/x/xxdiff.html" target="_top">1352</a></td>
 <td align="left">
-    compare and merge files (plain X)
+    сравнение и объединение файлов (X)
     </td>
 </tr>
 <tr>
@@ -31143,7 +31152,7 @@ bar: O</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=dirdiff" target="_top">V:0.08, I:0.6</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/d/dirdiff.html" target="_top">224</a></td>
 <td align="left">
-    display differences and merge changes between directory trees
+    отображение различий и объединение изменений в двух деревьях каталогов
     </td>
 </tr>
 <tr>
@@ -31157,7 +31166,7 @@ bar: O</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=docdiff" target="_top">V:0.01, I:0.14</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/d/docdiff.html" target="_top">688</a></td>
 <td align="left">
-    compare two files word by word / char by char
+    сравнение двух файлов слово-в-слово или посимвольно
     </td>
 </tr>
 <tr>
@@ -31171,7 +31180,7 @@ bar: O</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=imediff2" target="_top">V:0.02, I:0.10</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/i/imediff2.html" target="_top">76</a></td>
 <td align="left">
-    interactive full screen 2-way merge tool
+    инструмент для интерактивного двухполосного слияния файлов
     </td>
 </tr>
 <tr>
@@ -31213,36 +31222,36 @@ bar: O</pre>
 <td align="left"><a class="ulink" href="http://qa.debian.org/popcon.php?package=wdiff" target="_top">V:1.6, I:14</a></td>
 <td align="left"><a class="ulink" href="http://packages.qa.debian.org/w/wdiff.html" target="_top">1024</a></td>
 <td align="left">
-    display word differences between text files
+    вывод на экран тех слов, которыми файлы отличаются
     </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<br class="table-break"><div class="section" title="10.5.1. Извлечение отличий между файлами с исходным кодом">
+<br class="table-break"><div class="section" title="10.5.1. Извлечение отличий между файлами с исходным кодом (diff)">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_extracting_differences_for_source_files"></a>10.5.1. Извлечение отличий между файлами с исходным кодом</h3></div></div></div>
+<a name="_extracting_differences_for_source_files"></a>10.5.1. Извлечение отличий между файлами с исходным кодом (diff)</h3></div></div></div>
 <p>Каждая из этих команд находит отличия между двумя файлами с исходным кодом и
 создаёт единый файл с этими отличиями (diff-файл),
-"<code class="literal">file.patch0</code>" или "<code class="literal">file.patch1</code>":</p>
-<pre class="screen">$ diff -u file.old file.new &gt; file.patch0
-$ diff -u old/file new/file &gt; file.patch1</pre>
+"<code class="literal">файл-заплатку0</code>" или "<code class="literal">файл-заплатку1</code>":</p>
+<pre class="screen">$ diff -u старый.файл новый.файл &gt; файл-заплатка0
+$ diff -u старый/файл новый/файл &gt; файл-заплатка1</pre>
 </div>
-<div class="section" title="10.5.2. Merging updates for source files">
+<div class="section" title="10.5.2. Наложение заплат (patch)">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_merging_updates_for_source_files"></a>10.5.2. Merging updates for source files</h3></div></div></div>
-<p>Diff-файлы (ещё говорят patch-файл) используется для пересылки обновлений в
-программах. Получатель обновления прикладывает "заплатку" (patch) к другому
-файлу так:</p>
-<pre class="screen">$ patch -p0 file &lt; file.patch0
-$ patch -p1 file &lt; file.patch1</pre>
+<a name="_merging_updates_for_source_files"></a>10.5.2. Наложение заплат (patch)</h3></div></div></div>
+<p>Diff-файл (ещё говорят patch-файл, заплатка) используется для пересылки
+обновлений в программах. Получатель обновления "накладывает заплатку"
+(patch) к другому файлу так:</p>
+<pre class="screen">$ patch -p0 файл &lt; файл-заплатка0
+$ patch -p1 файл &lt; файл-заплатка1</pre>
 </div>
-<div class="section" title="10.5.3. Updating via 3-way-merge">
+<div class="section" title="10.5.3. Трёхстороннее слияние с diff3 (3-way-merge)">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_updating_via_3_way_merge"></a>10.5.3. Updating via 3-way-merge</h3></div></div></div>
-<p>If you have three versions of a source code, you can perform 3-way-merge
-effectively using <code class="literal">diff3</code>(1) by the following.</p>
-<pre class="screen">$ diff3 -m мой.файл старый.файл твой.файл &gt; файл</pre>
+<a name="_updating_via_3_way_merge"></a>10.5.3. Трёхстороннее слияние с diff3 (3-way-merge)</h3></div></div></div>
+<p>Если у вас есть три версии файла с исходным кодом, вы можете эффективно
+объединить их командой <code class="literal">diff3</code>(1) так:</p>
+<pre class="screen">$ diff3 -m мой.файл наш_старый.файл твой.файл &gt; файл</pre>
 </div>
 </div>
 <div class="section" title="10.6. Системы управления версиями (VCS)">
@@ -31255,8 +31264,8 @@ effectively using <code class="literal">diff3</code>(1) by the following.</p>
 <p>Если вы ещё не пользовались системами VCS, начните изучение с <span class="strong"><strong>Git</strong></span>, который стремительно набирает популярность.</p>
 </div>
 <div class="table">
-<a name="list-of-vcs"></a><p class="title"><b>Таблица 10.16. Список средств VCS</b></p>
-<div class="table-contents"><table summary="Список средств VCS" border="1">
+<a name="list-of-vcs"></a><p class="title"><b>Таблица 10.16. Список систем управления версиями (VCS)</b></p>
+<div class="table-contents"><table summary="Список систем управления версиями (VCS)" border="1">
 <colgroup>
 <col align="left">
 <col align="left">
@@ -31607,7 +31616,7 @@ VCS (для создания файлов как в системах BSD, см. 
                   <code class="literal">git pull</code>
                 </td>
 <td align="left">
-    update the working tree by merging the remote repository
+    обновить локальное рабочее дерево из удалённого хранилища
     </td>
 </tr>
 <tr>
@@ -31787,19 +31796,19 @@ VCS (для создания файлов как в системах BSD, см. 
 "<code class="literal">info cvs</code>"
 </li>
 </ul></div>
-<div class="section" title="10.7.1. Настройка хранилища CVS">
+<div class="section" title="10.7.1. Настройка репозитория CVS">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_configuration_of_cvs_repository"></a>10.7.1. Настройка хранилища CVS</h3></div></div></div>
-<p>Следующая конфигурация позволяет делать коммиты только членам группы
+<a name="_configuration_of_cvs_repository"></a>10.7.1. Настройка репозитория CVS</h3></div></div></div>
+<p>В Debian пакет <code class="literal">cvs</code> при установке настраивает готовый к
+использованию репозиторий в "<code class="literal">/srv/cvs</code>". А вот способ
+настроить похожий репозиторий в любом удобном месте. Следующая конфигурация
+позволяет добавлять обновления (commit) только членам группы
 "<code class="literal">src</code>", а администрирование разрешается членам группы
 "<code class="literal">staff</code>".</p>
-<pre class="screen"># cd /var/lib; umask 002; mkdir cvs
-# export CVSROOT=/srv/cvs/project
-# cd $CVSROOT
-# chown root:src .
-# chmod 2775 .
+<pre class="screen"># export CVSROOT=/srv/cvs/project
+# install -d -o root -g src -m 2775 $CVSROOT
 # cvs -d $CVSROOT init
-# cd CVSROOT
+# cd $CVSROOT/CVSROOT
 # chown -R root:staff .
 # chmod 2775 .
 # touch val-tags
@@ -31807,16 +31816,17 @@ VCS (для создания файлов как в системах BSD, см. 
 # chown root:src history val-tags</pre>
 <div class="tip" title="Подсказка" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Подсказка</h3>
-<p>You may restrict creation of new project by changing the owner of
-"<code class="literal">$CVSROOT</code>" directory to "<code class="literal">root:staff</code>"
-and its permission to "<code class="literal">3775</code>".</p>
+<p>Вы можете запретить создавать новые проекты, сменив владельца каталога
+"<code class="literal">$CVSROOT</code>" на "<code class="literal">root:staff</code>", и
+установив разрешение доступа "<code class="literal">3775</code>".</p>
 </div>
 </div>
 <div class="section" title="10.7.2. Локальный доступ к CVS">
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_local_access_to_cvs"></a>10.7.2. Локальный доступ к CVS</h3></div></div></div>
-<p>The default CVS repository is pointed by "<code class="literal">$CVSROOT</code>".  The
-following sets up "<code class="literal">$CVSROOT</code>" for the local access.</p>
+<p>"<code class="literal">$CVSROOT</code>" указывает на репозиторий, используемый по
+умолчанию. Следующая команда устанавливает "<code class="literal">$CVSROOT</code>" для
+локального доступа.</p>
 <pre class="screen">$ export CVSROOT=/srv/cvs/project</pre>
 </div>
 <div class="section" title="10.7.3. Удалённый доступ к CVS с помощьюч pserver">
@@ -31838,37 +31848,36 @@ $ cvs login</pre>
 <div class="section" title="10.7.4. Удалённый доступ к CVS по ssh">
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_remote_access_to_cvs_with_ssh"></a>10.7.4. Удалённый доступ к CVS по ssh</h3></div></div></div>
-<p>The following sets up "<code class="literal">$CVS_RSH</code>" and
-"<code class="literal">$CVSROOT</code>" for the remote access to the CVS repository by
-<a class="ulink" href="http://alioth.debian.org/projects/webwml/" target="_top">webwml project</a> with SSH.</p>
+<p>Установим переменные "<code class="literal">$CVS_RSH</code>" и
+"<code class="literal">$CVSROOT</code>" для удалённого доступа к репозиторию CVS
+<a class="ulink" href="http://alioth.debian.org/projects/webwml/" target="_top">проекта webwml</a> по SSH.</p>
 <pre class="screen">$ export CVS_RSH=ssh
 $ export CVSROOT=:ext:account@cvs.alioth.debian.org:/cvs/webwml</pre>
-<p>Вы можете использовать также авторизацию с помощью общедоступных ключей, что
-избавит от ввода пароля.</p>
+<p>Вы можете использовать также авторизацию по открытому ключу с SSH, чтобы не
+вводить пароль.</p>
 </div>
-<div class="section" title="10.7.5. Importing a new source to CVS">
+<div class="section" title="10.7.5. Помещение файлов в репозиторий">
 <div class="titlepage"><div><div><h3 class="title">
-<a name="_importing_a_new_source_to_cvs"></a>10.7.5. Importing a new source to CVS</h3></div></div></div>
-<p>Create a new local source tree location at
-"<code class="literal">~/path/to/module1</code>" by the following.</p>
+<a name="_importing_a_new_source_to_cvs"></a>10.7.5. Помещение файлов в репозиторий</h3></div></div></div>
+<p>Создайте новое локальное дерево каталогов
+"<code class="literal">~/path/to/module1</code>":</p>
 <pre class="screen">$ mkdir -p ~/path/to/module1; cd ~/path/to/module1</pre>
-<p>Populate a new local source tree under
-"<code class="literal">~/path/to/module1</code>" with files.</p>
-<p>Import it to CVS with the following parameters.</p>
+<p>Наполните файлами каталог "<code class="literal">~/path/to/module1</code>".</p>
+<p>Импортируйте его в CVS с такими параметрами:</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
 Имя модуля: "<code class="literal">module1</code>"
 </li>
 <li class="listitem">
-Vendor tag: "<code class="literal">Main-branch</code>" (tag for the entire branch)
+Метка производителя: "<code class="literal">Main-branch</code>" (метка всей ветки)
 </li>
 <li class="listitem">
-Release tag: "<code class="literal">Release-initial</code>" (tag for a specific
-release)
+Метка выпуска: "<code class="literal">Release-initial</code>" (метка конкретного
+выпуска)
 </li>
 </ul></div>
 <pre class="screen">$ cd ~/path/to/module1
-$ cvs import -m \"Start module1\" module1 Main-branch Release-initial
+$ cvs import -m "Start module1" module1 Main-branch Release-initial
 $ rm -Rf . # optional</pre>
 </div>
 <div class="section" title="10.7.6. Разрешения на доступ к файлам в хранилище CVS">
@@ -31888,48 +31897,48 @@ ensure this condition if needed.</p>
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_work_flow_of_cvs"></a>10.7.7. Рабочий процесс использования CVS</h3></div></div></div>
 <p>Вот пример типичной последовательности действий при работе с CVS.</p>
-<p>Проверить все доступные модули проекта, на который указывает
+<p>Проверьте все доступные модули проекта, на который указывает
 "<code class="literal">$CVSROOT</code>":</p>
 <pre class="screen">$ cvs rls
 CVSROOT
 module1
 module2
 ...</pre>
-<p>Checkout "<code class="literal">module1</code>" to its default directory
-"<code class="literal">./module1</code>" by the following.</p>
+<p>Создайте рабочую копию "<code class="literal">модуля1</code>" в каталоге
+"<code class="literal">модуль1</code>":</p>
 <pre class="screen">$ cd ~/path/to
-$ cvs co module1
-$ cd module1</pre>
-<p>Внесение изменений в содержимое по мере необходимости.</p>
-<p>Check changes by making "<code class="literal">diff -u [repository] [local]</code>"
-equivalent by the following.</p>
+$ cvs co модуль1
+$ cd модуль1</pre>
+<p>Внесите изменений в содержимое по мере необходимости.</p>
+<p>Проверить изменения можно командой "<code class="literal">diff -u [репозиторий]
+[локальное хранилище]</code>", а можно и короче:</p>
 <pre class="screen">$ cvs diff -u</pre>
-<p>You find that you broke some file "<code class="literal">file_to_undo</code>" severely
-but other files are fine.</p>
-<p>Overwrite "<code class="literal">file_to_undo</code>" file with the clean copy from
-CVS by the following.</p>
-<pre class="screen">$ cvs up -C file_to_undo</pre>
-<p>Save the updated local source tree to CVS by the following.</p>
+<p>Вы обнаруживаете, что серьёзно испортили "<code class="literal">один_файл</code>", но
+остальные в порядке.</p>
+<p>Перезапишите этот "<code class="literal">один_файл</code>" его последней,
+неиспорченной версией:</p>
+<pre class="screen">$ cvs up -C один_файл</pre>
+<p>Сохраните обновлённую локальную копию в CVS:</p>
 <pre class="screen">$ cvs ci -m "Описание изменений"</pre>
-<p>Create and add "<code class="literal">file_to_add</code>" file to CVS by the
-following.</p>
-<pre class="screen">$ vi file_to_add
-$ cvs add file_to_add
-$ cvs ci -m "Added file_to_add"</pre>
-<p>Merge the latest version from CVS by the following.</p>
+<p>Создайте и добавьте в CVS "<code class="literal">новый_файл</code>":</p>
+<pre class="screen">$ vi новый_файл
+$ cvs add новый_файл
+$ cvs ci -m "Добавлен новый_файл"</pre>
+<p>Получите из CVS последнюю версию:</p>
 <pre class="screen">$ cvs up -d</pre>
-<p>Watch out for lines starting with "<code class="literal">C filename</code>" which
-indicates conflicting changes.</p>
-<p>Look for unmodified code in "<code class="literal">.#filename.version</code>".</p>
-<p>Search for "<code class="literal">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>" and
-"<code class="literal">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>" in files for conflicting
-changes.</p>
-<p>Edit files to fix conflicts as needed.</p>
-<p>Add a release tag "<code class="literal">Release-1</code>" by the following.</p>
+<p>Следите, не появилось ли строчек типа "<code class="literal">C
+&lt;имя_файла&gt;</code>", указывающих на конфликтующие изменения.</p>
+<p>Если только что полученный файл "<code class="literal">filename</code>" отличается от
+вашего, то ваш будет переименован: <code class="literal">.#filename.version</code>".</p>
+<p>А в файле "<code class="literal">filename</code>" появятся строки с
+"<code class="literal">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>" и
+<code class="literal">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>", содержащие оба варианта.</p>
+<p>Если нужно, отредактируйте файлы, чтобы исправить конфликты.</p>
+<p>Добавьте метку (tag) "<code class="literal">Release-1</code>" так:</p>
 <pre class="screen">$ cvs ci -m "last commit for Release-1"
 $ cvs tag Release-1</pre>
-<p>Edit further.</p>
-<p>Remove the release tag "<code class="literal">Release-1</code>" by the following.</p>
+<p>Продолжайте редактирование.</p>
+<p>Удалите метку "<code class="literal">Release-1</code>" так:</p>
 <pre class="screen">$ cvs tag -d Release-1</pre>
 <p>Check in changes to CVS by the following.</p>
 <pre class="screen">$ cvs ci -m "real last commit for Release-1"</pre>
@@ -31958,7 +31967,7 @@ version.</p>
 <p>Sync with files modified by others on this branch while creating new
 directories as needed by the following.</p>
 <pre class="screen">$ cvs up -d</pre>
-<p>Edit files to fix conflicts as needed.</p>
+<p>Если нужно, отредактируйте файлы, чтобы исправить конфликты.</p>
 <p>Check in changes to CVS by the following.</p>
 <pre class="screen">$ cvs ci -m "checked into this branch"</pre>
 <p>Update the local tree by HEAD of main while removing sticky tag
@@ -32168,11 +32177,10 @@ properly and saves storage spaces.</p>
 <div class="section" title="10.8.6. Importing a new source to Subversion">
 <div class="titlepage"><div><div><h3 class="title">
 <a name="_importing_a_new_source_to_subversion"></a>10.8.6. Importing a new source to Subversion</h3></div></div></div>
-<p>Create a new local source tree location at
-"<code class="literal">~/path/to/module1</code>" by the following.</p>
+<p>Создайте новое локальное дерево каталогов
+"<code class="literal">~/path/to/module1</code>":</p>
 <pre class="screen">$ mkdir -p ~/path/to/module1; cd ~/path/to/module1</pre>
-<p>Populate a new local source tree under
-"<code class="literal">~/path/to/module1</code>" with files.</p>
+<p>Наполните файлами каталог "<code class="literal">~/path/to/module1</code>".</p>
 <p>Import it to Subversion with the following parameters.</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
@@ -32223,12 +32231,12 @@ module2
 <pre class="screen">$ cd ~/path/to
 $ svn co file:///srv/svn/project/module1/trunk module1
 $ cd module1</pre>
-<p>Внесение изменений в содержимое по мере необходимости.</p>
-<p>Check changes by making "<code class="literal">diff -u [repository] [local]</code>"
-equivalent by the following.</p>
+<p>Внесите изменений в содержимое по мере необходимости.</p>
+<p>Проверить изменения можно командой "<code class="literal">diff -u [репозиторий]
+[локальное хранилище]</code>", а можно и короче:</p>
 <pre class="screen">$ svn diff</pre>
-<p>You find that you broke some file "<code class="literal">file_to_undo</code>" severely
-but other files are fine.</p>
+<p>Вы обнаруживаете, что серьёзно испортили "<code class="literal">один_файл</code>", но
+остальные в порядке.</p>
 <p>Overwrite "<code class="literal">file_to_undo</code>" file with the clean copy from
 Subversion by the following.</p>
 <pre class="screen">$ svn revert file_to_undo</pre>
@@ -32241,19 +32249,19 @@ $ svn ci -m "Добавлен добавляемый_файл"</pre>
 <p>Получить последнии версии из хранилища Subversion (и объединить с
 локальными):</p>
 <pre class="screen">$ svn up</pre>
-<p>Watch out for lines starting with "<code class="literal">C filename</code>" which
-indicates conflicting changes.</p>
+<p>Следите, не появилось ли строчек типа "<code class="literal">C
+&lt;имя_файла&gt;</code>", указывающих на конфликтующие изменения.</p>
 <p>Look for unmodified code in, e.g., "<code class="literal">filename.r6</code>",
 "<code class="literal">filename.r9</code>", and "<code class="literal">filename.mine</code>".</p>
-<p>Search for "<code class="literal">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>" and
-"<code class="literal">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>" in files for conflicting
-changes.</p>
-<p>Edit files to fix conflicts as needed.</p>
-<p>Add a release tag "<code class="literal">Release-1</code>" by the following.</p>
+<p>А в файле "<code class="literal">filename</code>" появятся строки с
+"<code class="literal">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>" и
+<code class="literal">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>", содержащие оба варианта.</p>
+<p>Если нужно, отредактируйте файлы, чтобы исправить конфликты.</p>
+<p>Добавьте метку (tag) "<code class="literal">Release-1</code>" так:</p>
 <pre class="screen">$ svn ci -m "last commit for Release-1"
 $ svn cp file:///srv/svn/project/module1/trunk file:///srv/svn/project/module1/tags/Release-1</pre>
-<p>Edit further.</p>
-<p>Remove the release tag "<code class="literal">Release-1</code>" by the following.</p>
+<p>Продолжайте редактирование.</p>
+<p>Удалите метку "<code class="literal">Release-1</code>" так:</p>
 <pre class="screen">$ svn rm file:///srv/svn/project/module1/tags/Release-1</pre>
 <p>Check in changes to Subversion by the following.</p>
 <pre class="screen">$ svn ci -m "real last commit for Release-1"</pre>
@@ -32282,7 +32290,7 @@ version.</p>
 "<code class="literal">Release-initial-bugfixes</code>" branch.</p>
 <p>Sync with files modified by others on this branch by the following.</p>
 <pre class="screen">$ svn up</pre>
-<p>Edit files to fix conflicts as needed.</p>
+<p>Если нужно, отредактируйте файлы, чтобы исправить конфликты.</p>
 <p>Check in changes to Subversion by the following.</p>
 <pre class="screen">$ svn ci -m "checked into this branch"</pre>
 <p>Update the local tree with HEAD of trunk by the following.</p>
