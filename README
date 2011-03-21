@@ -1,10 +1,18 @@
 
-(Полу)черновики перевода (для себя и друзей [пока что]).
-Думаю, будут допинываться потихонечку.
+**********
+* что это
+**********
+(Полу)черновики перевода "Справочника по Debian".
+Неспешно допинываются.
+На данный момент большая часть переведена и вполне читабельна.
 
 Сообщения об ошибках и дополнения в любой форме приветствуются :--)
+Связь: qref2ru@gmail.com
 
-Надеюсь, что доведу это до приемлемого состояния.
+**********
+* откуда
+**********
+http://www.debian.org/doc/manuals/debian-reference/
 
 POT-файл взят отсюда:
 http://svn.debian.org/wsvn/ddp/manuals/trunk/quick-reference/po4a/#_manuals_trunk_quick-reference_po4a_
@@ -12,4 +20,3 @@ http://svn.debian.org/wsvn/ddp/manuals/trunk/quick-reference/po4a/#_manuals_trun
 Значительная часть первой главы вставлена из перевода первой версии этого справочника:
 http://qref.sourceforge.net/Debian/reference/index.ru.html
 
-Связь: qref2ru@gmail.com
